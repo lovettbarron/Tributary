@@ -26,7 +26,7 @@ Install expressJS and Jade.
 
 How to use me
 -------------
-All projects are based on Jade and partials.
+All projects are based on Jade and partials. CSS, images, and js files are placed in the "public" folder. All files placed in the public 
 Parts of a large application are divided into folders. For example
 ```
 project
@@ -47,4 +47,32 @@ Each folder will have an index.jade file. Index files should _never_ have conten
 They should mostly be used for managing linked files, includes, and any kind of iteration.
 
 ### template.jade
-Structure and template for a page is defined in the template. Not all the styling of the page needs to be here, but the vi
+Structure and template for a page is defined in this file. Not all the styling of the page needs to be here, but content buckets, partial placement, and similar should be here.
+
+MORE TO COME
+
+How to use me in teams
+----------------------
+Let's say we have three primary users categories.
+> Designer
+> Documentation responsibility
+> Technical responsibility
+
+Everyone is a designer. However, some designers have more responsibility than others.
+
+#### Technical responsibility
+This is the person or people who are responsible for the index.jade files and the overall structure. They need a level of technical expertise in order to navigate the complexities of Jade recursion. I've tried to hide of the complexity as possible but a few basic pieces of knowledge are required.
+These include an understanding of:
+```
+Unix file systems
+Recursion and linking
+Javascript (mostly jQuery)
+Twitter bootstrap and LESS/CSS
+```
+#### Documentation responsibility
+This person is responsible for recording both internal and external documentation. The entire site can be rendered as a PDF via the `localhost/renderPDF`. 
+This document structure is defined by the `sitedoc.txt` file.
+A simple site might look like this:
+```
+TBD
+```

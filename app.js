@@ -39,6 +39,11 @@ app.get('/', function(req, res){
 	});
 });
 
+app.get('/renderpdf', function(req, res){
+	//TBD with http://code.google.com/p/wkhtmltopdf/
+});
+
+
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
