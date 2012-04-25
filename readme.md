@@ -55,7 +55,9 @@ How to use me in teams
 ----------------------
 Let's say we have three primary users categories.
 > Designer
+
 > Documentation responsibility
+
 > Technical responsibility
 
 Everyone is a designer. Designers can be in charge of different parts of the system, and should be generally familiar with how HTML works, how twitter bootstrap works, and how jade translates into html. However, some designers have more responsibility than others.
