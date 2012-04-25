@@ -78,6 +78,6 @@ TBD
 ```
 
 
-Thinking and thesis
--------------------
+Why make this?
+--------------
 This will be up shortly, needs to await a publication thingy.
