@@ -6,9 +6,11 @@ It's based on NodeJS, ExpressJS, Bootstrap, and the Jade templating language.
 
 Requirements:
 -------------
+```
 NodeJS 0.6.x
 Expressjs 2.x
 Jade
+```
 
 How to install me
 -----------------
