@@ -24,4 +24,16 @@ Install expressJS and Jade.
 
 How to use me
 -------------
+All projects are based on Jade and partials.
+Parts of a large application are divided into folders. For example
+```
+project
+	- global
+		- header
+		- footer
+	- pages
+		- home
+		- profile
+```
 
+TBD TBD
