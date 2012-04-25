@@ -58,7 +58,7 @@ Let's say we have three primary users categories.
 > Documentation responsibility
 > Technical responsibility
 
-Everyone is a designer. However, some designers have more responsibility than others.
+Everyone is a designer. Designers can be in charge of different parts of the system, and should be generally familiar with how HTML works, how twitter bootstrap works, and how jade translates into html. However, some designers have more responsibility than others.
 
 #### Technical responsibility
 This is the person or people who are responsible for the index.jade files and the overall structure. They need a level of technical expertise in order to navigate the complexities of Jade recursion. I've tried to hide of the complexity as possible but a few basic pieces of knowledge are required.
@@ -76,3 +76,8 @@ A simple site might look like this:
 ```
 TBD
 ```
+
+
+Thinking and thesis
+-------------------
+This will be up shortly, needs to await a publication thingy.
