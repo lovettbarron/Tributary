@@ -38,4 +38,13 @@ project
 		- profile
 ```
 
-TBD TBD
+Individual pages are divided into folders. Each folder will have an index.jade, template.jade, and additional components as necessary.
+
+
+
+### index.jade
+Each folder will have an index.jade file. Index files should _never_ have content based information. 
+They should mostly be used for managing linked files, includes, and any kind of iteration.
+
+### template.jade
+Structure and template for a page is defined in the template. Not all the styling of the page needs to be here, but the vi
