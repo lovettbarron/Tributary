@@ -2,7 +2,8 @@
  * Module dependencies.
  */
 
-var express = require('express');
+var express = require('express'),
+	fs = require('fs');
 var app = express.createServer();
 
 // Optional since express defaults to CWD/views
