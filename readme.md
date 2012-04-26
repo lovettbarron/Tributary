@@ -18,7 +18,8 @@ Install nodeJS on your system. It will come with NPM.
 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
 Checkout this project from github with
-`git clone git@github.com:readywater/tributary.git`
+`git clone --recursive git@github.com:readywater/tributary.git`
+(Recursive is there to pull from the bootstrap link)
 
 Install expressJS and Jade.
 `sudo npm install -g express jade`
