@@ -18,7 +18,7 @@ express.compiler.compilers.less.compile = function (str, fn) {
     }
 };
 
-app.use(express.compiler({ src: publicdir, enable: ['less'] }));
+app.use(express.compiler({ src: __dirname + '/public', enable: ['less'] }));
 
 app.configure(function()
 {
