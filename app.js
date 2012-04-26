@@ -32,11 +32,27 @@ app.configure(function()
 });
 
 
-app.get('/', function(req, res){
-  res.render('index', { 
-	user: test 
-	
-	});
+var test = {
+  name: 'leonardo',
+  summary: { email: 'hunter.loftis+github@gmail.com', master: 'splinter', description: 'peaceful leader' },
+  weapons: ['katana', 'fists', 'shell'],
+  victims: ['shredder', 'brain', 'beebop', 'rocksteady']
+};
+
+
+app.get('/:path', function(req, res){
+	if( req.params.path) {
+		var path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+		if (path.isDirectory()) {
+		  res.render(__dirname + '/project/pages/' + req.params.path + '/index', { 
+			user: test 
+
+			});
+		}	
+		else {
+			res.render('index', { 
+		}
+	}
 });
 
 app.get('/renderpdf', function(req, res){
@@ -45,5 +61,5 @@ app.get('/renderpdf', function(req, res){
 
 
 
-app.listen(3000);
+app.listen(80);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
