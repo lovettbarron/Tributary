@@ -51,6 +51,7 @@ app.get('/:path', function(req, res){
 		}	
 		else {
 			res.render('index', { 
+			});
 		}
 	}
 });
