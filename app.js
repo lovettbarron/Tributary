@@ -42,20 +42,28 @@ var test = {
 
 
 app.get('/:path', function(req, res){
+	var path = '';
 	if( req.params.path) {
 		var path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
 		if (path.isDirectory()) {
-		  res.render(__dirname + '/project/pages/' + req.params.path + '/index', { 
-			user: test 
-
-			});
+			path = __dirname + '/project/pages/' + req.params.path + '/index'
 		}	
 		else {
-			res.render('index', { 
-			});
+			path = 'index'
 		}
 	}
+	if( req.xhr ) {
+		res.partial(path, {
+			
+		})
+	}
+	else {
+		res.render(path, { 
+		});
+	}
 });
+
+
 
 app.get('/renderpdf', function(req, res){
 	//TBD with http://code.google.com/p/wkhtmltopdf/
