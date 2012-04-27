@@ -42,12 +42,12 @@ var test = {
 
 
 app.get('/:path', function(req, res){
-	var path = '';
+	var path = 'index';
 	//Path definition
 	if( req.params.path !== '') {
 		try{
 			path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
-			if(!path.isDirectory()) {
+			if( !path.isDirectory() ) {
 				path = 'index'
 			} else { path = __dirname + '/project/pages/' + req.params.path; }
 		} catch(e) { console.log('error:' + e)}
