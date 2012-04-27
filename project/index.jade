@@ -3,6 +3,9 @@ extends layout
 body
 	block global/header
 	block global/context
-	block pages/:path
+	- if (path !== undefined)
+		block dashboard
+	- else
+		block= path
+	block pages/path
 	block global/footer
-  	
