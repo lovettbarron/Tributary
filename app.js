@@ -42,7 +42,9 @@ var test = {
 
 
 app.get('/', function(req,res) {
-	res.render('index');
+	res.render('index', {
+		title: 'example'
+	});
 });
 
 app.get('/:path', function(req, res){
