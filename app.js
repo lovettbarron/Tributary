@@ -43,15 +43,19 @@ var test = {
 
 app.get('/:path', function(req, res){
 	var path = '';
-	if( req.params.path) {
-		var path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+	//Path definition
+	if( req.params.path !== '') {
+		path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+		console.log('Returning results from: ' + path)
 		if (path.isDirectory()) {
 			path = __dirname + '/project/pages/' + req.params.path + '/index'
 		}	
 		else {
-			path = 'index'
+			path = 'index';
 		}
 	}
+	
+	//Return type
 	if( req.xhr ) {
 		res.partial(path, {
 			
