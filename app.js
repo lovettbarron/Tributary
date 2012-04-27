@@ -49,11 +49,11 @@ app.get('/:path', function(req, res){
 			path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
 			if( !path.isDirectory() ) {
 				path = 'index'
-			} else { path = __dirname + '/project/pages/' + req.params.path; }
+			} else { path = 'project/pages/' + req.params.path; }
 		} catch(e) { console.log('error:' + e)}
 		console.log('Returning results from: ' + path)
 		if (path.isDirectory()) {
-			path = __dirname + '/project/pages/' + req.params.path + '/index'
+			path = 'project/pages/' + req.params.path + '/index'
 		}	
 		else {
 			path = 'index';
