@@ -45,10 +45,12 @@ app.get('/:path', function(req, res){
 	var path = '';
 	//Path definition
 	if( req.params.path !== '') {
-		path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
-		if(!path.isDirectory()) {
-			path = 'index'
-		} else { path = __dirname + '/project/pages/' + req.params.path; }
+		try{
+			path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+			if(!path.isDirectory()) {
+				path = 'index'
+			} else { path = __dirname + '/project/pages/' + req.params.path; }
+		} catch(e) { console.log('error:' + e)}
 		console.log('Returning results from: ' + path)
 		if (path.isDirectory()) {
 			path = __dirname + '/project/pages/' + req.params.path + '/index'
