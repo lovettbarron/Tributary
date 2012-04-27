@@ -41,8 +41,13 @@ var test = {
 };
 
 
+app.get('/', function(req,res) {
+	res.render('index');
+});
+
 app.get('/:path', function(req, res){
 	var path = 'index';
+
 	//Path definition
 	if( req.params.path !== undefined) {
 		try{
@@ -51,7 +56,6 @@ app.get('/:path', function(req, res){
 				path = 'index'
 			} else { path = 'project/pages/' + req.params.path; }
 		} catch(e) { console.log('error:' + e)}
-		console.log('Returning results from: ' + path)
 		if (path.isDirectory()) {
 			path = 'project/pages/' + req.params.path + '/index'
 		}	
@@ -59,7 +63,8 @@ app.get('/:path', function(req, res){
 			path = 'index';
 		}
 	}
-	
+	console.log('Returning results from: ' + path)
+
 	//Return type
 	if( req.xhr ) {
 		res.partial(path, {
