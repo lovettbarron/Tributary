@@ -46,6 +46,9 @@ app.get('/:path', function(req, res){
 	//Path definition
 	if( req.params.path !== '') {
 		path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+		if(!path.isDirectory()) {
+			path = 'index'
+		} else { path = __dirname + '/project/pages/' + req.params.path; }
 		console.log('Returning results from: ' + path)
 		if (path.isDirectory()) {
 			path = __dirname + '/project/pages/' + req.params.path + '/index'
