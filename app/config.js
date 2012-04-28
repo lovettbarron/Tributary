@@ -1,5 +1,12 @@
-module.exports = function(app, express){
+var express = require('express');
 
+exports.boot = function(app){
+  bootApplication(app)
+}
+
+// App settings and middleware
+
+function bootApplication(app) {
 	// By Matt Sain, on http://stackoverflow.com/questions/4618257/node-js-express-js-how-to-render-less-css
 	var less;
 	express.compiler.compilers.less.compile = function (str, fn) {
@@ -23,7 +30,4 @@ module.exports = function(app, express){
 		app.use(app.router);
 		app.use(express.static(__dirname + '/public'));
 	});
-
-
-
 }
