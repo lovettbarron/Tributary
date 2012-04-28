@@ -7,15 +7,6 @@ var express = require('express'),
 var app = express.createServer()
 require('./app/config.js').boot(app);
 
-
-var test = {
-  name: 'leonardo',
-  summary: { email: 'hunter.loftis+github@gmail.com', master: 'splinter', description: 'peaceful leader' },
-  weapons: ['katana', 'fists', 'shell'],
-  victims: ['shredder', 'brain', 'beebop', 'rocksteady']
-};
-
-
 app.get('/', function(req,res) {
 	res.render('index', {
 		title: 'example'
@@ -24,14 +15,16 @@ app.get('/', function(req,res) {
 
 app.get('/:path', function(req, res){
 	var path = 'index';
-
+	var stat;
+	
 	//Path definition
 	if( req.params.path !== undefined) {
 		try{
-			path = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
-			if( !path.isDirectory() ) {
+			path = __dirname + '/project/pages/' + req.params.path;
+			stat = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
+			if( !stat.isDirectory() ) {
 				path = 'index'
-			} else { path = 'project/pages/' + req.params.path; }
+			} else { path = 'project/pages/' + req.params.path + 'index'; }
 		} catch(e) { console.log('error:' + e)}
 		if (path.isDirectory()) {
 			path = 'project/pages/' + req.params.path + '/index'

@@ -1,7 +1,7 @@
 var express = require('express');
 
 exports.boot = function(app){
-  bootApplication(app)
+  bootApplication(app);
 }
 
 // App settings and middleware
