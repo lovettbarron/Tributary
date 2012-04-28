@@ -5,7 +5,7 @@
 var express = require('express'),
 	fs = require('fs');
 var app = express.createServer()
-require('./app/config.js')(app, express).boot(app);
+require('./app/config.js').boot(app);
 
 
 var test = {
