@@ -6,7 +6,7 @@ var express = require('express'),
 	fs = require('fs');
 var app = express.createServer();
 
-require('./config.js')(app, express);
+require('./app/config.js')(app, express);
 
 
 var test = {
@@ -41,7 +41,7 @@ app.get('/:path', function(req, res){
 			path = 'index';
 		}
 	}
-	console.log('Returning results from: ' + path)
+	console.log('Returning results from: ' + path)	
 
 	//Return type
 	if( req.xhr ) {
