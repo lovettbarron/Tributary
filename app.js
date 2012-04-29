@@ -20,9 +20,13 @@ app.configure(function()
 });
 
 app.get('/', function(req,res) {
-	res.render('index', {
-		title: 'example'
-	});
+	try{
+		res.render('index', {
+			title: 'example'
+		});
+	} catch(e) {
+    console.log(e);
+  }
 });
 
 app.get('/:path', function(req, res){
