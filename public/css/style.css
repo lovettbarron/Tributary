@@ -6,6 +6,6 @@ ul#contextNav > li {
 	height: 60px;
 }
 
-.navbar {
+.navbar > div{
 	height: 100px;
 }
