@@ -6,11 +6,11 @@ $(document).ready( function() {
 			path = $(this).child().attr('id');
 			alert(path);
 			$.get('/' + path, function(data) {
-				$('#content').html(data);
-			});
+					$('#content').html(data);
+				});
 			$('#context > li').removeClass('active');
 			$(this).addClass('active');
-		}); 
+		})
 	})
 
 });
