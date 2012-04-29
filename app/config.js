@@ -30,4 +30,10 @@ function bootApplication(app) {
 		app.use(app.router);
 		app.use(express.static(__dirname + '/public'));
 	});
+	
+	console.log('Configuration loaded');
+}
+
+function compileBootstrap() {
+
 }
