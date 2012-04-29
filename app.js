@@ -32,7 +32,7 @@ app.get('/', function(req,res) {
 app.get('/:path', function(req, res){
 	var path = 'index';
 	var stat;
-	
+	/* Disabling for now, is supposed to check for directory/prevent dead returns but ya
 	//Path definition
 	if( req.params.path !== undefined) {
 		try{
@@ -48,8 +48,10 @@ app.get('/:path', function(req, res){
 		else {
 			path = 'index';
 		}
-	}
+	} */
 	console.log('Returning results from: ' + path)	
+
+	path = __dirname + '/project/pages/' + req.params.path;
 
 	//Return type
 	if( req.xhr ) {
