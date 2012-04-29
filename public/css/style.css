@@ -5,3 +5,7 @@ body {
 ul#contextNav > li {
 	height: 60px;
 }
+
+.navbar {
+	height: 70px;
+}
