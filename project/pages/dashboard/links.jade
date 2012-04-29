@@ -1,4 +1,3 @@
-//Placeholder
 - var Links = [
 					{title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
@@ -24,13 +23,13 @@
 ul.nav.nav-list
 
 	li.nav-header Quick Links
-	each link in Links
+	- each link in Links
 		li: a(href =link.address) link.title
 
 	li.nav-header My Tools
-	each tool in Tools
+	- each tool in Tools
 		li: a(href =tool.address) tool.title
 
 	li.nav-header My Groups
-	each group in Groups
+	- each group in Groups
 		li: a(href =group.address) group.title
