@@ -1,7 +1,8 @@
 $(document).ready( function() {
-	$('#context > li > a').click( function(e) {
+	$('ul#context > li > a').click( function(e) {
 		e.preventDefault();
 		path = $(this).attr('id');
+		alert(path);
 		$.get('/' + path, function(data) {
 			$('#content').html(data);
 		});
