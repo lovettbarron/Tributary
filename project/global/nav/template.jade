@@ -1,20 +1,22 @@
 .navbar.navbar-fixed-top.shrunk-nav
-	.navbar-inner
-		.container
-			.nav-collapse
-					a.brand(href="#body") Logo
-					ul.nav
-						li: a(href="#demo1") Profile
-						li: a(href="#demo1") People
-						li: a(href="#demo1") Admin
+	.container
+		.nav-collapse
+				a.brand(href="#body") Logo
+				ul.nav.nav-tabs.nav-stacked
+					li: a(href="#demo1") Profile
+					li: a(href="#demo1") People
+					li: a(href="#demo1") Admin
 
-					ul.nav
-						li: a(href="#demo1") Directory
-						li: a(href="#demo1") News
-						li: a(href="#demo1") Blog
+				ul.nav
+					li: a(href="#demo1") Directory
+					li: a(href="#demo1") News
+					li: a(href="#demo1") Blog
+
+				form.navbar-searc.pull-right
+					input.search-query(type='text', placeholder='search')
 
 
-					a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
-						span.icon-bar
-						span.icon-bar
-						span.icon-bar
+				a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
