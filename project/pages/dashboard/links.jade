@@ -1,0 +1,36 @@
+//Placeholder
+Links = [
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					]
+
+Tools = [
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					]
+
+Groups = [
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					{"title": "test", "address":"test"},
+					]
+
+
+ul.nav.nav-list
+	li.nav-header Quick Links
+	for( link in Links )
+		li
+			a(href=link.address)= link.title
+	li.nav-header My Tools
+	for( tool in Tools )
+		li
+			a(href=tool.address)= tool.title
+	li.nav-header My Groups
+	for( group in Groups )
+		li
+			a(href=group.address)= group.title
