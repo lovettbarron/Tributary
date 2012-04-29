@@ -14,7 +14,7 @@ app.get('/', function(req,res) {
 });
 
 app.get('/:path', function(req, res){
-	var path = 'index';
+	var path = 'index.jade';
 	var stat;
 	
 	//Path definition
