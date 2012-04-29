@@ -1,5 +1,11 @@
 body
 	include global/nav/index
-	include global/context/index
-	include pages/dashboard/index
-	include global/footer/index
+	.containger-fluid
+		.row
+			.span1
+				include global/context/index
+			.span11
+				include pages/dashboard/index
+		.row
+			.span11
+				include global/footer/index
