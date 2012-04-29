@@ -4,7 +4,6 @@ $(document).ready( function() {
 		$(this).click( function(e) {
 			e.preventDefault();
 			path = $(this).children('a').attr('id');
-			alert(path);
 			$.get('/' + path, function(data) {
 					$('#content').html(data);
 				});
