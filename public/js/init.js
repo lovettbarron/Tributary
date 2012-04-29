@@ -3,7 +3,7 @@ $(document).ready( function() {
 	$('ul#context > li').each( function(index) { 
 		$(this).click( function(e) {
 			e.preventDefault();
-			path = $(this).child().attr('id');
+			path = $(this).children('a').attr('id');
 			alert(path);
 			$.get('/' + path, function(data) {
 					$('#content').html(data);
