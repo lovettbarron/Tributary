@@ -19,17 +19,6 @@ function bootApplication(app) {
 	};
 
 	app.use(express.compiler({ src: __dirname + '/public', enable: ['less'] }));
-
-	app.configure(function()
-	{
-		app.set('views', __dirname + '/project');
-		app.set('view engine', 'jade');
-		app.use(express.bodyParser()   );
-		app.use(express.methodOverride());
-		app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
-		app.use(app.router);
-		app.use(express.static(__dirname + '/public'));
-	});
 	
 	console.log('Configuration loaded');
 }

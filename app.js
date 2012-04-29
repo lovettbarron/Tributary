@@ -7,6 +7,17 @@ var express = require('express'),
 var app = express.createServer()
 require('./app/config.js').boot(app);
 
+app.configure(function()
+{
+	app.set('views', __dirname + '/project');
+	app.set('view engine', 'jade');
+	app.use(express.bodyParser()   );
+	app.use(express.methodOverride());
+	app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
+	app.use(app.router);
+	app.use(express.static(__dirname + '/public'));
+});
+
 app.get('/', function(req,res) {
 	res.render('index', {
 		title: 'example'
@@ -14,7 +25,7 @@ app.get('/', function(req,res) {
 });
 
 app.get('/:path', function(req, res){
-	var path = 'index.jade';
+	var path = 'index';
 	var stat;
 	
 	//Path definition
