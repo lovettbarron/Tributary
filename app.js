@@ -14,7 +14,7 @@ app.configure(function()
 	app.use(express.bodyParser()   );
 	app.use(express.methodOverride());
 	app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
-	app.set('view options', { pretty: true })
+	app.set('view options', { pretty: true });
 	app.use(app.router);
 	app.use(express.static(__dirname + '/public'));
 });
