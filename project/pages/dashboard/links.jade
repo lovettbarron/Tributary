@@ -1,35 +1,35 @@
-- var Links = [
+Links = [
 					{title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
-					]
+					];
 
-- var Tools = [
+Tools = [
 					{title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
-					]
+					];
 
-- var Groups = [
+Groups = [
 					{title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
 					, {title: 'test', address: 'test'}
-					]
+					];
 
 
 ul.nav.nav-list
 
 	li.nav-header Quick Links
 	- each link in Links
-		li: a(href='#') #{link.title}
+		li: a(href='#') link.title
 
 	li.nav-header My Tools
 	- each tool in Tools
-		li: a(href='#') #{tool.title}
+		li: a(href='#') tool.title
 
 	li.nav-header My Groups
 	- each group in Groups
-		li: a(href='#') #{group.title}
+		li: a(href='#') group.title
