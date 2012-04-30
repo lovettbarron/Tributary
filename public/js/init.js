@@ -6,10 +6,12 @@ $(document).ready( function() {
 function ipsum() {
 	$('.ipsum').each( function(index) {
 			var target = this;
+			var length = this.attr('length');
 			$.getJSON('http://hipsterjesus.com/api/', {
 				paras : 1
 			}, function(data) {
-	         $(target).html( data.text );
+					var text = data.text
+	         $(target).html( text.substr(0, length ) );
 	     	});
 		});
 }
