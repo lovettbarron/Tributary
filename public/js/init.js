@@ -6,7 +6,7 @@ $(document).ready( function() {
 function ipsum() {
 	$('.ipsum').each( function(index) {
 			var target = this;
-			var length = this.attr('length');
+			var length = $(target).attr('length');
 			$.getJSON('http://hipsterjesus.com/api/', {
 				paras : 1
 			}, function(data) {
