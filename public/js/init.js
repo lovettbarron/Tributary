@@ -18,7 +18,7 @@ function ipsum() {
 
 function init() {
 		//Context menu switcher
-		$('ul#context > li').each( function(index) { 
+		$('ul > li').each( function(index) { 
 			$(this).click( function(e) {
 				e.preventDefault();
 				path = $(this).children('a').attr('id');
