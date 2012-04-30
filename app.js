@@ -61,8 +61,7 @@ app.get('/:path', function(req, res){
 	}
 	else {
 		res.render(path, { 
-			title: 'example',
-			path: path
+			title: 'example'
 		});
 	}
 });
