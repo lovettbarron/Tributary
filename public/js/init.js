@@ -12,9 +12,9 @@ $(document).ready( function() {
 		})
 	});
 	$('.ipsum').each( function(index) {
-			var $target = $this;
+			var target = this;
 			$.getJSON('http://hipsterjesus.com/api/', function(data) {
-	         $($target).html( data.text );
+	         $(target).html( data.text );
 	     	});
 		});
 
