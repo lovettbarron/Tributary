@@ -6,7 +6,10 @@ body
 				include global/context/index
 			.span10
 				#content.container
-					include pages/dashboard/index
+					-if( path === undefined)
+						include pages/dashboard/index
+					-else
+						include pages/#{path}/index
 		.row-fluid
 			#footer.span12
 				include global/footer/index

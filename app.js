@@ -57,12 +57,12 @@ app.get('/:path', function(req, res){
 	if( req.xhr ) {
 		res.partial(path, {
 			title: 'example'
-			
 		})
 	}
 	else {
 		res.render(path, { 
-			title: 'example'
+			title: 'example',
+			path: path
 		});
 	}
 });
