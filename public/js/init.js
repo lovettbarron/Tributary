@@ -13,7 +13,7 @@ $(document).ready( function() {
 	});
 	$('.ipsum').each( function(index) {
 			var target = this;
-			$.getJSON('http://hipsterjesus.com/api/' {
+			$.getJSON('http://hipsterjesus.com/api/', {
 				paras = 1
 			}, function(data) {
 	         $(target).html( data.text );
