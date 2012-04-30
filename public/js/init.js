@@ -10,6 +10,12 @@ $(document).ready( function() {
 			$('#context > li').removeClass('active');
 			$(this).addClass('active');
 		})
-	})
+	});
+	$('.ipsum').each( function(index) {
+			var $target = $this;
+			$.getJSON('http://hipsterjesus.com/api/', function(data) {
+	         $($target).html( data.text );
+	     	});
+		});
 
 });
