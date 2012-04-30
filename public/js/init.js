@@ -25,7 +25,7 @@ function init() {
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 					});
-				$('#context > li').removeClass('active');
+				$('ul > li').removeClass('active');
 				$(this).addClass('active');
 			})
 		});
