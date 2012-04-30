@@ -24,6 +24,7 @@ function init() {
 				path = $(this).children('a').attr('id');
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
+						ipsum();
 					});
 				$('ul > li').removeClass('active');
 				$(this).addClass('active');
