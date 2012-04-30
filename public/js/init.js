@@ -14,7 +14,7 @@ $(document).ready( function() {
 	$('.ipsum').each( function(index) {
 			var target = this;
 			$.getJSON('http://hipsterjesus.com/api/', {
-				paras = 1
+				paras : 1
 			}, function(data) {
 	         $(target).html( data.text );
 	     	});
