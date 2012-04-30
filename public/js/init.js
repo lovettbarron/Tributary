@@ -7,8 +7,9 @@ function ipsum() {
 	$('.ipsum').each( function(index) {
 			var target = this;
 			var length = $(target).attr('length');
+			var paragraphs = $(target).attr('para');
 			$.getJSON('http://hipsterjesus.com/api/', {
-				paras : 1
+				paras : paragraphs
 			}, function(data) {
 					var text = data.text
 	         $(target).html( text.substr(0, length ) );
