@@ -1,4 +1,6 @@
-$(document).ready(init());
+$(document).ready( function() {
+	init();
+	});
 
 
 function ipsum() {
