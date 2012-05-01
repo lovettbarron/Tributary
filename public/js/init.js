@@ -40,6 +40,7 @@ function comment() {
 	$('.commentHide').hide();
 	$('.comment').click( function(e) {
 		e.preventDefault();
+		alert('test');
 		$(this).children('.commentHide').toggle();		
 	})
 }
