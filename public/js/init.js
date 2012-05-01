@@ -38,9 +38,9 @@ function init() {
 
 function comment() {
 	$('.commentHide').hide();
-	$('.comment').click( function(e) {
+	$('.comment > button').click( function(e) {
 		e.preventDefault();
 		alert('test');
-		$(this).children('.commentHide').toggle();		
+		$(this).parent().children('.commentHide').toggle();		
 	})
 }
