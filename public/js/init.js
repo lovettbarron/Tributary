@@ -32,7 +32,7 @@ function init() {
 				$(this).addClass('active');
 			})
 		});
-
+		comment();
 		ipsum();
 }
 
