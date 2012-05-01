@@ -1,2 +1,22 @@
-h2 What's Happening?
-p.well Test test
+- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
+x.row-fluid
+	.span8
+	.span4
+		.btn-group.pull-right
+			btn.btn +
+			btn.btn see all
+.row-fluid
+	.span6
+		img(src='http://placehold.it/300x300')
+	.span6
+		-each story in Stories
+			.row-fluid
+				.span1
+					i.icon-user
+				.span7
+					h4= story.title
+				.span4
+					a(href='#') Read more
+			.row-fluid
+				.span12
+					p.ipsum(length='100')

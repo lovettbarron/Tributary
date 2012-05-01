@@ -5,17 +5,32 @@
 				.span2
 					a.brand(href="#body") Logo
 				.span4
-					ul.nav.nav-list
-						li: a(href="#demo1") Profile
-						li: a(href="#demo1") People
-						li: a(href="#demo1") Admin
+					ul.nav
+						li: a#profile(href="#profile") Profile
+						li: a#people(href="#people") People
+						li: a#groupDetail(href="#admin") Admin
 				.span6
+					ul.nav.pull-right
+						li: a#blog(href="#blog") Mary Jo's blog
+						li: a#news(href="#news") What's Happening?
+						li: a#people(href="#people") People
+			.row-fluid
+				.span2
+				.span4
 					.row-fluid
-						.span6
-							ul.nav.nav-list
-								li: a(href="#demo1") Directory
-								li: a(href="#demo1") News
-								li: a(href="#demo1") Blog
-					.row-fluid
-						form.navbar-search.span6.pull-right
-							input.search-query.span3(type='text', placeholder='search')
+						.span12
+							ul.nav
+								li.dropdown
+									a.dropdown-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
+										b.caret
+								li.dropdown
+									a.dropdown-toggle(href="#care",data-toggle="dropdown") Care
+										b.caret
+								li: a#research(href='#research Research') Research
+
+								li.dropdown
+									a.dropdown-toggle(href="#learning",data-toggle="dropdown") Learning
+										b.caret
+				.span6
+					form.navbar-search.pull-right
+						input.search-query(type='text', placeholder='search')

@@ -1,2 +1,17 @@
-h2 Subscriptions
-p.well Test test
+- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+.row-fluid
+	.span8
+		h2 Subscription
+	.span4
+		.btn-group.pull-right
+			btn.btn +
+			btn.btn Edit
+			btn.btn Hide
+-each story in Stories
+	.row-fluid
+		.span1
+			i.icon-download-alt
+		.span10
+			h4= story.title
+		p.ipsum(length='100')
+		span.pull-right: a(href='#') Read more
