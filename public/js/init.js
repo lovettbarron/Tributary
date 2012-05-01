@@ -35,3 +35,11 @@ function init() {
 
 		ipsum();
 }
+
+function comment() {
+	$('.commentHide').hide();
+	$('.comment').click( function(e) {
+		e.preventDefault();
+		$(this).children('.commentHide').toggle();		
+	})
+}
