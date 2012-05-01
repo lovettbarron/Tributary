@@ -1,0 +1,124 @@
+mixin radio(poll)
+	form.form-horizontal
+		fieldset
+		-each item in poll
+			label.radio 
+				input.radio(type='radio') 
+				| #{item}
+		btn.btn.btn-primary(type='button') Submit
+
+mixin forum(posts)
+	-each item in posts
+		.row-fluid
+			.span1: i.icon-user
+			.span9: #{item}
+			.span2: btn.btn.btn-mini More
+	btn.btn.btn-primary(type='button') See all
+
+mixin docs(posts)
+	-each item in posts
+		.row-fluid
+			.span1: i.icon-download
+			.span7: #{item}
+			.span4
+				.btn-group
+					btn.btn.btn-mini open
+					btn.btn.btn-mini edit
+	btn.btn.btn-primary(type='button') See all
+
+mixin share()
+	.btn-group
+		btn.btn Share
+		btn.btn Add to Favorite
+		btn.btn Report
+	hr
+
+mixin calendar()
+	.row-fluid
+		.span3
+			i.icon-circle-arrow-left.pull-right
+		.span6
+			h4.center April
+		.span3
+			i.icon-circle-arrow-right.pull-left
+	.row-fluid
+		.span12
+			table.table.table-bordered
+				thead
+					tr
+						th S
+						th M
+						th T
+						th W
+						th T
+						th F
+						th S
+				tbody
+					tr
+						td 
+						td 1
+						td 2
+						td 3
+						td 4
+						td 5
+						td 6
+					tr
+						td 7
+						td 8
+						td 9
+						td 10
+						td 11
+						td 12
+						td 13
+					tr
+						td 14
+						td 15
+						td 16
+						td 17
+						td 18
+						td 19
+						td 20
+					tr
+						td 21
+						td 22
+						td 23
+						td 24
+						td 25
+						td 26
+						td 27
+					tr
+						td 28
+						td 29
+						td 30
+						td 31
+						td 
+						td 
+						td 
+
+
+mixin comment()
+	.comment
+		btn.btn.btn-mini(type='Comment') Comment
+		.row-fluid.commentHide
+			.span6
+				.fieldset
+					label Leave a comment!
+					textarea.input-xlarge(rows='3')
+				hr
+				btn.btn.btn-primary.pull-left(type='submit') Post
+
+mixin subscribe()
+	.subscribe
+		btn.btn.btn-mini(type='Subscribe') Subscribe
+
+mixin addPerson()
+	.addPerson
+		btn.btn.btn-mini(type='addUser'): i.icon-user Subscribe
+
+mixin addGroup()
+	.addPerson
+		btn.btn.btn-mini(type='addGroup'): i.icon-globe Subscribe
+
+mixin addTool()
+	.addTool
+		btn.btn.btn-mini(type='addGroup'): i.icon-plus

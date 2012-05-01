@@ -1,0 +1,21 @@
+- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+- var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+- var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+
+ul.nav.nav-list
+
+	li.nav-header Recent Posts
+	- each link in Links
+		li
+			a(href='#') link.title
+
+	li.nav-header Categories
+	- each tool in Tools
+		li
+			a(href='#') category.title
