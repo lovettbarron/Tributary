@@ -36,6 +36,8 @@ function init() {
 			})
 		});
 		comment();
+		    $('.nav-pills a:first').tab('show');
+		
 		ipsum();
 }
 
@@ -49,8 +51,9 @@ function comment() {
 }
 
 function directoryObject() {
-	$('.directory').click( function(e) {
+	$('.accHeader').click( function(e) {
 		e.preventDefault();
+		$(this).parent().children('.accBody');
 		
 	} )
 }
