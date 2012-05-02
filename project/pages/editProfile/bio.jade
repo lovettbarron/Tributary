@@ -1,13 +1,57 @@
-.row-fluid
-	form-horizontal.span12.well
-		label First 
-			input (type='text': class='span3')
-		label Last 
-		input (type='text': class='span3')
-		hr
-		label Office
-			input (type='text': class='span3')
-		label Manager
-			input (type='text': class='span3')
-		label Assitant
-			input (type='text: class='span3')
+form-horizontal
+	.row-fluid
+		.span12.well
+			img(src="http://placehold.it/100x100")
+			.btn-group
+				btn.btn Upload
+			label First 
+				input (type='text': class='span3')
+			label Last 
+				input (type='text': class='span3')
+			.btn-group.pull-right
+				button (type='submit'): btn.btn Save Changes
+			.btn-group.pull-right
+				btn.btn Cancel
+
+	.row-fluid
+		.span12.well
+			.row-fluid
+				.span4
+			Label Office	
+			input (type='text', class='span3')
+			label Manager
+				input (type='text': class='span3')
+			label Assitant
+				input (type='text': class='span3')
+			.btn-group.pull-right
+				btn.btn Save Changes
+			.btn-group.pull-right
+				btn.btn Cancel
+
+	.row-fluid
+		.span12.well
+			label: h3 Contact Information
+			label email 
+				input (type='text': class='span3')
+			select.span1
+				option Everyone
+				option Department
+				option Only Me
+			label Office
+				input (type='text': class='span3')
+			label Mobile
+				input (type='text': class='span3')
+			label Home 
+				input (type='text': class='span3')
+			label Fax 
+				input (type='text': class='span3')
+			label Mobile Number
+				input (type='text': class='span3')
+				.btn-group.pull-right
+					btn.btn Save Changes
+				.btn-group.pull-right
+					btn.btn Cancel		
+
+
+		
+				

@@ -8,10 +8,10 @@ include ../../patterns/mixin
 		.row-fluid
 			ul.nav.nav-pills
 				li.active: a(href='#home', data-toggle="pill") Home
+				li: a(href='#calendarBig', data-toggle="pill") Calendar
 				li: a(href='#forum', data-toggle="pill") Forum
-				li: a(href='#calendar', data-toggle="pill") Calendar
 				li: a(href='#documents', data-toggle="pill") Documents
-				li: a(href='#people', data-toggle="pill") People
+				li: a(href='#peopleBig', data-toggle="pill") People
 				li: a(href='#tools', data-toggle="pill") Tools
 		.row-fluid.tab-content
 			#home.tab-pane.active
@@ -22,13 +22,13 @@ include ../../patterns/mixin
 						include files				
 				.span6.well
 					include calendar
+			#calendarBig.tab-pane
+				include ../../patterns/calendar
 			#forum.tab-pane
 				include ../../patterns/forum
-			#calendar.tab-pane
-				mixin calendar()
 			#documents.tab-pane
 				p Documents
-			#people.tab-pane
+			#peopleBig.tab-pane
 				p People
 			#tools.tab-pane
 				p Tools
