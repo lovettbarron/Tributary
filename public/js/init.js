@@ -36,7 +36,9 @@ function init() {
 			})
 		});
 		comment();
-		    $('.nav-pills a:first').tab('show');
+		$(function () {
+	    $('.nav-pills a:first').tab('show');
+	  })
 		
 		ipsum();
 }
