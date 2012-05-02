@@ -15,6 +15,18 @@ mixin forum(posts)
 			.span2: btn.btn.btn-mini More
 	btn.btn.btn-primary(type='button') See all
 
+mixin forumPost(post)
+	.row-fluid
+		.span1: img(src='http://placehold.it/100x100')
+		.span9
+			.row-fluid
+				.span12: h4 #{post.title}
+			.row-fluid
+				.span6: h6 6 posts, 3 participants
+				.span6: h6 Last updated 12 minutes ago
+		.span2
+				btn.btn.btn-mini(type='button') Edit
+
 mixin docs(posts)
 	-each item in posts
 		.row-fluid
@@ -25,6 +37,18 @@ mixin docs(posts)
 					btn.btn.btn-mini open
 					btn.btn.btn-mini edit
 	btn.btn.btn-primary(type='button') See all
+
+mixin people(posts)
+	-each item in posts
+		.row-fluid
+			.span1: i.icon-download
+			.span7: #{item}
+			.span4
+				.btn-group
+					btn.btn.btn-mini open
+					btn.btn.btn-mini edit
+	btn.btn.btn-primary(type='button') See all
+
 
 mixin share()
 	.btn-group
