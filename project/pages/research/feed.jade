@@ -1,0 +1,11 @@
+include ../../patterns/mixin.jade
+
+mixin share()
+
+
+- var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+ul.nav.nav-list
+	li.nav-header Feed
+	- each link in Feed
+		li: a(href='#') link.title
