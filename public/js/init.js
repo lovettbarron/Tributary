@@ -1,6 +1,6 @@
 $(document).ready( function() {
 	init();
-	$('.dropdown-toggle').dropdown()
+	$('.dropdown-toggle').dropdown();
 	});
 
 
@@ -46,4 +46,11 @@ function comment() {
 		alert('test');
 		$(this).parent().children('.commentHide').toggle();		
 	})
+}
+
+function directoryObject() {
+	$('.directory').click( function(e) {
+		e.preventDefault();
+		
+	} )
 }
