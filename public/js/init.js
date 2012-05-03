@@ -40,7 +40,7 @@ function init() {
 	    $('.nav-pills a:first').tab('show');
 	    $('#calendarTab a:first').tab('show');
 	  })
-		
+		calendar();
 		ipsum();
 }
 
