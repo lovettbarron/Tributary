@@ -80,11 +80,11 @@ function calendar() {
 		});
 		$(this).class('active');
 		//Hides all
-		$('#calendarContents > div.pane').each( function() {
+		$('#calendar-contents > div.pane').each( function() {
 			$(this).removeClass('active');
 			$(this).hide();
 		})
 		//Show selected
-		$('#calendarContents > div#' + target).addClass('active').show();
+		$('#calendar-contents > div#' + target).addClass('active').show();
 	});
 }
