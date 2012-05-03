@@ -62,5 +62,22 @@ function directoryObject() {
 }
 
 function calendar() {
-	$()
+	//Hide calendar
+	$('#calendarContents > div.pane').each( function() {
+		var active = $(this).attr('active')
+		if( !active ) {
+			#(this).hide();
+		}
+	})
+	//Bind
+	$('#calendarTabs > btn').click( function(e) {
+		var target = $(this).attr('href')
+		//Hides all
+		$('#calendarContents > div.pane').each( function() {
+			$(this).removeClass('active');
+			$(this).hide();
+		})
+		//Show selected
+		$('#calendarContents > div#' + target).class('active').show();
+	});
 }
