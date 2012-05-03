@@ -23,7 +23,7 @@ function ipsum() {
 
 function init() {
 		//Context menu switcher
-		$('ul > li').each( function(index) { 
+		$('a').each( function(index) { 
 			$(this).click( function(e) {
 				e.preventDefault();
 				path = $(this).children('a').attr('id');
