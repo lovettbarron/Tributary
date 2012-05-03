@@ -1,11 +1,11 @@
 include ../../patterns/mixin
 
-.row-fluid
+.row
 	.span8
-		.row-fluid
+		.row
 			.span12
 				include description
-		.row-fluid
+		.row
 			ul.nav.nav-pills
 				li.active: a(href='#home', data-toggle="pill") Overview
 				li: a(href='#calendarBig', data-toggle="pill") Calendar
@@ -13,7 +13,7 @@ include ../../patterns/mixin
 				li: a(href='#documents', data-toggle="pill") Documents
 				li: a(href='#peopleBig', data-toggle="pill") Members
 				li: a(href='#tools', data-toggle="pill") Tools
-		.row-fluid.tab-content
+		.row.tab-content
 			#home.tab-pane.active
 				.span6
 					.well

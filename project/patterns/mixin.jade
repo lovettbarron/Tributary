@@ -9,19 +9,19 @@ mixin radio(poll)
 
 mixin forum(posts)
 	-each item in posts
-		.row-fluid
+		.row
 			.span1: i.icon-user
 			.span9: #{item}
 			.span2: btn.btn.btn-mini More
 	btn.btn.btn-primary(type='button') See all
 
 mixin forumPost(post)
-	.row-fluid
+	.row
 		.span1: img(src='http://placehold.it/100x100')
 		.span9
-			.row-fluid
+			.row
 				.span12: h4 #{post}
-			.row-fluid
+			.row
 				.span6: h6 6 posts, 3 participants
 				.span6: h6 Last updated 12 minutes ago
 		.span2.btn-group
@@ -29,12 +29,12 @@ mixin forumPost(post)
 				btn.btn.btn-mini(type='button'): &#9660;
 
 mixin document(post)
-	.row-fluid
+	.row
 		.span1: i.icon-download
 		.span9
-			.row-fluid
+			.row
 				.span12: h4 #{post}
-			.row-fluid
+			.row
 				.span6: h6 Six collaborators
 				.span6: h6 Last updated 12 minutes ago
 		.span2.btn-group
@@ -44,7 +44,7 @@ mixin document(post)
 
 mixin docs(posts)
 	-each item in posts
-		.row-fluid
+		.row
 			.span1: i.icon-download
 			.span7: #{item}
 			.span4
@@ -55,7 +55,7 @@ mixin docs(posts)
 
 mixin people(posts)
 	-each item in posts
-		.row-fluid
+		.row
 			.span1: i.icon-download
 			.span7: #{item}
 			.span4
@@ -73,14 +73,14 @@ mixin share()
 	hr
 
 mixin calendar()
-	.row-fluid
+	.row
 		.span3
 			i.icon-circle-arrow-left.pull-right
 		.span6(style='text-align: center')
 			h4 April
 		.span3
 			i.icon-circle-arrow-right.pull-left
-	.row-fluid
+	.row
 		.span12
 			table.table.table-bordered
 				thead
@@ -138,7 +138,7 @@ mixin calendar()
 mixin comment()
 	.comment
 		btn.btn.btn-mini(type='Comment') Comment
-		.row-fluid.commentHide
+		.row.commentHide
 			.span6
 				.fieldset
 					label Leave a comment!
@@ -148,14 +148,14 @@ mixin comment()
 
 mixin todo()
 	.todo
-		.row-fluid
+		.row
 			.span8
 				h3 Todo list
 			.span4
 				.btn-group.pull-right
 					btn.btn +
 					btn.btn Edit
-		.row-fluid
+		.row
 			.span12
 				p Example todo
 

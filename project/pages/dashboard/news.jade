@@ -1,23 +1,22 @@
 - var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
-.row-fluid
-	.span8
-		h2 News
-	.span4
-		.btn-group.pull-right
-			btn.btn +
-			btn.btn see all
-.row-fluid
-	.span6
+
+h2 News
+	.btn-group.pull-right
+		btn.btn +
+		btn.btn see all
+
+.row
+	.span6.main-story
 		img(src='http://placehold.it/300x300')
 	.span6
 		-each story in Stories
-			.row-fluid
+			.row
 				.span1
 					i.icon-user
 				.span7
 					h4= story.title
 				.span4
 					a(href='#') Read more
-			.row-fluid
+			.row
 				.span12
 					p.ipsum(length='100')
