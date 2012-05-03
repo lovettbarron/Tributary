@@ -75,3 +75,18 @@ function calendar() {
 		$('#calendarContent > div#' + target)
 	});
 }
+
+function search() {
+	$('.typeahead').typeahead();
+	$('.search').click( function() {
+				e.preventDefault();
+				
+				path = $(this).attr('id');
+				$.get('/' + path, function(data) {
+						$('#content').html(data);
+						ipsum();
+					});
+				$('ul > li').removeClass('active');
+	})
+	
+};
