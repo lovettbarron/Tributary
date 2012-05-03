@@ -1,0 +1,13 @@
+-var types = ['Potato club', 'Tomato club', 'Donkey club', 'Cardiac Club', 'Frenchmens Galley', 'Brunette Enthusiasts']
+
+form-horizontal
+	.row-fluid.span12.well
+		label
+			h3 Skills
+			input(type="text", class="span4", placeholder="Skills...")
+			hr
+			ul.unstyled
+				-each type in types
+					li.span4.well
+						i.icon-remove
+						a(href='#')= type

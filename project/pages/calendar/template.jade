@@ -1,0 +1,9 @@
+include ../../patterns/mixin
+
+.row-fluid
+	.span8
+		include ../../patterns/calendar
+	.span4
+		mixin calendar()
+		hr
+		mixin todo()

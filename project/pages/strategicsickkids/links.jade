@@ -1,0 +1,31 @@
+- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+- var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+- var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+
+
+ul.nav.nav-list
+
+	li.nav-header More SickKids Headlines
+	- each link in Links
+		li
+			a(href='#') news.title
+
+	li.nav-header Research News
+	- each tool in Tools
+		li
+			a(href='#') news.title
+			
+	li.nav-header Learning News
+	- each tool in Tools
+		li
+			a(href='#') news.title
+			
+	li.nav-header Shop and Eat
+	- each tool in Tools
+		li
+			a(href='#') feature.title

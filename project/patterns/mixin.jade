@@ -26,7 +26,21 @@ mixin forumPost(post)
 				.span6: h6 Last updated 12 minutes ago
 		.span2.btn-group
 				btn.btn.btn-mini(type='button') Open
-				btn.btn.btn-mini(type='button'): i.icon-edit
+				btn.btn.btn-mini(type='button'): &#9660;
+
+mixin document(post)
+	.row-fluid
+		.span1: i.icon-download
+		.span9
+			.row-fluid
+				.span12: h4 #{post}
+			.row-fluid
+				.span6: h6 Six collaborators
+				.span6: h6 Last updated 12 minutes ago
+		.span2.btn-group
+				btn.btn.btn-mini(type='button') Edit
+				btn.btn.btn-mini(type='button'): &#9660;
+
 
 mixin docs(posts)
 	-each item in posts
@@ -131,6 +145,19 @@ mixin comment()
 					textarea.input-xlarge(rows='3')
 				hr
 				btn.btn.btn-primary.pull-left(type='submit') Post
+
+mixin todo()
+	.todo
+		.row-fluid
+			.span8
+				h3 Todo list
+			.span4
+				.btn-group.pull-right
+					btn.btn +
+					btn.btn Edit
+		.row-fluid
+			.span12
+				p Example todo
 
 mixin subscribe()
 	.subscribe

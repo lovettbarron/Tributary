@@ -3,17 +3,34 @@ include ../../patterns/mixin
 .row-fluid
 	.span8
 		.row-fluid
-			.span11
+			.span12
 				include about
 		.row-fluid
-			.span11.well
+			ul.nav.nav-pills
+				li.active: a(href='#home', data-toggle="pill") Home
+				li: a(href='#newsBig', data-toggle="pill") News
+				li: a(href='#calendarBig', data-toggle="pill") Calendar
+				li: a(href='#directory', data-toggle="pill") Directory
+				li: a(href='#forms', data-toggle="pill") Forms
+				li: a(href='#tools', data-toggle="pill") Tools
+		.row-fluid.tab-content
+			#home.tab-pane.active
 				include news
-	.span4
-		.row-fluid
+			#home.tab-pane
+				include news
+			#newsBig.tab-pane
+				include news
+			#calendarBig.tab-pane
+				include ../../patterns/calendar
+			#directory.tab-pane
+				include directory
+			#forms.tab-pane
+				include ../../patterns/forum
+			#tools.tab-pane
+				p Tools		
+	.row-fluid
+		.span4
 			include feed
-	.span10
-		.row-fluid
-			include links
+			
 
-
-		
+			

@@ -3,10 +3,13 @@ include ../../patterns/mixin
 .row-fluid
 	.span8
 		.row-fluid
-			.span11.well
+			.span12.well
 				include news
 		.row-fluid
-			.span11.well
+			.span6.well
 				include subscription
+			.span6.well
+				mixin calendar()
 	.span4
 		include links
+		hr
