@@ -71,7 +71,9 @@ function calendar() {
 	});
 	//Bind
 	$('#calendarTabs > btn').click( function(e) {
-		var target = $(this).attr('href')
+		e.preventDefault();
+		alert('test')
+		var target = $(this).attr('href');
 		var btnGroup = $(this).parent();
 		$(btnGroup).each( function() {
 			$(this).removeClass('active');
