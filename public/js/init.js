@@ -63,16 +63,14 @@ function directoryObject() {
 
 function calendar() {
 	//Hide calendar
-	$('#calendarContent > div.pane').each( function() {
-		var active = $(this).hasClass('active')
-		if( !active ) {
-			$(this).hide();
-		}
-	});
+	$('#calendarContent > div.pane').hide()
+	$('#calendarContent > div.active').show
+
 	//Bind
-	$('#calendarTabs > .btn').click( function(e) {
+	$('#calendarTabs > btn').click( function(e) {
 		e.preventDefault();
-		var target = $('#calendarTabs > .btn').attr('href');
+		$('#calendarTabs > btn').removeClass('active');
+		$(this).addClass('active');
 		$('#calendarContent > div.pane').hide();
 		$('#calendarContent > div#' + target)
 	});
