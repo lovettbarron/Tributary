@@ -70,21 +70,10 @@ function calendar() {
 		}
 	});
 	//Bind
-	$('#calendarTabs > btn').click( function(e) {
+	$('#calendarTabs > .btn').click( function(e) {
 		e.preventDefault();
-		alert('test')
-		var target = $(this).attr('href');
-		var btnGroup = $(this).parent();
-		$(btnGroup).each( function() {
-			$(this).removeClass('active');
-		});
-		$(this).class('active');
-		//Hides all
-		$('#calendar-contents > div.pane').each( function() {
-			$(this).removeClass('active');
-			$(this).hide();
-		})
-		//Show selected
-		$('#calendar-contents > div#' + target).addClass('active').show();
+		var target = $('#calendarTabs > .btn').attr('href');
+		$('#calendarContent > div.pane').hide();
+		$('#calendarContent > div#' + target)
 	});
 }
