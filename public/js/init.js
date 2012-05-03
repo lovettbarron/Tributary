@@ -26,7 +26,7 @@ function init() {
 		$('a').each( function(index) { 
 			$(this).click( function(e) {
 				e.preventDefault();
-				path = $(this).children('a').attr('id');
+				path = $(this).attr('id');
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						ipsum();
