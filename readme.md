@@ -14,7 +14,7 @@ Jade
 
 How to install me
 -----------------
-Install nodeJS on your system. It will come with NPM.
+Install nodeJS on a server or computer that needs to host the project. It will come with NPM.
 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
 Checkout this project from github with
@@ -24,6 +24,10 @@ Checkout this project from github with
 Install expressJS and Jade.
 `npm install express jade less`
 
+If you are using this tool in a studio setting, it is best to set up his project on the studio's server. It can be easily hosted on your own computer as well. To start the application, use terminal to go to the folder with Tributary, and type `node app.js &`
+To stop node, use `kill $(ps aux | grep -i node | awk '{print$2}')`
+
+
 
 How to use me
 -------------
@@ -31,17 +35,37 @@ All projects are based on Jade and partials. CSS, images, and js files are place
 Parts of a large application are divided into folders. For example
 ```
 project
+	- index.jade
+	- layout.jade
+	- header.jade
 	- global
 		- header
 		- footer
 	- pages
 		- home
 		- profile
+	- patterns
+		- mixin
+		- calendar
+		- profile
 ```
 
-Individual pages are divided into folders. Each folder will have an index.jade, template.jade, and additional components as necessary.
 
 
+## Project folder
+The project level contains a few key files for structuring the project, and various sub folders.
+
+###index.jade
+The overall structure and skeleton of the site. It should include objects from the global folder.
+
+### layout.jade
+Structures the top level HTML information. This should mostly remain static.
+
+### header.jade
+Contains all header information, including CSS and Javascript linkings.
+
+## Pages folder
+The pages folder contains each individual page and version of that page.
 
 ### index.jade
 Each folder will have an index.jade file. Index files should _never_ have content based information. 
@@ -49,6 +73,14 @@ They should mostly be used for managing linked files, includes, and any kind of 
 
 ### template.jade
 Structure and template for a page is defined in this file. Not all the styling of the page needs to be here, but content buckets, partial placement, and similar should be here.
+
+## Global folder
+This folder is the same as the pages folder, except that it organizes global elements such as navigation.
+
+## Pattern folder
+Patterns are reused elements throughout the site that can be included by either jade `include` or `mixin` functions.
+### mixin.jade
+This is a catch all for consistently used mixins. These are reusable patterns that can exist throughout the site. They can generally be used by adding `include ../../patterns/mixin`, followed by `mixin example()` to import that mixin.
 
 MORE TO COME
 
