@@ -42,6 +42,7 @@ function init() {
 	  })
 		calendar();
 		ipsum();
+		searchField();
 }
 
 function comment() {
@@ -76,7 +77,7 @@ function calendar() {
 	});
 }
 
-function search() {
+function searchField() {
 	$('.typeahead').typeahead();
 	$('.search').click( function() {
 				e.preventDefault();
