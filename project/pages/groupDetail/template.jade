@@ -7,11 +7,11 @@ include ../../patterns/mixin
 				include description
 		.row-fluid
 			ul.nav.nav-pills
-				li.active: a(href='#home', data-toggle="pill") Home
+				li.active: a(href='#home', data-toggle="pill") Overview
 				li: a(href='#calendarBig', data-toggle="pill") Calendar
 				li: a(href='#forum', data-toggle="pill") Forum
 				li: a(href='#documents', data-toggle="pill") Documents
-				li: a(href='#peopleBig', data-toggle="pill") People
+				li: a(href='#peopleBig', data-toggle="pill") Members
 				li: a(href='#tools', data-toggle="pill") Tools
 		.row-fluid.tab-content
 			#home.tab-pane.active
@@ -27,7 +27,7 @@ include ../../patterns/mixin
 			#forum.tab-pane
 				include ../../patterns/forum
 			#documents.tab-pane
-				p Documents
+				include ../../patterns/documents
 			#peopleBig.tab-pane
 				p People
 			#tools.tab-pane

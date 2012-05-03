@@ -10,6 +10,7 @@
 						li: a#people(href="#people") People
 						li: a#groupDetail(href="#admin") Admin
 						li: a#editProfile(href="#editProfile") Edit Profile
+						li: a#grantsmanagement(href="#grantsmanagement") Grants Management
 				.span6
 					ul.nav.pull-right
 						li: a#strategicsickkids(href="#strategicsickkids") Strategic SickKids
@@ -26,12 +27,12 @@
 						li.dropdown
 							a.dropdown-toggle(href="#care",data-toggle="dropdown") Care
 								b.caret
-						li: a#research(href='#research Research') Research
+						li: a#research(href='#research') Research
 
 						li.dropdown
 							a.dropdown-toggle(href="#learning",data-toggle="dropdown") Learning
 								b.caret
 				.span4
 					form.navbar-search.pull-right
-						input.search-query(type='text', placeholder='search')
-						btn.btn Search
+						input.typeahead.search-query(type='text', data-provide="typeahead", placeholder='Search')
+						btn#search.btn.search Search

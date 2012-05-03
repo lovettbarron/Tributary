@@ -8,8 +8,11 @@ include ../../patterns/mixin
 		.row-fluid
 			.span6.well
 				include subscription
-			.span6.well
-				mixin calendar()
+			.span6
+				.well
+					mixin calendar()
+				.well
+					mixin todo()
 	.span4
 		include links
 		hr
