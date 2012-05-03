@@ -38,6 +38,7 @@ function init() {
 		comment();
 		$(function () {
 	    $('.nav-pills a:first').tab('show');
+	    $('#calendarTab a:first').tab('show');
 	  })
 		
 		ipsum();
@@ -58,4 +59,8 @@ function directoryObject() {
 		$(this).parent().children('.accBody');
 		
 	} )
+}
+
+function calendar() {
+	$()
 }
