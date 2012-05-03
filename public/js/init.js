@@ -72,6 +72,11 @@ function calendar() {
 	//Bind
 	$('#calendarTabs > btn').click( function(e) {
 		var target = $(this).attr('href')
+		var btnGroup = $(this).parent();
+		$(btnGroup).each( function() {
+			$(this).removeClass('active');
+		});
+		$(this).class('active');
 		//Hides all
 		$('#calendarContents > div.pane').each( function() {
 			$(this).removeClass('active');
