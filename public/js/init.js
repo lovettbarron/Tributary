@@ -63,8 +63,8 @@ function directoryObject() {
 
 function calendar() {
 	//Hide calendar
-	$('#calendarContents > div.pane').each( function() {
-		var active = $(this).attr('active')
+	$('#calendarContent > div.pane').each( function() {
+		var active = $(this).hasClass('active')
 		if( !active ) {
 			$(this).hide();
 		}
@@ -85,6 +85,6 @@ function calendar() {
 			$(this).hide();
 		})
 		//Show selected
-		$('#calendarContents > div#' + target).class('active').show();
+		$('#calendarContents > div#' + target).addClass('active').show();
 	});
 }
