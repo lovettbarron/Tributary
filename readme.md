@@ -52,34 +52,34 @@ project
 
 
 
-## Project folder
+### Project folder
 The project level contains a few key files for structuring the project, and various sub folders.
 
-###index.jade
+####index.jade
 The overall structure and skeleton of the site. It should include objects from the global folder.
 
-### layout.jade
+#### layout.jade
 Structures the top level HTML information. This should mostly remain static.
 
-### header.jade
+#### header.jade
 Contains all header information, including CSS and Javascript linkings.
 
-## Pages folder
+### Pages folder
 The pages folder contains each individual page and version of that page.
 
-### index.jade
+#### index.jade
 Each folder will have an index.jade file. Index files should _never_ have content based information. 
 They should mostly be used for managing linked files, includes, and any kind of iteration.
 
-### template.jade
+#### template.jade
 Structure and template for a page is defined in this file. Not all the styling of the page needs to be here, but content buckets, partial placement, and similar should be here.
 
-## Global folder
+### Global folder
 This folder is the same as the pages folder, except that it organizes global elements such as navigation.
 
-## Pattern folder
+### Pattern folder
 Patterns are reused elements throughout the site that can be included by either jade `include` or `mixin` functions.
-### mixin.jade
+#### mixin.jade
 This is a catch all for consistently used mixins. These are reusable patterns that can exist throughout the site. They can generally be used by adding `include ../../patterns/mixin`, followed by `mixin example()` to import that mixin.
 
 MORE TO COME
