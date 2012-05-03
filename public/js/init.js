@@ -23,13 +23,13 @@ function ipsum() {
 
 function init() {
 		//Context menu switcher
-		$('a').each( function(index) { 
+		$('ul > li').each( function(index) { 
 			$(this).click( function(e) {
 				e.preventDefault();
 				path = $(this).children('a').attr('id');
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
-						init();
+						ipsum();
 					});
 				$('ul > li').removeClass('active');
 				$(this).addClass('active');
