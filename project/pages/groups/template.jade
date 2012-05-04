@@ -1,3 +1,4 @@
+include ../../patterns/mixin
 -var Groups = ['Group name', 'another group name', 'yet another group name']
 
 .row
@@ -5,6 +6,14 @@
 		.row
 			.span8
 				h2 Groups
+				.pull-right
+					.btn-group.dropdown
+							btn.btn.btn(type='button') Create a Group
+							btn.btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+							ul.dropdown-menu
+								li: a Share
+								li: a Leave group
+								li: a Admin page
 				-each group in Groups
 					.row-fluid.forum-post
 						.span1: img(src='http://placehold.it/100x100')
@@ -21,3 +30,4 @@
 									li: a Share
 									li: a Leave group
 									li: a Admin page
+			.span3

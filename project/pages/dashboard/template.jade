@@ -1,6 +1,6 @@
 include ../../patterns/mixin
 
-- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
+- var Stories =[ {title: 'SickKids in the news!', icon: 'user'}, {title: 'Testing this out', icon: 'wrench'} , {title: 'tons of cars', icon: 'folder-open'}, {title: 'test', icon: 'pencil'}];
 
 .row
 	.span8
@@ -19,22 +19,17 @@ include ../../patterns/mixin
 							-each story in Stories
 								.row
 									.span4
-										h4
-											i.icon-user
-											a= story.title
+										h4: a= story.title
 										p.ipsum(length='100')
 
 		.row
 			.span4
 				.well
 					h2: a(href='#subscription')  My Feeds
-						.btn-group.pull-right
-							btn.btn +
-							btn.btn Edit
 					-each story in Stories
 						.news-item
+							i(class='icon-' + story.icon).pull-left
 							h4
-								i.icon-download-alt								
 								a(href='#subscription')= story.title
 							p.ipsum(length='100')
 			.span4
