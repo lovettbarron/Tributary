@@ -44,3 +44,9 @@ h2, h3, h4 {
 .profile {
 	margin-bottom: 1em;
 }
+
+@media (min-width: 1200px) {
+	.well .span4 {
+		width: 350px;
+	}
+}

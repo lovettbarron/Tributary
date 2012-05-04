@@ -7,22 +7,25 @@ include ../../patterns/mixin
 		.row
 			.span8
 				.well
-					h2 News
-						.btn-group.pull-right
-							btn.btn +
-							btn.btn see all
+					.btn-group.pull-right
+						btn.btn +
+						btn.btn see all
+					h2 What's Happening?
+
 					.row
-						.span3
-							h3 Main Story
-							p.ipsum(length='400')
-							a Read More
+						.span4
+							p: img(src='http://placehold.it/300x100')
+							h4 This is the feature news story
+							p.ipsum(length='300')
+							a(href='#') Read more
 						.span4
 							-each story in Stories
-								.news-item
-									h4
-										i.icon-user
-										a= story.title
-									p.ipsum(length='100')
+								.row
+									.span4
+										h4
+											i.icon-user
+											a= story.title
+										p.ipsum(length='100')
 
 		.row
 			.span4
