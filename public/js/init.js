@@ -4,11 +4,11 @@ $(document).ready( function() {
 			path = hash.split('#')[1];
 			$.get('/' + path, function(data) {
 					$('#content').html(data);
+					init();
 				});
 			$('ul > li').removeClass('active');
 			$(this).addClass('active');
-	} 
-	init();
+	} else { init() }
 	$('.dropdown-toggle').dropdown();
 	});
 
