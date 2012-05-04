@@ -16,7 +16,7 @@ mixin forum(posts)
 	btn.btn.btn-primary(type='button') See all
 
 mixin forumPost(post)
-	.row-fluid
+	.row-fluid.forum-post
 		.span1: img(src='http://placehold.it/100x100')
 		.span9
 			.row-fluid
@@ -29,14 +29,14 @@ mixin forumPost(post)
 				btn.btn.btn-mini(type='button'): &#9660;
 
 mixin document(post)
-	.row-fluid
+	.row-fluid.document
 		.span1: i.icon-download
 		.span9
 			.row-fluid
 				.span12: h4 #{post}
 			.row-fluid
-				.span6: h6 Six collaborators
-				.span6: h6 Last updated 12 minutes ago
+				.span6 Six collaborators
+				.span6 Last updated 12 minutes ago
 		.span2.btn-group
 				btn.btn.btn-mini(type='button'): i.icon-pencil
 				btn.btn.btn-mini(type='button'): &#9660;

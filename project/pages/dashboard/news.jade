@@ -1,4 +1,5 @@
-- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'New imaging techniques developed at SickKids', address: 'test'} , {title: 'Innovation from within', address: 'test'}, {title: 'Learning Disabilities Research goes global', address: 'test'}];
+- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
+
 .row-fluid
 	.span8
 		h2: a What's Happening?
@@ -11,14 +12,14 @@
 		a(href='#').pull-right Read more
 	.span6
 		-each story in Stories
-			.row-fluid
+			.row
 				.span1
 					i.icon-user
 				.span7
 					h4= story.title
 				.span4
-					a(href='#').pull-right Read more
-			.row-fluid
+					a(href='#') Read more
+			.row
 				.span12
 					p.ipsum(length='100')
 		a(href='#').pull-right See all news
