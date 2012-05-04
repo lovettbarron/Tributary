@@ -5,8 +5,15 @@ include ../../patterns/mixin
 		h2 Documents
 		include ../../patterns/documents	
 	.span3
+		.btn-group.dropdown
+			btn.btn Create
+			btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+			ul.dropdown-menu
+				li: a Create an interactive form
+				li: a Create a collaborative document
+				li: a Create a static page
+				li: a Upload a PDF
+		hr
 		include favorites
-		hr
 		include groups
-		hr
 		include archive

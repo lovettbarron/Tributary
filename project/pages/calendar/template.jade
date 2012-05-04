@@ -7,8 +7,28 @@ h2 Calendar
 		include ../../patterns/calendar
 	.span3
 		.row-fluid
+			.btn-group.dropdown
+				btn.btn Create
+				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+				ul.dropdown-menu
+					li: a Create an event
+					li: a Create a deadline
+					li: a Create a time period
+			hr
 			.span6
-				h4 Navigate dates
 				mixin calendar()
+				h4 Filter
+				.row-fluid
+					.span1(style='color: red') &#9632;
+					.span5 Research
+				.row-fluid
+					.span1(style='color: green') &#9632;
+					.span5 SickKids
+				.row-fluid
+					.span1(style='color: black') &#9632;
+					.span5 Learning
+				.row-fluid
+					.span1(style='color: blue') &#9632;
+					.span5 Care
 		hr
 		mixin todo()

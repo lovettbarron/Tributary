@@ -1,8 +1,23 @@
--var post = ['test','test','test','test','test','test','test','test','test','test','test','test','test','test','test','test','test','test','test','test']
-
+-var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
 include mixin
 
 .row-fluid
 	.span12
 		-each item in post
-			mixin document(item)
+			.row-fluid.document
+				.span1: i(class='icon-' + item.icon)
+				.span9
+					.row-fluid
+						.span12: h4= item.title
+					.row-fluid
+						.span6 Six collaborators
+						.span6 Last updated 12 minutes ago
+				.span2.btn-group.dropdown
+						btn.btn.btn-mini(type='button'): i.icon-pencil
+						btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+						ul.dropdown-menu
+							li: a Make a copy
+							li: a Move to group
+							li: a Rename
+							li: a Share
+							li: a Delete

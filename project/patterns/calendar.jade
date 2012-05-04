@@ -1,17 +1,8 @@
 include mixin
 
-.row-fluid
-	.span6
-		.btn-group.pull-left.dropdown
-			btn.btn Create
-			btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-			ul.dropdown-menu
-				li: a Create an event
-				li: a Create a deadline
-				li: a Create a time period
-		
-	.span6
-		ul.nav.nav-pills.pull-right
+.row-fluid		
+	.span12
+		ul.nav.nav-pills.pull-left
 			li.active: a(href='#day', data-toggle="pill") Day
 			li: a(href='#week', data-toggle="pill") Week
 			li: a(href='#month', data-toggle="pill") Month
@@ -40,11 +31,11 @@ include mixin
 							
 	#week.tab-pane
 		.row-fluid
-			.span3
+			.span4
 				i.icon-circle-arrow-left.pull-right
-			.span6(style='text-align: center')
+			.span4(style='text-align: center')
 				h4 April 21-28 (week 4)
-			.span3
+			.span4
 				i.icon-circle-arrow-right.pull-left
 		.row-fluid
 			.span12
