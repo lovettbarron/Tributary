@@ -11,18 +11,18 @@
 ul.nav.nav-list
 
 	li.nav-header Quick Links
-		li: a(href='#') Shop and Eat at SickKids
-		li: a(href='#') Human Resources
+		li: a(href='#news') Shop and Eat at SickKids
+		li: a(href='#research') Human Resources
 	- each link in Links
 		li
-			a(href='#')= link.title
+			a(href='#groups')= link.title
 
 	li.nav-header My Tools
 	- each tool in Tools
 		li
-			a(href='#')= tool.title
+			a(href='#tools')= tool.title
 
 	li.nav-header My Groups
 	- each group in Groups
 		li
-			a(href='#')= group.title
+			a(href='#groups')= group.title

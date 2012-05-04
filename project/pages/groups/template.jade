@@ -1,35 +1,19 @@
+-var Groups = ['Group name', 'another group name', 'yet another group name']
+
 .row
 	.span8
 		.row
 			.span8
 				h2 Groups
-				
-				table.table.table-striped
-
-					tbody
-						tr 
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') Dog Enthusiasts
-							td Last Updated: 2 months ago
-						tr	
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') Cat Enthusiasts
-							td Last Updated: A minute ago
-						tr 
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') CAT Scan
-							td Last Updated: 12:55 pm
-						tr	 
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') Cardiology Club
-							td Last Updated: Yesterday
-						tr
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') SickKids Running Group
-							td Last Updated: Three Days Ago
-						tr 
-							td: i.icon-remove(type='Delete')
-							td: a(href='#groupDetail') Healthwatch
-							td Last Updated: A month ago
-
-
+				-each group in Groups
+					.row-fluid.forum-post
+						.span1: img(src='http://placehold.it/100x100')
+						.span9
+							.row-fluid
+								.span12: h4: a(href='#groupDetail')= group
+							.row-fluid
+								.span6: h6 Pillar
+								.span6: h6 Last updated 12 minutes ago
+						.span2.btn-group
+								btn.btn.btn-mini(type='button') Open
+								btn.btn.btn-mini(type='button'): &#9660;

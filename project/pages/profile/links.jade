@@ -6,6 +6,11 @@ mixin share()
 
 
 ul.nav.nav-list
-	li.nav-header David's Feed
+	h4 Bob's Feed
+	- each link in Feeds
+		li: a(href='#') link.title
+br		
+ul.nav.nav-list
+	h4 Bob's Work
 	- each link in Feeds
 		li: a(href='#') link.title

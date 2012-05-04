@@ -4,9 +4,13 @@ include ../../patterns/mixin
 .row
 	.span8
 		.row-fluid
-			.span6
-				.btn-group
-					btn.btn Filter
+			.span6#filterList
+				label.pull-left Filter
+				a.btn.dd-toggle(data-toggle='dropdown', data-target='#filterList') Show all &#9660;
+				ul.dropdown-menu
+					li Thing1
+					li Thing2
+						
 			.span6
 				.btn-group.pull-right
 					.btn.btn: i.icon-list
@@ -22,7 +26,7 @@ include ../../patterns/mixin
 					.span12: h4 This is an expanded subscription item
 					p.ipsum
 				.row-fluid
-					.span6: h6 6 posts, 3 participants
+					.span6: h6 from: Path/To/Original
 					.span6: h6 Last updated 12 minutes ago
 			.span2.btn-group
 				btn.btn.btn-mini(type='button') close
@@ -35,7 +39,7 @@ include ../../patterns/mixin
 					.row-fluid
 						.span12: h4= story.title
 					.row-fluid
-						.span6: h6 6 posts, 3 participants
+						.span6: h6 from: Path/To/Original
 						.span6: h6 Last updated 12 minutes ago
 				.span2.btn-group
 					btn.btn.btn-mini(type='button') Open
