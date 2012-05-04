@@ -15,7 +15,7 @@ $(document).ready( function() {
 
 function init() {
 		//Context menu switcher
-		$('a').each( function(index) { 
+		$('a:not([data-toggle])').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
 //				e.preventDefault();
 				var hash = $(this).attr('href');
