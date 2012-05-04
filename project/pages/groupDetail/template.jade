@@ -29,7 +29,15 @@ include ../../patterns/mixin
 								h3 Group Forum
 								mixin forum(forumposts)
 							.well
-								include ../../patterns/documents			
+								-var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
+								h4 Group Documents
+								-each story in post
+									.news-item
+										i(class='icon-' + story.icon).pull-left
+										h4
+											a(href='#subscription')= story.title
+										p.ipsum(length='100')
+
 						.span4
 							.well
 								mixin calendar()
