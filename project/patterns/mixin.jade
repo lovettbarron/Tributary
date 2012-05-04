@@ -29,14 +29,14 @@ mixin forumPost(post)
 				btn.btn.btn-mini(type='button'): &#9660;
 
 mixin document(post)
-	.row
+	.row-fluid.document
 		.span1: i.icon-download
 		.span9
-			.row
+			.row-fluid
 				.span12: h4 #{post}
-			.row
-				.span6: h6 Six collaborators
-				.span6: h6 Last updated 12 minutes ago
+			.row-fluid
+				.span6 Six collaborators
+				.span6 Last updated 12 minutes ago
 		.span2.btn-group
 				btn.btn.btn-mini(type='button') Edit
 				btn.btn.btn-mini(type='button'): &#9660;

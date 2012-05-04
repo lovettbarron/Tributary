@@ -2,10 +2,8 @@
 
 include mixin
 
-.row
-	.span8
-		h3 Documents
-	.span4
-hr
--each item in post
-	mixin document(item)
+.row-fluid
+	.span12
+		h2 Documents
+		-each item in post
+			mixin document(item)

@@ -1,6 +1,6 @@
 include mixin
 
-.row
+.row-fluid
 	.span6
 		.btn-group.pull-left
 			btn.btn Create Event
@@ -13,41 +13,36 @@ include mixin
 			li: a(href='#month', data-toggle="pill") Month
 			li: a(href='#year', data-toggle="pill") Year
 
-
-.row
-
-
-
 .tab-content
 	#day.tab-pane.active
-		.row
+		.row-fluid
 			.span3
 				i.icon-circle-arrow-left.pull-right
 			.span6(style='text-align: center')
 				h4 April 21 (week 4)
 			.span3
 				i.icon-circle-arrow-right.pull-left
-		.row
+		.row-fluid
 			.span12
 				table.table.table-bordered
 					thead
 						tr
 							th(columns='7', style='text-align: center') Sunday
-						tr.row
+						tr.row-fluid
 							th(columns='1').span1
 								- for(i=0;i < 23;i++)
 									p #{i}:00
 							th(columns='6').span11
 							
 	#week.tab-pane
-		.row
+		.row-fluid
 			.span3
 				i.icon-circle-arrow-left.pull-right
 			.span6(style='text-align: center')
 				h4 April 21-28 (week 4)
 			.span3
 				i.icon-circle-arrow-right.pull-left
-		.row
+		.row-fluid
 			.span12
 				table.table.table-bordered
 					thead
