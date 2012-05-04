@@ -1,23 +1,11 @@
-- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+include ../../patterns/mixin.jade
 
+h4 More Posts
 
-- var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var recent = {title: 'Recent Posts', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
+mixin linkList(recent)
 
-- var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var cats = {title: 'Categories', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
-
-
-ul.nav.nav-list
-
-	li: h4 More Posts
-
-	li.nav-header Recent Posts
-	- each tool in Tools
-		li
-			a(href='#') post.title
-			
-	li.nav-header Post by Category
-	- each tool in Tools
-		li
-			a(href='#') category.title
+mixin linkList(cats)

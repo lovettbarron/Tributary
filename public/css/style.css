@@ -104,7 +104,7 @@ h2, h3, h4 {
 }
 
 .link-list {
-	margin: 0.5em 0;
+	margin: 1em 0;
 }
 
 .link-list h4 {
@@ -121,6 +121,9 @@ h2, h3, h4 {
 	list-style-type: none;
 }
 
+.link-list ul li {
+	margin: 0.5em 0;
+}
 
 @media (min-width: 1200px) {
 	.row .well .span4 {

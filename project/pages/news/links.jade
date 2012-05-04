@@ -2,13 +2,15 @@ include ../../patterns/mixin.jade
 
 h4 More Headlines
 
-mixin linkList({title: 'SickKids Campaigns', [{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'}]})
-//- mixin linkList(tools)
-//- mixin linkList(groups)
+- var campaigns = {title: 'SickKids Campaigns', items: [{title: 'Campaign', address: '#'}, {title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'}]}
 
-	//- li.nav-header SickKids Campaigns
-			
-	//- li.nav-header Research News
-			
-	//- li.nav-header Shop and Eat
+mixin linkList(campaigns)
+
+- var news = {title: 'Research News', items: [{title: 'Headline', address: '#'}, {title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'}]}
+
+mixin linkList(news)
+
+- var eat = {title: 'Show & Eat', items: [{title: 'Feature', address: '#'}, {title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'}]}
+
+mixin linkList(eat)
 

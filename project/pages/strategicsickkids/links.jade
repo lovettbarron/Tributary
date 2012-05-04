@@ -1,5 +1,7 @@
-ul.nav.nav-list
-	li: h4 Strategic Tools
-	li: a(href='#') Ideas Platform Tool
-	li: a(href='#') Avenues to Excellence PDF
-	li: a(href='#') SickKids Scorecard
+include ../../patterns/mixin.jade
+
+h4 Strategic Tools
+
+- var links = {title: '', items: [{title: 'Shop & Eat at SickKids', address: '#'}, {title: 'Human Resources', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(links)
