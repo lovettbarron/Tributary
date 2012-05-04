@@ -19,7 +19,7 @@ function init() {
 			$(this).unbind('click').click( function(e) {
 				e.preventDefault();
 				var hash = $(this).attr('href');
-				path = hash.split('#')[1];
+				var path = hash.split('#')[1];
 //				path = $(this).attr('href');
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
