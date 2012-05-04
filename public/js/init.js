@@ -21,7 +21,7 @@ function init() {
 				var hash = $(this).attr('href');
 				var path = hash.split('#')[1];
 //				path = $(this).attr('href');
-				if(path == '') {
+				if(path === '') {
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						init();
