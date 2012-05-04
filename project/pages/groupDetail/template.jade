@@ -3,36 +3,58 @@ include ../../patterns/mixin
 .row
 	.span8
 		.row
-			.span12
-				include description
-		.row
-			ul.nav.nav-pills
-				li.active: a(href='#home', data-toggle="pill") Overview
-				li: a(href='#calendarBig', data-toggle="pill") Calendar
-				li: a(href='#forum', data-toggle="pill") Forum
-				li: a(href='#documents', data-toggle="pill") Documents
-				li: a(href='#peopleBig', data-toggle="pill") Members
-				li: a(href='#tools', data-toggle="pill") Tools
-		.row.tab-content
-			#home.tab-pane.active
-				.span6
-					.well
-						include forum
-					.well
-						include files				
-				.span6.well
-					include calendar
-			#calendarBig.tab-pane
-				include ../../patterns/calendar
-			#forum.tab-pane
-				include ../../patterns/forum
-			#documents.tab-pane
-				include ../../patterns/documents
-			#peopleBig.tab-pane
-				p People
-			#tools.tab-pane
-				p Tools
-	.span4
+			.span8
+				h2 SickKids Cyclists
+				.row
+					.span2
+						img(src="http://media.treehugger.com/assets/images/2011/10/cyclists-wearing-helmets.jpg")
+					.span6
+						em Sports & Leisure
+						p Join us for a healthier way to work and home!
+				br
+				ul.nav.nav-pills
+					li.active: a(href='#home', data-toggle="pill") Overview
+					li: a(href='#calendarBig', data-toggle="pill") Calendar
+					li: a(href='#forum', data-toggle="pill") Forum
+					li: a(href='#documents', data-toggle="pill") Documents
+					li: a(href='#peopleBig', data-toggle="pill") Members
+					li: a(href='#tools', data-toggle="pill") Tools
+			.span8
+				.row.tab-content
+					#home.tab-pane.active
+						.span4
+							.well
+								-var forumposts = [ 'Random post', 'random post 2', 'more random posts', 'oh hey all ya see']
+								h3 Group Forum
+								mixin forum(forumposts)
+							.well
+								include ../../patterns/documents			
+						.span4
+							.well
+								mixin calendar()
+					#calendarBig.tab-pane
+						.span8
+							include ../../patterns/calendar
+					#forum.tab-pane
+						.span8
+							.row-fluid
+								.span8
+									h3 Forum
+								.span4
+									mixin share()
+							include ../../patterns/forum
+					#documents.tab-pane
+						.span8
+							h3 Documents
+							include ../../patterns/documents
+					#peopleBig.tab-pane
+						.span8
+							h3 People
+					#tools.tab-pane
+						.span8
+							h3 Tools
+
+	.span3
 		mixin share()
 		include links
 		include tools

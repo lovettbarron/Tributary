@@ -29,7 +29,7 @@ h2, h3, h4 {
 	margin: 1em 0;
 }
 
-.document {
+.document, .forum-post {
 	border-width: 1px 0;
 	border-color: #eeeeee;
 	border-style: solid;

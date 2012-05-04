@@ -9,19 +9,19 @@ mixin radio(poll)
 
 mixin forum(posts)
 	-each item in posts
-		.row
+		.row-fluid
 			.span1: i.icon-user
 			.span9: #{item}
 			.span2: btn.btn.btn-mini More
 	btn.btn.btn-primary(type='button') See all
 
 mixin forumPost(post)
-	.row
+	.row-fluid.forum-post
 		.span1: img(src='http://placehold.it/100x100')
 		.span9
-			.row
+			.row-fluid
 				.span12: h4 #{post}
-			.row
+			.row-fluid
 				.span6: h6 6 posts, 3 participants
 				.span6: h6 Last updated 12 minutes ago
 		.span2.btn-group
@@ -44,7 +44,7 @@ mixin document(post)
 
 mixin docs(posts)
 	-each item in posts
-		.row
+		.row-fluid
 			.span1: i.icon-download
 			.span7: #{item}
 			.span4
@@ -55,7 +55,7 @@ mixin docs(posts)
 
 mixin people(posts)
 	-each item in posts
-		.row
+		.row-fluid
 			.span1: i.icon-download
 			.span7: #{item}
 			.span4
@@ -138,7 +138,7 @@ mixin calendar()
 mixin comment()
 	.comment
 		btn.btn.btn-mini(type='Comment') Comment
-		.row.commentHide
+		.row-fluid.commentHide
 			.span6
 				.fieldset
 					label Leave a comment!
