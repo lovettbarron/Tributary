@@ -5,35 +5,43 @@ include ../../patterns/mixin
 .row
 	.span8
 		.row
-			.well
-				h2 News
-					.btn-group.pull-right
-						btn.btn +
-						btn.btn see all
-
-				.row
-					.span3
-						img(src='http://placehold.it/300x300')
-					.span4
-						-each story in Stories
-							.news-item
-								h4
-									i.icon-user
-									a= story.title
-								p.ipsum(length='100')
+			.span8
+				.well
+					h2 News
+						.btn-group.pull-right
+							btn.btn +
+							btn.btn see all
+					.row
+						.span3
+							h3 Main Story
+							p.ipsum(length='400')
+							a Read More
+						.span4
+							-each story in Stories
+								.news-item
+									h4
+										i.icon-user
+										a= story.title
+									p.ipsum(length='100')
 
 		.row
 			.span4
-				.row
-					.well
-						h2 Subscription
-							.btn-group.pull-right
-								btn.btn +
-								btn.btn Edit
-						-each story in Stories
-							.row
-								.span4
-									h4
-										i.icon-download-alt								
-										a= story.title
-									p.ipsum(length='100')
+				.well
+					h2 Subscription
+						.btn-group.pull-right
+							btn.btn +
+							btn.btn Edit
+					-each story in Stories
+						.news-item
+							h4
+								i.icon-download-alt								
+								a= story.title
+							p.ipsum(length='100')
+			.span4
+				.well
+					mixin calendar()
+				.well
+					mixin todo()
+	.span2
+		include links
+		

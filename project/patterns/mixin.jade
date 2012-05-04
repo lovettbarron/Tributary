@@ -73,14 +73,14 @@ mixin share()
 	hr
 
 mixin calendar()
-	.row
+	.row-fluid
 		.span3
 			i.icon-circle-arrow-left.pull-right
 		.span6(style='text-align: center')
 			h4 April
 		.span3
 			i.icon-circle-arrow-right.pull-left
-	.row
+	.row-fluid
 		.span12
 			table.table.table-bordered
 				thead
@@ -148,14 +148,14 @@ mixin comment()
 
 mixin todo()
 	.todo
-		.row
+		.row-fluid
 			.span8
 				h3 Todo list
 			.span4
 				.btn-group.pull-right
 					btn.btn +
 					btn.btn Edit
-		.row
+		.row-fluid
 			.span12
 				p Example todo
 
