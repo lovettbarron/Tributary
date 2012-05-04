@@ -4,6 +4,7 @@ include ../../patterns/mixin
 	.span8
 		.row
 			.span8
+				//- include description
 				h2 SickKids Cyclists
 				.row
 					.span2
@@ -52,7 +53,7 @@ include ../../patterns/mixin
 							h3 People
 					#tools.tab-pane
 						.span8
-							h3 Tools
+							mixin tools(['test', 'test2', 'test3'])
 
 	.span3
 		mixin share()

@@ -1,19 +1,24 @@
 form-horizontal
-	.row
-		.span12.well
-			img(src="http://placehold.it/100x100")
-			.btn-group
-				btn.btn Upload
+
+	.row-fluid
+		.span4.well
+			img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+			.btn-group.pull
+				btn.btn Change
+		.span8.well			
 			label First 
+				input (type='text': class='span3')
+			label Middle
 				input (type='text': class='span3')
 			label Last 
 				input (type='text': class='span3')
 			.btn-group.pull-right
-				button (type='submit'): btn.btn Save Changes
+				btn.btn Save Changes
 			.btn-group.pull-right
 				btn.btn Cancel
 
-	.row
+	.row-fluid
+		label: h3 Contact Information
 		.span12.well
 			.row
 				.span4
@@ -27,10 +32,6 @@ form-horizontal
 				btn.btn Save Changes
 			.btn-group.pull-right
 				btn.btn Cancel
-
-	.row
-		.span12.well
-			label: h3 Contact Information
 			label email 
 				input (type='text': class='span3')
 			select.span1
