@@ -58,12 +58,11 @@ include ../../patterns/mixin
 						li: a Report
 	.span3
 		h4 Subscriptions
-		ul.nav.nav-list
-			li.nav-header Groups
-			-for(i=0;i<9;i++)
-				li: a Feed Name (6)
 
-			li.nav-header People
-			-for(i=0;i<9;i++)
-				li: a Feed Name (23)
-				
+		- var groups = {title: "Groups", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+
+		mixin linkList(groups)
+
+		- var people = {title: "People", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+
+		mixin linkList(people)
