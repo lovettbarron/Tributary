@@ -1,11 +1,11 @@
 form-horizontal
 
-	.row-fluid
-		.span4.well
-			img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+	.row
+		.span3.well
+			p: img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
 			.btn-group.pull
 				btn.btn Change
-		.span8.well			
+		.span7.well
 			label First 
 				input (type='text': class='span3')
 			label Middle
@@ -17,12 +17,13 @@ form-horizontal
 			.btn-group.pull-right
 				btn.btn Cancel
 
-	.row-fluid
-		label: h3 Contact Information
-		.span12.well
+	.row
+		.span11
+			h3 Contact Information
+		.span11.well
 			.row
 				.span4
-			Label Office	
+			Label Office
 			input (type='text', class='span3')
 			label Manager
 				input (type='text': class='span3')
@@ -34,7 +35,7 @@ form-horizontal
 				btn.btn Cancel
 			label email 
 				input (type='text': class='span3')
-			select.span1
+			select.span2
 				option Everyone
 				option Department
 				option Only Me

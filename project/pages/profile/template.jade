@@ -5,27 +5,22 @@
 				img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
 			.span4
 				h2 David Watts
-				em Physician | Cariology
+				p: em Physician | Cariology
+				p.ipsum(length=100)
 			.span2
-				.btn-mini-group.pull-right
-					btn-mini.btn Update Info
+				.pull-right
+					a.btn.btn-mini Edit
 		.row
 			.span8
 				include info
-				.well
-					h4 Projects
-					include project
-				
 				.profile-group
-					include skills
+					include project				
 				.profile-group
 					include interests
 				.profile-group
+					include skills
+				.profile-group
 					include groups
-
-				.well
-					h4 CV
-					include cv
 
 	.span3
 		include links
