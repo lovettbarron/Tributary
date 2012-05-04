@@ -31,6 +31,7 @@ function init() {
     $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
 		$(".collapse").collapse()
+		$('.dd-toggle').dropdown()
 		comment();
 		ipsum();
 		searchField();
