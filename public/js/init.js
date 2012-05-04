@@ -1,7 +1,8 @@
 $(document).ready( function() {
 	if(window.location.hash) {
-			//path = window.location.hash;
-			console.log(window.location.hash);
+			var hash = window.location.hash;
+			path = hash.split('#')[1];
+			console.log(path);
 			$.get('/' + path, function(data) {
 					$('#content').html(data);
 					init();
