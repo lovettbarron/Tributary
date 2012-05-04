@@ -1,0 +1,13 @@
+include ../../patterns/mixin.jade
+
+mixin share()
+
+
+- var Tools =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+ul.nav.nav-list
+	li.nav-header Tools
+	- each link in Tools
+		li: a(href='#') link.title
+		
+		include ../../patterns/mixin.jade

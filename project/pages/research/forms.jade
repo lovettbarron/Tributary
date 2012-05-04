@@ -1,0 +1,13 @@
+include ../../patterns/mixin.jade
+
+mixin share()
+
+
+- var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+ul.nav.nav-list
+	li.nav-header Forms
+	- each link in From
+		li: a(href='#') link.title
+		
+		include ../../patterns/mixin.jade
