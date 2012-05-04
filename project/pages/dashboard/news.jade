@@ -1,14 +1,18 @@
 - var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
 .row-fluid
 	.span8
-		h2 News
+		h2 What's Happening?
 	.span4
 		.btn-group.pull-right
 			btn.btn +
 			btn.btn see all
 .row-fluid
 	.span6
-		img(src='http://placehold.it/300x300')
+		img(src='http://placehold.it/300x100')
+		h4 This is the feature news story
+		p.ipsum(length='300')
+		br
+		a(href='#') Read more
 	.span6
 		-each story in Stories
 			.row-fluid

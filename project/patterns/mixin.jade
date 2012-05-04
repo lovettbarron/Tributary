@@ -38,9 +38,20 @@ mixin document(post)
 				.span6: h6 Six collaborators
 				.span6: h6 Last updated 12 minutes ago
 		.span2.btn-group
-				btn.btn.btn-mini(type='button') Edit
+				btn.btn.btn-mini(type='button'): i.icon-pencil
 				btn.btn.btn-mini(type='button'): &#9660;
 
+
+mixin tools(posts)
+	-each item in posts
+		.row-fluid
+			.span1: i.icon-download
+			.span7: #{item}
+			.span4
+				.btn-group
+					btn.btn.btn-mini open
+					btn.btn.btn-mini edit
+	btn.btn.btn-primary(type='button') See all
 
 mixin docs(posts)
 	-each item in posts
@@ -68,7 +79,7 @@ mixin people(posts)
 mixin share()
 	.btn-group
 		btn.btn Share
-		btn.btn Add to Favorite
+		btn.btn Add to Quick Links
 		btn.btn Report
 	hr
 

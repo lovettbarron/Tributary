@@ -1,11 +1,21 @@
 form-horizontal
 	.row-fluid.span12.well
 		h3 Projects
-			.form-inline
-				input(type="text", class="span2", placeholder="Project Name...")
-				input(type="text", class="span2", placeholder="Participants...")
-				input(type="text", class="span2", placeholder="From...")
-				input(type="text", class="span2", placeholder="To...")
+			table.table.table
+				tbody
+					tr
+						td
+							input(type="text", class="span8", placeholder="Project Name...")
+						td
+							input(type="text", class="span8", placeholder="Participants...")
+						td
+							input(type="text", class="span8", placeholder="From...") - 
+						td
+							input(type="text", class="span8", placeholder="To...")
+						td
+							i.icon-plus(type='Add')
+						
+							
 
 		table.table.table-striped
 			tbody

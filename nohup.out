@@ -1,0 +1,690 @@
+Configuration loaded
+Express server listening on port 3000 in development mode
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
