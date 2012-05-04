@@ -1,12 +1,37 @@
+include ../../patterns/mixin.jade
+
+h2 What's Happening?
+
 .row
 	.span8
+		.well.clearfix.news-feature
+			h3: a(href='#') SickKids Raises 20K with Blue Streak!
+			img.pull-left(src='http://placehold.it/300x300')
+			p.ipsum(length='1000', para='3')
+			p: a(href='#') Read more
+
 		.row
-			.span12
-				include feature
-		.row
-			.span6
-				include poll
-			.span6
-				include calendar
-	.span4
+			.span8
+				-var poll = ['This is an entry', 'This is another entry', 'isnt this fun?' ]
+				- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
+
+				.row
+					.span4
+						h3 Headlines
+						.well
+							-each story in Stories
+								.news-item
+									h4
+										i.icon-download-alt								
+										a= story.title
+									p.ipsum(length='100')
+
+					.span4
+						h3 SickKids Poll
+						
+						.well
+							h4 What do you think of this poll?
+							mixin radio(poll)
+
+	.span3
 		include links
