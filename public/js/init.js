@@ -2,7 +2,6 @@ $(document).ready( function() {
 	if(window.location.hash) {
 			var hash = window.location.hash;
 			path = hash.split('#')[1];
-			console.log(path);
 			$.get('/' + path, function(data) {
 					$('#content').html(data);
 				});
@@ -19,13 +18,17 @@ function init() {
 		$('a').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
 				e.preventDefault();
-				path = $(this).attr('id');
+				var hash = $(this).attr('href');
+				var path = hash.split('#')[1];
+//				path = $(this).attr('href');
+	//			if(path) {
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						init();
 					});
 				$('ul > li').removeClass('active');
-				$(this).addClass('active');
+				$(this).parent('li').addClass('active');
+//				}
 			})
 		});
 		$(function () {
