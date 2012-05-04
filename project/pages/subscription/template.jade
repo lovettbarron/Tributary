@@ -4,12 +4,14 @@ include ../../patterns/mixin
 .row
 	.span8
 		.row-fluid
-			.span6#filterList
-				label.pull-left Filter
-				a.btn.dd-toggle(data-toggle='dropdown', data-target='#filterList') Show all &#9660;
+			.span6.dropdown
+				h3.pull-left Filter: 
+				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Show all &#9660;
 				ul.dropdown-menu
-					li Thing1
-					li Thing2
+					li: a Show all
+					li: a Unread only
+					li: a Favorited only
+					li: a My groups only
 						
 			.span6
 				.btn-group.pull-right
@@ -28,9 +30,14 @@ include ../../patterns/mixin
 				.row-fluid
 					.span6: h6 from: Path/To/Original
 					.span6: h6 Last updated 12 minutes ago
-			.span2.btn-group
+			.span2.btn-group.dropdown
 				btn.btn.btn-mini(type='button') close
-				btn.btn.btn-mini(type='button'): &#9660;
+				btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+				ul.dropdown-menu
+					li: a Edit
+					li: a Share
+					li: a Hide
+					li: a Report
 		hr
 		-each story in Stories
 			.row-fluid
@@ -41,9 +48,14 @@ include ../../patterns/mixin
 					.row-fluid
 						.span6: h6 from: Path/To/Original
 						.span6: h6 Last updated 12 minutes ago
-				.span2.btn-group
+				.span2.btn-group.dropdown
 					btn.btn.btn-mini(type='button') Open
-					btn.btn.btn-mini(type='button'): &#9660;
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+					ul.dropdown-menu
+						li: a Edit
+						li: a Share
+						li: a Hide
+						li: a Report
 	.span3
 		h4 Subscriptions
 		ul.nav.nav-list
