@@ -1,12 +1,12 @@
 body
 	include global/nav/index
-	.container-fluid
-		.row-fluid
-			#context.span2
+	.container
+		.row
+			#context.span1
 				include global/context/index
-			.span10
+			.span11.offset1
 				#content.container
 					include pages/dashboard/index
-		.row-fluid
+		.row
 			#footer.span12
 				include global/footer/index

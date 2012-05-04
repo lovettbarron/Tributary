@@ -1,27 +1,32 @@
-.row-fluid
+.row
 	.span8
-		.row-fluid
-			.span12
-				include bio
-		.row-fluid
-			.span12
+		.row.profile
+			.span2
+				img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+			.span4
+				h2 David Watts
+				em Physician | Cariology
+			.span2
+				.btn-mini-group.pull-right
+					btn-mini.btn Update Info
+		.row
+			.span8
 				include info
-		.row-fluid
-			.span12
-				include project
-		.row-fluid
-			.span12
-				include skills
-		.row-fluid
-			.span12
-				include interests
-		.row-fluid
-			.span12
-				include groups
-		.row-fluid
-			.span12
-				include cv
-	.span4
-		.row-fluid
-				include links
+				.well
+					h4 Projects
+					include project
+				
+				.profile-group
+					include skills
+				.profile-group
+					include interests
+				.profile-group
+					include groups
+
+				.well
+					h4 CV
+					include cv
+
+	.span3
+		include links
 		

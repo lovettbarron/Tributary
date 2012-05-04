@@ -1,38 +1,37 @@
 .navbar.navbar-fixed-top.shrunk-nav
-	.navbar-inner
-		.container-fluid
-			.row-fluid
-				.span2
-					a.brand(href="#body") Logo
-				.span4
-					ul.nav
-						li: a#profile(href="#profile") Profile
-						li: a#people(href="#people") Kidmail
-						li: a#groupDetail(href="#admin") Admin
-						li: a#editProfile(href="#editProfile") Edit Profile
-						li: a#grantsmanagement(href="#grantsmanagement") Grants Management
-				.span6
-					ul.nav.pull-right
-						li: a#strategicsickkids(href="#strategicsickkids") Strategic SickKids
-						li: a#news(href="#news") What's Happening?
-						li: a#blog(href="#blog") Mary Jo's Message
-						li: a#people(href="#people") People
-			.row-fluid
-				.span2
-				.span6
-					ul.nav
-						li.dropdown
-							a.dropdown-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
-								b.caret
-						li.dropdown
-							a.dropdown-toggle(href="#care",data-toggle="dropdown") Care
-								b.caret
-						li: a#research(href='#research') Research
-
-						li.dropdown
-							a.dropdown-toggle(href="#learning",data-toggle="dropdown") Learning
-								b.caret
-				.span4
-					form.navbar-search.pull-right
-						input.typeahead.search-query(type='text', data-provide="typeahead", placeholder='Search')
-						btn#search.btn.search Search
+  .navbar-inner
+    .container
+      .row
+        .span2
+          a.brand(href="#body") Logo
+        .span10
+          .row
+            .span4
+              ul.nav
+                li: a#profile(href="#profile") Profile
+                li: a#people(href="#people") Kidmail
+                li: a#groupDetail(href="#admin") Admin
+                li: a#editProfile(href="#editProfile") Edit Profile
+            .span6
+              ul.nav.pull-right
+                li: a#strategicsickkids(href="#strategicsickkids") Strategic SickKids
+                li: a#news(href="#news") What's Happening?
+                li: a#blog(href="#blog") Mary Jo's Message
+                li: a#people(href="#people") People
+          .row          
+            .span6
+              ul.nav
+                li.dropdown
+                  a.dropdown-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
+                    b.caret
+                li.dropdown
+                  a.dropdown-toggle(href="#care",data-toggle="dropdown") Care
+                    b.caret
+                li: a#research(href='#research') Research
+                li.dropdown
+                  a.dropdown-toggle(href="#learning",data-toggle="dropdown") Learning
+                    b.caret
+            .span4
+              form.navbar-search.pull-right
+                input.typeahead.search-query(type='text', data-provide="typeahead", placeholder='Search')
+                btn#search.btn.search Search
