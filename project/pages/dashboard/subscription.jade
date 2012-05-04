@@ -1,15 +1,11 @@
-- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var Stories =[ {title: 'Departmental announcement', icon: 'user'}, {title: 'Testing it out', icon: 'download'} , {title: 'Testing testing', icon: 'pencil '}, {title: 'test', icon: 'info-sign'}];
 .row-fluid
 	.span8
-		h2 Subscription
-	.span4
-		.btn-group.pull-right
-			btn.btn +
-			btn.btn Edit
+		h2: a Subscription
 -each story in Stories
 	.row-fluid
 		.span1
-			i.icon-download-alt
+			i(class='icon-' + story.icon)
 		.span10
 			h4= story.title
 			p.ipsum(length='100')

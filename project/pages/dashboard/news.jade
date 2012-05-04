@@ -1,18 +1,14 @@
-- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}];
+- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'New imaging techniques developed at SickKids', address: 'test'} , {title: 'Innovation from within', address: 'test'}, {title: 'Learning Disabilities Research goes global', address: 'test'}];
 .row-fluid
 	.span8
-		h2 What's Happening?
-	.span4
-		.btn-group.pull-right
-			btn.btn +
-			btn.btn see all
+		h2: a What's Happening?
 .row-fluid
 	.span6
-		img(src='http://placehold.it/300x100')
-		h4 This is the feature news story
+		img(src='http://placehold.it/300x150')
+		h3 This is the feature news story
 		p.ipsum(length='300')
 		br
-		a(href='#') Read more
+		a(href='#').pull-right Read more
 	.span6
 		-each story in Stories
 			.row-fluid
@@ -21,7 +17,8 @@
 				.span7
 					h4= story.title
 				.span4
-					a(href='#') Read more
+					a(href='#').pull-right Read more
 			.row-fluid
 				.span12
 					p.ipsum(length='100')
+		a(href='#').pull-right See all news

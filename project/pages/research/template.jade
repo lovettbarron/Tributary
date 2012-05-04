@@ -7,30 +7,24 @@ include ../../patterns/mixin
 				include about
 		.row-fluid
 			ul.nav.nav-pills
-				li.active: a(href='#home', data-toggle="pill") Home
-				li: a(href='#newsBig', data-toggle="pill") News
-				li: a(href='#calendarBig', data-toggle="pill") Calendar
-				li: a(href='#directory', data-toggle="pill") Directory
-				li: a(href='#forms', data-toggle="pill") Forms
-				li: a(href='#tools', data-toggle="pill") Tools
+				li.active: a(href='#overview', data-toggle="pill") Overview
+				li: a(href='#news', data-toggle="pill") News
+				li: a(href='#corefacilities', data-toggle="pill") Core Facilities
+				li: a(href='#grantsmanagement', data-toggle="pill") Grants Management
+				li: a(href='#cpa', data-toggle="pill") CPA
+				li: a(href='#ss', data-toggle="pill") Shop'n'Swap
 		.row-fluid.tab-content
-			#home.tab-pane.active
+			#overview.tab-pane.active
+				include overview
+			#news.tab-pane
 				include news
-			#home.tab-pane
-				include news
-			#newsBig.tab-pane
-				include news
-			#calendarBig.tab-pane
-				include ../../patterns/calendar
-			#directory.tab-pane
-				include directory
-			#forms.tab-pane
-				include ../../patterns/forum
-			#tools.tab-pane
-				p Tools		
-	.row-fluid
-		.span4
-			include feed
-			
-
-			
+			#corefacilities.tab-pane
+				include corefacilities
+			#grantsmanagement.tab-pane
+				include grantsmanagement
+			#cpa.tab-pane
+				include cpa
+			#ss.tab-pane
+				include ss
+	.span4
+		include forms

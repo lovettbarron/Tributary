@@ -688,3 +688,2977 @@ Error: failed to locate view "/home/normative/src/Tributary/project/pages/favico
 Returning results from: index
 Returning results from: index
 Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/groupDetail/template.jade:undefined
+
+
+documents_mixin is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:21
+    19| 			#news.tab-pane
+    20| 				include news
+  > 21| 			#newsBig.tab-pane
+    22| 				include corefacilities
+    23| 			#grantsmanagement.tab-pane
+    24| 				include grantsmanagement
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/corefacilities.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 	.row-fluid
+  > 30| 		.span4
+    31| 			include Forms
+    32| 	.row-fluid
+    33| 		.span4
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 				.row-fluid
+  > 30| 					.span4
+    31| 						include Forms
+    32| 					.span4
+    33| 						include Tools
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 				.row-fluid
+  > 30| 					.span4
+    31| 						include Forms
+    32| 					.span4
+    33| 						include Tools
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+Error: /home/normative/src/Tributary/project/pages/research/template.jade:30
+    28| 				include ss	
+    29| 				.row-fluid
+  > 30| 					.span4
+    31| 						include Forms
+    32| 					.span4
+    33| 						include Tools
+
+ENOENT, no such file or directory '/home/normative/src/Tributary/project/pages/research/Forms.jade'
+    at Object.openSync (fs.js:238:18)
+    at Object.readFileSync (fs.js:128:15)
+    at Object.parseInclude (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:476:18)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:204:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:190:21)
+    at Object.parseExpr (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:229:21)
+    at Object.block (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:573:25)
+    at Object.parseTag (/home/normative/src/Tributary/node_modules/jade/lib/parser.js:667:26)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Feed =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Tools
+
+Tools is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/people", tried:
+  - /home/normative/src/Tributary/project/pages/people.jade
+  - /home/normative/src/Tributary/project/pages/_people.jade
+  - /home/normative/src/Tributary/project/pages/people/index.jade
+  - /home/normative/src/Tributary/project/pages/../people/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/people"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+Returning results from: index
+Returning results from: index
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/undefined", tried:
+  - /home/normative/src/Tributary/project/pages/undefined.jade
+  - /home/normative/src/Tributary/project/pages/_undefined.jade
+  - /home/normative/src/Tributary/project/pages/undefined/index.jade
+  - /home/normative/src/Tributary/project/pages/../undefined/index.jade
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/undefined"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+
+failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico", tried:
+  - /home/normative/src/Tributary/project/pages/favicon.ico
+  - /home/normative/src/Tributary/project/pages/favicon/index.ico
+  - /home/normative/src/Tributary/project/pages/../favicon/index.ico
+
+Error: failed to locate view "/home/normative/src/Tributary/project/pages/favicon.ico"
+    at Function.compile (/home/normative/src/Tributary/node_modules/express/lib/view.js:61:15)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:417:18)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at /home/normative/src/Tributary/app.js:63:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:246:11)
+    at param (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:243:11)
+    at pass (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:280:4)
+    at Object.handle (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:45:10)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
+Returning results from: index
+ReferenceError: /home/normative/src/Tributary/project/pages/research/forms.jade:6
+    4| 
+    5| 
+  > 6| - var Forms =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+    7| 
+    8| ul.nav.nav-list
+    9| 	li.nav-header Forms
+
+From is not defined
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at eval at <anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:164:3)
+    at Object.<anonymous> (/home/normative/src/Tributary/node_modules/jade/lib/jade.js:165:12)
+    at ServerResponse._render (/home/normative/src/Tributary/node_modules/express/lib/view.js:425:21)
+    at ServerResponse.render (/home/normative/src/Tributary/node_modules/express/lib/view.js:318:17)
+    at render (/home/normative/src/Tributary/node_modules/express/lib/view.js:187:16)
+    at renderPartial (/home/normative/src/Tributary/node_modules/express/lib/view.js:228:12)
+    at ServerResponse.partial (/home/normative/src/Tributary/node_modules/express/lib/view.js:276:15)
+    at /home/normative/src/Tributary/app.js:58:7
+    at callbacks (/home/normative/src/Tributary/node_modules/express/lib/router/index.js:272:11)
