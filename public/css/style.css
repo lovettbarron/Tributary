@@ -10,6 +10,31 @@ body {
 	position: fixed;
 }
 
+#context ul {
+	margin: 0;
+}
+
+#context li {
+	text-align: center;
+	list-style-type: none;
+	padding: 10px 0;
+}
+
+#context li:hover {
+	background: #eee;
+}
+
+#context li a {
+	font-size: 0.8em;
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+#contect li a:hover {
+	text-decoration: none;
+}
+
 .navbar {
 	-moz-box-shadow: inset 0 0 5px #000;
 	-webkit-box-shadow: inset 0 0 5px #000;
