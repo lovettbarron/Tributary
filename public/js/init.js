@@ -16,8 +16,8 @@ $(document).ready( function() {
 
 function init() {
 		//Context menu switcher
-		$('#content a').each( function(index) { 
-			$(this).unbind().click( function(e) {
+		$('#a').each( function(index) { 
+			$(this).unbind('click').click( function(e) {
 				e.preventDefault();
 				path = $(this).attr('id');
 				$.get('/' + path, function(data) {
