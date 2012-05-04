@@ -17,11 +17,11 @@ function init() {
 		//Context menu switcher
 		$('a').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
-				e.preventDefault();
+//				e.preventDefault();
 				var hash = $(this).attr('href');
 				var path = hash.split('#')[1];
 //				path = $(this).attr('href');
-	//			if(path) {
+//			if(path) {
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						init();
