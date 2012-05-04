@@ -167,8 +167,11 @@ mixin todo()
 				h3 Todo list
 			.span4
 				.btn-group.pull-right
-					btn.btn +
-					btn.btn Edit
+					btn.btn.btn-mini +
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+					ul.dropdown-menu
+						li: a Create a todo
+						li: a Create a Deadline
 		.row-fluid
 			.span12
 				p Example todo
