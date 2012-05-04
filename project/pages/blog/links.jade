@@ -10,12 +10,14 @@
 
 ul.nav.nav-list
 
-	li.nav-header Recent Posts
-	- each link in Links
-		li
-			a(href='#') link.title
+	li: h4 More Posts
 
-	li.nav-header Categories
+	li.nav-header Recent Posts
+	- each tool in Tools
+		li
+			a(href='#') post.title
+			
+	li.nav-header Post by Category
 	- each tool in Tools
 		li
 			a(href='#') category.title
