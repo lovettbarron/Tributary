@@ -5,23 +5,49 @@ include ../../patterns/mixin
 	.span8
 		.row-fluid
 			.span6
-				p filter
+				.btn-group
+					btn.btn Filter
 			.span6
-				p expand/collapse
-		.row.feedItem
-			.span12
-				h3 Item Header
-				p Item description
+				.btn-group.pull-right
+					.btn.btn: i.icon-list
+					.btn.btn: i.i.icon-tasks
+				.btn-group.pull-right
+					.btn.btn: i.icon-arrow-up
+					.btn.btn: i.i.icon-arrow-down
+		hr
+		.row-fluid
+			.span1: img(src='http://placehold.it/100x100')
+			.span9
+				.row-fluid
+					.span12: h4 This is an expanded subscription item
+					p.ipsum
+				.row-fluid
+					.span6: h6 6 posts, 3 participants
+					.span6: h6 Last updated 12 minutes ago
+			.span2.btn-group
+				btn.btn.btn-mini(type='button') close
+				btn.btn.btn-mini(type='button'): &#9660;
+		hr
+		-each story in Stories
+			.row-fluid
+				.span1: img(src='http://placehold.it/100x100')
+				.span9
+					.row-fluid
+						.span12: h4= story.title
+					.row-fluid
+						.span6: h6 6 posts, 3 participants
+						.span6: h6 Last updated 12 minutes ago
+				.span2.btn-group
+					btn.btn.btn-mini(type='button') Open
+					btn.btn.btn-mini(type='button'): &#9660;
 	.span3
 		h4 Subscriptions
 		ul.nav.nav-list
 			li.nav-header Groups
-			li
-				a Feed Name (23)
-				a Feed Name (23)
-				a Feed Name (23)
+			-for(i=0;i<9;i++)
+				li: a Feed Name (6)
+
 			li.nav-header People
-			li
-				a Feed Name (23)
-				a Feed Name (23)
-				a Feed Name (23)
+			-for(i=0;i<9;i++)
+				li: a Feed Name (23)
+				
