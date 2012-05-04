@@ -1,23 +1,25 @@
 include ../../patterns/mixin
 
+h2 Welcome to the Research Institute
+
 .row
 	.span8
-		.row
-			.span12
-				include about
-		.row
-			ul.nav.nav-pills
-				li.active: a(href='#overview', data-toggle="pill") Overview
-				li: a(href='#news', data-toggle="pill") News
-				li: a(href='#corefacilities', data-toggle="pill") Core Facilities
-				li: a(href='#grantsmanagement', data-toggle="pill") Grants Management
-				li: a(href='#cpa', data-toggle="pill") CPA
-				li: a(href='#ss', data-toggle="pill") Shop'n'Swap
-		.row-fluid.tab-content
+		ul.nav.nav-pills
+			li.active: a(href='#overview', data-toggle="pill") Overview
+			li: a(href='#news', data-toggle="pill") News
+			li: a(href='#corefacilities', data-toggle="pill") Core Facilities
+			li: a(href='#grantsmanagement', data-toggle="pill") Grants Management
+			li: a(href='#cpa', data-toggle="pill") CPA
+			li: a(href='#ss', data-toggle="pill") Shop'n'Swap
+		
+		.tab-content
 			#overview.tab-pane.active
-				include overview
+				img(src="http://placehold.it/300x300")
 			#news.tab-pane
-				include news
+				.btn-group.pull-right
+					btn.btn Read more
+				h2 News
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lorem, pharetra sit amet consectetur sit amet, convallis vel felis. Suspendisse tempus magna eu odio laoreet adipiscing. Quisque facilisis nisi et leo faucibus malesuada. Etiam nulla tortor, feugiat id pharetra eu, mollis et tellus. Fusce rhoncus mi sed sapien tempor gravida. Etiam purus lacus, dictum quis ultrices pulvinar, tristique gravida nisl. Suspendisse pulvinar auctor lorem ut rhoncus.
 			#corefacilities.tab-pane
 				include corefacilities
 			#grantsmanagement.tab-pane
@@ -26,7 +28,6 @@ include ../../patterns/mixin
 				include cpa
 			#ss.tab-pane
 				include ss
-	.span4
-		.row-fluid
-			include forms
 
+	.span3
+		include forms
