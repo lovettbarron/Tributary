@@ -26,7 +26,7 @@ function init() {
 						init();
 					});
 				$('ul > li').removeClass('active');
-				$(this).addClass('active');
+				$(this).parent('li').addClass('active');
 			})
 		});
 		$(function () {
