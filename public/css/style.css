@@ -103,6 +103,28 @@ h2, h3, h4 {
 	font-style: italic;
 }
 
+.link-list {
+	margin: 1em 0;
+}
+
+.link-list h4 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	color: #999;
+	text-transform: uppercase;
+}
+
+.link-list ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.link-list ul li {
+	margin: 0.5em 0;
+}
+
 @media (min-width: 1200px) {
 	.row .well .span4 {
 		width: 350px;

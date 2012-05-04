@@ -1,28 +1,16 @@
-- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+include ../../patterns/mixin.jade
 
+h4 More Headlines
 
-- var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var campaigns = {title: 'SickKids Campaigns', items: [{title: 'Campaign', address: '#'}, {title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'},{title: 'Campaign', address: '#'}]}
 
+mixin linkList(campaigns)
 
-- var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var news = {title: 'Research News', items: [{title: 'Headline', address: '#'}, {title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'},{title: 'Headline', address: '#'}]}
 
+mixin linkList(news)
 
+- var eat = {title: 'Show & Eat', items: [{title: 'Feature', address: '#'}, {title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'},{title: 'Feature', address: '#'}]}
 
-ul.nav.nav-list
+mixin linkList(eat)
 
-	li: h4 More Headlines
-
-	li.nav-header SickKids Campaigns
-	- each tool in Tools
-		li
-			a(href='#') campaign.title
-			
-	li.nav-header Research News
-	- each tool in Tools
-		li
-			a(href='#') news.title
-			
-	li.nav-header Shop and Eat
-	- each tool in Tools
-		li
-			a(href='#') feature.title

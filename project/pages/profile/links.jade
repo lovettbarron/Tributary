@@ -1,16 +1,12 @@
 include ../../patterns/mixin.jade
-
 mixin share()
 
-- var Feeds =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+h4 Links
 
+- var feed = {title: "Bob's Feed", items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
-ul.nav.nav-list
-	h4 Bob's Feed
-	- each link in Feeds
-		li: a(href='#') link.title
-br		
-ul.nav.nav-list
-	h4 Bob's Work
-	- each link in Feeds
-		li: a(href='#') link.title
+mixin linkList(feed)
+
+- var work = {title: "Bob's Work", items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(work)

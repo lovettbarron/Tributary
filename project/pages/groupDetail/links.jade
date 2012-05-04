@@ -1,7 +1,11 @@
-- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+include ../../patterns/mixin.jade
 
-ul.nav.nav-list
-	li.nav-header Group quick links
-	- each link in Links
-		li
-			a(href='#') link.title
+h4 Links
+
+- var links = {title: 'Group Quick Links', items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(links)
+
+- var tools = {title: 'Group Tools', items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(tools)

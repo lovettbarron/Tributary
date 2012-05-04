@@ -1,28 +1,15 @@
-- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+include ../../patterns/mixin.jade
 
+h4 Links
 
-- var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var links = {title: 'Quick Links', items: [{title: 'Shop & Eat at SickKids', address: '#'}, {title: 'Human Resources', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
+mixin linkList(links)
 
-- var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+- var tools = {title: 'My Tools', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
+mixin linkList(tools)
 
+- var groups = {title: 'My Groups', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
-ul.nav.nav-list
-
-	li.nav-header Quick Links
-		li: a(href='#news') Shop and Eat at SickKids
-		li: a(href='#research') Human Resources
-	- each link in Links
-		li
-			a(href='#groups')= link.title
-
-	li.nav-header My Tools
-	- each tool in Tools
-		li
-			a(href='#tools')= tool.title
-
-	li.nav-header My Groups
-	- each group in Groups
-		li
-			a(href='#groups')= group.title
+mixin linkList(groups)
