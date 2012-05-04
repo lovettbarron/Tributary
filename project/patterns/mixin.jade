@@ -188,3 +188,10 @@ mixin addGroup()
 mixin addTool()
 	.addTool
 		btn.btn.btn-mini(type='addGroup'): i.icon-plus
+
+mixin linkList(list)
+	.link-list
+		h4= list.title
+		ul
+			-each item in list.items
+				li: a(href=item.address)= item.title

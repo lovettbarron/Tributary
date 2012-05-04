@@ -1,28 +1,13 @@
-- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+include ../../patterns/mixin.jade
 
+- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
 - var Tools = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
-
 - var Groups = [ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
+h4 More Headlines
 
-
-ul.nav.nav-list
-
-	li: h4 More Headlines
-
-	li.nav-header Research News
-	- each tool in Tools
-		li
-			a(href='#') news.title
-			
-	li.nav-header Learning News
-	- each tool in Tools
-		li
-			a(href='#') news.title
-			
-	li.nav-header Shop and Eat
-	- each tool in Tools
-		li
-			a(href='#') feature.title
+mixin linkList(links)
+mixin linkList(tools)
+mixin linkList(groups)
