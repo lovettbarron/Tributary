@@ -19,7 +19,7 @@ function init() {
 		$('a').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
 				e.preventDefault();
-				path = $(this).attr('id');
+				path = $(this).attr('href');
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						init();
