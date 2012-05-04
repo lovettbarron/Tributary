@@ -15,27 +15,22 @@ $(document).ready( function() {
 
 function init() {
 		//Context menu switcher
-		$('a').each( function(index) { 
+		$('a:not([data-toggle])').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
 //				e.preventDefault();
 				var hash = $(this).attr('href');
 				var path = hash.split('#')[1];
-//				path = $(this).attr('href');
-//			if(path) {
 				$.get('/' + path, function(data) {
 						$('#content').html(data);
 						init();
 					});
 				$('ul > li').removeClass('active');
 				$(this).parent('li').addClass('active');
-//				}
 			})
 		});
-		$(function () {
-	    $('.nav-pills a:first').tab('show');
-	    $('#calendarTab a:first').tab('show');
-			$(".collapse").collapse()
-	  })
+    $('.nav-pills a:first').tab('show');
+    $('#calendarTab a:first').tab('show');
+		$(".collapse").collapse()
 		comment();
 		ipsum();
 		searchField();
