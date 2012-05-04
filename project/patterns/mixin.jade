@@ -37,9 +37,15 @@ mixin document(post)
 			.row-fluid
 				.span6 Six collaborators
 				.span6 Last updated 12 minutes ago
-		.span2.btn-group
+		.span2.btn-group.dropdown
 				btn.btn.btn-mini(type='button'): i.icon-pencil
-				btn.btn.btn-mini(type='button'): &#9660;
+				btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+				ul.dropdown-menu
+					li: a Make a copy
+					li: a Move to group
+					li: a Rename
+					li: a Share
+					li: a Delete
 
 
 mixin tools(posts)

@@ -14,6 +14,10 @@
 							.row-fluid
 								.span6: h6 Pillar
 								.span6: h6 Last updated 12 minutes ago
-						.span2.btn-group
+						.span2.btn-group.dropdown
 								btn.btn.btn-mini(type='button') Open
-								btn.btn.btn-mini(type='button'): &#9660;
+								btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+								ul.dropdown-menu
+									li: a Share
+									li: a Leave group
+									li: a Admin page
