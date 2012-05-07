@@ -1,33 +1,35 @@
 include ../../patterns/mixin
 -var Groups = ['Group name', 'another group name', 'yet another group name']
+- var groupSidebar = {title: 'My Groups', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
 .row
 	.span8
 		.row
 			.span8
-				.pull-right
-					.btn-group.dropdown
-							btn.btn(type='button') Create a Group
-							btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-							ul.dropdown-menu
-								li: a Share
-								li: a Leave group
-								li: a Admin page
 				h2 Groups
+				.row-fluid
+					.span6 Group Name
+					.span3 Admin
+					.span3 Last Modified
 				-each group in Groups
 					.row-fluid.forum-post
 						.span1: img(src='http://placehold.it/100x100')
-						.span9
-							.row-fluid
-								.span12: h4: a(href='#groupDetail')= group
-							.row-fluid
-								.span6: h6 Pillar
-								.span6: h6 Last updated 12 minutes ago
-						.span2.btn-group.dropdown
-								btn.btn.btn-mini(type='button') Open
-								btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-								ul.dropdown-menu
-									li: a Share
-									li: a Leave group
-									li: a Admin page
-			.span3
+						.span5: strong: a(href='#groupDetail')= group
+						.span3: a(href='#profile') Admin name
+						.span3 Last updated 12 minutes ago
+	.span3
+		.btn-group.dropdown
+				btn.btn(type='button') Create a Group
+				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+				ul.dropdown-menu
+					li: a Department group
+					li: a Project group
+					li: a Ad-hoc group
+					li.divider
+					li: h6 All groups have to be approved by administration.
+		hr
+		h4: a Program Groups (6) &#9654;
+		h4: a Department Groups (10) &#9654; 
+		h4: a Project Groups (3) &#9660;
+		blockquote: mixin linkList(groupSidebar)
+		h4: a All groups (40) &#9654;
