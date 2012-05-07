@@ -36,4 +36,8 @@ mixin pageTitle("Welcome to the Research Institute")
 				include ss
 
 	.span3
-		include forms
+		h4 Important Links
+
+		- var links = {title: "Important Links", items: [{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'}]}
+
+		mixin linkList(links)
