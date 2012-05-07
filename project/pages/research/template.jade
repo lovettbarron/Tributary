@@ -11,12 +11,13 @@ mixin pageTitle("Welcome to the Research Institute")
 			li: a(href='#grantsmanagement', data-toggle="pill") Grants Management
 			li: a(href='#cpa', data-toggle="pill") Communications & Public Affairs
 			li: a(href='#ss', data-toggle="pill") Shop'n'Swap
-		ul.nav.nav-pills
-			li: a(href="navbar-sub") Sub-link
-			li: a(href="navbar-sub") Sub-link
-			li: a(href="navbar-sub") Sub-link
-			li: a(href="navbar-sub") Sub-link
-			li: a(href="navbar-sub") Sub-link
+		.subnav
+			ul.nav.nav-pills
+				li: a(href="navbar-sub") Sub-link
+				li: a(href="navbar-sub") Sub-link
+				li: a(href="navbar-sub") Sub-link
+				li: a(href="navbar-sub") Sub-link
+				li: a(href="navbar-sub") Sub-link
 
 		.tab-content
 			#overview.tab-pane.active
