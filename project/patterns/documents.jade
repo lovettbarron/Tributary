@@ -3,18 +3,18 @@ include mixin
 
 .row-fluid
 	.span1 
-		input(type='checkbox')
+		input(type='checkbox',rel="tooltip",title="Select all")
 	.span1 Type
 	.span4 Title
-	.span4 Author
-	.span5 Options
+	.span4 Owner
+	.span2 Options
 hr
 -each item in post
-	.row-fluid.document
+	.row-fluid
 		.span1: input(type='checkbox')
 		.span1: i(class='icon-' + item.icon)
 		.span4: h4= item.title
-		.span4: h6 Author name
+		.span4: a(href='#profile') Author name
 		.span2.btn-group.dropdown
 				btn.btn.btn-mini(type='button'): i.icon-pencil
 				btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
@@ -26,5 +26,5 @@ hr
 					li: a Delete
 	.row-fluid
 		.span2 
-		.span5 Six collaborators
-		.span5 Last updated 12 minutes ago
+		.span4 Six collaborators
+		.span4 Last updated 12 minutes ago
