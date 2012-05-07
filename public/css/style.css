@@ -160,6 +160,10 @@ h2, h3, h4 {
 }
 
 
+.tab-content {
+	overflow: visible;
+}
+
 /* Subnav */
 .subnav {
   width: 100%;
