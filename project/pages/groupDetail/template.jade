@@ -20,31 +20,33 @@ mixin pageTitle("SickKids Cyclists")
 					li: a(href='#peopleBig', data-toggle="pill") Members
 					li: a(href='#tools', data-toggle="pill") Tools
 			.span8
-				.row.tab-content
+				.row-fluid.tab-content
 					#home.tab-pane.active
-						.span4
+						.span12
 							.well
 								-var forumposts = [ 'Random post', 'random post 2', 'more random posts', 'oh hey all ya see']
 								h3 Group Forum
 								mixin forum(forumposts)
-							.well
-								-var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
-								h4 Group Documents
-								-each story in post
-									.news-item
-										i(class='icon-' + story.icon).pull-left
-										h4
-											a(href='#subscription')= story.title
-										p.ipsum(length='100')
+						.row-fluid
+							.span6
+								.well
+									-var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
+									h4 Group Documents
+									-each story in post
+										.news-item
+											i(class='icon-' + story.icon).pull-left
+											h4
+												a(href='#subscription')= story.title
+											p.ipsum(length='100')
 
-						.span4
-							.well
-								mixin calendar()
+							.span6
+								.well
+									mixin calendar()
 					#calendarBig.tab-pane
-						.span8
+						.span12
 							include ../../patterns/calendar
 					#forum.tab-pane
-						.span8
+						.span12
 							.row-fluid
 								.span8
 									h3 Forum
@@ -52,16 +54,15 @@ mixin pageTitle("SickKids Cyclists")
 									mixin share()
 							include ../../patterns/forum
 					#documents.tab-pane
-						.span8
+						.span12
 							h3 Documents
 							include ../../patterns/documents
 					#peopleBig.tab-pane
-						.span8
+						.span12
 							h3 People
 					#tools.tab-pane
-						.span8
+						.span12
 							mixin tools(['test', 'test2', 'test3'])
 
 	.span3
-		mixin share()
 		include links
