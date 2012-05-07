@@ -159,7 +159,6 @@ h2, h3, h4 {
 	visibility: visible;
 }
 
-
 .tab-content {
 	overflow: visible;
 }
@@ -303,5 +302,11 @@ h2, h3, h4 {
 @media (min-width: 1200px) {
 	.row .well .span4 {
 		width: 350px;
+	}
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+	.row .well .span4 {
+		width: 280px;
 	}
 }
