@@ -198,3 +198,11 @@ mixin linkList(list)
 		ul
 			-each item in list.items
 				li: a(href=item.address)= item.title
+
+mixin pageTitle(title, toggle)
+	.row
+		.span6
+			h2= title
+		-if (toggle != false)
+			.span2
+				mixin share()

@@ -1,3 +1,5 @@
+include ../../patterns/mixin.jade
+
 .row
 	.span8
 		.row.profile
@@ -8,9 +10,9 @@
 				p: em Physician | Cardiology
 				type I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
 				p.ipsum(length=100)
-				btn.btn.btn-mini Follow
-			.span1
-				a.btn.btn-mini Edit
+				btn.btn.btn-mini Edit
+			.span2
+				mixin share()
 		.row
 			.span8
 				include info
@@ -29,7 +31,7 @@
 							td: a.btn.btn-mini Edit
 						tr
 							td Projects
-							td  
+							td	
 								a(href='#') Cardiology Research Project, 
 								a(href='#') Doctors Building Project, 
 								a(href='#') Kids Learning Project
