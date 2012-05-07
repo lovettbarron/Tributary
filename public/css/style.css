@@ -133,6 +133,21 @@ h2, h3, h4 {
 	margin-left: 10px;
 }
 
+.posts .closed:hover {
+	background: #eee;
+}
+
+.link-list li a {
+	margin-right: 10px;
+}
+
+.link-list li .btn {
+	visibility: hidden;
+}
+
+.link-list li:hover .btn {
+	visibility: visible;
+}
 
 @media (min-width: 1200px) {
 	.row .well .span4 {
