@@ -5,9 +5,8 @@ mixin pageTitle("Documents", false)
 	.span8
 		include ../../patterns/documents
 	.span3
-		.btn-group.dropdown
-			btn.btn Create
-			btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+		.dropdown
+			btn.btn.dd-toggle(data-toggle='dropdown', data-target='#') Create &#9660;
 			ul.dropdown-menu
 				li: a Document
 				li: a Spreadsheet
