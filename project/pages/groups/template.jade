@@ -2,11 +2,12 @@ include ../../patterns/mixin
 -var Groups = ['Group name', 'another group name', 'yet another group name']
 - var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 
+mixin pageTitle("Groups", false)
+
 .row
 	.span8
 		.row
 			.span8
-				h2 Groups
 				.row-fluid
 					.span6 Group Name
 					.span3 Admin
