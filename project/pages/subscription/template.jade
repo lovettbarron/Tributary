@@ -43,7 +43,7 @@ mixin pageTitle("Subscriptions", false)
 							p.post-meta 12 minutes ago from 
 								a Feed Name
 	.span3
-		h4 Subscriptions
+		h4 My Subscriptions
 
 		- var groups = {title: "Groups", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
 
@@ -52,3 +52,7 @@ mixin pageTitle("Subscriptions", false)
 		- var people = {title: "People", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
 
 		mixin linkList(people)
+		
+		- var news = {title: "News", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+
+		mixin linkList(news)
