@@ -30,6 +30,7 @@ function init() {
 		});
     $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
+		$('[rel="tooltip"]').tooltip();
 		$(".collapse").collapse()
 		$('.dd-toggle').dropdown()
 		comment();
