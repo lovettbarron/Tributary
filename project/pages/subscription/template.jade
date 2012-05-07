@@ -1,11 +1,12 @@
 include ../../patterns/mixin
 - var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
+mixin pageTitle("Subscriptions", false)
+
 .row
 	.span8
 		.row-fluid
 			.span6.dropdown
-				h3.pull-left Filter: 
 				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Show all &#9660;
 				ul.dropdown-menu
 					li: a Show all
@@ -14,48 +15,33 @@ include ../../patterns/mixin
 					li: a My groups only
 						
 			.span6
-				.btn-group.pull-right
-					.btn.btn: i.icon-list
-					.btn.btn: i.i.icon-tasks
-				.btn-group.pull-right
+				.btn-group.pull-right.sub-buttons
 					.btn.btn: i.icon-arrow-up
 					.btn.btn: i.i.icon-arrow-down
-		hr
-		.row-fluid
-			.span1: img(src='http://placehold.it/100x100')
-			.span9
-				.row-fluid
-					.span12: h4 This is an expanded subscription item
-					p.ipsum
-				.row-fluid
-					.span6: h6 from: Path/To/Original
-					.span6: h6 Last updated 12 minutes ago
-			.span2.btn-group.dropdown
-				btn.btn.btn-mini(type='button') close
-				btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-				ul.dropdown-menu
-					li: a Edit
-					li: a Share
-					li: a Hide
-					li: a Report
-		hr
-		-each story in Stories
-			.row-fluid
-				.span1: img(src='http://placehold.it/100x100')
-				.span9
-					.row-fluid
-						.span12: h4= story.title
-					.row-fluid
-						.span6: h6 from: Path/To/Original
-						.span6: h6 Last updated 12 minutes ago
-				.span2.btn-group.dropdown
-					btn.btn.btn-mini(type='button') Open
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-					ul.dropdown-menu
-						li: a Edit
-						li: a Share
-						li: a Hide
-						li: a Report
+				.btn-group.pull-right.sub-buttons
+					.btn.btn: i.icon-list
+					.btn.btn: i.i.icon-tasks
+		.row.posts
+			.span8
+				.row-fluid.post
+					.span1: img(src='http://placehold.it/100x100')
+					.span10
+						.row-fluid
+							.span12: h4: a This is an expanded subscription item
+							p.ipsum
+						.row-fluid.post-meta
+							.span6 12 minutes ago from 
+								a Feed Name
+							.span6
+								.pull-right: mixin share()
+
+				-each story in Stories
+					.row-fluid.post
+						.span1: img(src='http://placehold.it/100x100')
+						.span11
+							h4: a= story.title
+							p.post-meta 12 minutes ago from 
+								a Feed Name
 	.span3
 		h4 Subscriptions
 

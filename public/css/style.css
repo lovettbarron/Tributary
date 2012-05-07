@@ -69,12 +69,15 @@ h2, h3, h4 {
 	margin-bottom: 0.5em;
 }
 
-
 .news-item {
 	margin: 1em 0;
 }
 
-.document, .forum-post {
+.posts {
+	margin-top: 1em;
+}
+
+.document, .forum-post, .post {
 	border-width: 1px 0;
 	border-color: #eeeeee;
 	border-style: solid;
@@ -99,8 +102,9 @@ h2, h3, h4 {
 }
 
 .post-meta {
-	margin-bottom: 1em;
 	font-style: italic;
+	min-height: 18px;
+	margin: 0;
 }
 
 .link-list {
@@ -124,6 +128,11 @@ h2, h3, h4 {
 .link-list ul li {
 	margin: 0.5em 0;
 }
+
+.sub-buttons {
+	margin-left: 10px;
+}
+
 
 @media (min-width: 1200px) {
 	.row .well .span4 {
