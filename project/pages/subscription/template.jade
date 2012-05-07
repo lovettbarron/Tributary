@@ -45,14 +45,14 @@ mixin pageTitle("Subscriptions", false)
 	.span3
 		h4 My Subscriptions
 
-		- var groups = {title: "Groups", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+		- var groups = {title: "Groups", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
 
 		mixin linkList(groups)
 
-		- var people = {title: "People", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+		- var people = {title: "People", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
 
 		mixin linkList(people)
 		
-		- var news = {title: "News", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}]}
+		- var news = {title: "News", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
 
 		mixin linkList(news)
