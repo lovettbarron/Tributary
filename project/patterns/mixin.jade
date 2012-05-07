@@ -198,7 +198,12 @@ mixin linkList(list)
 		h4= list.title
 		ul
 			-each item in list.items
-				li: a(href=item.address)= item.title
+				li 
+					a(href=item.address)= item.title
+					a.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+					ul.dropdown-menu
+						li: a View
+						li: a Unsubscribe
 
 mixin pageTitle(title, toggle)
 	.row
