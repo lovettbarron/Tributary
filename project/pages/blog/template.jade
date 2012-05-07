@@ -5,21 +5,23 @@ mixin pageTitle("Mary Jo's Message", false)
 	.span8
 		.row
 			.span8
-				.well.post
-					h3: a(href='#') What is Innovation at SickKids?
-					p.post-meta By Mary Jo Haddad on April 19, 2012
-					p.ipsum(length='1000', para='3')
-					btn.btn.btn-mini(type='Comment') Comment
-					i.icon-thumbs-up(type='Favourite')
+				.well
+					.post
+						h3: a(href='#') What is Innovation at SickKids?
+						p.post-meta By Mary Jo Haddad on April 19, 2012
+						p.ipsum(length='1000', para='3')
+						btn.btn.btn-mini(type='Comment') Comment
+						i.icon-thumbs-up(type='Favourite')
 				
-				.well.post
-					h3: a(href='#') Our Strategy for the New Year
-					p.post-meta By Mary Jo Haddad on April 19, 2012
-					img.content.pull-left(src='http://placehold.it/200x200')
-					p.ipsum(length='1000', para='3')
-					hr.clear-fix
-					mixin comment()
-					i.icon-thumbs-up(type='Favourite')
+				.well
+					.post
+						h3: a(href='#') Our Strategy for the New Year
+						p.post-meta By Mary Jo Haddad on April 19, 2012
+						img.content.pull-left(src='http://placehold.it/200x200')
+						p.ipsum(length='1000', para='3')
+						hr.clear-fix
+						mixin comment()
+						i.icon-thumbs-up(type='Favourite')
 
 	.span3
 		include links
