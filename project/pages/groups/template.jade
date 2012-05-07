@@ -1,9 +1,7 @@
 include ../../patterns/mixin
 -var Groups = ['Group name', 'another group name', 'yet another group name']
 - var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
-
 mixin pageTitle("Groups", false)
-
 .row
 	.span8
 		.row
@@ -29,8 +27,9 @@ mixin pageTitle("Groups", false)
 					li.divider
 					li: h6 All groups have to be approved by administration.
 		hr
-		h4: a Program Groups (6) &#9654;
-		h4: a Department Groups (10) &#9654; 
-		h4: a Project Groups (3) &#9660;
-		blockquote: mixin linkList(groupSidebar)
-		h4: a All groups (40) &#9654;
+		ul.unstyled
+			li: a Program Groups (6) &#9654;
+			li: a Department Groups (10) &#9654; 
+			li: a Project Groups (3) &#9660;
+				li: mixin linkList(groupSidebar)
+			li: a All groups (40) &#9654;

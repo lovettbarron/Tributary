@@ -15,7 +15,8 @@ mixin pageTitle("Documents", false)
 				li: a Collaborative document
 				li: a Upload a document
 		hr
-		h4: a Shared docs (3) &#9660;
-		blockquote: mixin linkList(groupSidebar)
-		h4: a Archive (200) &#9654;
-		h4: a All docs (500) &#9654;
+		ul.unstyled
+			li: a Shared docs (3) &#9660;
+				li: mixin linkList(groupSidebar)
+			li: a Archive (200) &#9654;
+			li: a All docs (500) &#9654;

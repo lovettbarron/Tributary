@@ -160,7 +160,7 @@ mixin comment()
 				hr
 				btn.btn.btn-primary.pull-left(type='submit') Post
 
-mixin todo()
+mixin todo(items)
 	.todo
 		.row-fluid
 			.span9
@@ -172,9 +172,10 @@ mixin todo()
 					ul.dropdown-menu
 						li: a Create a todo
 						li: a Create a Deadline
+	-each item in items
 		.row-fluid
-			.span12
-				p Example todo
+			.span1: input(type='checkbox')
+			.span11= item
 
 mixin subscribe()
 	.subscribe
