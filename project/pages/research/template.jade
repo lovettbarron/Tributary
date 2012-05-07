@@ -1,7 +1,6 @@
 include ../../patterns/mixin.jade
 mixin pageTitle("Welcome to the Research Institute")
 
-
 .row
 	.span8
 		ul.nav.nav-pills
@@ -11,17 +10,19 @@ mixin pageTitle("Welcome to the Research Institute")
 			li: a(href='#grantsmanagement', data-toggle="pill") Grants Management
 			li: a(href='#cpa', data-toggle="pill") Communications & Public Affairs
 			li: a(href='#ss', data-toggle="pill") Shop'n'Swap
-		.subnav
-			ul.nav.nav-pills
-				li: a(href="navbar-sub") Sub-link
-				li: a(href="navbar-sub") Sub-link
-				li: a(href="navbar-sub") Sub-link
-				li: a(href="navbar-sub") Sub-link
-				li: a(href="navbar-sub") Sub-link
-
+		
 		.tab-content
 			#overview.tab-pane.active
-				img(src="http://placehold.it/300x300")
+				.subnav
+					ul.nav.nav-pills
+						li: a(href="navbar-sub") Sub-link
+						li: a(href="navbar-sub") Sub-link
+						li: a(href="navbar-sub") Sub-link
+						li: a(href="navbar-sub") Sub-link
+						li: a(href="navbar-sub") Sub-link
+				.pane-content
+					img(src="http://placehold.it/300x300")
+
 			#news.tab-pane
 				.btn-group.pull-right
 					btn.btn Read more
