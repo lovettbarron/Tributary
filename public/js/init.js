@@ -33,6 +33,8 @@ function init() {
 		$('[rel="tooltip"]').tooltip();
 		$(".collapse").collapse()
 		$('.dd-toggle').dropdown()
+		$('.modal').modal();
+		$('.modal').modal('hide')
 		comment();
 		ipsum();
 		searchField();

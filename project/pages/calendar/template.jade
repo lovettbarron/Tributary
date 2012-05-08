@@ -6,13 +6,12 @@ mixin pageTitle("Calendar", false)
 		include ../../patterns/calendar
 	.span3
 		.row-fluid
-			.btn-group.dropdown
-				btn.btn Create
-				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+			.dropdown
+				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#') Create an event
 				ul.dropdown-menu
-					li: a Create an event
-					li: a Create a deadline
-					li: a Create a time period
+					li: a(data-toggle='modal', href='#calendarModal') Create an event
+					li: a(data-toggle='modal', href='#calendarModal') Create a deadline
+					li: a(data-toggle='modal', href='#calendarModal') Create a time period
 			hr
 			.span6
 				mixin calendar()
@@ -31,3 +30,5 @@ mixin pageTitle("Calendar", false)
 					.span5 Care
 		hr
 		mixin todo(['This is an example todo', 'this is another example of a todo item', 'Yet another todo item'])
+
+include ../../patterns/modal_calendar.jade

@@ -1,6 +1,6 @@
 include ../../patterns/mixin.jade
 mixin pageTitle("Documents", false)
-- var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+- var groupSidebar = {items: [{title: 'SickKids Cyclist (5)', address: '#'}, {title: 'Pediatrics (2)', address: '#'},{title: 'Lunch n Learns (20)', address: '#'}]}
 .row
 	.span8
 		include ../../patterns/documents
@@ -13,9 +13,15 @@ mixin pageTitle("Documents", false)
 				li: a Interactive form
 				li: a Collaborative document
 				li: a Upload a document
+				li.divider
+				li: a Create a collection
 		hr
 		ul.unstyled
-			li: a Shared docs (3) &#9660;
-				li: mixin linkList(groupSidebar)
-			li: a Archive (200) &#9654;
-			li: a All docs (500) &#9654;
+			li: a My docs (94)
+			li: a All docs (500+) 
+			hr
+			li: a &#9660; Group collections (3)
+				li.indent: mixin linkList(groupSidebar)
+			li: a &#9654; My collections(5)
+			hr
+			li: a Archived documents (200)

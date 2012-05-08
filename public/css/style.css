@@ -20,6 +20,10 @@ body {
 	padding: 10px 0;
 }
 
+li.indent {
+	margin-left: 15px;
+}
+
 #context li:hover {
 	background: #eee;
 }

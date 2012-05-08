@@ -1,7 +1,8 @@
 mixin radio(poll)
 	form.form-horizontal
+		h3= poll.question
 		fieldset
-		-each item in poll
+		-each item in poll.items
 			label.radio 
 				input.radio(type='radio') 
 				| #{item}
@@ -47,7 +48,18 @@ mixin document(post)
 					li: a Share
 					li: a Delete
 
-
+mixin dailyAgenda(todo)
+	.row-fluid
+		.span9
+			h3 Agenda for today
+		.span3
+			a(href='#calendar') See all > 
+	-each agenda,key in todo
+		.row-fluid
+			.span3 #{key*2}:00pm
+			.span9(style='overflow: hidden')
+				span.label.label-info= agenda
+		
 mixin tools(posts)
 	-each item in posts
 		.row-fluid
@@ -213,3 +225,32 @@ mixin pageTitle(title, toggle)
 		-if (toggle != false)
 			.span2
 				mixin share()
+
+mixin twitter()
+	script(charset="utf-8", src="http://widgets.twimg.com/j/2/widget.js")
+	script
+		new TWTR.Widget({
+			version: 2,
+			type: 'profile',
+			rpp: 1,
+			interval: 30000,
+			width: 'auto',
+			height: 100,
+			theme: {
+				shell: {
+					background: 'transparent',
+					color: '#000000'
+				},
+				tweets: {
+					background: '#ffffff',
+					color: '#000000',
+					links: '#006fe6'
+				}
+			},
+			features: {
+				scrollbar: false,
+				loop: false,
+				live: false,
+				behavior: 'all'
+			}
+		}).render().setUser('sickkids').start();

@@ -7,7 +7,15 @@ include mixin
 	.span1 Type
 	.span4 Title
 	.span4 Owner
-	.span2 Options
+	.span2.dropdown Options
+		btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
+		ul.dropdown-menu
+			li: a Make a copy
+			li: a Assign to folder
+			li: a Assign to group
+			li: a Rename
+			li: a Share
+			li: a Delete
 hr
 -each item in post
 	.row-fluid
@@ -15,15 +23,6 @@ hr
 		.span1: i(class='icon-' + item.icon)
 		.span4: h4: a= item.title
 		.span4: a(href='#profile') Author name
-		.span2.btn-group.dropdown
-				btn.btn.btn-mini(type='button'): i.icon-pencil
-				btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-				ul.dropdown-menu
-					li: a Make a copy
-					li: a Move to group
-					li: a Rename
-					li: a Share
-					li: a Delete
 	.row-fluid
 		.span2 
 		.span4 Six collaborators

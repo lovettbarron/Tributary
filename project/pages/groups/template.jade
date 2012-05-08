@@ -18,7 +18,7 @@ mixin pageTitle("Groups", false)
 						.span3 Last updated 12 minutes ago
 	.span3
 		.dropdown
-				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#') Create a Group &#9660;
+				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#') Create a Group
 				ul.dropdown-menu
 					li: a Department group
 					li: a Project group
@@ -27,8 +27,12 @@ mixin pageTitle("Groups", false)
 					li: h6 All groups have to be approved by administration.
 		hr
 		ul.unstyled
-			li: a Program Groups (6) &#9654;
-			li: a Department Groups (10) &#9654; 
-			li: a Project Groups (3) &#9660;
-				li: mixin linkList(groupSidebar)
-			li: a All groups (40) &#9654;
+			li: a My groups (10)
+			li: a All groups (274)
+			hr
+			li: a &#9654; Program Groups (6)
+			li: a &#9654;  Care Groups (10)
+			li: a &#9660; Research Groups (3)
+				li.indent: mixin linkList(groupSidebar)
+			li: a &#9654;  Learning Groups (10)
+			li: a &#9654;  Recreational Groups (10)
