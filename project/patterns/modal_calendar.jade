@@ -1,9 +1,19 @@
+include mixin
+
 #calendarModal.modal
 	.modal-header
-		btn.close(data-dismiss='modal') x
-		h3 Modal Header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Create an Event
 	.modal-body
-		p Test test
+		mixin form({title:'Create an event', fields: [ { label: 'Name of event',type:'text' }, { label: 'Start Date', type: 'text'}, {label: 'End Date', type:'text'}, { label: 'Attendees', type: 'text'} ]})
 	.modal-footer
-		a.btn Close
-		a.btn.btn-primary Save
+		a.btn.close Close
+		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
+
+#calendarSuccess.modal.success
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Success!
+	.modal-body Your event has been successfully created, and invitations have been sent out.
+	.modal-footer
+		a.btn.btn-primaryclose(data-dismiss='modal') Close

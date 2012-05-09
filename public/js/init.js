@@ -34,7 +34,12 @@ function init() {
 		$(".collapse").collapse()
 		$('.dd-toggle').dropdown()
 		$('.modal').modal();
-		$('.modal').modal('hide')
+		$('.modal').modal('hide');
+		$('a.saveModal').on('click', function(e) {
+			e.preventDefault();
+			$('.modal').modal('hide');
+			$('.success').modal('show')
+		});
 		comment();
 		ipsum();
 		searchField();

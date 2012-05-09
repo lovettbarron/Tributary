@@ -8,6 +8,24 @@ mixin radio(poll)
 				| #{item}
 		btn.btn.btn-primary(type='button') Submit
 
+mixin form(form)
+	form.form-horizontal	
+		fieldset
+		-each field in form.fields
+			-if(field.type == 'radio')
+				mixin radio(field.poll)
+			-else if (field.type =='text')
+				.row-fluid
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						input.pull-left.text(type='text')
+			-else if (field.type =='text')
+				.form-inline
+					label.form= field.label					
+						input.text(type='text')
+
+
 mixin forum(posts)
 	-each item in posts
 		.row-fluid
