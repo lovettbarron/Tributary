@@ -30,7 +30,14 @@ function init() {
 		context();
 		
 		$('li.drop').on('click', function() {
-			$('li.retract').slideDown();
+			$('ul.retract').slideToggle();
+			$(this).hide();
+			$('li.retr').show();
+		})
+		$('li.retr').on('click', function() {
+			$('ul.retract').slideToggle();
+			$(this).hide();
+			$('li.drop').show();
 		})
 		
 		$('ul.primaryNavigation > li').on({
@@ -183,6 +190,7 @@ function context() {
 			if( $.inArray(path, context) <= -1) {
 				$('ul.retract').slideUp();
 				$('li.drop').show();
+				$('li.retr').hide();
 				$('ul.research').slideDown();
 			} else {
 				$('ul.retract').slideDown();

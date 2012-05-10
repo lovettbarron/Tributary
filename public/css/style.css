@@ -20,6 +20,11 @@ body {
 	padding: 10px 0;
 }
 
+.shrinker {
+	margin: 0;
+	height: 10px;
+}
+
 li.indent {
 	margin-left: 15px;
 }
