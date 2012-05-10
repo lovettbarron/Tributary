@@ -39,6 +39,11 @@ li.indent {
 	text-decoration: none;
 }
 
+#researchContext > li {
+	height: 20px;
+}
+
+
 .navbar {
 	-moz-box-shadow: inset 0 0 5px #000;
 	-webkit-box-shadow: inset 0 0 5px #000;

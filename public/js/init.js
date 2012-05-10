@@ -28,6 +28,23 @@ function init() {
 			})
 		});
 		context();
+		
+		$('li.drop').on('click', function() {
+			$('li.retract').slideDown();
+		})
+		
+		$('ul.primaryNavigation > li').on({
+			'hover': function(e) {
+				e.preventDefault();
+				$(this).children('a').click();
+		},
+		'click': function(e) {
+			$(this).children('ul > li:first > a').click();
+		}
+		})
+		
+		$('ul.primaryNavigation > li')
+		
     $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
 		$('[rel="tooltip"]').tooltip();
@@ -162,13 +179,18 @@ function context() {
 	var hash = window.location.hash;
 	var context = ['calendar','groups','dashboard','docs','subscription','news','profile','publicProfile','blog']
 	path = hash.split('#')[1];
-	if( $.inArray(path, context) <= -1) {
-		$('ul.retract').slideUp();
-	} else {
-		$('ul.retract').slideDown();
+		if(window.location.hash) {
+			if( $.inArray(path, context) <= -1) {
+				$('ul.retract').slideUp();
+				$('li.drop').show();
+				$('ul.research').slideDown();
+			} else {
+				$('ul.retract').slideDown();
+				$('ul.research').slideUp();
+				$('li.drop').hide();
+			}
+		}	
 	}
-	
-}
 
 function addTodo(content) {
 	var todo = '<div class="row-fluid todo">'

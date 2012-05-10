@@ -5,11 +5,7 @@ mixin pageTitle("Welcome to the Research Institute")
 
 .row
 	.span8
-		ul.nav.nav-pills
-			li.active: a(href='#overview', data-toggle="pill") Overview
-			li: a(href='#news', data-toggle="pill") News Feed
-			li: a(href='#calendar', data-toggle="pill") Calendar
-			li: a(href='#links', data-toggle="pill") Resources and Links		
+
 			
 		.tab-content
 			#overview.tab-pane.active
@@ -37,7 +33,7 @@ mixin pageTitle("Welcome to the Research Institute")
 					btn.btn Read more
 				h2 News
 			#calendar.tab-pane
-				include ../../patterns/calendar
+				include ../financial/index
 			#links.tab-pane
 				
 
