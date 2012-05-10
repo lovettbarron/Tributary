@@ -1,0 +1,47 @@
+include ../../patterns/mixin.jade
+
+.row
+	.span8
+		.row.profile
+			.span2
+				img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+			.span4
+				a.btn.btn-mini.pull-right(class='#subscruption')
+					i.icon-plus
+					| Follow Bob
+				h2 Bob Watts 
+				p: em Physician | Cardiology
+				type I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
+				p.ipsum(length=100)
+			.span2
+				mixin share()
+		.row
+			.span8
+				include info
+				br
+				table.table.table-striped.border
+					h3 More About Me
+					tbody
+						tr 
+							td Responsibilities
+							td Organic eu ullamco bespoke master cleanse cillum, leggings delectus tattooed. Enim bespoke etsy semiotics iphone nesciunt, officia jean shorts. Artisan selvage pinterest, commodo lomo excepteur hoodie yr quinoa umami tumblr. Shoreditch craft beer retro adipisicing, kale chips photo booth mustache officia anim gluten-free. Exercitation aesthetic VHS cosby sweater, put a bird on it pinterest kogi assumenda four loko cupidatat squid eu.
+						tr
+							td Skills
+							td JavaScript, CSS, HTML5, InDesign, Emailing
+						tr
+							td Projects
+							td	
+								a(href='#') Cardiology Research Project, 
+								a(href='#') Doctors Building Project, 
+								a(href='#') Kids Learning Project
+						tr
+							td Groups
+							td 
+								a(href='#') Cardiology Group, 
+								a(href='#') Doctor's Group, 
+								a(href='#') Clinical Care Group
+						tr
+							td Interests
+							td Cooking, Skiing, Research, Writing, Running
+	.span3
+		include links

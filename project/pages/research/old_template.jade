@@ -1,0 +1,61 @@
+
+include ../../patterns/mixin.jade
+mixin pageTitle("Welcome to the Research Institute")
+
+.row
+	.span8
+		ul.nav.nav-pills
+			li.active: a(href='#overview', data-toggle="pill") Overview
+			li: a(href='#news', data-toggle="pill") News
+			li: a(href='#corefacilities', data-toggle="pill") Facilities + Support
+			li: a(href='#financialservices', data-toggle="pill") Financial Services
+			li: a(href='#cpa', data-toggle="pill") Policies, Procedures & Guidelines
+			li: a(href='#ss', data-toggle="pill") Research IT
+			li: a(href='#ss', data-toggle="pill") Training Centre
+			li: a(href='#ss', data-toggle="pill") Resources and Links		
+			
+		.tab-content
+			#overview.tab-pane.active
+				.subnav
+					ul.nav.nav-pills
+						li: a(href="navbar-sub") Shop'n'Swap
+						li: a(href="navbar-sub") Corporate Ventures
+						li: a(href="navbar-sub") Human Resources
+						li: a(href="navbar-sub") Communicatoins and Public Affairs
+						li: a(href="navbar-sub") Research Programs
+				.pane-content
+					img(src="http://placehold.it/300x300")
+
+			#news.tab-pane
+				.btn-group.pull-right
+					btn.btn Read more
+				h2 News
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean orci lorem, pharetra sit amet consectetur sit amet, convallis vel felis. Suspendisse tempus magna eu odio laoreet adipiscing. Quisque facilisis nisi et leo faucibus malesuada. Etiam nulla tortor, feugiat id pharetra eu, mollis et tellus. Fusce rhoncus mi sed sapien tempor gravida. Etiam purus lacus, dictum quis ultrices pulvinar, tristique gravida nisl. Suspendisse pulvinar auctor lorem ut rhoncus.
+			#corefacilities.tab-pane
+				include corefacilities
+			#financialservices.tab-pane
+				include financialservices
+				h2 Financial Services
+				hr
+				h3 About Us
+				p Research Awards and Financial Services (RA&FS) is an important resource for researchers and research trainees who wish to apply for external grants and awards. The RA&FS staff can help identify funding resources, assist with the development of applications (including budget preparation) and help obtain institutional sign-off prior to grant submission.
+				Research Awards and Financial Services consists of four divisions:
+				Grants Management Office
+				GRIA (Government Research Infrastructure Awards)
+				Financial Planning & Analysis
+				Financial Operations
+
+				Each division is designed to meet the different needs within the Research Institute. For a detailed description of the various divisions, and the many services that we offer, we welcome you to browse our site.
+			
+			#cpa.tab-pane
+				include cpa
+			#ss.tab-pane
+				include ss
+	
+
+	.span3
+		h4 Important Links
+
+		- var links = {title: "Important Links", items: [{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'}]}
+
+		mixin linkList(links)

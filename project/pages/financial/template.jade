@@ -1,0 +1,29 @@
+include ../../patterns/mixin
+
+small 
+	a(href='#research') Research Institute
+	|  / 
+	a(href='#financial') Financial Services
+.pull-right
+	mixin share()
+mixin pageTitle("Financial Services", false)
+.row
+	.span8
+		.pull-right
+			ul.nav.nav-list.well.span3
+				li.nav-header Test
+				li: a(href='#grantsmanagement') Test
+				li: a(href='#grantsmanagement') Test
+				li: a(href='#grantsmanagement') Test
+				li: a(href='#grantsmanagement') Test
+		h3 About Us
+		p Research Awards and Financial Services (RA&FS) is an important resource for researchers and research trainees who wish to apply for external grants and awards. The RA&FS staff can help identify funding resources, assist with the development of applications (including budget preparation) and help obtain institutional sign-off prior to grant submission.
+			| Research Awards and Financial Services consists of four divisions:
+			| Grants Management Office
+			| GRIA (Government Research Infrastructure Awards)
+			| Financial Planning & Analysis
+			| Financial Operations
+
+		p Each division is designed to meet the different needs within the Research Institute. For a detailed description of the various divisions, and the many services that we offer, we welcome you to browse our site.
+	.span3
+		include links

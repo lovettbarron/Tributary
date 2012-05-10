@@ -1,0 +1,15 @@
+include ../../patterns/mixin.jade
+
+h4 Links
+
+- var links = {title: 'Quick Links', items: [{title: 'Shop & Eat at SickKids', address: '#'}, {title: 'Human Resources', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(links)
+
+- var tools = {title: 'My Tools', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(tools)
+
+- var groups = {title: 'My Groups', items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(groups)
