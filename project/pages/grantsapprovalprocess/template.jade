@@ -1,0 +1,51 @@
+include ../../patterns/mixin
+
+small 
+	a(href='#research') Research Institute
+	|  / 
+	a(href='#financial') Financial Services
+	|  / 
+	a(href='#grantsmanagement') Grants Management
+	|  / 
+	a(href='#grantsapprovalprocess') Grants Approval Process
+
+.pull-right
+	mixin share()
+
+mixin pageTitle("Grants Approval Process", false)
+.row
+	.span8
+		.pull-right
+			ul.nav.nav-list.well.span3
+				li.nav-header Test
+				li: a.anchor(href='#thesteps') The Steps
+				li: a.anchor(href='#internalpeerreview') Internal Peer Review Process
+				li: a.anchor(href='#tipstospeedthingsup') Tips to speed things up
+				li: a(href='#RTCapproval') RTC Approval
+				li: a(href='#specialapprovals') Special Approvals
+				li: a(href='#Resources/Tools') Resources/Tools 
+		h4#The Grants Approval Process GrantsApprovalProcess
+		p
+		The Grants Management Office (GMO) is a resource for researchers and research trainees who wish to apply for external grants and awards. GMO staff can assist with the grant approval process including identifying funding resources, assisting with the budget and obtaining institutional sign-off.
+		br
+		For the fellowship or studentship application (training award) approval process, please follow the instructions in the Research Training approval section.
+		br
+		hr
+		h4 Grant Approval Overview
+		br
+		The The researcher is responsible for completing the research grant or award application according to the established policies and guidelines of SickKids and the granting agency. SickKids also requires the researcher to obtain the signature(s) from the authorized official(s) before submitting it to the granting agency. This is known as institutional sign-off. The grant approval also applies for online submission where institutional signature may not be required by the granting agency. At least six weeks prior to the granting agency's due date, a completed Notice of Application (NOA) must be submitted to GMO. The NOA informs the Research Institute as to the researcher's intent and to plan for the receipt of the research grant.
+		br
+		The researcher is responsible for coordinating the internal peer review and must ensure that the Reviewers Report form is completed and returned to GMO. GMO staff are available for assistance and advice pertaining to the grant approval process. After the applicant and program head (where required by the granting agency) sign the research grant or award application, the application package must be submitted to GMO for institutional sign-off.
+		br
+		The appropriate GMO staff reviews the application file for documentation completeness prior to obtaining institutional sign-off. To avoid any unnecessary delays in the grant approval process, do not hesitate to contact GMO staff during any step of the process for assistance or clarification. For a complete application file, allow at least 72 hours notice to obtain institutional sign-off.
+		br
+		.well
+			h5 Note:
+			For For assistance with developing the budget, contact GMO staff. Budgets in foreign currencies must be submitted to GMO for review at least two weeks prior to the due date.
+			For information pertaining to research infrastructure applications (Canada Foundation for Innovation, Genome Canada, Ontario Research Fund, Canada Research Chairs, etc.) and services offered by GRIA, visit the GRIA website.
+h4#header2 Header 2
+		p.ipsum
+		h4#header3 Header 3
+		p.ipsum
+	.span3
+		include ../financial/links

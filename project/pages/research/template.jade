@@ -7,7 +7,7 @@ mixin pageTitle("Welcome to the Research Institute")
 	.span8
 		ul.nav.nav-pills
 			li.active: a(href='#overview', data-toggle="pill") Overview
-			li: a(href='#news', data-toggle="pill") News
+			li: a(href='#news', data-toggle="pill") News Feed
 			li: a(href='#calendar', data-toggle="pill") Calendar
 			li: a(href='#links', data-toggle="pill") Resources and Links		
 			
@@ -21,20 +21,21 @@ mixin pageTitle("Welcome to the Research Institute")
 						li: a(href='#financial') Grants Management
 						li: a(href='#financial') Health Services
 
-				.pane-content
-					p
+				.row-fluid
+					.span6
+						-each story in Stories
+							.row-fluid.post.closed
+								.span1: img(src='http://placehold.it/100x100')
+								.span11
+									h4: a= story.title
+									p.post-meta 12 minutes ago from 
+										a Feed Name
+
 
 			#news.tab-pane
 				.btn-group.pull-right
 					btn.btn Read more
 				h2 News
-				-each story in Stories
-					.row-fluid.post.closed
-						.span1: img(src='http://placehold.it/100x100')
-						.span11
-							h4: a= story.title
-							p.post-meta 12 minutes ago from 
-								a Feed Name
 			#calendar.tab-pane
 				include ../../patterns/calendar
 			#links.tab-pane

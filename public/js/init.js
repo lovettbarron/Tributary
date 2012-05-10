@@ -12,7 +12,6 @@ $(document).ready( function() {
 	$('.dropdown-toggle').dropdown();
 });
 
-
 function init() {
 		//Context menu switcher
 		$('a:not([data-toggle],[class=anchor])').each( function(index) { 
@@ -28,6 +27,7 @@ function init() {
 				$(this).parent('li').addClass('active');
 			})
 		});
+		context();
     $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
 		$('[rel="tooltip"]').tooltip();
@@ -156,6 +156,18 @@ function ipsum() {
 		$(target).html( text.substr(0, length ) );
 	
 		});
+}
+
+function context() {
+	var hash = window.location.hash;
+	var context = ['calendar','groups','dashboard','docs','subscription','news','profile','publicProfile','blog']
+	path = hash.split('#')[1];
+	if( $.inArray(path, context) <= -1) {
+		$('ul.retract').slideUp();
+	} else {
+		$('ul.retract').slideDown();
+	}
+	
 }
 
 function addTodo(content) {
