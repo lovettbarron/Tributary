@@ -18,13 +18,7 @@ mixin pageTitle("Groups", false)
 						.span3 Last updated 12 minutes ago
 	.span3
 		.dropdown
-				btn.btn.dd-toggle(data-toggle='dropdown', data-target='#') Create a Group
-				ul.dropdown-menu
-					li: a Department group
-					li: a Project group
-					li: a Ad-hoc group
-					li.divider
-					li: h6 All groups have to be approved by administration.
+				btn.btn(data-toggle='modal', href='#todoModal') Create a Group
 		hr
 		ul.unstyled
 			li: a My groups (10)

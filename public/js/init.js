@@ -15,7 +15,7 @@ $(document).ready( function() {
 
 function init() {
 		//Context menu switcher
-		$('a:not([data-toggle])').each( function(index) { 
+		$('a:not([data-toggle],[class=anchor])').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
 //				e.preventDefault();
 				var hash = $(this).attr('href');
@@ -40,6 +40,44 @@ function init() {
 			$('.modal').modal('hide');
 			$('.success').modal('show')
 		});
+
+		//Context menu for doc
+		$('#contextActive').hide();
+		$('input.docSelected').click(function() {
+			var active = false;
+			$('input.docSelected').each( function() {
+				if(!active) {
+					if( $(this).attr('checked') ) { active = true; }
+				}
+			})
+			if(active) {
+				$('#contextActive').show();
+				$('#contextHidden').hide();
+			}
+			else {
+				$('#contextActive').hide();
+				$('#contextHidden').show();				
+			}
+		});
+		//The glorious little overhang!
+		$('.navDropdown').hide();
+		$('a.ddMain').click(function() {
+			var active = false;
+			$('input.docSelected').each( function() {
+				if(!active) {
+					if( $(this).attr('checked') ) { active = true; }
+				}
+			})
+			if(active) {
+				$('#contextActive').show();
+				$('#contextHidden').hide();
+			}
+			else {
+				$('#contextActive').hide();
+				$('#contextHidden').show();				
+			}
+		});
+		
 		comment();
 		ipsum();
 		searchField();
@@ -118,4 +156,12 @@ function ipsum() {
 		$(target).html( text.substr(0, length ) );
 	
 		});
+}
+
+function addTodo(content) {
+	var todo = '<div class="row-fluid todo">'
+			+'	<div class="span1"><input type="checkbox"></div>'
+			+'	<div class="span11">' + content
+			+'</div>'	
+	$('.todo:last').append(todo);
 }

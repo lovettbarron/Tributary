@@ -7,7 +7,6 @@ include ../../patterns/mixin
 		.row
 			.span8
 				.well
-					a.pull-right(href='#news') See all >
 					h2: a(href='#news') What's Happening?
 
 					.row
@@ -22,11 +21,10 @@ include ../../patterns/mixin
 									.span4
 										h4: a= story.title
 										p.ipsum(length='100')
-
+						a.pull-right(href='#news') See all >
 		.row
 			.span4
 				.well
-					a.pull-right(href='#subscription') See all >
 					h2: a(href='#subscription')  My Feeds
 					-each story in Stories
 						.news-item
@@ -34,14 +32,16 @@ include ../../patterns/mixin
 							h4
 								a(href='#subscription')= story.title
 							p.ipsum(length='100')
+					a.pull-right(href='#subscription') See all >
+				.well
+					mixin radio({question: 'What do you think of the new Intranet?', items:['I think it\'s awesome', 'It\'s the best intranet I\'ve ever seen','I think it\'s great but we can do better!']})
 			.span4
 				.well
 					mixin dailyAgenda(['This item is on the calendar today', 'This is another item that needs to be done today', 'Project deadline is today'])
+					hr
 					mixin todo(['This is an example todo', 'this is another example of a todo item', 'Yet another todo item'])
 				.well
 					mixin twitter()
-				.well
-					mixin radio({question: 'What do you think of the new Intranet?', items:['I think it\'s awesome', 'It\'s the best intranet I\'ve ever seen','I think it\'s great but we can do better!']})
 	.span3
 		include links
 		

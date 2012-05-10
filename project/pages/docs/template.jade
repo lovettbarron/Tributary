@@ -20,8 +20,9 @@ mixin pageTitle("Documents", false)
 			li: a My docs (94)
 			li: a All docs (500+) 
 			hr
+			h6 Filters
+			mixin form({ title: 'Test', fields: [ { label: 'Document', type: 'checkbox'},{label: 'Spreadsheet', type: 'checkbox'},{label: 'Interactive Form', type: 'checkbox'},{label: 'Collaborative Document', type: 'checkbox'},{label: 'Uploaded Document', type: 'checkbox'}]})
+			h6 Categories
 			li: a &#9660; Group collections (3)
 				li.indent: mixin linkList(groupSidebar)
 			li: a &#9654; My collections(5)
-			hr
-			li: a Archived documents (200)
