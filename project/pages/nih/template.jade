@@ -1,14 +1,6 @@
 include ../../patterns/mixin
 
-small 
-	a(href='#research') Research Institute
-	|  / 
-	a(href='#financial') Financial Services
-	|  / 
-	a(href='#grantsmanagement') Grants Management
-	|  / 
-	a(href='#grantsapprovalprocess') Grants Approval Process
-
+mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial Services', page:'financial'}, {title: 'NIH Grant'}])
 .pull-right
 	mixin share()
 
@@ -23,17 +15,18 @@ mixin pageTitle("Grants Approval Process", false)
 				li: a.anchor(href='#electronicgrantsubmission') Electronic Grant Submission
 				li: a.anchor(href='#nihlinks') NIH Links
 		h3#Guidelines Guidelines - National Institutes of Health (NIH)
-		br
+
 		h4 Information for Applicants
-		br
 		p GMO has prepared the following information to assist SickKids researchers in completing the required internal and external forms, preparing budgets and expediting the grant approval process.
-		br
+
 		h4 National Institutes of Health (NIH) Overview
 		p NIH is composed of 27 Institutes and Centers with a combined budget of approximately 31 billion dollars/year. 80% of this budget is dedicated to funding extramural biomedical research through competitive awards made to hospitals and universities in the United States and around the world.
+
 		h4 Finding Funding Opportunities
 		p The majority of NIH grant proposals are submitted electronically in response to a specific Funding Opportunity Announcement (FOA). This includes investigator- initiated (Parent) proposals. Each FOA is associated with a Funding Opportunity number (e.g. PA-10-67).
 		p To search and download FOAs.
 		To view the parent announcements (unsolicited or investigator-initiated applications).
+
 		h4 Funding Programs
 		p There are a variety of NIH funding programs, some of which Canadian Institutions are not eligible to apply for, or for which Canadian researchers may only apply as Co-Investigators. Each Funding Announcement will have a section describing institutional and individual eligibility criteria. The most commonly used Research Funding Programs for which Canadian Institutions are usually eligible are as follows:
 		ul
@@ -41,15 +34,174 @@ mixin pageTitle("Grants Approval Process", false)
 			li R03 – Small Grant Program. Provides up to $50,000 per year for two years to support pilot studies, collection of preliminary data, secondary analysis of existing data, and small self-contained research projects.
 			li R21 – Exploratory/Developmental Research Grant Award. Provides up to a total of $275,000 for two years for exploratory and developmental research. Preliminary data is not usually required.
 			li U01 – Research Project Cooperative Agreement. Multi-site collaboration on a specific project where substantial programmatic involvement is anticipated between the Principal Investigators and the NIH Awarding Institute and Center.
+
 		h4 Application Overview
-		p: Most NIH applications are submitted through 
-			| http://www.grants.gov
+		p Most NIH applications are submitted through 
+			| #http://www.grants.gov
 			| a web portal for all US government grant funding. It is not necessary for Investigators applying for NIH research grants under SickKids to register at grants.gov or at their credentialing agency Central Contractor Registry (CCR). These are institutional registrations which SickKids has already completed. The SickKids DUNS number (208511808) and other information that will be required for your application can be found at the GMO 
-			| frequently requested information page.
+			| #frequently requested information page.
+
 		p As soon as you know you will be submitting an NIH please contact the appropriate GMO staff and follow the SickKids 
 			| grant approval process.
-		p This 
-			| section 
-			describes the application steps in detail for Investigators applying for a SickKids grant with no external site collaborators, for a SickKids grant with external site collaborators, and for a grant in which SickKids is a collaborating sub-site.
+
+		p This section describes the application steps in detail for Investigators applying for a SickKids grant with no external site collaborators, for a SickKids grant with external site collaborators, and for a grant in which SickKids is a collaborating sub-site.
 		
-		h4#budgetguidelines | Budget Guidelines
+		h3#budgetguidelines Budget Guidelines
+		
+		h4 NIH Budget Guidelines
+
+		h5 Research and Related Budget – General
+		ul
+			li	Organizational DUNS for SickKids: 208511808
+			li	Budget Type: Project if SickKids is the lead or sole applicant institution.  Subaward/Consortium if SickKids is a sub-site.
+			li	Start Date – End Date: This should be one year duration for each Budget Period.  As each year’s budget is completed a button becomes available to complete the following budget year.
+		
+		h5 Research and Related Budget – Section A and B (Personnel)
+		ul
+			li	Senior Key Personnel: These are persons with programmatic responsibility (Generally PhDs or MDs) and should only include SickKids employees.
+			li	Base Salary: This is the actual salary received by the Investigator(s).  This is capped for 2010 at a maximum of $199,700.  Salaries below that may include a 3% incremental increase in each budget year.
+			li	Cal. Months: This is the amount of effort (paid and unpaid) the Investigator intends to devote to this project over the course of this budget period.  Some effort is required for a PI/PD role even if no salary is claimed.  To calculate Calendar Months effort multiply % effort by 0.12 (e.g. 20% effort * 0.12 = 2.4 CalMos).
+			li	Requested Salary: Base salary pro-rated to the amount of effort.  NIH allows Investigators to request salary although it is not mandatory that they do so.
+			li	Fringe Benefits: Refer to the Frequently Requested Institutional Information for the current SickKids benefit rates.
+		
+		h5 Research and Related Budget – Section C, D, and E (Equipment and Travel)
+		ul
+			li Equipment: NIH defines equipment as an article of tangible nonexpendable personal property having a useful life of more than one year and an acquisition cost of $5,000 or more.
+			li Travel: NIH considers travel within North America to be domestic.  Costs should be in accordance with those allowed under the SickKids #travel policy.
+			li Participant/Trainee Support Costs: Leave this section blank unless stated otherwise in the FOA.
+		h5 Research and Related Budget - Section F-K (Other Direct Costs, Indirect Costs, and Justification)
+		ul
+			li	Materials and Supplies: Total funds for consumables, which should be itemized in the justification for categories over $1,000.
+			li	Publication Costs: Costs of disseminating findings.
+			li	Consultant Services: Persons who will be providing services in a fee for service or advisory capacity.  Such persons should not be listed elsewhere as collaborators in the application and nor should they have programmatic responsibility.
+			li	ADP/Computer Services: In the justification include the established rate for such services.
+			li	Subaward/Consortium Contractual Costs:  This should be the total Direct and F&A costs of all collaborating institutions where SickKids is the lead institution with one or more sub-sites.
+			li	Equipment or Facility Rental/User Fees: In the justification include the established rate for such costs.
+			li	Alteratilons and Renovations: Foreign applications may be allowed minor A&R (up to $500,000).
+			li	Other: Other Direct Costs not listed above: This could include Patient Care Costs above the Standard of Care.  For guidance contact Julie Gibson, Clinical Research Office, at phone 8481.
+			li	Indirect Costs: Should be “MTDC” (modified total direct costs).
+			li	Indirect Cost Rate: Should be (8%)
+			li	Indirect Cost Base: Total amount of proposal, including Consortium Costs and Consortium Indirect, minus costs of equipment for SickKids.
+			li	Funds Requested: Indirect Cost Base multiplied by 8%.
+			li	Cognizant Federal Agency: Should be “NIH Notice NOT-OD-01-028.html”
+			li	Fee: Not applicable to SickKids applications.
+				.well
+					p User tip: When creating budgets in the Adobe applications it is necessary to upload a budget justification (or a blank pdf placeholder) on the third page (Section F-K) in order to use the button on the top right to go to the next budget period.  Each budget period is normally one year; the justification should cover all years of proposed funding.
+		
+		h3#budgetpreparation Budget Preparation
+		em General Budget Notes:
+		ul
+			li	All direct costs must be reasonable, allowable and directly allocable to the research project.
+			li	All budgets should be prepared in US dollars.  Contact GMO for the current exchange rate to convert CAD to USD.
+			li	The NIH classifies costs as either Direct Costs or Facilities & Administrative (F&A) Costs.  F&A Costs are indirect costs that cannot be directly related to the research project.  Foreign applicants (e.g. SickKids) may include 8% F&A on all line items except equipment.  (see http://grants.nih.gov/grants/guide/notice-files/NOT-OD-01-028.html)
+			li	SickKids grant applications may include F&A Costs for US collaborating institutions at whatever rate those institutions have negotiated with the US government.
+			li	Unless stated otherwise in the FOA, if the total direct costs for any year are budgeted at $500,000 or more, excluding consortium indirect (F&A) costs, written permission must be obtained from NIH at least six weeks prior to proposal submission.
+			li	Foreign applicants may not use modular budget formats (see http://grants.nih.gov/grants/guide/notice-files/NOT-OD-06-096.html)
+			li	A completed Excel budget form must be included with the other documents that you send to GMO. Although it will not be included with your final application, it will expedite the budget review process.  Download the Excel template from the link below and simply replace the costs and sample figures with your own. If you modify the template to accommodate your budget, be sure to update the formulas as well.
+			br
+			Full Full details are available in http://budget guidelines »»
+		h3#electronicgrantsubmission Electronic Grant Submission	
+		h5 Information for Applicants
+		p
+			GMO has prepared the following information to assist SickKids researchers and their support staff in understanding the NIH grants application process.
+
+		h5 Before you apply
+		p
+			All key senior personnel submitting or collaborating on an NIH grant require a one-time registration on eRA Commons, the NIH grants administration portal.  If you do not already have an eRA username please contact Rebbie Pamintuan at ext 6895 or John Kearney at ext 28143.  Investigators applying under SickKids do not need to register with grants.gov or Central Contractor Registry (CCR) – these are institutional registrations which are complete. 
+			| http://eRA Commons login page
+
+		h5 A. If SickKids is the grantee institution (single site)
+		ol
+			li	The majority of NIH grant proposals are submitted electronically in response to a Funding Opportunity Announcement (FOA).  This includes investigator-initiated (Parent) proposals.  Each FOA is associated with a Funding Opportunity number (e.g. PA-10-067).
+				br
+				|To search and download FOAs
+				|To view the parent announcements (unsolicited or investigator-initiated applications)
+
+			li	Read the FOA to ensure that it is a suitable target for your proposal. In particular check the institutional and individual eligibility criteria to ensure that you and SickKids (a Non-domestic Entity or Foreign Organization) are eligible to apply. Should you wish to apply click on the "Apply for Grant Electronically" button embedded in the FOA to download the application package or search for and download the application package by Funding Opportunity Number at the grants.gov link below. Note that each application package is unique to the FOA and you must use that specific package in order to apply.
+				br
+				|To search for and download application packages by Funding Opportunity Number
+				|http://www07.grants.gov/applicants/search_opportunities.jsp
+			
+			li	To complete the grants application package you will need a compatible version of Adobe or Adobe Reader installed on your computer.
+				br
+				|To confirm your Adobe installation is compatible: 
+				|http://www.grants.gov/applicants/AdobeVersioningTestOnly.jsp
+			li
+				br
+				Complete the application package forms in accordance with general application guidelines and observing the page limits and special requirements found in the FOA. Where the FOA and the general guidelines contradict each other the instructions in the FOA take precedence.
+				|General application instructions: (Application Guide SF424 (R&R) - Adobe Forms Version B)
+				http://grants.nih.gov/grants/funding/424/index.htm#inst
+
+				.well 
+					p User tip: When creating budgets in the Adobe applications it is necessary to upload a budget justification (or a blank pdf placeholder) on the third page (Section F-K) in order to use the button on the top right to go to the next budget period. Each budget period is normally one year; the justification should cover all years of proposed funding.
+
+			li	At least two weeks prior to the deadline date, submit your budget and budget justification using the excel spreadsheet templates below for review to the GMO as well as the completed internal assurance form.
+				ul
+					li	SickKids NIH budget template
+					li	SickKids NIH budget template for consortia
+					li	NIH Assurance form (for internal use only)
+			li	Five business days prior to the application deadline, send copy of the completed application package (which has been institutionally peer reviewed where applicable) to the GMO. Doing so will enable the GMO to obtain the required institutional approvals, to electronically submit the application to grants.gov on your behalf, and to fix any problems should your application be rejected for administrative or technical reasons.
+			li	The actual submission of the application will be done by the GMO. As soon as it has passed automated administrative and technical screening the application in full will appear as a pdf file in the Investigator's eRA Commons account, where the Investigator and GMO will have an opportunity to retract and resubmit the application in the event of technical problems.
+			
+		h5 B. If SickKids is the grantee institution (multi-sites or consortium)
+		p
+		If you are applying for a grant which proposes collaboration with researchers at other institutions, the process is the same as that described, except for the following additional steps. For each participating institution you will require:
+		ul
+			li	A consortium letter of intent from the institutional signing authority of the collaborating institution
+			li	A face page signed by the institutional signing authority of the collaborating institution (PHS 398 face page)
+			li	A checklist prepared by the the institutional grants office of the collaborating institution. (Checklist)
+			li	A Completed R&R Subaward budget attachment form extracted from your application form
+			li	A Biosketch for each key personnel at the collaborating institutions (Biosketch template)
+			li	eRA Commons username for all key personnel at the collaborating institutions.
+			li	A paragraph or two concisely describing the scope of work to be done by each of your collaborators. This will be used for the purposes of subgranting successful awards and will not be submitted to NIH for peer review.
+		h5 C: If SickKids is a participating institution in a consortium
+		p
+		If you are a collaborator on another instituion's application you will be asked to prepare, at minimum, the elements listed above under part B. 
+		h5	Help and Guidance
+		p
+		For help with any of the above feel free to contact Rebbie Pamintuan at ext. 6895 or John Kearney at ext. 28143.
+		
+		h5 New for 2010
+		NIH has made major changes to Research Plan page lengths and the Peer Review Process for grants submitted after January 25, 2010.
+		ul
+			li	RIWeb announcement
+			li	http://enhancing-peer-review.nih.gov
+
+			Research Awards & Financial Services
+			Grants Management Office (GMO)
+
+		h3#nihlinks Forms and Links
+
+		h4 Funding Announcements:
+		ul
+			li	a(href='#') NIH Search Funding Announcements
+			li	a(href='#') NIH Parent (Investigator-initiated) announcements
+			
+		h4 NIH Policy Notices:
+		ul
+			li	a(href='#') NIH Grants Policy and Guidance
+		
+		h4 Application Packages:
+		ul
+			li	Grants.gov: to search for and download application packages by Funding Opportunity Number
+				a(href='#')  http://www07.grants.gov/applicants/search_opportunities.jsp
+		h4 Forms:
+		ul
+			li	a(href='#') SickKids NIH Assurance Form 
+			li	a(href='#') SickKids PHS398 Face Page 
+			li	a(href='#') SickKids Notice of Application Form 
+			li	a(href='#') SickKids NIH budget template (for planning and GMO review) [Excel]
+			li	a(href='#') SickKids NIH budget template for consortia [Excel]
+		
+		h4 Application Guidance:
+		ul
+			li	a(href='#') NIH General application instructions: (Application Guide SF424 (R&R) - Adobe Forms Version B
+			li	a(href='#') NIH: Avoiding common errors
+			li	a(href='#') NIH: Frequently Asked Questions
+			li	a(href='#') NIH: Foreign Grants Information
+			li	a(href='#') SickKids Grant Approval Process
+			li	a(href='#') GMO frequently requested information page
+	
+		h4 Peer Review:
+		ul
+			li a(href='#') NIH Peer Review Process

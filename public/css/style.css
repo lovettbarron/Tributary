@@ -121,6 +121,11 @@ h2, h3, h4 {
 	margin-top: 1em;
 }
 
+.breadcrumb {
+	border: 0;
+	background: transparent;
+}
+
 .document, .forum-post, .post {
 	border-width: 1px 0;
 	border-color: #eeeeee;
@@ -305,7 +310,7 @@ h2, h3, h4 {
 @media (min-width: 980px) {
   .subnav-fixed {
     position: fixed;
-    top: 100px;
+    top: 78px;
     left: 0;
     right: 0;
     z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
