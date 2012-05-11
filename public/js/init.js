@@ -208,7 +208,7 @@ function context() {
 			else if( $.inArray(path, sub) >= 0) { // Financial
 				$('li.retr').hide();
 				$('ul.retract').hide();
-				$('ul.research').hide();
+				$('ul.research').slideUp();
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
 				

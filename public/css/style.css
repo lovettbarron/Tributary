@@ -27,12 +27,13 @@
 
 ul.research {
 	margin-top: 10px;
-	background: #e3e3e3;
+	background: #eee;
 	width: 100%;
 }
 
 ul.research > li {
 	padding: 0 5 0 5;
+	border-bottom: 1px dashed #e3e3e3;
 }
 
 ul.financial {

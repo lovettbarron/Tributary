@@ -5,7 +5,7 @@ include ../../patterns/mixin
 		.row
 			.span8
 				.well
-					h2: a(href='#news') What's Happening?
+					h3: a(href='#news') What's Happening?
 					.row
 						.span4
 							p: img(src='http://placehold.it/300x100')
@@ -21,7 +21,7 @@ include ../../patterns/mixin
 		.row
 			.span4
 				.well
-					h2: a(href='#subscription')  My Feeds
+					h3: a(href='#subscription')  My Feeds
 					-each story in Stories
 						.news-item
 							h4
@@ -30,7 +30,7 @@ include ../../patterns/mixin
 							p.ipsum(length='100')
 					a.pull-right(href='#subscription') View all my subscriptions »
 				.well
-					h2 Quick Poll
+					h3 Quick Poll
 					mixin radio({question: 'What do you think of the new Intranet?', items:['I think it\'s awesome', 'It\'s the best intranet I\'ve ever seen','I think it\'s great but we can do better!']})
 					a.pull-right(href='#poll') View poll results »
 					btn.btn.btn-primary(type='button') Submit

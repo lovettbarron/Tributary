@@ -1,6 +1,6 @@
 mixin radio(poll)
 	form.form-horizontal
-		h3= poll.question
+		h4= poll.question
 		fieldset
 		-each item in poll.items
 			label.radio 
@@ -67,10 +67,10 @@ mixin document(post)
 mixin dailyAgenda(todo)
 	.row-fluid
 		.span12
-			h2: a(href='#calendar') Agenda
+			h3: a(href='#calendar') Agenda
 	.row-fluid
 		.span12
-			h3 Today
+			h4 Today's Appointments
 	-each agenda,key in todo
 		.row-fluid
 			.span3 #{key*2}:00pm
@@ -78,10 +78,11 @@ mixin dailyAgenda(todo)
 				span.label.label-info
 					a(href='#calendar', style='color: white')= agenda
 	include modal_todo.jade
+	hr
 	.todo
 		.row-fluid
 			.span9
-				h3 To do
+				h4 To do list
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 	-var items = ['This is an example todo', 'this is another example of a todo item', 'Yet another todo item']
@@ -256,7 +257,7 @@ mixin pageTitle(title, toggle)
 				mixin share()
 
 mixin twitter()
-	h4 Twitter feed
+	h3 Twitter feed
 	img(src="http://placehold.it/300x200")
 
 mixin breadcrumb(items)
