@@ -9,8 +9,8 @@ mixin pageTitle("What's Happening", false)
 			p: a(href='#') Read more
 	.row
 		.span8
-			-var poll = ['This is an entry', 'This is another entry', 'isnt this fun?' ]
-			- var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', address: 'test'}, {title: 'Stars are doing the happy for SickKids', address: 'test'} , {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', address: 'test'}, {title: 'Can you tell me how to get, how to get to.. Marnie's Lounge! (see photos)', address: 'test'}]
+			-var poll = {question: 'May 7 is Stop! Clean Your Hands Day. What is SickKids\' hand hygiene complaince target?', items:['This is an entry', 'This is another entry', 'isnt this fun?']}
+			- var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', address: 'test'}, {title: 'Stars are doing the happy for SickKids', address: 'test'} , {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', address: 'test'}, {title: 'Can you tell me how to get, how to get to.. Marnie\'s Lounge! (see photos)', address: 'test'}]
 			.row
 				.span4
 					h3 Headlines
@@ -24,7 +24,6 @@ mixin pageTitle("What's Happening", false)
 				.span4
 					h3 SickKids Poll
 					.well
-						h4 May 7 is Stop! Clean Your Hands Day. What is SickKids' hand hygiene complaince target?
 						mixin radio(poll)
 	.span2
 		include links
