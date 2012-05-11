@@ -8,7 +8,11 @@ $(document).ready( function() {
 				});
 			$('ul > li').removeClass('active');
 			$(this).addClass('active');
-	} else { init() }
+	} else { 
+		$('ul.shrinker').hide(); 
+		$('ul.research').hide();
+		init(); 
+		}
 	$('.dropdown-toggle').dropdown();
 });
 
@@ -184,18 +188,19 @@ function ipsum() {
 
 function context() {
 	var hash = window.location.hash;
-	var context = ['calendar','groups','dashboard','docs','subscription','news','profile','publicProfile','blog']
+	var context = ['','calendar','groups','dashboard','docs','subscription','news','profile','publicProfile','blog']
 	path = hash.split('#')[1];
 		if(window.location.hash) {
 			if( $.inArray(path, context) <= -1) {
 				$('ul.retract').slideUp();
-				$('li.drop').show();
-				$('li.retr').hide();
+				$('li.drop').hide();
+				$('ul.shrinker').show();
+				$('li.retr').show();
 				$('ul.research').slideDown();
 			} else {
 				$('ul.retract').slideDown();
 				$('ul.research').slideUp();
-				$('li.drop').hide();
+				$('ul.shrinker').hide();
 			}
 		}	
 	}

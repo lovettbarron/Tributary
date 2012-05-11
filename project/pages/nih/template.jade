@@ -1,0 +1,55 @@
+include ../../patterns/mixin
+
+small 
+	a(href='#research') Research Institute
+	|  / 
+	a(href='#financial') Financial Services
+	|  / 
+	a(href='#grantsmanagement') Grants Management
+	|  / 
+	a(href='#grantsapprovalprocess') Grants Approval Process
+
+.pull-right
+	mixin share()
+
+mixin pageTitle("Grants Approval Process", false)
+.row
+	.span8
+		.pull-right
+			ul.nav.nav-list.well.span3
+				li.nav-header Test
+				li: a.anchor(href='#budgetguidelines') Budget Guidelines
+				li: a.anchor(href='#budgetpreparation') Budget Preparation
+				li: a.anchor(href='#electronicgrantsubmission') Electronic Grant Submission
+				li: a.anchor(href='#nihlinks') NIH Links
+		h3#Guidelines Guidelines - National Institutes of Health (NIH)
+		br
+		h4 Information for Applicants
+		br
+		p GMO has prepared the following information to assist SickKids researchers in completing the required internal and external forms, preparing budgets and expediting the grant approval process.
+		br
+		h4 National Institutes of Health (NIH) Overview
+		p NIH is composed of 27 Institutes and Centers with a combined budget of approximately 31 billion dollars/year. 80% of this budget is dedicated to funding extramural biomedical research through competitive awards made to hospitals and universities in the United States and around the world.
+		h4 Finding Funding Opportunities
+		p The majority of NIH grant proposals are submitted electronically in response to a specific Funding Opportunity Announcement (FOA). This includes investigator- initiated (Parent) proposals. Each FOA is associated with a Funding Opportunity number (e.g. PA-10-67).
+		p To search and download FOAs.
+		To view the parent announcements (unsolicited or investigator-initiated applications).
+		h4 Funding Programs
+		p There are a variety of NIH funding programs, some of which Canadian Institutions are not eligible to apply for, or for which Canadian researchers may only apply as Co-Investigators. Each Funding Announcement will have a section describing institutional and individual eligibility criteria. The most commonly used Research Funding Programs for which Canadian Institutions are usually eligible are as follows:
+		ul
+			li R01 – Research Grant Program. NIH’s most commonly used grant program; for operating costs of discrete, specified, circumscribed research projects. Generally awarded for a period of 3-5 years with no specific limit on proposed budgets.
+			li R03 – Small Grant Program. Provides up to $50,000 per year for two years to support pilot studies, collection of preliminary data, secondary analysis of existing data, and small self-contained research projects.
+			li R21 – Exploratory/Developmental Research Grant Award. Provides up to a total of $275,000 for two years for exploratory and developmental research. Preliminary data is not usually required.
+			li U01 – Research Project Cooperative Agreement. Multi-site collaboration on a specific project where substantial programmatic involvement is anticipated between the Principal Investigators and the NIH Awarding Institute and Center.
+		h4 Application Overview
+		p: Most NIH applications are submitted through 
+			| http://www.grants.gov
+			| a web portal for all US government grant funding. It is not necessary for Investigators applying for NIH research grants under SickKids to register at grants.gov or at their credentialing agency Central Contractor Registry (CCR). These are institutional registrations which SickKids has already completed. The SickKids DUNS number (208511808) and other information that will be required for your application can be found at the GMO 
+			| frequently requested information page.
+		p As soon as you know you will be submitting an NIH please contact the appropriate GMO staff and follow the SickKids 
+			| grant approval process.
+		p This 
+			| section 
+			describes the application steps in detail for Investigators applying for a SickKids grant with no external site collaborators, for a SickKids grant with external site collaborators, and for a grant in which SickKids is a collaborating sub-site.
+		
+		h4#budgetguidelines | Budget Guidelines

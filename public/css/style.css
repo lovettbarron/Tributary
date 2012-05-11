@@ -29,6 +29,12 @@ li.indent {
 	background: #eee;
 }
 
+
+#context li.active {
+	background: #eee;
+}
+
+
 #context li a {
 	font-size: 0.8em;
 	display: block;
