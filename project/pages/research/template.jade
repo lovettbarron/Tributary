@@ -1,46 +1,32 @@
 include ../../patterns/mixin.jade
-- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
-
-mixin pageTitle("Welcome to the Research Institute")
+mixin pageTitle("Welcome to the Research Institute", false)
 
 .row
 	.span8
-
-			
-		.tab-content
-			#overview.tab-pane.active
-				.pull-right
-					ul.nav.nav-list.well.span3
-						li.nav-header Test
-						li: a(href='#financialservices') Financial Services
-						li: a(href='#financial') Research IT
-						li: a(href='#financial') Grants Management
-						li: a(href='#financial') Health Services
-
-				.row-fluid
-					.span6
-						-each story in Stories
-							.row-fluid.post.closed
-								.span1: img(src='http://placehold.it/100x100')
-								.span11
-									h4: a= story.title
-									p.post-meta 12 minutes ago from 
-										a Feed Name
-
-
-			#news.tab-pane
-				.btn-group.pull-right
-					btn.btn Read more
-				h2 News
-			#calendar.tab-pane
-				include ../financial/index
-			#links.tab-pane
-				
-
-
+		.well.clear-fix.news-feature
+			h3: a(href='#') Towering over Bay and Elm streets, new SickKids building reaches highest point
+			img.pull-left(src='http://placehold.it/300x300')
+			p.ipsum
+			p: a(href='#') Read more
+		.row
+			.span8
+				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
+				.row
+					.span4
+						h3 Headlines
+						.well
+							-each story in Stories
+								.news-item
+									h4
+										i.icon-download-alt								
+										a= story.title
+									p.ipsum(length='100')
+					.span4
+						h3 Events and Seminars
+						.well
+							p calendar club
+							p hubub
+							p dubub
+							p rubadubdub
 	.span3
-		h4 Important Links
-
-		- var links = {title: "Important Links", items: [{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'},{title: 'Page Name', address: '#'}]}
-
-		mixin linkList(links)
+		include links

@@ -1,31 +1,30 @@
 include ../../patterns/mixin.jade
 mixin pageTitle("What's Happening", false)
-
 .row
 	.span8
 		.well.clearfix.news-feature
-			h3: a(href='#') SickKids Raises 20K with Blue Streak!
+			h3: a(href='#') Get fit and have fun with the Inter-Hospital Health  Challenge (see photos)
 			img.pull-left(src='http://placehold.it/300x300')
-			p.ipsum(length='1000', para='3')
+			p We kicked off the Inter-Hospital Heealth Challenge on May 1 with the largest exercise class University Ave. has ever seen! Energetic staff from SickKids and surrounding hospitals hiked up their heart rates to star this May health challenge. Check out these happy and health people and find out how you can particiapte! 
 			p: a(href='#') Read more
-		.row
-			.span8
-				-var poll = ['This is an entry', 'This is another entry', 'isnt this fun?' ]
-				- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing this out', address: 'test'} , {title: 'tons of cars', address: 'test'}, {title: 'test', address: 'test'}]
-				.row
-					.span4
-						h3 Headlines
-						.well
-							-each story in Stories
-								.news-item
-									h4
-										i.icon-download-alt								
-										a= story.title
-									p.ipsum(length='100')
-					.span4
-						h3 SickKids Poll
-						.well
-							h4 What do you think of this poll?
-							mixin radio(poll)
+	.row
+		.span8
+			-var poll = ['This is an entry', 'This is another entry', 'isnt this fun?' ]
+			- var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', address: 'test'}, {title: 'Stars are doing the happy for SickKids', address: 'test'} , {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', address: 'test'}, {title: 'Can you tell me how to get, how to get to.. Marnie's Lounge! (see photos)', address: 'test'}]
+			.row
+				.span4
+					h3 Headlines
+					.well
+						-each story in Stories
+							.news-item
+								h4
+									i.icon-download-alt								
+									a= story.title
+								p.ipsum(length='100')
+				.span4
+					h3 SickKids Poll
+					.well
+						h4 May 7 is Stop! Clean Your Hands Day. What is SickKids' hand hygiene complaince target?
+						mixin radio(poll)
 	.span3
 		include links
