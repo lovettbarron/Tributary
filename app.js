@@ -11,7 +11,7 @@ app.configure(function()
 {
 	app.set('views', __dirname + '/project');
 	app.set('view engine', 'jade');
-	app.use(express.bodyParser()   );
+	app.use(express.bodyParser());
 	app.use(express.methodOverride());
 	app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
 	app.set('view options', { pretty: true });
@@ -22,7 +22,7 @@ app.configure(function()
 app.get('/', function(req,res) {
 	try{
 		res.render('index', {
-			title: 'example'
+			title: '1'
 		});
 	} catch(e) {
     console.log(e);
@@ -32,36 +32,18 @@ app.get('/', function(req,res) {
 app.get('/:path', function(req, res){
 	var path = 'index';
 	var stat;
-	/* Disabling for now, is supposed to check for directory/prevent dead returns but ya
-	//Path definition
-	if( req.params.path !== undefined) {
-		try{
-			path = __dirname + '/project/pages/' + req.params.path;
-			stat = fs.lstatSync(__dirname + '/project/pages/' + req.params.path);
-			if( !stat.isDirectory() ) {
-				path = 'index'
-			} else { path = 'project/pages/' + req.params.path + 'index'; }
-		} catch(e) { console.log('error:' + e)}
-		if (path.isDirectory()) {
-			path = 'project/pages/' + req.params.path + '/index'
-		}	
-		else {
-			path = 'index';
-		}
-	} */
-	console.log('Returning results from: ' + path)	
 
 	path = __dirname + '/project/pages/' + req.params.path;
+	console.log('Returning results from: ' + path)	
 
 	//Return type
 	if( req.xhr ) {
 		res.partial(path, {
-			page: req.params.path
+			title: '2'
 		})
-	}
-	else {
+	} else {
 		res.render(path, { 
-			page: req.params.path
+			title: '3'
 		});
 	}
 });
