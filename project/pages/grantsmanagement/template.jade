@@ -1,12 +1,6 @@
 include ../../patterns/mixin
 
-small 
-	a(href='#research') Research Institute
-	|  / 
-	a(href='#research') Financial Services
-	|  / 
-	a(href='#grantsmanagement') Grants Management
-
+mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial Services', page:'financial'}, {title: 'Grants Management'}])
 .pull-right
 	mixin share()
 
@@ -23,7 +17,7 @@ mixin pageTitle("Grants Management", false)
 				li: a(href='#grantsapprovalprocess') Grants Approval Process
 					i.icon-share.pull-right
 
-		h4#header1 About 1
+		h4#header1 About
 		p GMO is responsible for overseeing all grants management related activities, such as compliance with Hospital and granting agencies' policies, educating and informing Research Institute leadership on new regulations of granting agencies, recommending or updating institutional policies or procedures to ensure compliance with granting agencies' policies and regulations, managing funded research agreements, communicating funding opportunities to SickKids researchers and managing the grant approval process. GMO is also responsible for overseeing the fiduciary and financial management of all externally funded research grants, (excluding  a(href='#') GRIA - Government Research Infrastructure Awards), which equates to approximately $75 million annually and roughly 2,000 cost centres.
 		.well
 			p: h4 Patient Care Funds

@@ -6,7 +6,6 @@ mixin radio(poll)
 			label.radio 
 				input.radio(type='radio') 
 				| #{item}
-		btn.btn.btn-primary(type='button') Submit
 
 mixin form(form)
 	form.form-horizontal	
@@ -67,15 +66,30 @@ mixin document(post)
 
 mixin dailyAgenda(todo)
 	.row-fluid
-		.span9
-			h2: a(href='#calendar') Agenda for today
+		.span12
+			h2: a(href='#calendar') Agenda
+	.row-fluid
+		.span12
+			h3 Today
 	-each agenda,key in todo
 		.row-fluid
 			.span3 #{key*2}:00pm
 			.span9(style='overflow: hidden')
 				span.label.label-info
 					a(href='#calendar', style='color: white')= agenda
-	a.pull-right(href='#calendar') See all >
+	include modal_todo.jade
+	.todo
+		.row-fluid
+			.span9
+				h3 To do
+			.span3
+				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
+	-var items = ['This is an example todo', 'this is another example of a todo item', 'Yet another todo item']
+	-each item in items
+		.row-fluid.todo
+			.span1: input(type='checkbox')
+			.span11= item
+	a.pull-right(href='#calendar') View my calendar »
 		
 mixin tools(posts)
 	-each item in posts
@@ -201,7 +215,7 @@ mixin todo(items)
 		.row-fluid.todo
 			.span1: input(type='checkbox')
 			.span11= item
-	a.pull-right(href='#calendar') See all >
+	a.pull-right(href='#calendar') View calendar »
 
 
 mixin subscribe()
@@ -244,3 +258,13 @@ mixin pageTitle(title, toggle)
 mixin twitter()
 	h4 Twitter feed
 	img(src="http://placehold.it/300x200")
+
+mixin breadcrumb(items)
+	ul.breadcrumb
+		-each item, key in items
+			-if (key == items.length-1)
+				li= item.title
+			-else
+				li
+					a(href='#' + item.page)= item.title
+					span.divider /		

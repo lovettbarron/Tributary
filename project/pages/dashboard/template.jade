@@ -1,47 +1,43 @@
 include ../../patterns/mixin
-
 - var Stories =[ {title: 'SickKids in the news!', icon: 'user'}, {title: 'Testing this out', icon: 'wrench'} , {title: 'tons of cars', icon: 'folder-open'}, {title: 'test', icon: 'pencil'}];
-
 .row
 	.span8
 		.row
 			.span8
 				.well
 					h2: a(href='#news') What's Happening?
-
 					.row
 						.span4
 							p: img(src='http://placehold.it/300x100')
-							h4 This is the feature news story
-							p.ipsum(length='300')
-							a(href='#news') Read more
+							h4: a(href='#news') This is the feature news story
+							p.ipsum(length='500')
 						.span4
 							-each story in Stories
 								.row
 									.span4
 										h4: a= story.title
 										p.ipsum(length='100')
-						a.pull-right(href='#news') See all >
+						a.pull-right(href='#news') Read the daily news »
 		.row
 			.span4
 				.well
 					h2: a(href='#subscription')  My Feeds
 					-each story in Stories
 						.news-item
-							i(class='icon-' + story.icon).pull-left
 							h4
-								a(href='#subscription')= story.title
+								i(class='icon-' + story.icon)
+								a(href='#subscription')  #{story.title}
 							p.ipsum(length='100')
-					a.pull-right(href='#subscription') See all >
+					a.pull-right(href='#subscription') View all my subscriptions »
 				.well
+					h2 Quick Poll
 					mixin radio({question: 'What do you think of the new Intranet?', items:['I think it\'s awesome', 'It\'s the best intranet I\'ve ever seen','I think it\'s great but we can do better!']})
+					a.pull-right(href='#poll') View poll results »
+					btn.btn.btn-primary(type='button') Submit
 			.span4
 				.well
 					mixin dailyAgenda(['This item is on the calendar today', 'This is another item that needs to be done today', 'Project deadline is today'])
-					hr
-					mixin todo(['This is an example todo', 'this is another example of a todo item', 'Yet another todo item'])
 				.well
 					mixin twitter()
 	.span3
 		include links
-		

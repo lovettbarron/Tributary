@@ -1,19 +1,14 @@
 include ../../patterns/mixin
 
-//- small 
-//-	a(href='#research') Research Institute
-//-	|  / 
-//-	a(href='#financial') Financial Services
-//-.pull-right
-//-	mixin share() */
+mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial'}])
 mixin pageTitle("Financial Services", false)
 .row
 	.span8
 		.pull-right
 			ul.nav.nav-list.well.span3
 				li.nav-header Test
-				li: a(href='#grantsmanagement') Test
-				li: a(href='#grantsmanagement') Test
+				li: a(href='#grantsmanagement') Grants Management
+				li: a(href='#nih') NIH Guidelines
 				li: a(href='#grantsmanagement') Test
 				li: a(href='#grantsmanagement') Test
 		h3 About Us
