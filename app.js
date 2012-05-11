@@ -56,12 +56,12 @@ app.get('/:path', function(req, res){
 	//Return type
 	if( req.xhr ) {
 		res.partial(path, {
-			title: 'example'
+			page: req.params.path
 		})
 	}
 	else {
 		res.render(path, { 
-			title: 'example'
+			page: req.params.path
 		});
 	}
 });

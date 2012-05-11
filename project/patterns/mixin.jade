@@ -1,3 +1,38 @@
+mixin subnav(section)
+	case section
+		when 'research'
+			li: a(href='#research') Overview
+			li: a(href='#financial') News
+			li: a(href='#financial') Facilities and Support
+			li: a(href='#financial') Policies, Procedures, and Guidelines
+			li: a(href='#financial') Research IT
+			li: a(href='#financial') Training Centre
+			li: a(href='#financial') Resources and Links
+		when 'support'
+			li: a(href='#research') Overview
+			li: a(href='#financial') Human Resources
+			li: a(href='#financial') Policies
+			li: a(href='#financial') Procedures, and Guidelines
+			li: a(href='#financial') Guides
+			li: a(href='#financial') Health & Safety
+			li: a(href='#financial') Information Services
+			li: a(href='#financial') Communications & Public Affairs
+			li: a(href='#financial') Financial Services
+		when 'care'
+			li: a(href='#research') Overview
+			li: a(href='#financial') News
+			li: a(href='#financial') Clinical Resources
+			li: a(href='#financial') Forms & Tools
+			li: a(href='#financial') Training & Education
+		when 'learning'
+			li: a(href='#research') Overview
+			li: a(href='#financial') News
+			li: a(href='#financial') Simulation Training
+			li: a(href='#financial') Modules
+			li: a(href='#financial') Events & Seminars
+			li: a(href='#financial') Interprofessional Education
+			li: a(href='#financial') Career & Professional Development
+
 mixin radio(poll)
 	form.form-horizontal
 		h3= poll.question

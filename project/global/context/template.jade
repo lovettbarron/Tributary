@@ -1,3 +1,5 @@
+include ../../patterns/mixin.jade
+
 ul
 	li
 		a(href="#dashboard", title="Home")
@@ -24,5 +26,8 @@ ul.shrinker
 	li.drop: i.icon-chevron-down
 	li.retr: i.icon-chevron-up
 hr
-ul.research
-	include ../../pages/research/nav
+
+case (page)
+	when "#research"
+		ul.research
+			mixin subnav('research')
