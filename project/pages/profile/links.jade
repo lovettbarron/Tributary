@@ -1,10 +1,15 @@
+include ../../patterns/mixin.jade
 
-h4 Links
+h4 My Links
 
-- var feed = {title: "Bob's Feed", items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+- var links = {title: 'My Services', items: [{title: 'e-HR for Staff', address: '#'}, {title: 'Staff Absence Reporting System (STARS)', address: '#'},{title: 'Occupational Health & Safety Services', address: '#'}, {title: 'Benefits Information', address: '#'}, {title: 'Information Services', address: '#'},{title: 'Financial Services', address: '#'},{title: 'Shop & Eat at SickKids', address: '#'}]}
 
-mixin linkList(feed)
+mixin linkList(links)
 
-- var work = {title: "Bob's Work", items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+- var tools = {title: 'My Tools', items: [{title: 'KidTrac', address: '#'}, {title: 'iProject', address: '#'},{title: 'Ideas Innovation Tool', address: '#'}, {title: 'Canadian Medical Directory', address: '#'}]}
 
-mixin linkList(work)
+mixin linkList(tools)
+
+- var groups = {title: 'My Groups', items: [{title: 'Critical Care Medicine Program (CCMP)', address: '#'}, {title: 'IV Pump Project', address: '#'},{title: 'Cardiac Connections', address: '#'},{title: 'Centre for Nursing', address: '#'},{title: 'Community Care Access Centre', address: '#'},{title: 'MDCentre', address: '#'}]}
+
+mixin linkList(groups)

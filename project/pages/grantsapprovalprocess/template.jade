@@ -1,14 +1,6 @@
 include ../../patterns/mixin
 
-small 
-	a(href='#research') Research Institute
-	|  / 
-	a(href='#financial') Financial Services
-	|  / 
-	a(href='#grantsmanagement') Grants Management
-	|  / 
-	a(href='#grantsapprovalprocess') Grants Approval Process
-
+mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial Services', page:'financial'}, {title: 'Grants Management',page:'grantsmanagement'},{title:'Grants Approval Process'}])
 .pull-right
 	mixin share()
 
