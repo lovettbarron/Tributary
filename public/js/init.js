@@ -11,6 +11,7 @@ $(document).ready( function() {
 	} else { 
 		$('ul.shrinker').hide(); 
 		$('ul.research').hide();
+		$('ul.financial').hide();
 		init(); 
 		}
 	$('.dropdown-toggle').dropdown();
@@ -190,25 +191,40 @@ function ipsum() {
 	
 		});
 }
-
+	
 function context() {
 	var hash = window.location.hash;
-	var context = ['','calendar','groups','dashboard','docs','subscription','news','profile','publicProfile','blog']
+	var context = ['research'];
+	var sub = ['grantsmanagement', 'nih','grantsapprovalprocess','financial'];
 	path = hash.split('#')[1];
 		if(window.location.hash) {
-			if( $.inArray(path, context) <= -1) {
+			if( $.inArray(path, context) >= 0) { //Research context			
 				$('ul.retract').slideUp();
-				$('li.drop').hide();
-				$('ul.shrinker').show();
-				$('li.retr').show();
 				$('ul.research').slideDown();
-			} else {
+				$('li.drop, li.retr').hide();
+				$('li.drop').slideDown();
+				$('ul.financial').hide();
+			} 
+			else if( $.inArray(path, sub) >= 0) { // Financial
+				$('li.retr').hide();
+				$('ul.retract').hide();
+				$('ul.research').hide();
+				$('ul.financial').slideDown();
+				$('ul.shrinker#home').show();
+				
+			}
+			else { // Home context
 				$('ul.retract').slideDown();
 				$('ul.research').slideUp();
+				$('ul.financial').slideUp();
 				$('ul.shrinker').hide();
 			}
-		}	
-	}
+		}
+ $('a#researchExpand').click( function() {
+	$('ul.research').slideToggle();
+});
+}
+
 
 function addTodo(content) {
 	var todo = '<div class="row-fluid todo">'
