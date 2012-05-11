@@ -64,6 +64,10 @@ li.indent {
 	color: #fff;
 }
 
+.navbar .nav > li > a:hover,  {
+	color: #999999;
+}
+
 .navbar-inner {
 	border-radius: 0;
 	-webkit-border-radius: 0;
