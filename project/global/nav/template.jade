@@ -1,20 +1,46 @@
-.navbar
+.navbar.navbar-fixed-top
 	.navbar-inner
-		.row
-			.span1
-				a.brand(href="#dashboard") Logo
-			.span11
+		.container
+			.row
+				.span1
+					a.brand(href="#dashboard") Logo
+				.span11
+					.row
+						.span8
+							ul.nav
+								li: a(href="#strategicsickkids") Strategic SickKids
+								li: a(href="#news") What's Happening?
+								li: a(href="#blog") Mary Jo's Message
+								li: a(href="#people") People
+						.span3
+							ul.user-nav.pull-right
+								li
+									i.icon-user.icon-white
+									|  Welcome, <a href="#profile">Bob</a>
+								li: a(href="#people") Kidmail
+
+	.mainnavsub
+		.subnav
+			.container
 				.row
-					.span8
-						ul.nav
-							li: a(href="#strategicsickkids") Strategic SickKids
-							li: a(href="#news") What's Happening?
-							li: a(href="#blog") Mary Jo's Message
-							li: a(href="#people") People
+					.span8.offset1
+						ul.nav.nav-pills
+							li.dropdown
+								a.dd-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
+							li.dropdown
+								a.dd-toggle(href="#care",data-toggle="dropdown") Care
+							li.dropdown
+								a.dd-toggle(href="#research") Research
+								ul.dropdown-menu
+									li: a(href='#research') Overview
+									li: a(href='#financial') News
+									li: a(href='#financial') Facilities and Support
+									li: a(href='#financial') Policies, Procedures, and Guidelines
+									li: a(href='#financial') Research IT
+									li: a(href='#financial') Training Centre
+									li: a(href='#financial') Resources and Links							
+							li.dropdown
+								a.dd-toggle(href="#learning",data-toggle="dropdown") Learning
 					.span3
-						ul.user-nav.pull-right
-							li
-								i.icon-user.icon-white
-								|  Welcome, <a href="#profile">Bob</a>
-							li: a(href="#people") Kidmail
-			
+						form.navbar-search.pull-right
+							input.search-query(type='text', data-provide="typeahead", placeholder='Search')

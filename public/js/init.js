@@ -33,6 +33,13 @@ function init() {
 		});
 		context();
 		
+		$('li.dropdown').hover(function(){
+			$(".dropdown-menu", this).addClass("open");
+		},
+		function(){
+			$(".dropdown-menu", this).removeClass("open");
+		});
+		
 		$('li.drop').on('click', function() {
 			$('ul.retract').slideToggle();
 			$(this).hide();
@@ -60,7 +67,6 @@ function init() {
     $('#calendarTab a:first').tab('show');
 		$('[rel="tooltip"]').tooltip();
 		$(".collapse").collapse()
-		$('.dd-toggle').dropdown()
 		$('.modal').modal();
 		$('.modal').modal('hide');
 		$('a.saveModal').on('click', function(e) {
@@ -88,7 +94,6 @@ function init() {
 			}
 		});
 		//The glorious little overhang!
-		$('.navDropdown').hide();
 		$('a.ddMain').click(function() {
 			var active = false;
 			$('input.docSelected').each( function() {
@@ -112,8 +117,8 @@ function init() {
 		
 		// fix sub nav on scroll
     var $win = $(window)
-      , $nav = $('.subnav')
-      , navTop = $('.subnav').length && $('.subnav').offset().top - 40
+      , $nav = $('.main-content .subnav')
+      , navTop = $('.main-content .subnav').length && $('.main-content .subnav').offset().top - 40
       , isFixed = 0
 
     processScroll()
