@@ -194,14 +194,9 @@ mixin todo(items)
 	.todo
 		.row-fluid
 			.span9
-				h3 Todo list
+				h3 To do
 			.span3
-				.btn-group.pull-right
-					btn.btn.btn-mini(data-toggle='modal', href='#todoModal') +
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-					ul.dropdown-menu
-						li: a Create a todo
-						li: a Create a Deadline
+				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 	-each item in items
 		.row-fluid.todo
 			.span1: input(type='checkbox')
@@ -247,4 +242,5 @@ mixin pageTitle(title, toggle)
 				mixin share()
 
 mixin twitter()
-	<div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 100%;"><div class="twtr-hd">                     <h3>SickKids Foundation</h3><h4><a target="_blank" href="http://twitter.com/intent/user?screen_name=sickkids">sickkids</a></h4>             </div>            <div class="twtr-bd"><div class="twtr-timeline" style="height: auto;"><div class="twtr-tweets"><div class="twtr-reference-tweet"></div><div id="tweet-id-1" class="twtr-tweet"><div class="twtr-tweet-wrap"><div class="twtr-avatar"><div class="twtr-img"><a target="_blank" href="http://twitter.com/intent/user?screen_name=sickkids"><img alt="sickkids profile" src="http://a0.twimg.com/profile_images/2181267564/Facebook_Timeline_Profiles__SickKids__normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="http://twitter.com/intent/user?screen_name=sickkids" class="twtr-user">sickkids</a> SickKids <a href="http://twitter.com/search?q=%23HappyTip" title="#HappyTip" class="tweet-url hashtag" target="_blank">#HappyTip</a> - Don't hold back your emoticons. <a href="http://twitter.com/search?q=%23dothehappy" title="#dothehappy" class="tweet-url hashtag" target="_blank">#dothehappy</a> <a href="http://t.co/zzycmfzz" target="_blank" urlentities="[object Object]" rel="nofollow">ow.ly/1LVp2q</a>             <em>            <a target="_blank" class="twtr-timestamp" time="Wed May 09 14:20:06 +0000 2012" href="http://twitter.com/sickkids/status/200228656344342529">3 hours ago</a> ·            <a target="_blank" class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=200228656344342529">reply</a> ·             <a target="_blank" class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=200228656344342529">retweet</a> ·             <a target="_blank" class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=200228656344342529">favorite</a>             </em>           </p>         </div>       </div></div>                  <!-- tweets show here -->                </div>              </div>            </div>            <div class="twtr-ft">              <div><a target="_blank" href="http://twitter.com"><img alt="" src="http://widgets.twimg.com/i/widget-logo.png"></a>                <span><a target="_blank" class="twtr-join-conv" style="color:#000000" href="http://twitter.com/sickkids">Join the conversation</a></span>              </div>            </div>          </div></div>
+	h4 Twitter feed
+	img(src="http://placehold.it/300x200")
