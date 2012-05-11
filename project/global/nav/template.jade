@@ -1,40 +1,20 @@
-.navbar.navbar-fixed-top.shrunk-nav
+.navbar
 	.navbar-inner
-		.container
-			.row
-				.span1
-					a.brand(href="#dashboard") Logo
-				.span11
-					.row
-						.span8
-							ul.nav
-								li: a(href="#strategicsickkids") Strategic SickKids
-								li: a(href="#news") What's Happening?
-								li: a(href="#blog") Mary Jo's Message
-								li: a(href="#people") People
-						.span3
-							ul.user-nav.pull-right
-								li
-									i.icon-user.icon-white
-									|  Welcome, <a href="#profile">Bob</a>
-								li: a(href="#people") Kidmail
-					.row
-						.span8
-							ul.nav.primaryNavigation
-								li.dropdown
-									a.dd-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
-										b.caret
-								li.dropdown
-									a.dd-toggle(href="#care",data-toggle="dropdown") Care
-										b.caret
-								li.dropdown
-									a.dd-toggle(href="#research",data-toggle="dropdown") Research
-										b.caret
-									include research_dd
-								li.dropdown
-									a.dd-toggle(href="#learning",data-toggle="dropdown") Learning
-										b.caret
-						.span3
-							form.navbar-search.pull-right
-								input.search-query(type='text', data-provide="typeahead", placeholder='Search')
-
+		.row
+			.span1
+				a.brand(href="#dashboard") Logo
+			.span11
+				.row
+					.span8
+						ul.nav
+							li: a(href="#strategicsickkids") Strategic SickKids
+							li: a(href="#news") What's Happening?
+							li: a(href="#blog") Mary Jo's Message
+							li: a(href="#people") People
+					.span3
+						ul.user-nav.pull-right
+							li
+								i.icon-user.icon-white
+								|  Welcome, <a href="#profile">Bob</a>
+							li: a(href="#people") Kidmail
+			
