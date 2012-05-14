@@ -55,9 +55,11 @@ mixin form(form)
 					.span9
 						input.pull-left.text(type='text')
 			-else if (field.type =='checkbox')
-				label.form
-					input(type='checkbox', style='margin-right: 5px')
-					| #{field.label}
+				.row-fluid
+					.span3
+						label.pull-right.form= field.label
+					.span9
+						input(type='checkbox', style='margin-right: 5px')
 
 mixin forum(posts)
 	-each item in posts

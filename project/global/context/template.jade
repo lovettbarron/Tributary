@@ -3,29 +3,29 @@ include ../../patterns/mixin.jade
 ul
 	li
 		a(href="#dashboard", title="Home")
-			i.icon-home
-		a(href="#dashboard", title="Home") Home
+			i.icon-home.pull-left
+		a(href="#dashboard", title="Home")  Home
 ul.retract
 	li
 		a(href="#calendar", title="Calendar") 
-			i.icon-calendar
-		a(href="#calendar", title="Calendar") Calendar
+			i.icon-calendar.pull-left
+		a(href="#calendar", title="Calendar")  Calendar
 	li
 		a(href="#docs", title="Documents")
-			i.icon-folder-open
-		a(href="#docs", title="Documents") Documents
+			i.icon-folder-open.pull-left
+		a(href="#docs", title="Documents")  Documents
 	li
 		a(href="#groups", title="Groups")
-			i.icon-globe
-		a(href="#groups", title="Groups") Groups
+			i.icon-globe.pull-left
+		a(href="#groups", title="Groups")  Groups
 	li
 		a(href="#subscription", title="Subscriptions")
-			i.icon-book
+			i.icon-book.pull-left
 		a(href="#subscription", title="Subscriptions") Subscriptions
 ul.research
-	li.header: strong Research
+	li.header Research
 	include ../../pages/research/nav
 ul.financial
 	li.header: a#researchExpand(href='#research') Research 
-	li.header: strong Financial
+	li.header - Financial Services
 	include ../../pages/financial/nav

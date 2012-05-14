@@ -4,16 +4,24 @@ include ../../patterns/mixin
 .pull-right
 	mixin share()
 
-mixin pageTitle("Grants Management", false)
+mixin pageTitle("Grants Management Office (GMO)", false)
 .row
 	.span8
 		.subnav#subnav
 			ul.nav.nav-pills
-				li: a.anchor(href='#header1') About
-				li: a.anchor(href='#header2') Services
-				li: a.anchor(href='#header3') My Grant Accountant
-				li: a.anchor(href='#header4') Opportunities/Deadlines
-				li.dropdown: a.dd-toggle(href='#grantsapprovalprocess') Approval Process »
+				li: a.anchor(href='#header1') Our Services
+				li: a.anchor(href='#header2') Upcoming Grants & Deadlines
+				li: a.anchor(href='#header3') Resources & Links
+				li: a.anchor(href='#header4') Important Contacts
+				li.vertical-divider
+				li.dropdown: a.dd-toggle(href='#grantsapprovalprocess') Grants Approval Process »
+					ul.dropdown-menu
+						li: a The Steps
+						li: a Internal Peer Review Process
+						li: a RTC Approval
+						li: a Special Approvals
+						li: a Tips & Tools
+				li.dropdown: a.dd-toggle(href='#grantsapprovalprocess') NIH Guidelines »
 					ul.dropdown-menu
 						li: a The Steps
 						li: a Internal Peer Review Process
@@ -23,4 +31,4 @@ mixin pageTitle("Grants Management", false)
 						li: a Resources/Tools
 		include content
 	.span2
-//		include ../financial/links
+		include ../financial/links

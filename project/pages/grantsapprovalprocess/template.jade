@@ -1,6 +1,6 @@
 include ../../patterns/mixin
 
-//mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial Services', page:'financial'}, {title: 'Grants Management',page:'grantsmanagement'},{title:'Grants Approval Process'}])
+mixin breadcrumb([{title:'Research', page:'research'}, {title: 'Financial Services', page:'financial'}, {title: 'Grants Management',page:'grantsmanagement'},{title:'Grants Approval Process'}])
 .pull-right
 	mixin share()
 
@@ -10,11 +10,10 @@ mixin pageTitle("Grants Approval Process", false)
 		.subnav#subnav
 				ul.nav.nav-pills
 					li: a.anchor(href='#header1') The Steps
-					li: a.anchor(href='#header2') Internal Peer Review Process
-					li: a.anchor(href='#header3') Tips to speed things up
+					li: a.anchor(href='#header2') Peer Review Process
 					li: a.anchor(href='#header4') RTC Approval
 					li: a.anchor(href='#header5') Special Approvals
-					li: a.anchor(href='#header6') Resources/Tools
+					li: a.anchor(href='#header6') Tips &Tools
 		include content
 		
 	.span2
