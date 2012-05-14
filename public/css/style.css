@@ -15,6 +15,10 @@
 	margin: 0;
 }
 
+.header > div {
+	font-weight: 900;
+}
+
 #context li {
 	text-align: left;
 	list-style-type: none;
