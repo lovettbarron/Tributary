@@ -9,7 +9,7 @@ mixin subnav(section)
 			li: a(href='#financial') Training Centre
 			li: a(href='#financial') Resources and Links
 		when 'support'
-			li: a(href='#research') Overview
+			li: a(href='#support') Overview
 			li: a(href='#financial') Human Resources
 			li: a(href='#financial') Policies
 			li: a(href='#financial') Procedures, and Guidelines
@@ -41,6 +41,21 @@ mixin radio(poll)
 			label.radio 
 				input.radio(type='radio') 
 				| #{item}
+
+mixin newsBtn()
+	#newsBtn.btn-group.pull-right
+		a.btn.btn-mini.pull-right(href='#') Submit a Story »
+		a.btn.btn-mini.pull-right(href='#') Subscribe
+
+mixin checkbox(form)
+	form.form-horizontal	
+		fieldset
+		-each field in form.fields
+			.row-fluid
+				.span3
+					input(type='checkbox', style='margin-right: 5px')
+				.span9
+					label.form= field.label
 
 mixin form(form)
 	form.form-horizontal	
@@ -104,7 +119,7 @@ mixin document(post)
 mixin dailyAgenda(todo)
 	.row-fluid
 		.span12
-			h3: a(href='#calendar') Agenda
+			h3: a(href='#calendar') My Agenda
 	.row-fluid
 		.span12
 			h4 Today's Appointments
@@ -119,7 +134,7 @@ mixin dailyAgenda(todo)
 	.todo
 		.row-fluid
 			.span9
-				h4 To do list
+				h4 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 	-var items = ['This is an example todo', 'this is another example of a todo item', 'Yet another todo item']
@@ -241,19 +256,20 @@ mixin comment()
 				hr
 				btn.btn.btn-primary.pull-left(type='submit') Post
 
-mixin todo(items)
+mixin todo(items, show)
 	include modal_todo.jade
 	.todo
 		.row-fluid
 			.span9
-				h3 To do
+				h3 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 	-each item in items
 		.row-fluid.todo
 			.span1: input(type='checkbox')
 			.span11= item
-	a.pull-right(href='#calendar') View calendar »
+	-if(show)
+		a.pull-right(href='#calendar') View calendar »
 
 
 mixin subscribe()
@@ -285,6 +301,11 @@ mixin linkList(list)
 							li: a View
 							li: a Unsubscribe
 
+mixin toTop()
+	hr
+	a.anchor.pull-right(href='#') Return to top 
+		i.icon-circle-arrow-up
+
 mixin pageTitle(title, toggle)
 	.row
 		.span6
@@ -294,7 +315,7 @@ mixin pageTitle(title, toggle)
 				mixin share()
 
 mixin twitter()
-	h3 Twitter feed
+	h3 SickKids Twitter Feed
 	img(src="http://placehold.it/300x200")
 
 mixin breadcrumb(items)

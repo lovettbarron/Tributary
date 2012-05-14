@@ -33,7 +33,6 @@ function init() {
 			})
 		});
 		context();
-		
 		$('li.dropdown').hover(function(){
 			$(".dropdown-menu", this).addClass("open");
 		},
@@ -177,23 +176,29 @@ function ipsum() {
 function context() {
 	var hash = window.location.hash;
 	var context = ['research'];
-	var sub = ['grantsmanagement', 'nih','grantsapprovalprocess','financial'];
+	var sub = ['financial'];
+	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess']
 	path = hash.split('#')[1];
+		$('li.sub').hide();
 		if(window.location.hash) {
 			if( $.inArray(path, context) >= 0) { //Research context			
 				$('ul.retract').slideUp();
 				$('ul.research').slideDown();
-				$('li.drop, li.retr').hide();
-				$('li.drop').slideDown();
 				$('ul.financial').hide();
 			} 
 			else if( $.inArray(path, sub) >= 0) { // Financial
-				$('li.retr').hide();
 				$('ul.retract').hide();
 				$('ul.research').slideUp();
+				$('li.sub').slideUp();
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
-				
+			}
+			else if( $.inArray(path, subsub) >= 0) { //Grants management
+				$('ul.retract').hide();
+				$('ul.research').slideUp();
+				$('li.sub').slideDown();
+				$('ul.financial').slideDown();
+				$('ul.shrinker#home').show();
 			}
 			else { // Home context
 				$('ul.retract').slideDown();

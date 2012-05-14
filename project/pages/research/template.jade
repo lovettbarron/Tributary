@@ -8,19 +8,23 @@ mixin pageTitle("Welcome to the Research Institute", false)
 			- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
 		.well
-			h3: a(href='#news') What's Happening?
+			mixin newsBtn()
+			h3: a(href='#news') Research Institute News
 			.row
 				.span4
-					p: img(src='http://placehold.it/300x100')
+					p: img(src='http://placehold.it/300x200')
 					h4: a(href='#news') Towering over Bay and Elm streets new SickKids building reaches highest point
 					p Our Topping Off event was a hit! Thanks to all of you for coming out and celebrating this construction milestone. See a special video, artist renderings and read the full story in our topping off news release page on SickKids.ca.
+						span.ipsum(length='100')
 				.span4
 					-each story in Stories
 						.row
 							.span4
 								h4: a= story.title
 								p.ipsum(length='100')
-				a.pull-right(href='#news') Read the daily news »
+			.row-fluid
+				.span12
+					a.pull-right(href='#news') Read all research news »
 		.row
 			.span8
 				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
@@ -32,6 +36,8 @@ mixin pageTitle("Welcome to the Research Institute", false)
 							p: a(href='#') Final RLT Location plan for researchers (February 8, 2012)
 							p: a(href='#') Rossant: It's 2012 and that means we can now say The Tower opens "next year!" (January 19,2012)
 							p: a(href='#') News and updates from the Chief, (October 14, 2011)
+							a.pull-right(href='#news') Read more »
+							
 					.span4
 						.well
 							h3 Events and Seminars
@@ -39,6 +45,7 @@ mixin pageTitle("Welcome to the Research Institute", false)
 							p: a(href='#') Cell Biology Seminars
 							p: a(href='#') Child Health Evalutaive Science Rounds
 							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
-							p: a(href='#') Developmental & Stem Cell Biology Seminars													
+							p: a(href='#') Developmental & Stem Cell Biology Seminars
+							a.pull-right(href='#news') Read more »													
 	.span2
 		include links
