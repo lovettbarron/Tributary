@@ -62,7 +62,9 @@ function init() {
 		}
 		})
 		
-		$('ul.primaryNavigation > li')
+		$('#todoModal input[type="checkbox"]').click( function(e) {
+			$('.calendarView').show();
+		})
 		
     $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
@@ -94,6 +96,7 @@ function init() {
 				$('#contextHidden').show();				
 			}
 		});
+		
 		//The glorious little overhang!
 		$('a.ddMain').click(function() {
 			var active = false;
@@ -224,7 +227,6 @@ function context() {
 	$('ul.research').slideToggle();
 });
 }
-
 
 function addTodo(content) {
 	var todo = '<div class="row-fluid todo">'

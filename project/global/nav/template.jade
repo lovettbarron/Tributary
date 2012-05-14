@@ -25,7 +25,7 @@ include ../../patterns/mixin.jade
 		.subnav
 			.container
 				.row
-					.span8.offset1
+					.span7.offset1
 						ul.nav.nav-pills
 							li.dropdown
 								a.dd-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
@@ -44,6 +44,7 @@ include ../../patterns/mixin.jade
 								ul.dropdown-menu
 									mixin subnav('learning')
 
-					.span3
+					.span4
 						form.navbar-search.pull-right
 							input.search-query(type='text', data-provide="typeahead", placeholder='Search')
+							a.btn.btn-inverse.disabled(href='#search'): i.icon-search.icon-white

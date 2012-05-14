@@ -3,7 +3,9 @@
 		btn.closeModal.pull-right(data-dismiss='modal') x
 		h3 Create an Todo
 	.modal-body
-		mixin form({title:'Create a Todo', fields: [ { label: 'Todo',type:'text' }, { label: 'Due date?', type: 'checkbox'}, {label: 'Due date', type:'text'} ]})
+		mixin form({title:'Create a Todo', fields: [ { label: 'Todo',type:'text' }, { label: 'Due date?', type: 'checkbox'}]})
+		.calendarView.hide
+			mixin calendar()
 	.modal-footer
 		a.btn.close Close
 		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
