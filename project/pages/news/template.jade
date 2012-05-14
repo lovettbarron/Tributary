@@ -8,26 +8,6 @@ mixin pageTitle("What's Happening?", false)
 			p We kicked off the Inter-Hospital Heealth Challenge on May 1 with the largest exercise class University Ave. has ever seen! Energetic staff from SickKids and surrounding hospitals hiked up their heart rates to star this May health challenge. Check out these happy and health people and find out how you can participate! There could be a lot more text here all about the story that would be featured.
 			p.ipsum(length='100')
 			p: a(href='#') Read more
-	.span2
-		h4 News Links
-
-		- var groups = {title: "SicKKids Campaigns", items: [{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'}], showOpts: true}
-
-		mixin linkList(groups)
-
-		- var people = {title: "Research Institute News", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
-
-		mixin linkList(people)
-
-		- var news = {title: "Shop & Eat at SickKids", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
-
-				mixin linkList(news)
-.row
-	.span8
-		h3 More SickKids Headlines
-		include ../../patterns/mixin
-		- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
-
 		.row
 			.span8
 				.row-fluid
@@ -48,6 +28,7 @@ mixin pageTitle("What's Happening?", false)
 							.btn.btn: i.i.icon-tasks
 				.row.posts
 					.span8
+						h3 More SickKids Headlines
 						.row-fluid.post
 							.span1: img(src='http://placehold.it/100x100')
 							.span10
@@ -59,6 +40,8 @@ mixin pageTitle("What's Happening?", false)
 										a Feed Name
 									.span6
 										.pull-right: mixin share()
+					- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
 
 						-each story in Stories
 							.row-fluid.post.closed
@@ -67,3 +50,18 @@ mixin pageTitle("What's Happening?", false)
 									h4: a= story.title
 									p.post-meta 12 minutes ago from 
 										a Feed Name
+
+	.span2
+		h4 News Links
+
+		- var groups = {title: "SicKKids Campaigns", items: [{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'}], showOpts: true}
+
+		mixin linkList(groups)
+
+		- var people = {title: "Research Institute News", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
+
+		mixin linkList(people)
+
+		- var news = {title: "Shop & Eat at SickKids", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
+
+				mixin linkList(news)

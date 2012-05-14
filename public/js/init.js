@@ -196,7 +196,9 @@ function context() {
 			else if( $.inArray(path, subsub) >= 0) { //Grants management
 				$('ul.retract').hide();
 				$('ul.research').slideUp();
-				$('li.sub').slideDown();
+				if( !$('li.sub:first').is(':visible')) {
+					$('li.sub').slideDown();
+				}
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
 			}
