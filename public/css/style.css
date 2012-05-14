@@ -15,6 +15,11 @@
 	margin: 0;
 }
 
+#header1, #header2, #header3, #header4, #header5 {
+	padding-top: 116px;
+	margin-top: -116px;
+}
+
 .header > div {
 	font-weight: 900;
 }
