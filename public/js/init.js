@@ -21,7 +21,7 @@ function init() {
 		//Context menu switcher
 		$('a:not([data-toggle],[class=anchor])').each( function(index) { 
 			$(this).unbind('click').click( function(e) {
-//				e.preventDefault();
+				//e.preventDefault();
 				var hash = $(this).attr('href');
 				var path = hash.split('#')[1];
 				$.get('/' + path, function(data) {

@@ -1,0 +1,32 @@
+include ../../patterns/mixin
+-var Groups = ['Lindsay Ellerby', 'Kerem Tirmandi', 'Andrew Lovett-Barron', 'Blair Johnsrude', 'Robyn Polan', 'Matthew Milan', 'Genco Csomethng','Matt Nish-Lapidus', 'Mark Rato', 'Thomas Calahan', 'Tom Cruise', 'Conan Barbaran', 'Dick Dickler',]
+- var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+mixin pageTitle("Groups", false)
+.row
+	.span8
+		.row
+			.span8
+				.row-fluid
+					.span6 People
+					.span3 Role
+					.span3 Last Modified
+				-each group in Groups
+					.row-fluid.forum-post
+						.span1: img(src='http://placehold.it/100x100')
+						.span5: strong: a(href='#groupDetail')= group
+						.span3: a(href='#profile') Admin
+						.span3 Last updated 12 minutes ago
+	.span2
+		.dropdown
+				btn.btn(data-toggle='modal', href='#todoModal') Create a Group
+		hr
+		ul.unstyled
+			li: a My groups (10)
+			li: a All groups (274)
+			hr
+			li: a &#9654; Program Groups (6)
+			li: a &#9654;  Care Groups (10)
+			li: a &#9660; Research Groups (3)
+				li.indent: mixin linkList(groupSidebar)
+			li: a &#9654;  Learning Groups (10)
+			li: a &#9654;  Recreational Groups (10)
