@@ -12,7 +12,7 @@ $(document).ready( function() {
 		$('ul.shrinker').hide(); 
 		$('ul.research').hide();
 		$('ul.financial').hide();
-		init(); 
+		init();
 		}
 	$('.dropdown-toggle').dropdown();
 });
@@ -40,27 +40,6 @@ function init() {
 		function(){
 			$(".dropdown-menu", this).removeClass("open");
 		});
-		
-		$('li.drop').on('click', function() {
-			$('ul.retract').slideToggle();
-			$(this).hide();
-			$('li.retr').show();
-		})
-		$('li.retr').on('click', function() {
-			$('ul.retract').slideToggle();
-			$(this).hide();
-			$('li.drop').show();
-		})
-		
-		$('ul.primaryNavigation > li').on({
-			'hover': function(e) {
-				e.preventDefault();
-				$(this).children('a').click();
-		},
-		'click': function(e) {
-			$(this).children('ul > li:first > a').click();
-		}
-		})
 		
 		$('#todoModal input[type="checkbox"]').click( function(e) {
 			$('.calendarView').show();
