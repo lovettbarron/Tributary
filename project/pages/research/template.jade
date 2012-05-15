@@ -4,9 +4,6 @@ mixin pageTitle("Welcome to the Research Institute", false)
 .row
 			- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
-.row
-			- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
-	.span8
 		.well
 			mixin newsBtn()
 			h3: a(href='#news') Research Institute News
@@ -31,12 +28,12 @@ mixin pageTitle("Welcome to the Research Institute", false)
 				.row
 					.span4
 						.well
-							h3 From the Chief
+							h3 Updates for Scientists
 							p: a(href'#') TCPSS2 Research Ethics Training, (April 23,2012)
 							p: a(href='#') Final RLT Location plan for researchers (February 8, 2012)
 							p: a(href='#') Rossant: It's 2012 and that means we can now say The Tower opens "next year!" (January 19,2012)
 							p: a(href='#') News and updates from the Chief, (October 14, 2011)
-							a.pull-right(href='#news') Read more »
+							a.pull-right(href='#news') Read more updates »
 							
 					.span4
 						.well
@@ -46,6 +43,6 @@ mixin pageTitle("Welcome to the Research Institute", false)
 							p: a(href='#') Child Health Evalutaive Science Rounds
 							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
 							p: a(href='#') Developmental & Stem Cell Biology Seminars
-							a.pull-right(href='#news') Read more »													
+							a.pull-right(href='#news') See all events »
 	.span2
 		include links
