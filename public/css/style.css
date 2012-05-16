@@ -466,6 +466,10 @@ h2, h3, h4 {
 }
 
 @media (min-width: 1200px) {
+	.subnav-fixed {
+				left: 200px;
+				width: 770px;
+	}
 	.row .well .span4 {
 		width: 350px;
 	}
