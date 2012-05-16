@@ -1,6 +1,6 @@
 include ../../patterns/mixin.jade
 mixin pageTitle("Welcome to the Research Institute", false)
-- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
+- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test', highlight: true}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 .row
 	.span8
 		.well
@@ -14,10 +14,17 @@ mixin pageTitle("Welcome to the Research Institute", false)
 						span.ipsum(length='100')
 				.span4
 					-each story in Stories
-						.row
-							.span4
-								h4: a= story.title
-								p.ipsum(length='100')
+						-if (story.highlight)
+							.row
+								.span4.highlight
+									em From the chief
+									h4: a= story.title
+									p.ipsum(length='100')
+						-else
+							.row
+								.span4
+									h4: a= story.title
+									p.ipsum(length='100')
 			.row-fluid
 				.span12
 					a.pull-right(href='#news') Read all research news »

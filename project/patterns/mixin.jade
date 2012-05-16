@@ -1,3 +1,5 @@
+-var todoItems = [{todo:'This is an non-dated todo item'}, {todo: 'This is a todo item due today', date: 'in 2 hours'}, {todo: 'This is a todo item due tomorrow', date: 'tomorrow'}, {todo: 'A far away todo', date: 'June 30 at 3pm'}]
+
 mixin subnav(section)
 	case section
 		when 'research'
@@ -43,9 +45,14 @@ mixin radio(poll)
 				| #{item}
 
 mixin newsBtn()
-	#newsBtn.btn-group.pull-right
-		a.btn.btn-mini.pull-right(href='#') Submit a Story »
-		a.btn.btn-mini.pull-right(href='#') Subscribe
+	#newsBtn.pull-right
+		btn.btn.btn-mini(href='#') Submit a Story
+		|  
+		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
+
+mixin subscribe()
+	#newsBtn.pull-right
+		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
 
 mixin checkbox(form)
 	form.form-horizontal	
@@ -137,11 +144,14 @@ mixin dailyAgenda(todo)
 				h4 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
-	-var items = ['This is an example todo', 'this is another example of a todo item', 'Yet another todo item']
-	-each item in items
-		.row-fluid.todo
-			.span1: input(type='checkbox')
-			.span11= item
+		-each item in todoItems
+			.row-fluid.todo
+				.span1: input(type='checkbox')
+				-if(item.date)
+					.span6= item.todo
+					.span3: span.label.label-warning Due #{item.date}
+				-else
+					.span11= item.todo
 	a.pull-right(href='#calendar') View my calendar »
 		
 mixin tools(posts)
@@ -264,10 +274,14 @@ mixin todo(items, show)
 				h3 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
-	-each item in items
-		.row-fluid.todo
-			.span1: input(type='checkbox')
-			.span11= item
+		-each item in todoItems
+			.row-fluid.todo
+				.span1: input(type='checkbox')
+				-if(item.date)
+					.span6= item.todo
+					.span3: span.label.label-warning Due #{item.date}
+				-else
+					.span11= item.todo
 	-if(show)
 		a.pull-right(href='#calendar') View calendar »
 
