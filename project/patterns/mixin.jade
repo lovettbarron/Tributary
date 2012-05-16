@@ -71,17 +71,39 @@ mixin form(form)
 			-if(field.type == 'radio')
 				mixin radio(field.poll)
 			-else if (field.type =='text')
-				.row-fluid
+				.row-fluid.formField
 					.span3
 						label.pull-right.form= field.label					
 					.span9
 						input.pull-left.text(type='text')
 			-else if (field.type =='checkbox')
-				.row-fluid
+				.row-fluid.formField
 					.span3
 						label.pull-right.form= field.label
 					.span9
 						input(type='checkbox', style='margin-right: 5px')
+			-else if (field.type =='person')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						input.pull-left.text(type='text', placeholder='Default is you')
+						btn.btn: i.icon-user
+			-else if (field.type =='date')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
+						btn.btn: i.icon-calendar
+			-else if (field.type=='dropdown')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						select.select
+							-each option in field.options
+								option= option
 
 mixin forum(posts)
 	-each item in posts
@@ -285,10 +307,6 @@ mixin todo(items, show)
 	-if(show)
 		a.pull-right(href='#calendar') View calendar »
 
-
-mixin subscribe()
-	.subscribe
-		btn.btn.btn-mini(type='Subscribe') Subscribe
 
 mixin addPerson()
 	.addPerson

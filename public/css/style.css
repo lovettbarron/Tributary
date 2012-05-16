@@ -214,6 +214,10 @@ h2, h3, h4 {
 	background: transparent;
 }
 
+.formField {
+	margin-bottom: 18px;
+}
+
 .todo {
 	margin: 8px 0 8px 0;
 }

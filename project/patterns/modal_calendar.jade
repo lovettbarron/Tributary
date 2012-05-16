@@ -5,7 +5,7 @@ include mixin
 		btn.closeModal.pull-right(data-dismiss='modal') x
 		h3 Create an Event
 	.modal-body
-		mixin form({title:'Create an event', fields: [ { label: 'Name of event',type:'text' }, { label: 'Start Date', type: 'text'}, {label: 'End Date', type:'text'}, { label: 'Attendees', type: 'text'} ]})
+		mixin form({title:'Create an event', fields: [ { label: 'Name of event',type:'text' }, { label: 'Start Date', type: 'date'}, {label: 'End Date', type:'date'}, { label: 'Attendees', type: 'person'} ]})
 	.modal-footer
 		a.btn.close Close
 		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
