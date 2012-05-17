@@ -1,0 +1,43 @@
+include ../../patterns/mixin
+
+#shopModal.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Terms of use
+	.modal-body 
+		h3 Rules
+		p NO personal items can be listed.
+		p Items will be automatically listed for two weeks unless you specify a different date.
+
+		p We will not monitor your listing. It will automatically drop off the day after it expires (normally two weeks). If you need to extend the date or would like it removed earlier, please use the change/remove form.
+
+		h3 Restrictions
+		p There are restrictions on the disposal of certain types of lab equipment and materials. Please refer to the following list, particularly with respect to radioactive items.
+
+		ul
+			li.header Restricted items
+			li Radioactive items CANNOT be listed. Contact Anne Monteath for disposal.
+			li Scintillation counters cannot be listed as they have a radioactive internal source
+			li All lab equipment MUST be wipe-tested and cleaned of biological and chemical contamination before being transferred to the new owner(s).
+	.modal-footer
+		a.btn.btn-primary(data-toggle='modal', href='#shopForm', data-dismiss='modal') Accept
+		a.btn.close Close
+
+
+#shopForm.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Post an item
+	.modal-body
+		mixin form({title:'Create post', fields: [ {label: 'Category', type:'dropdown', options: ['Research Tool','Office Supplies','Personal listing']},{ label: 'Name of object',type:'text' }, { label: 'Description', type: 'text'}, {label: 'End Date', type:'date'}, { label: 'Contact person', type: 'person'} ]})
+	.modal-footer
+		a.btn.close(data-dismiss='modal') Close
+		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
+
+#shopSuccess.modal.success
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Success!
+	.modal-body Your item will be posted pending moderation. You will receive an email when it is posted.
+	.modal-footer
+		a.btn.btn-primary.close(data-dismiss='modal') Close
