@@ -97,6 +97,12 @@ function init() {
 		comment();
 		ipsum();
 		searchField();
+		$('.onHover').hide();
+		$('.feedItem').hover( function() {
+			$(this).find('.onHover').show();
+		}, function() {
+			$(this).find('.onHover').hide();
+		})
 		
 		// fix sub nav on scroll
     var $win = $(window)

@@ -3,19 +3,21 @@ mixin pageTitle("Clinical Resources", false)
 .row
 	.span8
 		hr
-		h3 About Us
-		p.ipsum(length='500') 
+		p This section contains resources for clinical staff. 
+		br
+		p.ipsum(length=200)
 		ul
-		li ***Tenative***
-		li Lab Services
-		li Pharmacy
-		li Kidcom - out of country postal codes?
-		li patient statitics
-		li human resources
-		li information services
-		li communicatoins and public affairs
-		li Access and Patient Flow
-		li Ambulatory
-		
-	.span3
+		li: a(href='labservices')
+		li: a(href='diagnosticimaging')
+		li: a(href='ccrt')
+		li: a(href='electronmicro')
+		li: a(href='medeng')
+		li: a(href='childandfamily')
+		li: a(href='palliative')
+		li: a(href='medicaldirectives')
+		li: a(href='patientstatistics')
+		li: a(href='clinicalgoods')
+		li: a(href='nursing')
+	.span2
 		include links
+	

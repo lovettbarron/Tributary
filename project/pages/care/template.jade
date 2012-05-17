@@ -1,4 +1,5 @@
 include ../../patterns/mixin.jade
+include ../../patterns/feed
 mixin pageTitle("Welcome to Patient Care", false)
 
 .row
@@ -40,5 +41,9 @@ mixin pageTitle("Welcome to Patient Care", false)
 							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
 							p: a(href='#') Developmental & Stem Cell Biology Seminars
 							a.pull-right(href='#news') See all events »
+				.row
+					.span8
+						mixin miniFeed({title: 'Care feed', updates: [{type:'news', title:'Chief of Care updated her status', time:'2 minutes ago'},{type:'doc',title:'Policy documents updated', time:'2 days ago'},{type:'event',title:'Join our Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
+						
 	.span2
 		include links
