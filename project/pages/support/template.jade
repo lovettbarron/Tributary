@@ -1,12 +1,12 @@
 include ../../patterns/mixin.jade
-mixin pageTitle("Welcome to the Research Institute", false)
-- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test', highlight: true}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
+mixin pageTitle("Welcome to Staff Support Resources", false)
 
 .row
+			- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
 		.well
 			mixin newsBtn()
-			h3: a(href='#news') Research Institute News
+			h3: a(href='#news') Patient Care News
 			.row
 				.span4
 					p: img(src='http://placehold.it/300x200')
@@ -15,17 +15,10 @@ mixin pageTitle("Welcome to the Research Institute", false)
 						span.ipsum(length='100')
 				.span4
 					-each story in Stories
-						-if (story.highlight)
-							.row
-								.span4.highlight
-									em From the chief
-									h4: a= story.title
-									p.ipsum(length='100')
-						-else
-							.row
-								.span4
-									h4: a= story.title
-									p.ipsum(length='100')
+						.row
+							.span4
+								h4: a= story.title
+								p.ipsum(length='100')
 			.row-fluid
 				.span12
 					a.pull-right(href='#news') Read all research news »
@@ -41,7 +34,7 @@ mixin pageTitle("Welcome to the Research Institute", false)
 							p: a(href='#') Rossant: It's 2012 and that means we can now say The Tower opens "next year!" (January 19,2012)
 							p: a(href='#') News and updates from the Chief, (October 14, 2011)
 							a.pull-right(href='#news') Read more updates »
-							
+
 					.span4
 						.well
 							h3 Events and Seminars

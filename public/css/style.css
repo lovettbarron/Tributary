@@ -214,12 +214,36 @@ h2, h3, h4 {
 	background: transparent;
 }
 
+.formField {
+	margin-bottom: 18px;
+}
+
+.todo {
+	margin: 8px 0 8px 0;
+}
+
 .document, .forum-post, .post {
 	border-width: 1px 0;
 	border-color: #eeeeee;
 	border-style: solid;
 	margin-top: -1px;
 	padding: 10px 0;
+}
+
+.highlight {
+  background-color: #d3d3d3; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #d3d3d3 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#d3d3d3)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#d3d3d3 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #f5f5f5 0%,#d3d3d3 100%); /* IE10+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%,#d3d3d3 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%,#d3d3d3 100%); /* W3C */
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .well .post {
@@ -466,6 +490,10 @@ h2, h3, h4 {
 }
 
 @media (min-width: 1200px) {
+	.subnav-fixed {
+				left: 200px;
+				width: 770px;
+	}
 	.row .well .span4 {
 		width: 350px;
 	}

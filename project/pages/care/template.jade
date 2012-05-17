@@ -1,0 +1,44 @@
+include ../../patterns/mixin.jade
+mixin pageTitle("Welcome to Patient Care", false)
+
+.row
+			- var Stories = [ {title: 'Cardiac Care', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
+	.span8
+		.well
+			mixin newsBtn()
+			h3: a(href='#news') Patient Care Updates
+			.row
+				.span8
+					-each story in Stories
+						.row
+							.span8
+								h4: a= story.title
+								p.ipsum(length='100')
+			.row-fluid
+				.span12
+					a.pull-right(href='#news') Read all research news »
+		.row
+			.span8
+				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
+				.row
+					.span4
+						.well
+							h3 Tools
+							p: a e-formulary 2011
+							p: a Infusion Calculator
+							p: a VIG Dose Calculator
+							p: a Resucitation and Intubation Drug Calculator
+							p: a Intravenous Medication Adminsitration 
+							a.pull-right(href='#tools') See more »
+							
+					.span4
+						.well
+							h3 Events and Seminars
+							p: a(href='#') Cardio-Pulmonary RIP and Networking Series
+							p: a(href='#') Cell Biology Seminars
+							p: a(href='#') Child Health Evalutaive Science Rounds
+							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
+							p: a(href='#') Developmental & Stem Cell Biology Seminars
+							a.pull-right(href='#news') See all events »
+	.span2
+		include links

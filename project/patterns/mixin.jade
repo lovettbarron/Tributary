@@ -1,3 +1,5 @@
+-var todoItems = [{todo:'This is an non-dated todo item'}, {todo: 'This is a todo item due today', date: 'in 2 hours'}, {todo: 'This is a todo item due tomorrow', date: 'tomorrow'}, {todo: 'A far away todo', date: 'June 30 at 3pm'}]
+
 mixin subnav(section)
 	case section
 		when 'research'
@@ -11,21 +13,21 @@ mixin subnav(section)
 		when 'support'
 			li: a(href='#support') Overview
 			li: a(href='#financial') Human Resources
-			li: a(href='#financial') Policies
-			li: a(href='#financial') Procedures, and Guidelines
+			li: a(href='#financial') Policies, Procedures and Guidelines
 			li: a(href='#financial') Guides
 			li: a(href='#financial') Health & Safety
 			li: a(href='#financial') Information Services
 			li: a(href='#financial') Communications & Public Affairs
 			li: a(href='#financial') Financial Services
+			li: a(href='#financial') Other Services
 		when 'care'
-			li: a(href='#research') Overview
+			li: a(href='#care') Overview
 			li: a(href='#financial') News
-			li: a(href='#financial') Clinical Resources
+			li: a(href='#clinic') Clinical Resources
 			li: a(href='#financial') Forms & Tools
 			li: a(href='#financial') Training & Education
 		when 'learning'
-			li: a(href='#research') Overview
+			li: a(href='#learning') Overview
 			li: a(href='#financial') News
 			li: a(href='#financial') Simulation Training
 			li: a(href='#financial') Modules
@@ -43,9 +45,14 @@ mixin radio(poll)
 				| #{item}
 
 mixin newsBtn()
-	#newsBtn.btn-group.pull-right
-		a.btn.btn-mini.pull-right(href='#') Submit a Story »
-		a.btn.btn-mini.pull-right(href='#') Subscribe
+	#newsBtn.pull-right
+		btn.btn.btn-mini(href='#') Submit a Story
+		|  
+		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
+
+mixin subscribe()
+	#newsBtn.pull-right
+		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
 
 mixin checkbox(form)
 	form.form-horizontal	
@@ -64,17 +71,39 @@ mixin form(form)
 			-if(field.type == 'radio')
 				mixin radio(field.poll)
 			-else if (field.type =='text')
-				.row-fluid
+				.row-fluid.formField
 					.span3
 						label.pull-right.form= field.label					
 					.span9
 						input.pull-left.text(type='text')
 			-else if (field.type =='checkbox')
-				.row-fluid
+				.row-fluid.formField
 					.span3
 						label.pull-right.form= field.label
 					.span9
 						input(type='checkbox', style='margin-right: 5px')
+			-else if (field.type =='person')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						input.pull-left.text(type='text', placeholder='Default is you')
+						btn.btn: i.icon-user
+			-else if (field.type =='date')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
+						btn.btn: i.icon-calendar
+			-else if (field.type=='dropdown')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form= field.label					
+					.span9
+						select.select
+							-each option in field.options
+								option= option
 
 mixin forum(posts)
 	-each item in posts
@@ -137,11 +166,14 @@ mixin dailyAgenda(todo)
 				h4 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
-	-var items = ['This is an example todo', 'this is another example of a todo item', 'Yet another todo item']
-	-each item in items
-		.row-fluid.todo
-			.span1: input(type='checkbox')
-			.span11= item
+		-each item in todoItems
+			.row-fluid.todo
+				.span1: input(type='checkbox')
+				-if(item.date)
+					.span6= item.todo
+					.span3: span.label.label-warning Due #{item.date}
+				-else
+					.span11= item.todo
 	a.pull-right(href='#calendar') View my calendar »
 		
 mixin tools(posts)
@@ -264,17 +296,17 @@ mixin todo(items, show)
 				h3 To Do List
 			.span3
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
-	-each item in items
-		.row-fluid.todo
-			.span1: input(type='checkbox')
-			.span11= item
+		-each item in todoItems
+			.row-fluid.todo
+				.span1: input(type='checkbox')
+				-if(item.date)
+					.span6= item.todo
+					.span3: span.label.label-warning Due #{item.date}
+				-else
+					.span11= item.todo
 	-if(show)
 		a.pull-right(href='#calendar') View calendar »
 
-
-mixin subscribe()
-	.subscribe
-		btn.btn.btn-mini(type='Subscribe') Subscribe
 
 mixin addPerson()
 	.addPerson

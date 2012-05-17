@@ -33,6 +33,7 @@ function init() {
 			})
 		});
 		context();
+		subscribeButtons();
 		$('li.dropdown').hover(function(){
 			$(".dropdown-menu", this).addClass("open");
 		},
@@ -212,6 +213,19 @@ function context() {
  $('a#researchExpand').click( function() {
 	$('ul.research').slideToggle();
 });
+}
+
+function subscribeButtons() {
+	$('.subscribeButton').click( function(e) {
+		e.preventDefault();
+		if($(this).hasClass('subscribed')) {
+			$(this).removeClass('subscribed')
+			$(this).html('Subscribe');
+		} else {
+			$(this).addClass('subscribed')
+			$(this).html('<i class="icon-ok"></i> Subscribed')
+		}
+	});
 }
 
 function addTodo(content) {
