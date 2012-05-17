@@ -46,6 +46,6 @@ include ../../patterns/mixin.jade
 							td Interests
 							td Cooking, Skiing, Research, Writing, Running
 		include ../../patterns/feed
-		mixin miniFeed({title: 'Bob\'s feed', updates: [{type:'profile', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', time:'2 days ago'},{type:'event',title:'Bob created an event', time:'last week'},{type:'news',title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
+		mixin miniFeed({title: 'Bob\'s feed', updates: [{type:'profile', actor:'bob', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'bob', time:'2 days ago'},{type:'event',actor:'bob', title:'Bob created an event', time:'last week'},{type:'news',actor:'bob', title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
 		include links

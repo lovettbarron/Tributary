@@ -11,6 +11,9 @@ $(document).ready( function() {
 	} else { 
 		$('ul.shrinker').hide(); 
 		$('ul.research').hide();
+		$('ul.support').hide();
+		$('ul.care').hide();
+		$('ul.learning').hide();
 		$('ul.financial').hide();
 		init();
 		}
@@ -184,7 +187,10 @@ function context() {
 	var hash = window.location.hash;
 	var context = ['research'];
 	var sub = ['financial'];
-	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess']
+	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess'];
+	var care = ['care'];
+	var learning = ['learning'];
+	var ssr = ['support'];
 	path = hash.split('#')[1];
 		$('li.sub').hide();
 		if(window.location.hash) {
@@ -192,6 +198,9 @@ function context() {
 				$('ul.retract').slideUp();
 				$('ul.research').slideDown();
 				$('ul.financial').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 			} 
 			else if( $.inArray(path, sub) >= 0) { // Financial
 				$('ul.retract').hide();
@@ -199,6 +208,29 @@ function context() {
 				$('li.sub').slideUp();
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
+			}
+			else if( $.inArray(path, care) >= 0) { // care
+				$('ul.retract').slideUp();
+				$('ul.care').slideDown();
+				$('ul.financial').hide();
+				$('ul.research').hide();
+				$('ul.support').hide();
+				$('ul.learning').hide();
+			}
+			else if( $.inArray(path, learning) >= 0) { // learning
+				$('ul.retract').slideUp();
+				$('ul.learning').slideDown();
+				$('ul.financial').hide();
+				$('ul.care').hide();
+				$('ul.support').hide();
+			}
+			else if( $.inArray(path, ssr) >= 0) { // support
+				$('ul.retract').slideUp();
+				$('ul.support').slideDown();
+				$('ul.financial').hide();
+				$('ul.research').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
 			}
 			else if( $.inArray(path, subsub) >= 0) { //Grants management
 				$('ul.retract').hide();
