@@ -222,6 +222,7 @@ function context() {
 				$('ul.learning').slideDown();
 				$('ul.financial').hide();
 				$('ul.care').hide();
+				$('ul.research').hide();
 				$('ul.support').hide();
 			}
 			else if( $.inArray(path, ssr) >= 0) { // support
