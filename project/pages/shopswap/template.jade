@@ -1,0 +1,57 @@
+include ../../patterns/mixin
+
+-var swap = [{title: 'This is a post', user: 'Lorem von Ipsum'},{title: 'This is a post', user: 'Lorem von Ipsum'},{title: 'This is a post', user: 'Lorem von Ipsum'},{title: 'This is a post', user: 'Lorem von Ipsum'}]
+
+include modal_shopswap
+
+mixin content(list)
+	-for post in list
+		.row-fluid
+			.span12: h3= post.title
+		.row-fluid
+			.span8
+				.row-fluid
+					.span12
+						p.ipsum(length='100')
+				.row-fluid
+					.span3
+						i.icon-share-alt
+						|  Reply
+					.span3
+					.span3
+						i.icon-flag
+						|  Flag
+					.span3
+			.span4
+				.row-fluid
+					.span4
+						img(src='http://placehold.it/100x100')
+					.span8
+						span.username= post.user
+						p Administrator
+				.row-fluid
+					.span12
+						i.icon-envelope
+		hr
+
+
+.row
+	.span8
+		mixin subscribe()
+		h2 Shop 'n Swap
+		.well
+			p Shop n' Swap is available to all Research Institute employees who would like to dispose of lab or office items, such as equipment or supplies. Items can be sold, traded or given away. There is also a forum for posting personal items.
+		ul.nav.nav-pills.pull-left
+			li.active: a(href='#header1', data-toggle="pill") Research tools
+			li: a(href='#header2', data-toggle="pill") Office supplies
+			li: a(href='#header3', data-toggle="pill") Personal listings
+		mixin content(swap)
+	.span2
+		.dropdown
+			a.btn(data-toggle='modal', href='#shopModal') Post an item
+		hr
+		h4 My postings
+
+
+		mixin linkList({title: 'Department', items: [{title: 'HP95 Printer Cartridges', address: '#'}, {title: 'Box of TI-83+ calculators', address: '#'},{title: 'IBM Laptops', address: '#'}]})
+		mixin linkList({title: 'Personal', items: [{title: 'Teak side table', address: '#'}, {title: 'FREE box of baby clothes', address: '#'}]})

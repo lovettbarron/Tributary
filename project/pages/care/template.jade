@@ -1,22 +1,11 @@
 include ../../patterns/mixin.jade
+include ../../patterns/feed
 mixin pageTitle("Welcome to Patient Care", false)
 
 .row
-			- var Stories = [ {title: 'Cardiac Care', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
 		.well
-			mixin newsBtn()
-			h3: a(href='#news') Patient Care Updates
-			.row
-				.span8
-					-each story in Stories
-						.row
-							.span8
-								h4: a= story.title
-								p.ipsum(length='100')
-			.row-fluid
-				.span12
-					a.pull-right(href='#news') Read all research news »
+			mixin miniFeed({title: 'Care feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
 		.row
 			.span8
 				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
@@ -40,5 +29,6 @@ mixin pageTitle("Welcome to Patient Care", false)
 							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
 							p: a(href='#') Developmental & Stem Cell Biology Seminars
 							a.pull-right(href='#news') See all events »
+						
 	.span2
 		include links

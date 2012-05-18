@@ -29,3 +29,12 @@ ul.financial
 	li.header: a#researchExpand(href='#research') Research 
 	li.header.last: a(href='#financial') Financial Services
 	include ../../pages/financial/nav
+ul.care
+	li.header.last Care
+	mixin subnav('care')
+ul.learning
+	li.header.last Learning
+	mixin subnav('learning')
+ul.support
+	li.header.last Support
+	mixin subnav('support')

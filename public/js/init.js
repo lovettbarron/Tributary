@@ -11,6 +11,9 @@ $(document).ready( function() {
 	} else { 
 		$('ul.shrinker').hide(); 
 		$('ul.research').hide();
+		$('ul.support').hide();
+		$('ul.care').hide();
+		$('ul.learning').hide();
 		$('ul.financial').hide();
 		init();
 		}
@@ -97,6 +100,21 @@ function init() {
 		comment();
 		ipsum();
 		searchField();
+		// On hover state for feed items
+		$('.onHover').hide();
+		$('.feedItem').hover( function() {
+			$(this).find('.onHover').show();
+		}, function() {
+			$(this).find('.onHover').hide();
+		})
+		
+		// Click in to feed update
+		$('#feedUpdate').focus( function(){
+			$(this).height('100');
+		});
+		$('#feedUpdate').focusout( function() {
+			$(this).height('30');
+		});
 		
 		// fix sub nav on scroll
     var $win = $(window)
@@ -178,7 +196,10 @@ function context() {
 	var hash = window.location.hash;
 	var context = ['research'];
 	var sub = ['financial'];
-	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess']
+	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess'];
+	var care = ['care'];
+	var learning = ['learning'];
+	var ssr = ['support'];
 	path = hash.split('#')[1];
 		$('li.sub').hide();
 		if(window.location.hash) {
@@ -186,6 +207,9 @@ function context() {
 				$('ul.retract').slideUp();
 				$('ul.research').slideDown();
 				$('ul.financial').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 			} 
 			else if( $.inArray(path, sub) >= 0) { // Financial
 				$('ul.retract').hide();
@@ -193,9 +217,39 @@ function context() {
 				$('li.sub').slideUp();
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
+			}
+			else if( $.inArray(path, care) >= 0) { // care
+				$('ul.retract').slideUp();
+				$('ul.care').slideDown();
+				$('ul.financial').hide();
+				$('ul.research').hide();
+				$('ul.support').hide();
+				$('ul.learning').hide();
+			}
+			else if( $.inArray(path, learning) >= 0) { // learning
+				$('ul.retract').slideUp();
+				$('ul.learning').slideDown();
+				$('ul.financial').hide();
+				$('ul.care').hide();
+				$('ul.research').hide();
+				$('ul.support').hide();
+			}
+			else if( $.inArray(path, ssr) >= 0) { // support
+				$('ul.retract').slideUp();
+				$('ul.support').slideDown();
+				$('ul.financial').hide();
+				$('ul.research').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
 			}
 			else if( $.inArray(path, subsub) >= 0) { //Grants management
 				$('ul.retract').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 				$('ul.research').slideUp();
 				if( !$('li.sub:first').is(':visible')) {
 					$('li.sub').slideDown();
@@ -208,6 +262,9 @@ function context() {
 				$('ul.research').slideUp();
 				$('ul.financial').slideUp();
 				$('ul.shrinker').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 			}
 		}
  $('a#researchExpand').click( function() {
