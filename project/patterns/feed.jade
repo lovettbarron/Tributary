@@ -9,14 +9,14 @@ mixin miniFeed(feed)
 				.span12
 						form.form-horizontal
 							textarea.input-xlarge#feedUpdate(rows='1')
-							.pull-left.btnPadding
-								label Privacy: 							
+							.pull-left.btnPadding.feedbtn
+								label Privacy:
 									select(style='width: 70%')
-										option(value='default') Public
-										option Group only
-										option Subscribers only
-										option Me only
-							a.btn.btn-primary.pull-right#postWall Post
+										option(value='default') Everyone
+										option My Team
+										option My followers
+										option Private
+							a.feedbtn.btn.btn-primary.pull-right#postWall Post
 		- each item in feed.updates
 			case item.type
 				when 'profile'
@@ -29,7 +29,6 @@ mixin miniFeed(feed)
 								h4: a(href='#publicProfile')= item.actor
 								p= item.title
 								.row-fluid.onHover
-									.span8
 									.span2
 										i.icon-share
 										|  Share
@@ -46,7 +45,6 @@ mixin miniFeed(feed)
 								h4: a(href='#groupDetail')= item.title
 								p= item.desc
 								.row-fluid.onHover
-									.span8
 									.span2
 										i.icon-share
 										|  Share
@@ -63,15 +61,14 @@ mixin miniFeed(feed)
 								h4: a(href='#calendar')= item.title
 								p= item.desc
 								.row-fluid.onHover
-									.span6
 									.span2
-										i.icon-plus-sign
+										i.icon-plus-sign(alt='Register')
 										|  Register
 									.span2
-										i.icon-share
+										i.icon-share(alt='Share')
 										|  Share
 									.span2
-										i.icon-remove
+										i.icon-remove(alt='Report')
 										|  Report
 				when 'news'
 					.feedItem
@@ -84,10 +81,9 @@ mixin miniFeed(feed)
 								h6: a(href='#publicProfile')= item.actor
 								p.ipsum(length='130')
 								.row-fluid.onHover
-									.span6
 									.span2
 										i.icon-share-alt
-										|  Leave comment
+										|  Open
 									.span2
 										i.icon-share
 										|  Share
@@ -107,18 +103,17 @@ mixin miniFeed(feed)
 									|  Updated: 
 								p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
 								.row-fluid.onHover
-									.span4
 									.span2
-										i.icon-plus-sign
+										i.icon-plus-sign(alt='Bookmark')
 										|  Bookmark
 									.span2
-										i.icon-pencil
+										i.icon-pencil(alt='Edit')
 										|  Edit
 									.span2
-										i.icon-share
+										i.icon-share(alt='Share')
 										|  Share
 									.span2
-										i.icon-remove
+										i.icon-remove(alt='report')
 										|  Report
 		.pull-right
 			a(href='#subscription') Read older posts »

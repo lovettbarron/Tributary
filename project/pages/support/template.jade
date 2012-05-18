@@ -6,7 +6,6 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 	- var Stories = [ {title: 'Filling out my intranet profile', address: 'test'}, {title: 'Where to find new info!', address: 'test'}, {title: 'Getting the most out of my department', address: 'test'}, {title: 'Learning and growing with SickKids', address: 'test'}]
 	.span8
 		.well
-			mixin newsBtn()
 			h3: a(href='#news') New To SickKids?
 			.row
 				.span4
@@ -28,7 +27,7 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
 				.row
 					.span4
-						mixin miniFeed({title: 'Care feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
+						mixin miniFeed({title: 'Support feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
 					.span4
 						.well
 							h3 Events and Seminars

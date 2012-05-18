@@ -107,13 +107,15 @@ function init() {
 		}, function() {
 			$(this).find('.onHover').hide();
 		})
-		
+		$('.feedbtn').hide();
 		// Click in to feed update
 		$('#feedUpdate').focus( function(){
 			$(this).height('100');
+			$('.feedbtn').show();
 		});
 		$('#feedUpdate').focusout( function() {
 			$(this).height('30');
+			$('.feedbtn').hide();
 		});
 		
 		// fix sub nav on scroll

@@ -1,7 +1,7 @@
 include ../../patterns/mixin
 - var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
-mixin pageTitle("Subscriptions", false)
+mixin pageTitle("Activity Feed", false)
 
 .row
 	.span8
@@ -43,16 +43,15 @@ mixin pageTitle("Subscriptions", false)
 							p.post-meta 12 minutes ago from 
 								a Feed Name
 	.span2
-		h4 My Subscriptions
-
-		- var groups = {title: "Groups", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
-
-		mixin linkList(groups)
-
-		- var people = {title: "People", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
-
-		mixin linkList(people)
-		
-		- var news = {title: "News", items: [{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'},{title: 'Feed Name (4)', address: '#'}], showOpts: true}
-
-		mixin linkList(news)
+		h4 Activity Filter
+		ul.unstyled
+			li: a My Subscriptions (94)
+			li: a My Teams (134)
+			li: a All news (291)
+			li: a All activity (500+) 
+			hr
+			h6 Filters
+			mixin checkbox({ title: 'Test', fields: [ { label: 'People', type: 'checkbox'},{label: 'Groups', type: 'checkbox'},{label: 'News', type: 'checkbox'},{label: 'Documents', type: 'checkbox'},{label: 'Events', type: 'checkbox'}]})
+			h6 Categories
+			li: a &#9660; Group collections (3)
+			li: a &#9654; My collections(5)
