@@ -8,7 +8,7 @@ include mixin
 		mixin form({title:'Create an event', fields: [ { label: 'Name of event',type:'text' }, { label: 'Start Date', type: 'date'}, {label: 'End Date', type:'date'}, { label: 'Attendees', type: 'person'} ]})
 	.modal-footer
 		a.btn.close Close
-		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
+		a.btn.btn-primary.saveModal(href='calendarSuccess') Save
 
 #calendarSuccess.modal.success
 	.modal-header

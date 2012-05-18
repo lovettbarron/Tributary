@@ -20,7 +20,7 @@ include ../../patterns/feed
 							-each story in Stories
 								a.news-item= story.title
 								//- p.ipsum(length='100')
-							a.news-item(href='#news') Read the daily news »
+							a.news-item(href='news') Read the daily news »
 						.span3
 							h4 Ongoing at SickKids
 							p: img.news-feature(src='http://placehold.it/300x200')
@@ -37,7 +37,7 @@ include ../../patterns/feed
 				.well
 					h3 Quick Poll
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})
-					a.pull-right(href='#poll') View poll results »
+					a.pull-right(href='poll') View poll results »
 					btn.btn.btn-primary(type='button') Submit
 			.span4
 				.well

@@ -174,7 +174,7 @@ mixin dailyAgenda(todo)
 					.span3: span.label.label-warning Due #{item.date}
 				-else
 					.span11= item.todo
-	a.pull-right(href='#calendar') View my calendar »
+	a.pull-right(href='calendar') View my calendar »
 		
 mixin tools(posts)
 	-each item in posts
@@ -305,7 +305,7 @@ mixin todo(items, show)
 				-else
 					.span11= item.todo
 	-if(show)
-		a.pull-right(href='#calendar') View calendar »
+		a.pull-right(href='calendar') View calendar »
 
 
 mixin addPerson()
@@ -357,5 +357,5 @@ mixin breadcrumb(items)
 				li= item.title
 			-else
 				li
-					a(href='#' + item.page)= item.title
+					a(href='' + item.page)= item.title
 					span.divider /		

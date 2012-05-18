@@ -32,7 +32,7 @@ include ../../patterns/mixin
 		mixin form({title:'Create post', fields: [ {label: 'Category', type:'dropdown', options: ['Research Tool','Office Supplies','Personal listing']},{ label: 'Name of object',type:'text' }, { label: 'Description', type: 'text'}, {label: 'End Date', type:'date'}, { label: 'Contact person', type: 'person'} ]})
 	.modal-footer
 		a.btn.close(data-dismiss='modal') Close
-		a.btn.btn-primary.saveModal(href='#calendarSuccess') Save
+		a.btn.btn-primary.saveModal(href='calendarSuccess') Save
 
 #shopSuccess.modal.success
 	.modal-header
