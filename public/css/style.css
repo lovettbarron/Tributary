@@ -205,6 +205,14 @@ h2, h3, h4 {
 	margin: 1em 0;
 }
 
+a.news-item {
+	display: block;
+}
+
+img.news-feature {
+	width: 100%;
+}
+
 .posts {
 	margin-top: 1em;
 }
@@ -491,16 +499,28 @@ h2, h3, h4 {
 
 @media (min-width: 1200px) {
 	.subnav-fixed {
-				left: 200px;
-				width: 770px;
+		left: 200px;
+		width: 770px;
 	}
 	.row .well .span4 {
 		width: 350px;
+	}
+	.row .well .span5 {
+		width: 450px;
+	}
+	.row .well .span3 {
+		width: 250px;
 	}
 }
 
 @media (min-width: 979px) and (max-width: 1200px) {
 	.row .well .span4 {
 		width: 280px;
+	}
+	.row .well .span5 {
+		width: 360px;
+	}
+	.row .well .span3 {
+		width: 200px;
 	}
 }
