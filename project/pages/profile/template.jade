@@ -1,55 +1,49 @@
 include ../../patterns/mixin.jade
+include ../../patterns/feed.jade
 
 .row
 	.span8
 		.row.profile
 			.span2
 				img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
-			.span4
+			.span6
+				a.btn.pull-right Edit profile
 				h2 Bob Watts
 				p: em Physician | Cardiology
-				type I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
+				p I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
 				p.ipsum(length=100)
-				btn.btn.btn-mini Edit
-			.span2
-				mixin share()
 		.row
 			.span8
 				include info
 				br
 				table.table.table-striped.border
+					a.btn.pull-right Edit detailed info
 					h3 More About Me
 
 					tbody
 						tr 
 							td Responsibilities
 							td Organic eu ullamco bespoke master cleanse cillum, leggings delectus tattooed. Enim bespoke etsy semiotics iphone nesciunt, officia jean shorts. Artisan selvage pinterest, commodo lomo excepteur hoodie yr quinoa umami tumblr. Shoreditch craft beer retro adipisicing, kale chips photo booth mustache officia anim gluten-free. Exercitation aesthetic VHS cosby sweater, put a bird on it pinterest kogi assumenda four loko cupidatat squid eu.
-							td: a.btn.btn-mini Edit
 						tr
 							td Skills
 							td JavaScript, CSS, HTML5, InDesign, Emailing
-							td: a.btn.btn-mini Edit
 						tr
 							td Projects
 							td	
 								a(href='#') Cardiology Research Project, 
 								a(href='#') Doctors Building Project, 
 								a(href='#') Kids Learning Project
-							td: a.btn.btn-mini Edit
 						tr
 							td Groups
 							td 
 								a(href='#') Cardiology Group, 
 								a(href='#') Doctor's Group, 
 								a(href='#') Clinical Care Group
-							td: a.btn.btn-mini Edit
 						tr
 							td Interests
 							td Cooking, Skiing, Research, Writing, Running
-
 			include ../../patterns/feed
 			mixin miniFeed({personal: true, title: 'My Feed', updates: [{type:'profile', actor:'bob', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'bob', time:'2 days ago'},{type:'event',actor:'bob', title:'Bob created an event', time:'last week'},{type:'news',actor:'bob', title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
 		include links
-		
