@@ -3,15 +3,15 @@
 mixin subnav(section)
 	case section
 		when 'research'
-			li: a(href='#research') Overview
-			li: a(href='#financial') News
-			li: a(href='#financial') Facilities and Support
-			li: a(href='#financial') Policies, Procedures, and Guidelines
-			li: a(href='#financial') Research IT
-			li: a(href='#financial') Training Centre
-			li: a(href='#financial') Resources and Links
+			li: a(href='research') Overview
+			li: a(href='financial') News
+			li: a(href='financial') Facilities and Support
+			li: a(href='financial') Policies, Procedures, and Guidelines
+			li: a(href='financial') Research IT
+			li: a(href='financial') Training Centre
+			li: a(href='financial') Resources and Links
 		when 'support'
-			li: a(href='#support') Overview
+			li: a(href='support') Overview
 			li: a(href='support') Human Resources
 			li: a(href='support') Policies, Procedures and Guidelines
 			li: a(href='support') Guides
@@ -21,19 +21,19 @@ mixin subnav(section)
 			li: a(href='support') Financial Services
 			li: a(href='support') Other Services
 		when 'care'
-			li: a(href='#care') Overview
-			li: a(href='#care') News
-			li: a(href='#care') Clinical Resources
-			li: a(href='#care') Forms & Tools
-			li: a(href='#care') Training & Education
+			li: a(href='care') Overview
+			li: a(href='care') News
+			li: a(href='care') Clinical Resources
+			li: a(href='care') Forms & Tools
+			li: a(href='care') Training & Education
 		when 'learning'
-			li: a(href='#learning') Overview
-			li: a(href='#learning') News
-			li: a(href='#learning') Simulation Training
-			li: a(href='#learning') Modules
-			li: a(href='#learning') Events & Seminars
-			li: a(href='#learning') Interprofessional Education
-			li: a(href='#learning') Career & Professional Development
+			li: a(href='learning') Overview
+			li: a(href='learning') News
+			li: a(href='learning') Simulation Training
+			li: a(href='learning') Modules
+			li: a(href='learning') Events & Seminars
+			li: a(href='learning') Interprofessional Education
+			li: a(href='learning') Career & Professional Development
 
 mixin radio(poll)
 	form.form-horizontal
@@ -148,7 +148,7 @@ mixin document(post)
 mixin dailyAgenda(todo)
 	.row-fluid
 		.span12
-			h3: a(href='#calendar') My Agenda
+			h3: a(href='calendar') My Agenda
 	.row-fluid
 		.span12
 			h4 Today's Appointments
@@ -157,7 +157,7 @@ mixin dailyAgenda(todo)
 			.span3 #{key*2}:00pm
 			.span9(style='overflow: hidden')
 				span.label.label-info
-					a(href='#calendar', style='color: white')= agenda
+					a(href='calendar', style='color: white')= agenda
 	include modal_todo.jade
 	hr
 	.todo
@@ -335,7 +335,7 @@ mixin linkList(list)
 
 mixin toTop()
 	hr
-	a.anchor.pull-right(href='#') Return to top 
+	a.pull-right(href='#') Return to top 
 		i.icon-circle-arrow-up
 
 mixin pageTitle(title, toggle)

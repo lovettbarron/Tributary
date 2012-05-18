@@ -11,8 +11,6 @@ app.configure(function()
 {
 	app.set('views', __dirname + '/project');
 	app.set('view engine', 'jade');
-	app.use(express.bodyParser());
-	app.use(express.methodOverride());
 	app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
 	app.set('view options', { pretty: true });
 	app.use(app.router);
@@ -20,39 +18,26 @@ app.configure(function()
 });
 
 app.get('/', function(req,res) {
-	try{
-		res.render('index', {
-			title: '1'
-		});
-	} catch(e) {
-    console.log(e);
-  }
+	res.render(__dirname + '/project/pages/dashboard', {
+		title: '1'
+	});
 });
 
 app.get('/:path', function(req, res){
-	var path = 'index';
-	var stat;
-
 	path = __dirname + '/project/pages/' + req.params.path;
 	console.log('Returning results from: ' + path)	
 
 	//Return type
-	if( req.xhr ) {
-		res.partial(path, {
-			title: '2'
-		})
-	} else {
-		res.render(path, { 
-			title: '3'
-		});
-	}
+	res.render(path, { 
+		title: '3'
+	});
 });
 
 
 
-app.get('/renderpdf', function(req, res){
-	//TBD with http://code.google.com/p/wkhtmltopdf/
-});
+// app.get('/renderpdf', function(req, res){
+// 	//TBD with http://code.google.com/p/wkhtmltopdf/
+// });
 
 
 

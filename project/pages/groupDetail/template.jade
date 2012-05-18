@@ -22,12 +22,12 @@ mixin pageTitle("SickKids Cyclists")
 								a 416-555-5555
 				br
 				ul.nav.nav-pills
-					li.active: a(href='#home', data-toggle="pill") Overview
-					li: a(href='#calendarBig', data-toggle="pill") Calendar
-					li: a(href='#forum', data-toggle="pill") Forum
-					li: a(href='#documents', data-toggle="pill") Documents
-					li: a(href='#peopleBig', data-toggle="pill") Members
-					li: a(href='#tools', data-toggle="pill") Tools
+					li.active: a(href='home', data-toggle="pill") Overview
+					li: a(href='calendarBig', data-toggle="pill") Calendar
+					li: a(href='forum', data-toggle="pill") Forum
+					li: a(href='documents', data-toggle="pill") Documents
+					li: a(href='peopleBig', data-toggle="pill") Members
+					li: a(href='tools', data-toggle="pill") Tools
 			.span8
 				.row-fluid.tab-content
 					#home.tab-pane.active
@@ -45,7 +45,7 @@ mixin pageTitle("SickKids Cyclists")
 										.news-item
 											i(class='icon-' + story.icon).pull-left
 											h4
-												a(href='#subscription')= story.title
+												a(href='subscription')= story.title
 											p.ipsum(length='100')
 
 							.span6

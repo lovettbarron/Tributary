@@ -26,7 +26,7 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=#{item.type}')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='#publicProfile')= item.actor
+								h4: a(href='publicProfile')= item.actor
 								p= item.title
 								.row-fluid.onHover
 									.span8
@@ -43,7 +43,7 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=#{item.type}')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='#groupDetail')= item.title
+								h4: a(href='groupDetail')= item.title
 								p= item.desc
 								.row-fluid.onHover
 									.span8
@@ -60,7 +60,7 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=#{item.type}')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='#calendar')= item.title
+								h4: a(href='calendar')= item.title
 								p= item.desc
 								.row-fluid.onHover
 									.span6
@@ -80,8 +80,8 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=#{item.type}')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='#news')= item.title
-								h6: a(href='#publicProfile')= item.actor
+								h4: a(href='news')= item.title
+								h6: a(href='publicProfile')= item.actor
 								p.ipsum(length='130')
 								.row-fluid.onHover
 									.span6
@@ -101,9 +101,9 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=#{item.type}')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='##{item.link}')= item.title
+								h4: a(href='{item.link}')= item.title
 								h6
-									a(href='#publicProfile') Bob
+									a(href='publicProfile') Bob
 									|  Updated: 
 								p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
 								.row-fluid.onHover
@@ -121,4 +121,4 @@ mixin miniFeed(feed)
 										i.icon-remove
 										|  Report
 		.pull-right
-			a(href='#subscription') Read older posts »
+			a(href='subscription') Read older posts »

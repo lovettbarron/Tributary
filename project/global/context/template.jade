@@ -2,39 +2,30 @@ include ../../patterns/mixin.jade
 
 ul
 	li
-		a(href="#dashboard", title="Home")
+		a(href="dashboard", title="Home")
 			i.icon-home.pull-left
-		a(href="#dashboard", title="Home")  Home
+		a(href="dashboard", title="Home")  Home
 ul.retract
 	li
-		a(href="#calendar", title="Calendar") 
+		a(href="calendar", title="Calendar") 
 			i.icon-calendar.pull-left
-		a(href="#calendar", title="Calendar")  Calendar
+		a(href="calendar", title="Calendar")  Calendar
 	li
-		a(href="#docs", title="Documents")
+		a(href="docs", title="Documents")
 			i.icon-folder-open.pull-left
-		a(href="#docs", title="Documents")  Documents
+		a(href="docs", title="Documents")  Documents
 	li
-		a(href="#groups", title="Groups")
+		a(href="groups", title="Groups")
 			i.icon-globe.pull-left
-		a(href="#groups", title="Groups")  Groups
+		a(href="groups", title="Groups")  Groups
 	li
-		a(href="#subscription", title="Subscriptions")
+		a(href="subscription", title="Subscriptions")
 			i.icon-book.pull-left
-		a(href="#subscription", title="Subscriptions") Subscriptions
+		a(href="subscription", title="Subscriptions") Subscriptions
 ul.research
 	li.header.last Research
 	include ../../pages/research/nav
 ul.financial
 	li.header: a#researchExpand(href='#research') Research 
-	li.header.last: a(href='#financial') Financial Services
+	li.header.last: a(href='financial') Financial Services
 	include ../../pages/financial/nav
-ul.care
-	li.header.last Care
-	mixin subnav('care')
-ul.learning
-	li.header.last Learning
-	mixin subnav('learning')
-ul.support
-	li.header.last Support
-	mixin subnav('support')

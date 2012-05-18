@@ -3,5 +3,13 @@ include patterns/mixin.jade
 
 html
 	include header
-	body(data-spy="scroll")
-		include index
+	body
+		include global/nav/index
+		.container.main-content
+			.row
+				#context.span2
+					include global/context/index
+					include global/footer/index
+				.span10.offset2
+					#content.container
+						!= body

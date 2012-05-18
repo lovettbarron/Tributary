@@ -5,21 +5,21 @@ include ../../patterns/mixin.jade
 		.container
 			.row
 				.span1
-					a.brand(href="#dashboard") SK
+					a.brand(href="dashboard") SK
 				.span11
 					.row
 						.span8
 							ul.nav
-								li: a(href="#strategicsickkids") Strategic SickKids
-								li: a(href="#news") What's Happening?
-								li: a(href="#blog") Mary Jo's Message
-								li: a(href="#directory") People
+								li: a(href="strategicsickkids") Strategic SickKids
+								li: a(href="news") What's Happening?
+								li: a(href="blog") Mary Jo's Message
+								li: a(href="directory") People
 						.span3
 							ul.user-nav.pull-right
 								li
 									i.icon-user.icon-white
 									|  Welcome, <a href="#profile">Bob</a>
-								li: a(href="#people") Kidmail
+								li: a(href="people") Kidmail
 
 	.mainnavsub
 		.subnav
@@ -28,19 +28,19 @@ include ../../patterns/mixin.jade
 					.span7.offset1
 						ul.nav
 							li.dropdown
-								a.dd-toggle(href="#support",data-toggle="dropdown") Staff Support Resources
+								a.dd-toggle(href="support",data-toggle="dropdown") Staff Support Resources
 								ul.dropdown-menu
 									mixin subnav('support')
 							li.dropdown
-								a.dd-toggle(href="#care",data-toggle="dropdown") Care
+								a.dd-toggle(href="care",data-toggle="dropdown") Care
 								ul.dropdown-menu
 									mixin subnav('care')
 							li.dropdown
-								a.dd-toggle(href="#research") Research
+								a.dd-toggle(href="research") Research
 								ul.dropdown-menu
 									mixin subnav('research')
 							li.dropdown
-								a.dd-toggle(href="#learning",data-toggle="dropdown") Learning
+								a.dd-toggle(href="learning",data-toggle="dropdown") Learning
 								ul.dropdown-menu
 									mixin subnav('learning')
 
