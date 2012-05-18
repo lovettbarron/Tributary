@@ -48,7 +48,7 @@ function init() {
 			$('.calendarView').show();
 		})
 		
-    $('.nav-pills a:first').tab('show');
+    // $('.nav-pills a:first').tab('show');
     $('#calendarTab a:first').tab('show');
 		$('[rel="tooltip"]').tooltip();
 		$(".collapse").collapse()

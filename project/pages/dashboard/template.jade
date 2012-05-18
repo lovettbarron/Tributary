@@ -7,21 +7,30 @@ include ../../patterns/feed
 		.row
 			.span8
 				.well
-					mixin newsBtn()
+					#newsBtn.pull-right
+						btn.btn.btn-mini(href='#') Submit a Story
 					h3: a(href='#news') What's Happening?
 					.row
-						.span4
-							p: img(src='http://placehold.it/300x200')
+						.span5
 							h4: a(href='#news') Get fit and have fun with the inter-hospital healh
-							p: We kicked off the Inter-Hospital Heealth Challenge on May 1 with the largest exercise class University Ave. has ever seen! Energetic staff from SickKids and surrounding hospitals hiked up their heart rates to star this May health challenge. Check out these happy and health people and find out how you can participate!
-								span.ipsum(length='100')
-						.span4
+							p: img.news-feature(src='http://placehold.it/300x112')
+							p.ipsum(length='100')
+							hr
+							h4 More Headlines
 							-each story in Stories
-								.row
-									.span4
-										h4: a= story.title
-										p.ipsum(length='100')
-						a.pull-right(href='#news') Read the daily news »
+								a.news-item= story.title
+								//- p.ipsum(length='100')
+							a.news-item(href='#news') Read the daily news »
+						.span3
+							h4 Ongoing at SickKids
+							p: img.news-feature(src='http://placehold.it/300x200')
+							h4: a(href='') Campaign Title
+							p Some more information about the campaign in one or two lines.
+							p 
+								img.icon-chevron-left 
+								| 1 of 7
+								img.icon-chevron-right 
+
 		.row
 			.span4
 				mixin miniFeed({personal: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Huma Khan', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
