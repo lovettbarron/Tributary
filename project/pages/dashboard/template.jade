@@ -1,4 +1,5 @@
 include ../../patterns/mixin
+include ../../patterns/feed
 - var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', icon: 'user'}, {title: 'Stars are doing the happy for SickKids (see video)', icon: 'folder-open'}, {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', icon: 'pencil'}, {title: 'Can you tell me how to get, how to get to... Marnie\'s Lounge! (see photos)', icon: 'folder-open'}];
 
 .row
@@ -24,14 +25,7 @@ include ../../patterns/mixin
 		.row
 			.span4
 				.well
-					h3: a(href='#subscription')  My Subscription Updates
-					-each story in Stories
-						.news-item
-							h4
-								i(class='icon-' + story.icon)
-								a(href='#subscription')  #{story.title}
-							p.ipsum(length='100')
-					a.pull-right(href='#subscription') View all my subscriptions »
+					mixin miniFeed({personal: true, title: 'Subscription feed', updates: [{type:'profile', actor:'bob', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'bob', time:'2 days ago'},{type:'event',actor:'bob', title:'Bob created an event', time:'last week'},{type:'news',actor:'bob', title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
 				.well
 					h3 Quick Poll
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})

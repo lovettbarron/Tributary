@@ -100,12 +100,21 @@ function init() {
 		comment();
 		ipsum();
 		searchField();
+		// On hover state for feed items
 		$('.onHover').hide();
 		$('.feedItem').hover( function() {
 			$(this).find('.onHover').show();
 		}, function() {
 			$(this).find('.onHover').hide();
 		})
+		
+		// Click in to feed update
+		$('#feedUpdate').focus( function(){
+			$(this).height('100');
+		});
+		$('#feedUpdate').focusout( function() {
+			$(this).height('30');
+		});
 		
 		// fix sub nav on scroll
     var $win = $(window)
@@ -208,6 +217,9 @@ function context() {
 				$('li.sub').slideUp();
 				$('ul.financial').slideDown();
 				$('ul.shrinker#home').show();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 			}
 			else if( $.inArray(path, care) >= 0) { // care
 				$('ul.retract').slideUp();
@@ -235,6 +247,9 @@ function context() {
 			}
 			else if( $.inArray(path, subsub) >= 0) { //Grants management
 				$('ul.retract').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 				$('ul.research').slideUp();
 				if( !$('li.sub:first').is(':visible')) {
 					$('li.sub').slideDown();
@@ -247,6 +262,9 @@ function context() {
 				$('ul.research').slideUp();
 				$('ul.financial').slideUp();
 				$('ul.shrinker').hide();
+				$('ul.care').hide();
+				$('ul.learning').hide();
+				$('ul.support').hide();
 			}
 		}
  $('a#researchExpand').click( function() {

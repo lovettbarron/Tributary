@@ -25,6 +25,18 @@
 	font-weight: 900;
 }
 
+.btnPadding {
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+#feedUpdate {
+	width: 100%;
+	height: 30px;
+	clear: both;
+	margin-bottom: 5px;
+}
+
 .feedItem {
 	position: relative;
 	border: 1px solid #ddd;
