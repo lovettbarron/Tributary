@@ -3,7 +3,7 @@
  */
 
 var express = require('express'),
-	fs = require('fs');
+var fs = require('fs');
 var app = express.createServer()
 require('./app/config.js').boot(app);
 
