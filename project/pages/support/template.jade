@@ -5,23 +5,37 @@ include ../../patterns/user_modal.jade
 mixin pageTitle("Welcome to Staff Support Resources", false)
 
 .row
-			- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
+	- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
 		.well
 			h3: a(href='news') New To SickKids?
 			.row
 				.span4
-					p: img(src='http://placehold.it/300x200')
 					h4: a(href='news') How to get started at SickKids
-					p Our Topping Off event was a hit! Thanks to all of you for coming out and celebrating this construction milestone. See a special video, artist renderings and read the full story in our topping off news release page on SickKids.ca.
+					p.ipsum(length='150')
+					p: a(href='#') Top ten things to get started!
+					p: a(href='#') Where to get the right help
+					p: a(href='#') Your admin and your work!
 				.span4
 					.well
 						h4 Still have questions?
-						p If you have any questions, call +1 (555) 555-5555 or contact <a data-toggle='modal' href='#userModal'>Mary Anne</a> <i class='icon-user'></i>
+						p If you need any help, contact Mary-Anne Borins
+						h6: a(href='publicProfile') Mary-Anne Borins
+						p phone: 416-555-5555 ext 444
+							br 
+							| email: <a href="mailto:email@email.mail">maborins@sickkids.ca</a>
 		.row
 			.span4
-				.minWell
-					mixin miniFeed({title: 'Support feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
+				.well
+					h3 Job Opportunities
+					p: a(href='#') New Hire Orientation
+					p: a(href='#') Code Blue Response
+					p: a(href='#') Emergency Measures
+					p: a(href='#') e-Learning
+					p: a(href='#') about SickKids
+					p: a(href='#') about Patient Care
+					p: a(href='#') about the Research Institute
+					p: a(href='#') about the Learning Institute
 			.span4
 				.well
 					h3 Links to get started

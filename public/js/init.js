@@ -11,6 +11,12 @@ $(document).ready( function() {
 
 function init() {
 
+	$('a.brand').hover( function() {
+		$('.returnHome').show()
+	}, function() {
+$('.returnHome').hide()
+	});
+
 		context();
 		subscribeButtons();
 		$('li.dropdown').hover(function(){

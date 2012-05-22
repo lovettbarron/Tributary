@@ -36,6 +36,18 @@
 	margin-top: -116px;
 }
 
+.returnHome {
+	display: none;
+	font-size: .8em;
+	position: absolute;
+	top: 27px;
+	left: 5px;
+}
+
+img.feature {
+	padding: 3px;
+}
+
 .header > div {
 	font-weight: 900;
 }
