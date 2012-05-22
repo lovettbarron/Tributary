@@ -12,10 +12,10 @@ $(document).ready( function() {
 function init() {
 
 	$('a.brand').hover( function() {
-		$('.returnHome').show()
-	}, function() {
-$('.returnHome').hide()
-	});
+			$('.returnHome').show()
+		}, function() {
+			$('.returnHome').hide()
+		});
 
 		context();
 		subscribeButtons();
@@ -96,7 +96,7 @@ $('.returnHome').hide()
 		});
 		$('#feedUpdate').focusout( function() {
 			$(this).height('30');
-			$('.feedbtn').hide();
+//			$('.feedbtn').hide();
 		});
 		
 		// fix sub nav on scroll
