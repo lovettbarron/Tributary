@@ -171,7 +171,7 @@ function ipsum() {
 	
 function context() {
 	var path = window.location.pathname.split('/')[1];
-	var context = ['research'];
+	var context = ['research','shopswap'];
 	var sub = ['financial'];
 	var subsub = ['grantsmanagement', 'nih','grantsapprovalprocess'];
 	var care = ['care'];
