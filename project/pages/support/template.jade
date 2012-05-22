@@ -1,5 +1,6 @@
 include ../../patterns/mixin.jade
 include ../../patterns/feed.jade
+include ../../patterns/user_modal.jade
 
 mixin pageTitle("Welcome to Staff Support Resources", false)
 
@@ -11,32 +12,27 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 			.row
 				.span4
 					p: img(src='http://placehold.it/300x200')
-					h4: a(href='news') Towering over Bay and Elm streets new SickKids building reaches highest point
+					h4: a(href='news') How to get started at SickKids
 					p Our Topping Off event was a hit! Thanks to all of you for coming out and celebrating this construction milestone. See a special video, artist renderings and read the full story in our topping off news release page on SickKids.ca.
-						span.ipsum(length='100')
 				.span4
-					-each story in Stories
-						.row
-							.span4
-								h4: a= story.title
-								p.ipsum(length='100')
-			.row-fluid
-				.span12
-					a.pull-right(href='#news') Read all research news »
+					.well
+						h4 Still have questions?
+						p If you have any questions, call +1 (555) 555-5555 or contact <a data-toggle='modal' href='#userModal'>Mary Anne</a> <i class='icon-user'></i>
 		.row
-			.span8
-				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
-				.row
-					.span4
-						mixin miniFeed({title: 'Support feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
-					.span4
-						.well
-							h3 Events and Seminars
-							p: a(href='#') Cardio-Pulmonary RIP and Networking Series
-							p: a(href='#') Cell Biology Seminars
-							p: a(href='#') Child Health Evalutaive Science Rounds
-							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
-							p: a(href='#') Developmental & Stem Cell Biology Seminars
-							a.pull-right(href='news') See all events »
+			.span4
+				.minWell
+					mixin miniFeed({title: 'Support feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
+			.span4
+				.well
+					h3 Links to get started
+					p: a(href='#') New Hire Orientation
+					p: a(href='#') Code Blue Response
+					p: a(href='#') Emergency Measures
+					p: a(href='#') e-Learning
+					p: a(href='#') about SickKids
+					p: a(href='#') about Patient Care
+					p: a(href='#') about the Research Institute
+					p: a(href='#') about the Learning Institute
+					
 	.span2
 		include links

@@ -156,26 +156,25 @@ mixin dailyAgenda(todo)
 			h4 Today's Appointments
 	-each agenda,key in todo
 		.row-fluid
-			.span3 #{key*2}:00pm
-			.span9(style='overflow: hidden')
+			.span2 #{key*2}:00
+			.span10(style='overflow: hidden')
 				span.label.label-info
 					a(href='calendar', style='color: white')= agenda
 	include modal_todo.jade
 	hr
 	.todo
 		.row-fluid
-			.span9
-				h4 To Do List
-			.span3
+			.span12
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
+				h4 To Do List
 		-each item in todoItems
 			.row-fluid.todo
-				.span1: input(type='checkbox')
+				.span2: input(type='checkbox')
 				-if(item.date)
-					.span6= item.todo
-					.span3: span.label.label-warning Due #{item.date}
+					.span10= item.todo
+						span.pull-right.label.label-warning Due #{item.date}
 				-else
-					.span11= item.todo
+					.span10= item.todo
 	a.pull-right(href='calendar') View my calendar »
 		
 mixin tools(posts)
@@ -349,8 +348,15 @@ mixin pageTitle(title, toggle)
 				mixin share()
 
 mixin twitter()
+	-var twitter = ['SickKids_Hospital','SickKidsHealth','ResearchTower','SickKidsHealth']
 	h3 SickKids Twitter Feed
-	img(src="http://placehold.it/300x200")
+	-each account in twitter
+		.row-fluid
+			img.pull-left(src='http://placehold.it/60x60', style='padding: 3px')
+			p(style='float:right; clear:left')
+				h4: a(href='http://twitter.com/' + account) @#{account}
+				p.ipsum(length='60')
+	.pull-right New to Twitter? <a href='http://twitter.com'>Join the conversation here!</a>
 
 mixin breadcrumb(items)
 	ul.breadcrumb

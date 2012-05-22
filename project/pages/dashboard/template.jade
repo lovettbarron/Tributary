@@ -1,6 +1,6 @@
 include ../../patterns/mixin.jade
 include ../../patterns/feed.jade
-
+include ../../patterns/submitstory_modal.jade
 - var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', icon: 'user'}, {title: 'Stars are doing the happy for SickKids (see video)', icon: 'folder-open'}, {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', icon: 'pencil'}, {title: 'Can you tell me how to get, how to get to... Marnie\'s Lounge! (see photos)', icon: 'folder-open'}];
 
 .row
@@ -9,7 +9,7 @@ include ../../patterns/feed.jade
 			.span8
 				.well
 					#newsBtn.pull-right
-						btn.btn.btn-mini(href='#') Submit a Story
+						btn.btn.btn-mini(data-toggle='modal', href='#submitStoryModal') Submit a Story
 					h3: a(href='news') What's Happening?
 					.row
 						.span5
@@ -31,10 +31,13 @@ include ../../patterns/feed.jade
 								img.icon-chevron-left 
 								| 1 of 7
 								img.icon-chevron-right 
-
+							hr
+							h4 Realtime Data
+							img(src='http://placehold.it/200x150&text=Realtime+Data')
 		.row
 			.span4
-				mixin miniFeed({personal: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Huma Khan', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+				.minWell
+					mixin miniFeed({personal: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Huma Khan', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 				.well
 					h3 Quick Poll
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})

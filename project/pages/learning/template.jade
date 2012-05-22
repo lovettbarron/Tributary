@@ -1,33 +1,31 @@
 include ../../patterns/mixin.jade
 include ../../patterns/feed.jade
 
-mixin pageTitle("Welcome to the Research Institute", false)
+mixin pageTitle("Welcome to the Learning Institute", false)
 
 .row
 	.span8
 		.well
-			mixin miniFeed({title: 'Learning feed', updates: [{type:'news', title:'Child Care in the news', time:'2 minutes ago'},{type:'group', desc:'This is a group update that is made in the group', title:'SickKids Cyclists', time:'30min ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'Reminder to join our Friday care social on the 4th flour',title:'Friday Care Social', time:'last week'},{type:'news',title:'$1mil grant awarded to care workers', time:'2 weeks ago'}]})
+			mixin miniFeed({title: 'Learning feed', updates: [{type:'news', title:'SickKids part of $6.4 million research grant', time:'2 minutes ago'},{type:'group', desc:'Updated its information', title:'Staff Continuing Professional Development Fund', time:'30min ago'},{type:'doc',title:'Conference and Learning Event guidelines',actor:'Kerem Tirmandi', time:'2 days ago'},{type:'event', desc:'Learning Institute town hall wants your opinion!',title:'Learning Institute Town Hall - June 2012', time:'last week'},{type:'news',title:'SickKids researchers solve a universal lab test mystery', time:'2 weeks ago'}]})
 		.row
 			.span8
 				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]
 				.row
 					.span4
 						.well
-							h3 Updates for Scientists
-							p: a(href'#') TCPSS2 Research Ethics Training, (April 23,2012)
-							p: a(href='#') Final RLT Location plan for researchers (February 8, 2012)
-							p: a(href='#') Rossant: It's 2012 and that means we can now say The Tower opens "next year!" (January 19,2012)
-							p: a(href='#') News and updates from the Chief, (October 14, 2011)
+							h3 Learning Resources
+							p: a(href='#') iLearn
+							p: a(href='#') Conference Management
+							p: a(href='#') eLearning
+							p: a(href='#') News and updates from the Chief of Learning, (February 14, 2012)
 							a.pull-right(href='news') Read more updates »
 							
 					.span4
 						.well
 							h3 Events and Seminars
-							p: a(href='#') Cardio-Pulmonary RIP and Networking Series
-							p: a(href='#') Cell Biology Seminars
-							p: a(href='#') Child Health Evalutaive Science Rounds
-							p: a(href='#') Critical Care Medicine - Acute Care Research Rounds
-							p: a(href='#') Developmental & Stem Cell Biology Seminars
+							p: a(href='#') Seeking Solutions Conference
+							p: a(href='#') Education Day - A Tribute to the career of Dr. Susan Tallett
+							p: a(href='#') 23rd Annual Jack Crawford Day
 							a.pull-right(href='#news') See all events »
 	.span2
 		include links

@@ -2,22 +2,28 @@ include ../../patterns/mixin.jade
 
 h4 Important Links
 
-- var links = {title: 'Resources', items: [{title: 'Research Programs', address: '#'}, {title: 'Research4Kids', address: '#'},{title: 'KidTrac', address: '#'}, {title: 'Human Resources', address: '#'}, {title: 'Communications and Public Affairs', address: '#'},{title: 'Shop\'n\'Swap', address: '#'}]}
+- var links = {title: 'Patient Care and Research Services', items: [{title: 'Data Warehouse', address: '#'},{title: 'Foundation Restricted Funds information', address: '#'},{title: 'Guide to Lab Services', address: '#'},{title: 'KidCom - Clinical Systems Quick Reference Guides', address: '#'},{title: 'Kidcom - Out of Country postal Codes', address: '#'},{title: 'Patient Statistics', address: '#'}]}
 
 mixin linkList(links)
 
-- var groups = {title: 'Research IT', items: [{title: 'Support tickets', address: '#'}, {title: 'Software order form', address: '#'},{title: 'Research4kids login', address: '#'},{title: 'Research4kids support', address: '#'},{title: 'Community Care Access Centre', address: '#'}]}
+- var links = {title: 'Human Resources', items: [{title: 'View Job OPenings', address: '#'},{title: 'e-HR for Staff', address: '#'},{title: 'e-HR for Leaders', address: '#'},{title: 'HR Report Centre', address: '#'},{title: 'Leaders Guide to REspect in the Work Place', address: '#'},{title: 'Online Recrutiment Centre', address: 'Staff Scheduling'},{title: 'Staff Absence Reporting System', address: 'Staff Scheduling'}, {title: 'View Benefits Information', address: 'Staff Scheduling'}]}
+
+mixin linkList(links)
+
+- var tools = {title: 'Information Services', items: [{title: 'EPC Tutorial', address: '#'},{title: 'InfoQuest', address: '#'},{title: 'Kidcom - Reference Guide', address: '#'},{title: 'Viruses and Virus Hoaxes', address: '#'}]}
+
+mixin linkList(tools)
+
+- var tools = {title: 'Financial Services', items: [{title: 'Requesting Access to Restricted Funds', address: '#'},{title: 'Basic (Office Supplies) Online Ordering', address: '#'},{title: 'Energy Conservation at SickKids', address: '#'},{title: 'kidTRAC finanical and materials management system', address: '#'},{title: 'KidTRAIN', address: '#'},{title: 'Purchashing and Materials Management', address: '#'}]}
+
+mixin linkList(tools)
+
+- var groups = {title: 'Occupational Health and Safety', items: [{title: 'Respiratory Virus Watch', address: '#'},{title: 'Software order form', address: '#'},{title: 'Research4kids login', address: '#'},{title: 'Research4kids support', address: '#'},{title: 'Community Care Access Centre', address: '#'}]}
 
 mixin linkList(groups)
 
-- var tools = {title: 'Instrument Booking', items: [{title: 'Flow Cytometry', address: '#'}, {title: 'Imaging Facility', address: '#'},{title: 'Research MEG', address: '#'}, {title: 'Research MRI', address: '#'}]}
+- var tools = {title: 'Policies and Procedures', items: [{title: 'By-Laws', address: '#'},{title: 'Conflict Management', address: '#'},{title: 'Emergency Measures', address: '#'}, {title: 'Medical Directives', address: 'Staff Scheduling'},{title: 'Online Recrutiment Centre', address: 'Staff Scheduling'},{title: 'Space Allocation and Requests'}]}
 
 mixin linkList(tools)
 
-- var tools = {title: 'Financial Services', items: [{title: '*NEW* Scientific Peer Review for Animal Use Protocols', address: '#'}, {title: '*NEW* Recent publications from our scientific staff', address: '#'},{title: 'Update your scientific profile', address: '#'}, {title: 'Faculty Orientation', address: '#'}, {title: 'Foundation Relations', address: '#'}, {title: 'Grants opportunities and deadlines', address: '#'}]}
 
-mixin linkList(tools)
-
-- var tools = {title: 'Trainees Corner', items: [{title: 'Trainee news', address: '#'}, {title: 'The Training Post', address: '#'},{title: 'Enrol in safety seminars', address: '#'}]}
-
-mixin linkList(tools)
