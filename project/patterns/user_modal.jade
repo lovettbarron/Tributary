@@ -1,0 +1,20 @@
+include mixin
+
+#userModal.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Bob Watts
+	.modal-body
+		.row-fluid
+		.row-fluid
+			.span3
+				img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+			.span9
+				p: em Physician | Cardiology
+				p I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
+				p.ipsum(length=100)
+	.modal-footer
+		a.btn(href='publicProfile') View Profile
+		a.btn.btn Instant message
+		a.btn.btn Call
+		a.btn.btn-primary Email

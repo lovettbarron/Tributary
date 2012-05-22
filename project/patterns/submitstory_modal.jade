@@ -1,0 +1,30 @@
+include mixin
+
+#submitStoryModal.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Terms of use
+	.modal-body 
+		p Placeholder for posting rules and guidelines.
+	.modal-footer
+		a.btn.btn-primary(data-toggle='modal', href='#submitStoryForm', data-dismiss='modal') Accept
+		a.btn.close Close
+
+
+#submitStoryForm.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Post an item
+	.modal-body
+		mixin form({title:'Create post', fields: [ {label: 'Pillar news', type:'dropdown', options: ['Hospital wide','Care','Research','Learning','Support']},{ label: 'Title of Article',type:'text' }, { label: 'Description', type: 'text'}, {label: 'Publish date', type:'date'}, { label: 'Contact person', type: 'person'} ]})
+	.modal-footer
+		a.btn.close(data-dismiss='modal') Close
+		a.btn.btn-primary.saveModal(href='submitStorySuccess') Save
+
+#submitStorySuccess.modal.success
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Success!
+	.modal-body We've recieved your story submission and will review it for posting.
+	.modal-footer
+		a.btn.btn-primary.close(data-dismiss='modal') Close

@@ -1,0 +1,15 @@
+include ../../patterns/mixin.jade
+
+h4 Links
+
+- var links = {title: 'RI Policies', items: [{title: 'Morphine Info Sheet for Pharmacists', address: '#'}, {title: 'Dopamine Dosing Charts', address: '#'},{title: 'IV Medication Adminstration', address: '#'},{title: 'eCPS', address: '#'},{title: 'Dopamine + Dosing Charts', address: '#'}, {title: 'Tall Man Drug Names', address: '#'}, {title: 'Pyxis Training', address: '#'}]}
+
+mixin linkList(links)
+
+- var tools = {title: 'Tools', items: [{title: 'Resucitation Drug Calculator', address: '#'}, {title: 'Infusion Calculator', address: '#'},{title: 'e-Forumulary 2011', address: '#'},{title: 'CIHR Grantscraft', address: '#'},{title: 'NI - Administration of Clinical Trials at NIDDK', address: '#'},{title: 'Research Grant Application Checklist', address: '#'}]}
+
+mixin linkList(tools)
+
+- var forms = {title: 'Forms', items: [{title: 'Adverse Drug Reaction', address: '#'}, {title: 'Formulary Addition Request', address: '#'},{title: 'Special Access Program', address: '#'},{title: 'Notice of Application Form (.pdf)', address: '#'}]}
+
+mixin linkList(groups)
