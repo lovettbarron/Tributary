@@ -3,7 +3,8 @@
  */
 
 var express = require('express'),
-	fs = require('fs');
+	fs = require('fs'),
+  url = require('url');
 var app = express.createServer()
 require('./app/config.js').boot(app);
 
@@ -15,6 +16,7 @@ app.configure(function()
 	app.set('view options', { pretty: true });
 	app.use(app.router);
 	app.use(express.static(__dirname + '/public'));
+	app.use(express.basicAuth('sktest','sktest'));
 });
 
 app.get('/', function(req,res) {
@@ -32,8 +34,6 @@ app.get('/:path', function(req, res){
 		title: '3'
 	});
 });
-
-
 
 // app.get('/renderpdf', function(req, res){
 // 	//TBD with http://code.google.com/p/wkhtmltopdf/
