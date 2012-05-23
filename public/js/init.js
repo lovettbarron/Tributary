@@ -11,7 +11,7 @@ $(document).ready( function() {
 
 function init() {
 
-	$('a.brand').hover( function() {
+	$('a.brand').parent().hover( function() {
 			$('.returnHome').show()
 		}, function() {
 			$('.returnHome').hide()
