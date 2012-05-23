@@ -52,16 +52,105 @@ mixin pageTitle("What's Happening?", false)
 										a Feed Name
 
 	.span2
-		h4 News Links
-
-		- var groups = {title: "SicKKids Campaigns", items: [{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'},{title: 'Campaign Link', address: '#'}], showOpts: true}
-
-		mixin linkList(groups)
-
-		- var people = {title: "Research Institute News", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
-
-		mixin linkList(people)
-
-		- var news = {title: "Shop & Eat at SickKids", items: [{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'},{title: 'Headline Link', address: '#'}], showOpts: true}
-
-				mixin linkList(news)
+		hr
+		ul.unstyled.rightNav
+			li
+				a All News (7000)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			li
+				a Research News (10)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			li
+				a All my subscriptions (4000)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			hr
+			li.header: h6 Type:
+			li
+				a Groups (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a People (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Documents (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Events (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+			li.header: h6 Pillar:
+			li
+				a Research news (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Care news (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Learning news (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Support news (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+		.pull-right
+			a Reset search
