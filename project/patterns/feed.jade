@@ -88,7 +88,9 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='news')= item.title
-								p.post-meta: a(href='publicProfile')= item.actor
+								p.post-meta
+									a(href='publicProfile')= item.actor
+									|  wrote:
 								p.ipsum(length='130')
 								.row-fluid.onHover
 									.span2
@@ -111,7 +113,7 @@ mixin miniFeed(feed)
 								.time.pull-right #{item.time}
 								h4: a(href='{item.link}')= item.title
 								p.post-meta
-									a(href='publicProfile') Bob Watts
+									a(href='publicProfile')= item.actor
 									|  updated: 
 								p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
 								.row-fluid.onHover
