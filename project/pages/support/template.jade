@@ -8,18 +8,18 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 	- var Stories = [ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! Corporate Services Survey launches today', address: 'test'}, {title: 'Borschel and Tabori honoured with Ontario Early Researcher Awards', address: 'test'}, {title: 'Cedarlane Life Sciences and Medical Lab Expo', address: 'test'}]
 	.span8
 		.well.bignews
-			h3: a(href='news') New To SickKids?
+			h3 New to SickKids?
 			.row
 				.span4
 					h4: a(href='news') How to get started at SickKids
 					p.ipsum(length='150')
-					p: a(href='#') Top ten things to get started!
+					p: a(href='#') Find your HR manager
 					p: a(href='#') Where to get the right help
-					p: a(href='#') Your admin and your work!
+					p: a(href='#') Your admin and your work
 				.span4
 					.well
 						h4 Still have questions?
-						p If you need any help, contact Mary-Anne Borins
+						p If you need any help, contact Mary-Anne Borins in Human Resources
 						h6: a(href='publicProfile') Mary-Anne Borins
 						p phone: 416-555-5555 ext 444
 							br 
@@ -27,7 +27,7 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 		.row
 			.span4
 				.well
-					h3 Job Opportunities
+					h3 Recent Job Openings
 					p: a(href='#') Donations Coordinator
 					p: a(href='#') Knowledge Translation and Exchange Specialist
 					p: a(href='#') Clinical Research Project Assistant
@@ -39,15 +39,13 @@ mixin pageTitle("Welcome to Staff Support Resources", false)
 					a.pull-right See all openings »
 			.span4
 				.well
-					h3 Links to get started
+					h3 Events and Seminars
 					p: a(href='#') New Hire Orientation
-					p: a(href='#') Code Blue Response
+					p: a(href='#') Code Blue Response Seminar
 					p: a(href='#') Emergency Measures
-					p: a(href='#') e-Learning
-					p: a(href='#') about SickKids
-					p: a(href='#') about Patient Care
-					p: a(href='#') about the Research Institute
-					p: a(href='#') about the Learning Institute
+					p: a(href='#') e-Learning: Using the LMS
+					p: a(href='#') Benefits Overview Session
+					a.pull-right(href='news') See all events »
 					
 	.span2
 		include links
