@@ -14,6 +14,7 @@ include ../../patterns/mixin.jade
 		.row
 			.span8
 				include info
+				hr
 		.row
 			.span4
 				table.table.table-striped.border
@@ -21,7 +22,7 @@ include ../../patterns/mixin.jade
 					tbody
 						tr 
 							td Responsibilities
-							td Organic eu ullamco bespoke master cleanse cillum, leggings delectus tattooed. Enim bespoke etsy semiotics iphone nesciunt, officia jean shorts. Artisan selvage pinterest, commodo lomo excepteur hoodie yr quinoa umami tumblr. Shoreditch craft beer retro adipisicing, kale chips photo booth mustache officia anim gluten-free. Exercitation aesthetic VHS cosby sweater, put a bird on it pinterest kogi assumenda four loko cupidatat squid eu.
+							td Organic eu ullamco bespoke master cleanse cillum, leggings delectus tattooed. Enim bespoke etsy semiotics iphone nesciunt, officia jean shorts. Artisan selvage pinterest, commodo
 						tr
 							td Skills
 							td JavaScript, CSS, HTML5, InDesign, Emailing
@@ -42,7 +43,8 @@ include ../../patterns/mixin.jade
 							td Cooking, Skiing, Research, Writing, Running
 
 			.span4
-				include ../../patterns/feed
-				mixin miniFeed({personal: false, title: 'Bob\'s Feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'Bob Watts', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'Cyclist Salsa party', time:'last week'},{type:'news',actor:'Bob Watts', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+				.well
+					include ../../patterns/feed
+					mixin miniFeed({personal: false, title: 'Bob\'s Feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'Bob Watts', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'Cyclist Salsa party', time:'last week'},{type:'news',actor:'Bob Watts', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
 		include links
