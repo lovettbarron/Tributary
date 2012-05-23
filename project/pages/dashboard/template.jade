@@ -41,12 +41,12 @@ include ../../patterns/submitstory_modal.jade
 				.well
 					h3 Quick Poll
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})
-					a.pull-right(href='poll') View poll results »
+					a.pollresults.pull-right(href='poll') View poll results »
 					btn.btn.btn-primary(type='button') Submit
 			.span4
-				.well
+				.well.clearfix
 					mixin dailyAgenda(['This item is on the calendar today', 'This is another item that needs to be done today', 'Project deadline is today'])
-				.well
+				.well.clearfix
 					mixin twitter()
 	.span2
 		include links
