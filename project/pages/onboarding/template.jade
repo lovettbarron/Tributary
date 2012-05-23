@@ -1,0 +1,68 @@
+include ../../patterns/mixin.jade
+include ../../patterns/feed.jade
+include ../../patterns/submitstory_modal.jade
+- var Stories =[ {title: 'SickKids is celebrating National Nursing Week!', icon: 'user'}, {title: 'Stars are doing the happy for SickKids (see video)', icon: 'folder-open'}, {title: 'Towering over Bay and Elm, SickKids Centre for Research and Learning reaches highest point (see video)', icon: 'pencil'}, {title: 'Can you tell me how to get, how to get to... Marnie\'s Lounge! (see photos)', icon: 'folder-open'}];
+
+.row
+	.span8
+		.row
+			.span8
+				.well.onboarding
+					#newsBtn.pull-right
+						btn.btn.btn-mini(data-toggle='modal', href='#submitStoryModal') Submit a Story
+					h3: a(href='news') What's Happening?
+					.row
+						.span5
+							h4: a(href='news') Get fit and have fun with the inter-hospital healh
+							p: img.news-feature(src='http://placehold.it/300x112&text=Video+or+Image')
+							p.ipsum(length='100')
+							hr
+							h4 More Headlines
+							-each story in Stories
+								a.news-item= story.title
+								//- p.ipsum(length='100')
+							a.news-item(href='news') Read the daily news »
+						.span3
+							h4 Ongoing at SickKids
+							p: img.news-feature(src='http://placehold.it/300x200')
+							h4: a(href='#') Campaign Title
+							p Some more information about the campaign in one or two lines.
+							p 
+								img.icon-chevron-left 
+								| 1 of 7
+								img.icon-chevron-right 
+							hr
+							h4 Realtime Data
+							img(src='http://placehold.it/200x150&text=Realtime+Data')
+					.onboardingContent
+						.well
+							h3 What's happening with the Daily news!
+							p.ipsum(length='300')
+							btn.btn.closeOnboarding Close
+		.row
+			.span4
+				.minWell.onboarding
+					mixin miniFeed({personal: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Huma Khan', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+					.onboardingContent
+						.well
+							h3 Your Activity Feed
+							p.ipsum(length='100')
+							btn.btn.closeOnboarding Close
+				.well
+					h3 Quick Poll
+					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})
+					a.pull-right(href='poll') View poll results »
+					btn.btn.btn-primary(type='button') Submit
+			.span4
+				.well.onboarding
+					mixin dailyAgenda(['This item is on the calendar today', 'This is another item that needs to be done today', 'Project deadline is today'])
+					.onboardingContent
+						.well
+							h3 My Daily Agenda
+							p.ipsum(length='100')
+							btn.btn.closeOnboarding Close
+				.well
+					mixin twitter()
+	.span2
+		include links
+	-var poll = {question: 'May 7 is Stop! Clean Your Hands Day. What is SickKids\' hand hygiene complaince target?', items:['60%', '70%', '80%', '90%']}

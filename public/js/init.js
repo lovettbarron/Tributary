@@ -98,6 +98,12 @@ function init() {
 			$(this).height('30');
 //			$('.feedbtn').hide();
 		});
+		// Hide onboarding item
+		$('.closeOnboarding').click(function(e) {
+			e.preventDefault();
+			$(this).parent().parent().hide();
+		})
+		
 		//Post to the feed where appropriate.
 		$('#postWall').click(function(e) {
 			e.preventDefault();
@@ -276,7 +282,7 @@ function subscribeButtons() {
 			$(this).html('Subscribe');
 		} else {
 			$(this).addClass('subscribed')
-			$(this).html('<i class="icon-ok"></i> Subscribed')
+			$(this).html('loading...').delay(3000).html('<i class="icon-ok"></i> Subscribed')
 		}
 	});
 }
