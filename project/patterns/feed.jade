@@ -85,7 +85,7 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='news')= item.title
-								h6: a(href='publicProfile')= item.actor
+								p.post-meta: a(href='publicProfile')= item.actor
 								p.ipsum(length='130')
 								.row-fluid.onHover
 									.span2
@@ -107,7 +107,7 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='{item.link}')= item.title
-								p
+								p.post-meta
 									a(href='publicProfile') Bob Watts
 									|  Updated: 
 								p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
@@ -150,7 +150,7 @@ mixin shareModal(type)
 									img(src='http://placehold.it/100x100&text=#{type}')
 								.span10
 									h4: a(href='{item.link}') Title of this post
-									h6
+									p.post-meta
 										a(href='publicProfile') Bob Watts
 										|  Updated: 
 									p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
@@ -161,7 +161,7 @@ mixin shareModal(type)
 									img(src='http://placehold.it/100x100&text=#{type}')
 								.span10
 									h4: a(href='news') Title of the news
-									h6: a(href='publicProfile') Bob Watts
+									p.post-meta: a(href='publicProfile') Bob Watts
 									p.ipsum(length='130')
 					when 'event'
 						.feedItem
