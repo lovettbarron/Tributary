@@ -336,6 +336,8 @@ img.news-feature {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+	padding: 5px;
+	margin-bottom: 5px;
 }
 
 .well .post {
