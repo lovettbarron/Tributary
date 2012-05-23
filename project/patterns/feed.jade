@@ -65,8 +65,8 @@ mixin miniFeed(feed)
 								.time.pull-right #{item.time}
 								h4: a(href='calendar')= item.title
 								p.post-meta
-									a(href='publicProfile') Sean Applebee
-									|  Created Event: 
+									a(href='publicProfile')= item.actor
+									|  created: 
 								p Please join us for this Seminar about how this and that works.
 								.row-fluid.onHover
 									.span2
@@ -112,7 +112,7 @@ mixin miniFeed(feed)
 								h4: a(href='{item.link}')= item.title
 								p.post-meta
 									a(href='publicProfile') Bob Watts
-									|  Updated: 
+									|  updated: 
 								p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
 								.row-fluid.onHover
 									.span2
@@ -155,7 +155,7 @@ mixin shareModal(type)
 									h4: a(href='{item.link}') Title of this post
 									p.post-meta
 										a(href='publicProfile') Bob Watts
-										|  Updated: 
+										|  updated: 
 									p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
 					when 'news'
 						.feedItem
