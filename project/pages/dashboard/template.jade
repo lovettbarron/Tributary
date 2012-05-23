@@ -7,13 +7,13 @@ include ../../patterns/submitstory_modal.jade
 	.span8
 		.row
 			.span8
-				.well
+				.well.bignews
 					#newsBtn.pull-right
 						btn.btn.btn-mini(data-toggle='modal', href='#submitStoryModal') Submit a Story
 					h3: a(href='news') What's Happening?
 					.row
 						.span5
-							h4: a(href='news') Get fit and have fun with the inter-hospital healh
+							h4: a(href='news') Get fit and have fun with the inter-hospital health
 							p: img.news-feature(src='http://placehold.it/300x112&text=Video+or+Image')
 							p.ipsum(length='100')
 							hr
@@ -25,14 +25,14 @@ include ../../patterns/submitstory_modal.jade
 						.span3
 							h4 Ongoing at SickKids
 							p: img.news-feature(src='http://placehold.it/300x200')
-							h4: a(href='#') Campaign Title
+							h5: a(href='#') Campaign Title
 							p Some more information about the campaign in one or two lines.
 							p 
 								img.icon-chevron-left 
 								| 1 of 7
 								img.icon-chevron-right 
 							hr
-							h4 Realtime Data
+							h4 Real-time Data Ticker
 							img(src='http://placehold.it/200x150&text=Realtime+Data')
 		.row
 			.span4
