@@ -1,21 +1,12 @@
 include ../../patterns/mixin
--var Groups = ['Group name', 'another group name', 'yet another group name']
 - var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
 mixin pageTitle("Groups", false)
 .row
 	.span8
 		.row
 			.span8
-				.row-fluid
-					.span6 Group Name
-					.span3 Admin
-					.span3 Last Modified
-				-each group in Groups
-					.row-fluid.forum-post
-						.span1: img(src='http://placehold.it/100x100')
-						.span5: strong: a(href='groupDetail')= group
-						.span3: a(href='profile') Admin name
-						.span3 Last updated 12 minutes ago
+				include ../../patterns/list
+				mixin listType({ type: 'group', header: ['Group Name','Pillar','Admin','Updated'], context: ['Join group', 'Subscribe to group','Report group'], items: [{ title: 'Research Human Resources', assoc:'Research', origin:'SickKids',updated:'yesterday' }, { title: 'Research team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid dynamics reading group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
 	.span2
 		.dropdown
 				btn.btn(data-toggle='modal', href='#todoModal') Create a Group

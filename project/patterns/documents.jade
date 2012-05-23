@@ -1,33 +1,3 @@
--var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
 include mixin
-.row-fluid#contextActive
-	btn.btn Make a copy
-	btn.btn Assign to collection
-	btn.btn Share
-	btn.btn.pull-right Delete
-.row-fluid#contextHidden
-	.span1 
-		input(type='checkbox',rel="tooltip",title="Select all")
-	.span1 Type
-	.span4 Title
-	.span4 Owner
-	.span2.dropdown Options
-		btn.btn.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;
-		ul.dropdown-menu
-			li: a Make a copy
-			li: a Assign to collection
-			li: a Assign to group collection
-			li: a Rename
-			li: a Share
-			li: a Delete
-hr
--each item in post
-	.row-fluid
-		.span1: input.docSelected(type='checkbox')
-		.span1: i(class='icon-' + item.icon)
-		.span4: h4: a= item.title
-		.span4: a(href='publicProfile') Author name
-	.row-fluid
-		.span2 
-		.span4 Six collaborators
-		.span4 Last updated 12 minutes ago
+include list
+mixin listType({ type: 'group', header: ['Document title','Type','Owner','Updated'], context: ['Assign to group', 'Subscribe to doc','Delete','Bookmark'], items: [{ title: 'Public release policy', assoc:'Document', origin:'SickKids',updated:'yesterday' }, { title: 'Strategy - assoc', assoc:'Document', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotological group policy', assoc:'Document', origin:'Hemotology research',updated:'two hours ago' }, { title: 'Cyclist schedule for May', assoc:'Spreadsheet', origin:'Tim Maly',updated:'three days ago' }, { title: 'Hemotology finances expense form', assoc:'Spreadsheet', origin:'Jerry',updated:'yesterday' }, { title: 'Freedom of Information release form', assoc:'Form', origin:'Tim Maly',updated:'yesterday' }, { title: 'My PR release', assoc:'Document', origin:'Bob Watts',updated:'yesterday' }] })

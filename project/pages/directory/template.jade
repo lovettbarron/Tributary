@@ -1,23 +1,12 @@
 include ../../patterns/mixin
--var Groups = ['Lindsay Ellerby', 'Kerem Tirmandi', 'Andrew Lovett-Barron', 'Blair Johnsrude', 'Robyn Polan', 'Matthew Milan', 'Genco Csomethng','Matt Nish-Lapidus', 'Mark Rato', 'Thomas Calahan', 'Tom Cruise', 'Conan Barbaran', 'Dick Dickler',]
 - var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
-mixin pageTitle("Groups", false)
+mixin pageTitle("Directory", false)
 .row
 	.span8
 		.row
 			.span8
-				.row-fluid.header
-					.span5 People
-					.span2 Role
-					.span2 Department
-					.span2 Last Modified
-				-each group, i in Groups
-					.row-fluid.forum-post
-						.span1: img(src='http://placehold.it/100x100')
-						.span4: strong: a(href='publicProfile')= group
-						.span2 Admin
-						.span2: a(href='groupDetail') Learning Group
-						.span2 Updated today
+			include ../../patterns/list
+			mixin listType({ type: 'people', header: ['Person','Role','Department','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' }] })
 	.span2
 		.dropdown
 				btn.btn(data-toggle='modal', href='#todoModal') Create a Group

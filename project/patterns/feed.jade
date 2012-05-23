@@ -21,6 +21,7 @@ mixin miniFeed(feed)
 			case item.type
 				when 'profile'
 					.feedItem
+						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=#{item.type}')
@@ -30,13 +31,15 @@ mixin miniFeed(feed)
 								p= item.title
 								.row-fluid.onHover
 									.span2
-										i.icon-share
-										|  Share
+										a(data-toggle='modal', href='#' + item.type + 'shareModal')
+											i.icon-share
+											|  Share
 									.span2
 										i.icon-remove
 										|  Report
 				when 'group'
 					.feedItem
+						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=#{item.type}')
@@ -46,13 +49,15 @@ mixin miniFeed(feed)
 								p= item.desc
 								.row-fluid.onHover
 									.span2
-										i.icon-share
-										|  Share
+										a(data-toggle='modal', href='#' + item.type + 'shareModal')
+											i.icon-share
+											|  Share
 									.span2
 										i.icon-remove
 										|  Report
 				when 'event'
 					.feedItem
+						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=#{item.type}')
@@ -65,13 +70,15 @@ mixin miniFeed(feed)
 										i.icon-plus-sign(alt='Register')
 										|  Go
 									.span2
-										i.icon-share(alt='Share')
-										|  Share
+										a(data-toggle='modal', href='#' + item.type + 'shareModal')
+											i.icon-share(alt='Share')
+											|  Share
 									.span2
 										i.icon-remove(alt='Report')
 										|  Report
 				when 'news'
 					.feedItem
+						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=#{item.type}')
@@ -85,13 +92,15 @@ mixin miniFeed(feed)
 										i.icon-share-alt
 										|  Open
 									.span2
-										i.icon-share
-										|  Share
+										a(data-toggle='modal', href='#' + item.type + 'shareModal')
+											i.icon-share
+											|  Share
 									.span2
 										i.icon-remove
 										|  Report
 				when 'doc'
 					.feedItem
+						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=#{item.type}')
@@ -110,10 +119,67 @@ mixin miniFeed(feed)
 										i.icon-pencil(alt='Edit')
 										|  Edit
 									.span2
-										i.icon-share(alt='Share')
-										|  Share
+										a(data-toggle='modal', href='#' + item.type + 'shareModal')
+											i.icon-share(alt='Share')
+											|  Share
 									.span2
 										i.icon-remove(alt='report')
 										|  Report
 		.pull-right
 			a(href='subscription') View past activity »
+
+mixin shareModal(type)
+	div.modal(id=type + 'shareModal')
+		.modal-header
+			btn.closeModal.pull-right(data-dismiss='modal') x
+			h3 Share with
+				select(style='width: 70%, font-weight: 600')
+					option(value='default') Everyone
+					option My Team
+					option My followers
+					option Private
+		.modal-body
+			form.form-horizontal
+				textarea.input-xlarge#feedUpdate(rows='1')
+			.row-fluid
+				case type
+					when 'doc'
+						.feedItem
+							.row-fluid
+								.span2
+									img(src='http://placehold.it/100x100&text=#{type}')
+								.span10
+									h4: a(href='{item.link}') Title of this post
+									h6
+										a(href='publicProfile') Bob Watts
+										|  Updated: 
+									p "Pour-over ad typewriter 8-bit, jean shorts cardigan godard. Swag wolf occaecat, polaroid gluten-free sint nostrud before they quit"
+					when 'news'
+						.feedItem
+							.row-fluid
+								.span2
+									img(src='http://placehold.it/100x100&text=#{type}')
+								.span10
+									h4: a(href='news') Title of the news
+									h6: a(href='publicProfile') Bob Watts
+									p.ipsum(length='130')
+					when 'event'
+						.feedItem
+							.row-fluid
+								.span2
+									img(src='http://placehold.it/100x100&text=#{type}')
+								.span10
+									h4: a(href='calendar') Title of Event
+									p.ipsum(length='100')
+					when 'profile'
+						.feedItem
+							.row-fluid
+								.span2
+									img(src='http://placehold.it/100x100&text=#{type}')
+								.span10
+									h4: a(href='publicProfile') Bob Watts
+									p.ipsum(length='100')
+
+		.modal-footer
+			a.btn.close Close
+			a.btn.btn-primary.saveModal(href='Success') Share
