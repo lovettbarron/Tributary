@@ -588,3 +588,6 @@ img.news-feature {
 	margin: 5px 0;
 }
 
+.row-fluid [class*="span"] {
+	min-height: 5px;
+}
