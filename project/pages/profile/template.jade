@@ -15,7 +15,8 @@ include ../../patterns/feed.jade
 		.row
 			.span8
 				include info
-				br
+		.row
+			.span4
 				table.table.table-striped.border
 					a.btn.pull-right Edit detailed info
 					h3 More About Me
@@ -42,8 +43,9 @@ include ../../patterns/feed.jade
 						tr
 							td Interests
 							td Cooking, Skiing, Research, Writing, Running
-			include ../../patterns/feed
-			mixin miniFeed({personal: true, title: 'My Feed', updates: [{type:'profile', actor:'bob', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'bob', time:'2 days ago'},{type:'event',actor:'bob', title:'Bob created an event', time:'last week'},{type:'news',actor:'bob', title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
+			.span4
+				include ../../patterns/feed
+				mixin miniFeed({personal: true, title: 'My Feed', updates: [{type:'profile', actor:'bob', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of honours was updated', actor:'bob', time:'2 days ago'},{type:'event',actor:'bob', title:'Bob created an event', time:'last week'},{type:'news',actor:'bob', title:'Bob commented on the Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
 		include links
