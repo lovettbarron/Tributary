@@ -167,14 +167,15 @@ mixin dailyAgenda(todo)
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 				h4 To Do List
 		-each item in todoItems
-			.row-fluid
+			.row-fluid.todo-item
 				.span1: input(type='checkbox')
 				-if(item.date)
-					.span11
+					.span8
 						= item.todo
-						span.pull-right.label.label-warning #{item.date}
+					.span3
+						.pull-right.label.label-warning #{item.date}
 				-else
-					.span10= item.todo
+					.span8= item.todo
 	p
 		a.pull-right(href='calendar') View my calendar »
 		
