@@ -6,16 +6,14 @@ var express = require('express'),
 	fs = require('fs'),
   url = require('url');
 var app = express.createServer()
-require('./app/config.js').boot(app);
 
-app.configure(function()
-{
-	app.set('views', __dirname + '/project');
-	app.set('view engine', 'jade');
-	app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
-	app.set('view options', { pretty: true });
-	app.use(app.router);
-	app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/project');
+app.set('view engine', 'jade');
+app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] }));
+app.set('view options', { pretty: true });
+app.use(express.static(__dirname + '/public'));
+
+app.configure('production', function(app){
 	app.use(express.basicAuth('sktest','sktest'));
 });
 
@@ -29,15 +27,10 @@ app.get('/:path', function(req, res){
 	path = __dirname + '/project/pages/' + req.params.path;
 	console.log('Returning results from: ' + path)	
 
-	//Return type
 	res.render(path, { 
 		title: '3'
 	});
 });
-
-// app.get('/renderpdf', function(req, res){
-// 	//TBD with http://code.google.com/p/wkhtmltopdf/
-// });
 
 var port = process.env.PORT || 3000;
 
