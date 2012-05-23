@@ -167,14 +167,16 @@ mixin dailyAgenda(todo)
 				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#todoModal') +
 				h4 To Do List
 		-each item in todoItems
-			.row-fluid.todo
-				.span2: input(type='checkbox')
+			.row-fluid
+				.span1: input(type='checkbox')
 				-if(item.date)
-					.span10= item.todo
-						span.pull-right.label.label-warning Due #{item.date}
+					.span11
+						= item.todo
+						span.pull-right.label.label-warning #{item.date}
 				-else
 					.span10= item.todo
-	a.pull-right(href='calendar') View my calendar »
+	p
+		a.pull-right(href='calendar') View my calendar »
 		
 mixin tools(posts)
 	-each item in posts
@@ -355,7 +357,7 @@ mixin twitter()
 			p(style='float:right; clear:left')
 				h4: a(href='http://twitter.com/' + account) @#{account}
 				p.ipsum(length='60')
-	.pull-right New to Twitter? <a href='http://twitter.com'>Join the conversation here!</a>
+	p New to Twitter? <a href='http://twitter.com'>Join the conversation here!</a>
 
 mixin breadcrumb(items)
 	ul.breadcrumb
