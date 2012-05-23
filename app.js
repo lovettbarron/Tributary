@@ -13,7 +13,7 @@ app.use(express.compiler({ src: __dirname + '/bootstrap/less', enable: ['less'] 
 app.set('view options', { pretty: true });
 app.use(express.static(__dirname + '/public'));
 
-app.configure('production', function(app){
+app.configure('production', function(){
 	app.use(express.basicAuth('sktest','sktest'));
 });
 
