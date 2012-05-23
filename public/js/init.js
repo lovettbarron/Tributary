@@ -10,6 +10,14 @@ $(document).ready( function() {
 });
 
 function init() {
+	
+	$('.rightNav').find('.dropdown').hide();
+	$('.rightNav > li').hover( function() {
+		$(this).find('.dropdown').show();
+	},
+	function() {
+		$(this).find('.dropdown').hide();
+	})
 
 	$('a.brand').parent().hover( function() {
 			$('.returnHome').show()

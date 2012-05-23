@@ -9,15 +9,117 @@ mixin pageTitle("Groups", false)
 				mixin listType({ type: 'group', header: ['Group Name','Pillar','Admin','Updated'], context: ['Join group', 'Subscribe to group','Report group'], items: [{ title: 'Research Human Resources', assoc:'Research', origin:'SickKids',updated:'yesterday' }, { title: 'Research team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid dynamics reading group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
 	.span2
 		.dropdown
-				btn.btn(data-toggle='modal', href='#todoModal') Create a Group
+			btn.btn(data-toggle='modal', href='#todoModal') Create a Group
 		hr
-		ul.unstyled
-			li: a My groups (10)
-			li: a All groups (274)
+		ul.unstyled.rightNav
+			li
+				a All groups (274)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			li
+				a My groups (10)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
 			hr
-			li: a &#9654; Program Groups (6)
-			li: a &#9654;  Care Groups (10)
-			li: a &#9660; Research Groups (3)
-				li.indent: mixin linkList(groupSidebar)
-			li: a &#9654;  Learning Groups (10)
-			li: a &#9654;  Recreational Groups (10)
+			li.header: h6 Type:
+			li
+				a Department (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Program (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Team (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Centres (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Project (75)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Other (1500)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+			li.header: h6 Pillar:
+			li
+				a Research (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Care (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Learning (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Support (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+		.pull-right
+			a Reset search

@@ -8,16 +8,98 @@ mixin pageTitle("Directory", false)
 			include ../../patterns/list
 			mixin listType({ type: 'people', header: ['Person','Role','Department','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' }] })
 	.span2
-		.dropdown
-				btn.btn(data-toggle='modal', href='#todoModal') Create a Group
 		hr
-		ul.unstyled
-			li.active: a My Contacts (13)
-			li: a All Staff (7023)
+		ul.unstyled.rightNav
+			li
+				a All People (274)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+			li
+				a My groups (10)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
 			hr
-			li: a &#9654; Program Groups (6)
-			li: a &#9654;  Care Groups (10)
-			li: a &#9660; Research Groups (3)
-				li.indent: mixin linkList(groupSidebar)
-			li: a &#9654;  Learning Groups (10)
-			li: a &#9654;  Recreational Groups (10)
+			li.header: h6 Pillar:
+			li
+				a Research (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Care (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Learning (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Support (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			hr
+			li.header: h6 By:
+			li
+				a Programs (1240)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Teams (2120)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Projects (30)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			li
+				a Departments (150)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort alphabestically
+						li: a Sort by recent activity
+						li.divider
+						li: a Unsubscribe
+			hr
+		.pull-right
+			a Reset search

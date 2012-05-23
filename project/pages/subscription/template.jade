@@ -43,15 +43,105 @@ mixin pageTitle("Activity Feed", false)
 							p.post-meta 12 minutes ago from 
 								a Feed Name
 	.span2
-		h4 Activity Filter
-		ul.unstyled
-			li: a My Subscriptions (94)
-			li: a My Teams (134)
-			li: a All news (291)
-			li: a All activity (500+) 
+		hr
+		ul.unstyled.rightNav
+			li
+				a All News (7000)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			li
+				a Research News (10)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+			li
+				a All my subscriptions (4000)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
 			hr
-			h6 Filters
-			mixin checkbox({ title: 'Test', fields: [ { label: 'People', type: 'checkbox'},{label: 'Groups', type: 'checkbox'},{label: 'News', type: 'checkbox'},{label: 'Documents', type: 'checkbox'},{label: 'Events', type: 'checkbox'}]})
-			h6 Categories
-			li: a &#9660; Group collections (3)
-			li: a &#9654; My collections(5)
+			li.header: h6 Type:
+			li
+				a Groups (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a People (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Documents (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Events (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+			li.header: h6 Pillar:
+			li
+				a Research (700)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Care (900)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Learning (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			li
+				a Support (300)
+				.dropdown.pull-right
+					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
+					ul.dropdown-menu
+						li: a Sort by new
+						li: a Sort by old
+						li.divider
+						li: a Unsubscribe
+			hr
+		.pull-right
+			a Reset search
