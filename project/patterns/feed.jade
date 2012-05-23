@@ -64,7 +64,10 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='calendar')= item.title
-								p= item.desc
+								p.post-meta
+									a(href='publicProfile') Sean Applebee
+									|  Created Event: 
+								p Please join us for this Seminar about how this and that works.
 								.row-fluid.onHover
 									.span2
 										i.icon-plus-sign(alt='Register')
