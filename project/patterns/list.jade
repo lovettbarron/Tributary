@@ -1,0 +1,58 @@
+mixin listType(data)
+	.row-fluid#contextActive
+		-each button in data.context
+			btn.btn= button
+
+	.row-fluid#contextHidden
+		.span1 
+			input(type='checkbox',rel="tooltip",title="Select all")
+		-each header,key in data.header
+			-if(!key)
+				.span4= header
+			-else
+				.span2= header
+	-each item in data.items
+		.row-fluid.forum-post
+			.span1 
+				input.docSelected(type='checkbox',rel="tooltip")
+			.span1: img(src='http://placehold.it/100x100')
+
+			//- Title, item, or name
+			.span3.listTitle
+				case data.type
+					when 'doc'
+						a(href='docs')= item.title
+					when 'group'
+						a(href='groupDetail')= item.title
+					when 'people'
+						a(href='publicProfile')= item.title
+					when 'shop'
+						a(href='shopswap')= item.title
+
+			//- Association of document: group, pillar, or collaborators
+			.span2.listAssoc
+				case data.type
+					when 'doc'
+						a(href='groupDetail')= item.assoc
+					when 'group'
+						a(href='care')= item.assoc
+					when 'people'
+						a(href='publicProfile')= item.assoc
+					when 'shop'
+						a(href='shopswap')= item.assoc
+
+			//- Origin of document: author, group, or source
+			.span2.listOrigin
+				case data.type
+					when 'doc'
+						| item.origin
+					when 'group'
+						a(href='publicProfile')= item.origin
+					when 'people'
+						a(href='publicProfile')= item.origin
+					when 'shop'
+						a(href='shopswap')= item.origin
+
+			//- Last updated
+			.span2.listUpdated
+				| #{item.updated}
