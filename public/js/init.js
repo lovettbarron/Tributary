@@ -84,9 +84,9 @@ function init() {
 		// On hover state for feed items
 		$('.onHover').hide();
 		$('.feedItem').hover( function() {
-			$(this).find('.onHover').show();
+//			$(this).find('.onHover').show();
 		}, function() {
-			$(this).find('.onHover').hide();
+	//		$(this).find('.onHover').hide();
 		})
 		$('.feedbtn').hide();
 		// Click in to feed update
