@@ -1,13 +1,8 @@
 include ../../patterns/mixin.jade
+- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 mixin pageTitle("What's Happening?", false)
 .row
 	.span8
-		.well.clearfix.news-feature
-			h3: a(href='#') Get fit and have fun with the Inter-Hospital Health  Challenge (see photos)
-			img.pull-left(src='http://placehold.it/300x200')
-			p We kicked off the Inter-Hospital Heealth Challenge on May 1 with the largest exercise class University Ave. has ever seen! Energetic staff from SickKids and surrounding hospitals hiked up their heart rates to star this May health challenge. Check out these happy and health people and find out how you can participate! There could be a lot more text here all about the story that would be featured.
-			p.ipsum(length='100')
-			p: a(href='#') Read more
 		.row
 			.span8
 				.row-fluid
@@ -28,7 +23,6 @@ mixin pageTitle("What's Happening?", false)
 							.btn.btn: i.i.icon-tasks
 				.row.posts
 					.span8
-						h3 More SickKids Headlines
 						.row-fluid.post
 							.span1: img(src='http://placehold.it/100x100')
 							.span10
@@ -40,7 +34,7 @@ mixin pageTitle("What's Happening?", false)
 										a Feed Name
 									.span6
 										.pull-right: mixin share()
-					- var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
 
 
 						-each story in Stories
