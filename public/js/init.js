@@ -32,118 +32,118 @@ function init() {
 	});
 
 	$('a.brand').parent().hover( function() {
-			$('.returnHome').show()
-		}, function() {
-			$('.returnHome').hide()
-		});
+		$('.returnHome').show()
+	}, function() {
+		$('.returnHome').hide()
+	});
 
-		$(".collapse").collapse('hide')
-		$(".accordion-heading").click( function(e) {
-			$(this).find('.collapse').collapse('toggle');
-		});
-		
-		$('.collapse').on('hidden', function() {
-			$(this).find('.collapseToggle > .down').show();
-			$(this).find('.collapseToggle > .up').hide();
-		});
-		$('.collapse').on('shown', function() {
-			$(this).find('.collapseToggle > .down').hide();
-			$(this).find('.collapseToggle > .up').show();
-		});
+	$(".collapse").collapse('hide')
+	$(".accordion-heading").click( function(e) {
+		$(this).find('.collapse').collapse('toggle');
+	});
+	
+	$('.collapse').on('hidden', function() {
+		$(this).find('.collapseToggle > .down').show();
+		$(this).find('.collapseToggle > .up').hide();
+	});
+	$('.collapse').on('shown', function() {
+		$(this).find('.collapseToggle > .down').hide();
+		$(this).find('.collapseToggle > .up').show();
+	});
 
 
-		context();
-		subscribeButtons();
-		$('li.dropdown').hover(function(){
-			$(".dropdown-menu", this).addClass("open");
-		},
-		function(){
-			$(".dropdown-menu", this).removeClass("open");
-		});
-		
-		$('#todoModal input[type="checkbox"]').click( function(e) {
-			$('.calendarView').show();
-		})
-		
-    $('#calendarTab a:first').tab('show');
-		$('[rel="tooltip"]').tooltip();
-		$(".collapse").collapse()
-		$('.modal').modal();
+	context();
+	subscribeButtons();
+	$('li.dropdown').hover(function(){
+		$(".dropdown-menu", this).addClass("open");
+	},
+	function(){
+		$(".dropdown-menu", this).removeClass("open");
+	});
+	
+	$('#todoModal input[type="checkbox"]').click( function(e) {
+		$('.calendarView').show();
+	})
+	
+   $('#calendarTab a:first').tab('show');
+	$('[rel="tooltip"]').tooltip();
+	$(".collapse").collapse()
+	$('.modal').modal();
+	$('.modal').modal('hide');
+	$('a.saveModal').on('click', function(e) {
+		e.preventDefault();
 		$('.modal').modal('hide');
-		$('a.saveModal').on('click', function(e) {
-			e.preventDefault();
-			$('.modal').modal('hide');
-			$('.success').modal('show')
-		});
+		$('.success').modal('show')
+	});
 
-		//Context menu for doc
-		$('#contextActive').hide();
-		$('input.docSelected').click(function() {
-			var active = false;
-			$('input.docSelected').each( function() {
-				if(!active) {
-					if( $(this).attr('checked') ) { active = true; }
-				}
-			})
-			if(active) {
-				$('#contextActive').show();
-				$('#contextHidden').hide();
+	//Context menu for doc
+	$('#contextActive').hide();
+	$('input.docSelected').click(function() {
+		var active = false;
+		$('input.docSelected').each( function() {
+			if(!active) {
+				if( $(this).attr('checked') ) { active = true; }
 			}
-			else {
-				$('#contextActive').hide();
-				$('#contextHidden').show();				
-			}
-		});
-		
-		//The glorious little overhang!
-		$('a.ddMain').click(function() {
-			var active = false;
-			$('input.docSelected').each( function() {
-				if(!active) {
-					if( $(this).attr('checked') ) { active = true; }
-				}
-			})
-			if(active) {
-				$('#contextActive').show();
-				$('#contextHidden').hide();
-			}
-			else {
-				$('#contextActive').hide();
-				$('#contextHidden').show();				
-			}
-		});
-		
-		comment();
-		ipsum();
-		searchField();
-		// On hover state for feed items
-		$('.onHover').hide();
-		$('.feedItem').hover( function() {
-//			$(this).find('.onHover').show();
-		}, function() {
-	//		$(this).find('.onHover').hide();
 		})
-		$('.feedbtn').hide();
-		// Click in to feed update
-		$('#feedUpdate').focus( function(){
-			$(this).height('100');
-			$('.feedbtn').show();
-		});
-		$('#feedUpdate').focusout( function() {
-			$(this).height('30');
-//			$('.feedbtn').hide();
-		});
-		// Hide onboarding item
-		$('.closeOnboarding').click(function(e) {
-			e.preventDefault();
-			$(this).parent().parent().hide();
+		if(active) {
+			$('#contextActive').show();
+			$('#contextHidden').hide();
+		}
+		else {
+			$('#contextActive').hide();
+			$('#contextHidden').show();				
+		}
+	});
+	
+	//The glorious little overhang!
+	$('a.ddMain').click(function() {
+		var active = false;
+		$('input.docSelected').each( function() {
+			if(!active) {
+				if( $(this).attr('checked') ) { active = true; }
+			}
 		})
-		
-		//Post to the feed where appropriate.
-		$('#postWall').click(function(e) {
-			e.preventDefault();
-			var posting = $('#feedUpdate').val();
-			$('.feedItem:first').before(''
+		if(active) {
+			$('#contextActive').show();
+			$('#contextHidden').hide();
+		}
+		else {
+			$('#contextActive').hide();
+			$('#contextHidden').show();				
+		}
+	});
+	
+	comment();
+	ipsum();
+	searchField();
+	// On hover state for feed items
+	$('.onHover').hide();
+	$('.feedItem').hover( function() {
+//		$(this).find('.onHover').show();
+	}, function() {
+//		$(this).find('.onHover').hide();
+	})
+	$('.feedbtn').hide();
+	// Click in to feed update
+	$('#feedUpdate').focus( function(){
+		$(this).height('100');
+		$('.feedbtn').show();
+	});
+	$('#feedUpdate').focusout( function() {
+		$(this).height('30');
+//		$('.feedbtn').hide();
+	});
+	// Hide onboarding item
+	$('.closeOnboarding').click(function(e) {
+		e.preventDefault();
+		$(this).parent().parent().hide();
+	})
+	
+	//Post to the feed where appropriate.
+	$('#postWall').click(function(e) {
+		e.preventDefault();
+		var posting = $('#feedUpdate').val();
+		$('.feedItem:first').before(''
 +'			<div class="feedItem">'
 +'			                <div class="row-fluid">                                                                  '
 +'			                  <div class="span2"><img src="http://placehold.it/100x100&amp;text=profile"></div>      '
@@ -158,33 +158,33 @@ function init() {
 +'			                  </div>                                                                                 '
 +'			                </div>                                                                                   '
 +'			              </div>                                                                                     ')
-		});
-		
-		// fix sub nav on scroll
-    var $win = $(window)
-      , $nav = $('.main-content .subnav')
-      , navTop = $('.main-content .subnav').length && $('.main-content .subnav').offset().top - 40
-      , isFixed = 0
+	});
+	
+	// fix sub nav on scroll
+   var $win = $(window)
+     , $nav = $('.main-content .subnav')
+     , navTop = $('.main-content .subnav').length && $('.main-content .subnav').offset().top - 40
+     , isFixed = 0
 
-    processScroll()
+   processScroll()
 
-    // hack sad times - holdover until rewrite for 2.1
-    $nav.on('click', function () {
-      if (!isFixed) setTimeout(function () {  $win.scrollTop($win.scrollTop() - 47) }, 10)
-    })
+   // hack sad times - holdover until rewrite for 2.1
+   $nav.on('click', function () {
+     if (!isFixed) setTimeout(function () {  $win.scrollTop($win.scrollTop() - 47) }, 10)
+   })
 
-    $win.on('scroll', processScroll)
+   $win.on('scroll', processScroll)
 
-    function processScroll() {
-      var i, scrollTop = $win.scrollTop()
-      if (scrollTop >= navTop && !isFixed) {
-        isFixed = 1	
-        $nav.addClass('subnav-fixed')
-      } else if (scrollTop <= navTop && isFixed) {
-        isFixed = 0
-        $nav.removeClass('subnav-fixed')
-      }
-    }
+   function processScroll() {
+     var i, scrollTop = $win.scrollTop()
+     if (scrollTop >= navTop && !isFixed) {
+       isFixed = 1	
+       $nav.addClass('subnav-fixed')
+     } else if (scrollTop <= navTop && isFixed) {
+       isFixed = 0
+       $nav.removeClass('subnav-fixed')
+     }
+   }
 }
 
 function comment() {

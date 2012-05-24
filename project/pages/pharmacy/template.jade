@@ -7,13 +7,14 @@ include ../../patterns/mixin
 mixin pageTitle("Pharmacy", false)
 .row
 	.span8
-		.subnav#subnav
+		.subnav
 			ul.nav.nav-pills
 				li: a(href='#header1') Our Services
 				li: a(href='#header2') Drug Information Update
-				li: a(href='#header3') Drug A;erts
+				li: a(href='#header3') Drug Alerts
 				li: a(href='#header4') Nursing Newsletters
 				li: a(href='#header5') Special Access Program (SAP)
-		include content
+		.page-content
+			include content
 	.span2
 		include ../pharmacy/links
