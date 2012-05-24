@@ -370,7 +370,7 @@ function modifyProfile() {
 	$('div.editDetails').hide();
 	$('a.addTools').click( function() {
 		var tool = $(this).parent().find('select').val();
-		$('ul.selectedTools').prepend('<li><a class="removeItem"><i class="icon-remove-sign"></i></a><a>' + tool + '</a></li>')
+		$('ul.selectedTools').prepend('<li><a class="removeItem"><i class="icon-remove-sign"></i>' + tool + '</a></li>')
 	});
 	$('a.editLinks').click( function() {
 		if(!$(this).hasClass('editing')){
@@ -390,7 +390,7 @@ function modifyProfile() {
 		} else {
 			$(this).removeClass('editing');
 			$(this).removeClass('btn-primary').html('Edit');
-			$('#editLinks').find('i').remove('i');			
+			$('#editLinks').find('a > i').parent().remove();			
 			$('.MyTools').hide();
 		} }	)
 		

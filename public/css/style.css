@@ -29,6 +29,10 @@
           border-radius: 4px;
 }
 
+#editLinks li > a {
+	margin-right: 2px;
+}
+
 .MyTools {
 	padding: 10px 3px 10px 3px;
 }
