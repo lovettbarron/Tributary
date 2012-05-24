@@ -7,17 +7,21 @@ mixin listType(data)
 						-each item in data.dropdown
 							li: a= item
 	.row-fluid#contextActive
-		-each button in data.context
-			btn.btn= button
+		.span1
+			input.pull-right.docSelected(type='checkbox',rel="tooltip")
+		.span1
+		.span11
+			-each button in data.context
+				btn.btn.btn-mini= button
 
 	.row-fluid#contextHidden
 		.span1 
 			input.pull-right(type='checkbox',rel="tooltip",title="Select all")
 		-each header,key in data.header
 			-if(!key)
-				.span4: strong= header
+				.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
 			-else
-				.span2: strong= header
+				.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
 	-each item in data.items
 		.row-fluid.forum-post
 			.span1 

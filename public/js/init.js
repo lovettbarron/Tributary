@@ -1,3 +1,5 @@
+var notificationOpen = 0;
+
 $(document).ready( function() {
 	$('ul.shrinker').hide(); 
 	$('ul.research').hide();
@@ -46,6 +48,9 @@ function init() {
 			$(this).html('Expand');
 			$(this).removeClass('open')
 		}
+	});
+	$('div.accordion-heading').click( function(e) {
+//		$(this).find('a.expandToggle').click();
 	});
 	
 	$('.collapse').on('hidden', function() {
@@ -341,12 +346,14 @@ function subscribeButtons() {
 }
 
 function notification($target) {
-	$($target).parent().parent().find('div.notification').each( function() {
-		$(this).fadeIn(300);
-	});
-	$('.closeNotification').click( function() {
-		$(this).parent().fadeOut(300);
-	})
+	var height = notificationOpen * 120
+		$($target).parent().parent().find('div.notification:first').css('top', height + 90).fadeIn(300);
+		notificationOpen =+ 1;
+		$('.closeNotification').click( function() {
+			$(this).parent().fadeOut(300, function() {
+				notificationOpen =- 1;
+				});
+			})
 }
 
 function addTodo(content) {
