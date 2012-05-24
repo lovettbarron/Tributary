@@ -12,7 +12,7 @@ mixin listType(data)
 
 	.row-fluid#contextHidden
 		.span1 
-			input(type='checkbox',rel="tooltip",title="Select all")
+			input.pull-right(type='checkbox',rel="tooltip",title="Select all")
 		-each header,key in data.header
 			-if(!key)
 				.span4: strong= header
@@ -21,7 +21,7 @@ mixin listType(data)
 	-each item in data.items
 		.row-fluid.forum-post
 			.span1 
-				input.docSelected(type='checkbox',rel="tooltip")
+				input.pull-right.docSelected(type='checkbox',rel="tooltip")
 			.span1: img(src='http://placehold.it/100x100')
 
 			//- Title, item, or name

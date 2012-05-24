@@ -3,10 +3,8 @@ include ../../patterns/mixin
 mixin pageTitle("Groups", false)
 .row
 	.span8
-		.row
-			.span8
-				include ../../patterns/list
-				mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Join group', 'Subscribe to group','Report group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid dynamics reading group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
+		include ../../patterns/list
+		mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Join group', 'Subscribe to group','Report group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid dynamics reading group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
 	.span2
 		.dropdown
 			btn.btn(data-toggle='modal', href='#todoModal') Create a Group
@@ -24,55 +22,35 @@ mixin pageTitle("Groups", false)
 			li
 				a Department (700)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Program (900)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Team (300)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Centres (300)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Project (75)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Other (1500)
 
-						li.divider
-						li: a Unsubscribe
 			hr
 			li.header: h6 Pillar:
 			li
 				a Research (700)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Care (900)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Learning (300)
 
-						li.divider
-						li: a Unsubscribe
 			li
 				a Support (300)
 
-						li.divider
-						li: a Unsubscribe
 		hr
 		.pull-right
 			a Reset filters
