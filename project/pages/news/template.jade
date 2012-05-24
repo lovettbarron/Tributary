@@ -5,15 +5,11 @@ include ../../patterns/mixin.jade
 mixin pageTitle("What's Happening?", false)
 .row
 	.span8
-		.row-fluid
-			.span6
-				.btn-group.pull-left.sub-buttons
-					.btn.btn: i.icon-arrow-up
-					.btn.btn: i.i.icon-arrow-down
+		.row
+			.span8
 				.btn-group.pull-left.sub-buttons
 					.btn.btn: i.icon-list
 					.btn.btn: i.i.icon-tasks
-			.span6
 				.dropdown.pull-right
 					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
 					ul.dropdown-menu
@@ -27,6 +23,7 @@ mixin pageTitle("What's Happening?", false)
 				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
+		h3 Filters
 		hr
 		ul.unstyled.rightNav
 			li
@@ -46,6 +43,6 @@ mixin pageTitle("What's Happening?", false)
 				a Support news (300)
 			li
 				a Campaigns (3)
-
+		hr
 		.pull-right
-			a Reset search
+			a Reset filters
