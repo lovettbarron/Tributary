@@ -549,3 +549,10 @@ img.news-feature {
 .row-fluid [class*="span"] {
 	min-height: 5px;
 }
+
+h3:before {
+    display:block; 
+    content:""; 
+    height:150px; 
+    margin:-150px 0 0; 
+}
