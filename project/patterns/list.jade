@@ -1,11 +1,4 @@
 mixin listType(data)
-	.row-fluid
-		.span12
-			.pull-right.dropdown
-					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
-					ul.dropdown-menu
-						-each item in data.dropdown
-							li: a= item
 	.row-fluid#contextActive
 		.span1
 			input.pull-right.docSelected(type='checkbox',rel="tooltip")
