@@ -144,8 +144,9 @@ mixin miniFeed(feed)
 									.span2
 										i.icon-remove(alt='report')
 										|  Report
-		.pull-right
-			a(href='subscription') View all activity »
+		-if (feed.mini)
+			.pull-right
+				a(href='subscription') View all activity »
 
 mixin shareModal(type)
 	div.modal(id=type + 'shareModal')

@@ -22,6 +22,8 @@
 	background: #efefef;
 }
 
+.time { padding: 0 0 0 4px}
+
 .accordion-group > div > div {
 	padding: 3px;
 }
