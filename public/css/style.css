@@ -14,6 +14,14 @@
 	margin-top: 0;
 }
 
+a.expandToggle {
+	position: absolute;
+	margin: 5px;
+	bottom: 0;
+	right: 0;
+	z-index:999;
+}
+
 .accordion-group {
 	background: #efefef;
 }

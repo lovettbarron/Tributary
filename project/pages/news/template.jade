@@ -7,9 +7,6 @@ mixin pageTitle("What's Happening?", false)
 	.span8
 		.row
 			.span8
-				.btn-group.pull-left.sub-buttons
-					.btn.btn: i.icon-list
-					.btn.btn: i.i.icon-tasks
 				.dropdown.pull-right
 					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
 					ul.dropdown-menu
@@ -20,7 +17,7 @@ mixin pageTitle("What's Happening?", false)
 		.row.posts
 			.span8
 				include ../../patterns/feed
-				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
 		h3 Filters
