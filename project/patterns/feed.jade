@@ -17,7 +17,7 @@ mixin miniFeed(feed)
 										option My followers
 										option Private
 							a.feedbtn.btn.btn-primary.pull-right#postWall Post
-		- each item in feed.updates
+		- each item, key in feed.updates
 			case item.type
 				when 'profile'
 					.feedItem
@@ -80,14 +80,14 @@ mixin miniFeed(feed)
 										i.icon-remove(alt='Report')
 										|  Report
 				when 'news'
-					.feedItem
+					.feedItem.accordion-group
 						mixin shareModal(item.type)
-						.row-fluid
+						.row-fluid.accordion-heading
 							.span2
 								img(src='http://placehold.it/100x100&text=++News++')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='news')= item.title
+								h4: a(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key)= item.title
 								p.post-meta
 									a(href='publicProfile')= item.actor
 									|  wrote:
@@ -103,6 +103,14 @@ mixin miniFeed(feed)
 									.span2
 										i.icon-remove
 										|  Report
+						.row-fluid.accordion-body.collapse(id=key)
+							.span12
+								p.ipsum(length='900')
+							.row-fluid.post-meta
+								.span6 12 minutes ago from 
+									a Feed Name
+								.span6
+									.pull-right: mixin share()
 				when 'doc'
 					.feedItem
 						mixin shareModal(item.type)

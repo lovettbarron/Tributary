@@ -25,6 +25,11 @@ function init() {
 			$('.returnHome').hide()
 		});
 
+		$(".collapse").collapse('hide')
+		$(".accordion-heading").click( function(e) {
+			$(this).find('.collapse').collapse('toggle');
+		});
+
 		context();
 		subscribeButtons();
 		$('li.dropdown').hover(function(){

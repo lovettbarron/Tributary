@@ -10,9 +10,13 @@ mixin pageTitle("Mary Jo's Message", false)
 						h3: a(href='#') What is Innovation at SickKids?
 						p.post-meta By Mary Jo Haddad on April 19, 2012
 						p.ipsum(length='1000', para='3')
-						btn.btn.btn-mini(type='Comment') Comment
+						hr.clean-fix
+						form.form-horizontal
+							textarea.input-large#feedUpdate(columns='5')
+							.pull-left.btnPadding.feedbtn
 						btn.btn.btn-mini: i.icon-thumbs-up(type='Favourite')
-					include ../../patterns/feed
+						btn.btn.btn-mini(type='Comment') Comment
+											
 
 				.well
 					.post
@@ -21,8 +25,12 @@ mixin pageTitle("Mary Jo's Message", false)
 						img.content.pull-left(src='http://placehold.it/200x200')
 						p.ipsum(length='1000', para='3')
 						hr.clear-fix
-						btn.btn.btn-mini(type='Comment') Comment
+						form.form-horizontal
+							textarea.input-large#feedUpdate(columns='5')
+							.pull-left.btnPadding.feedbtn
 						btn.btn.btn-mini: i.icon-thumbs-up(type='Favourite')
+						btn.btn.btn-mini(type='Comment') Comment
+				
 
 	.span2
 		include links

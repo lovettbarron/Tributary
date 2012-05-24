@@ -7,12 +7,11 @@ mixin pageTitle("Activity Feed", false)
 	.span8
 		.row-fluid
 			.span6.dropdown
-				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Show all &#9660;
+				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
 				ul.dropdown-menu
-					li: a Show all
-					li: a Unread only
-					li: a Favorited only
-					li: a My groups only
+					li: a Newest
+					li: a Oldest
+					li: a Alphabetically
 						
 			.span6
 				.btn-group.pull-right.sub-buttons
@@ -23,25 +22,8 @@ mixin pageTitle("Activity Feed", false)
 					.btn.btn: i.i.icon-tasks
 		.row.posts
 			.span8
-				.row-fluid.post
-					.span1: img(src='http://placehold.it/100x100')
-					.span10
-						.row-fluid
-							.span12: h4: a This is an expanded subscription item
-							p.ipsum
-						.row-fluid.post-meta
-							.span6 12 minutes ago from 
-								a Feed Name
-							.span6
-								.pull-right: mixin share()
-
-				-each story in Stories
-					.row-fluid.post.closed
-						.span1: img(src='http://placehold.it/100x100')
-						.span11
-							h4: a= story.title
-							p.post-meta 12 minutes ago from 
-								a Feed Name
+				include ../../patterns/feed
+				mixin miniFeed({personal: false, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
 		hr
 		ul.unstyled.rightNav
@@ -107,7 +89,7 @@ mixin pageTitle("Activity Feed", false)
 			hr
 			li.header: h6 Pillar:
 			li
-				a Research news (700)
+				a Research (700)
 				.dropdown.pull-right
 					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
 					ul.dropdown-menu
@@ -116,7 +98,7 @@ mixin pageTitle("Activity Feed", false)
 						li.divider
 						li: a Unsubscribe
 			li
-				a Care news (900)
+				a Care (900)
 				.dropdown.pull-right
 					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
 					ul.dropdown-menu
@@ -125,7 +107,7 @@ mixin pageTitle("Activity Feed", false)
 						li.divider
 						li: a Unsubscribe
 			li
-				a Learning news (300)
+				a Learning (300)
 				.dropdown.pull-right
 					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
 					ul.dropdown-menu
@@ -134,7 +116,7 @@ mixin pageTitle("Activity Feed", false)
 						li.divider
 						li: a Unsubscribe
 			li
-				a Support news (300)
+				a Support (300)
 				.dropdown.pull-right
 					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
 					ul.dropdown-menu
