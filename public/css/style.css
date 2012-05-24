@@ -29,6 +29,10 @@
           border-radius: 4px;
 }
 
+.MyTools {
+	padding: 10px 3px 10px 3px;
+}
+
 a.expandToggle {
 	position: absolute;
 	margin: 5px;

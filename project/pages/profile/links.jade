@@ -13,7 +13,7 @@ a.btn.pull-right.editLinks Edit
 		h4 My Tools
 		.row-fluid.MyTools.well
 			| Add tool from list
-			select.select.span8
+			select.select.span12
 				-each item in tools
 					option= item.title
 			a.btn.btn-mini.addTools Add tool
@@ -22,6 +22,7 @@ a.btn.pull-right.editLinks Edit
 				-if (item.selected)
 					li 
 						a(href=item.address)= item.title
+						mixin notification({title:item.title + ' deleted', desc: 'Click here to undo' })
 
 	- var groups = {title: 'My Groups', items: [{title: 'Critical Care Medicine Program (CCMP)', address: '#'}, {title: 'IV Pump Project', address: '#'},{title: 'Cardiac Connections', address: '#'},{title: 'Centre for Nursing', address: '#'},{title: 'Community Care Access Centre', address: '#'},{title: 'MDCentre', address: '#'}]}
 

@@ -367,16 +367,26 @@ function addTodo(content) {
 
 function modifyProfile() {
 	$('.MyTools').hide();
+	$('div.editDetails').hide();
 	$('a.addTools').click( function() {
 		var tool = $(this).parent().find('select').val();
-		$('ul.selectedTools').prepend('<li><i class="icon-remove-sign"></i><a>' + tool + '</a></li>')
+		$('ul.selectedTools').prepend('<li><a class="removeItem"><i class="icon-remove-sign"></i></a><a>' + tool + '</a></li>')
 	});
 	$('a.editLinks').click( function() {
 		if(!$(this).hasClass('editing')){
 			$('.MyTools').show();
 			$(this).addClass('editing');
 			$(this).addClass('btn-primary').html('Save');
-			$('#editLinks').find('li').prepend('<i class="icon-remove-sign"></i>');
+			$('#editLinks').find('li').prepend('<a class="removeItem"><i class="icon-remove-sign"></i></a>');
+			$('a.removeItem').click( function() {
+				$(this).parent().queue( 
+						function(n) {
+							$(this).html('<a>Undo</a>');
+			        n();
+					}).delay(3000)
+					.fadeOut(500);
+					
+				})
 		} else {
 			$(this).removeClass('editing');
 			$(this).removeClass('btn-primary').html('Edit');
@@ -385,8 +395,16 @@ function modifyProfile() {
 		} }	)
 		
 	$('a.editDetails').click( function() {
-		$('#editDetails').find('td:last', function() {
-			
-		})
+		if(!$(this).hasClass('editing')){
+			$('div.editDetails').show();
+			$('div.unEditted').hide();
+			$(this).addClass('editing');
+			$(this).addClass('btn-primary').html('Save');
+		} else {
+			$(this).removeClass('editing');
+			$(this).removeClass('btn-primary').html('Edit');
+			$('div.editDetails').hide();
+			$('div.unEditted').show();
+		}
 	});
 }

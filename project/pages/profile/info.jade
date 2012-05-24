@@ -1,6 +1,6 @@
-a.btn.pull-right Edit contact info
+a.btn.pull-right.editDetails Edit contact info
 h3 Contact Info
-.row-fluid
+.row-fluid.unEditted
 	.span6
 		table.table.table-striped.border
 			tbody
@@ -37,3 +37,39 @@ h3 Contact Info
 				tr	
 					td Fax
 					td (416) 999-9911
+
+.row-fluid.editDetails
+	.span6
+		table.table.table-striped.border
+			tbody
+				tr 
+					td Department
+					td: input(type='text', value="Clinical Care") 
+				tr 
+					td Office Location
+					td: input(type='text', value="180 Dundas Street West, 1624")
+				tr
+					td Manager
+					td: input(type='text', value="Stephen Porter")
+				tr
+					td Assistant
+					td: input(type='text', value="Amanda Perrin")  
+	.span6
+		table.table.table-striped.border
+			tbody
+				tr
+					td Email
+					td: input(type='text', value="dwatts@sickkids.ca")
+				tr
+					td Work Phone
+					td: input(type='text', value="(416) 899-2395")
+				tr
+					td Mobile Phone
+					td: input(type='text', value="(416) 223-2953") 
+				tr
+					td Home Phone
+					td: input(type='text', value="(416) 225-1123")
+				tr	
+					td Fax
+					td: input(type='text', value="(416) 999-9911")
+
