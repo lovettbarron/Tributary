@@ -60,7 +60,7 @@ function init() {
 		$(this).find('.expandToggle').hide();
 	});
 
-
+modifyProfile()
 	context();
 	subscribeButtons();
 	$('li.dropdown').hover(function(){
@@ -362,4 +362,31 @@ function addTodo(content) {
 			+'	<div class="span11">' + content
 			+'</div>'	
 	$('.todo:last').append(todo);
+}
+
+
+function modifyProfile() {
+	$('.MyTools').hide();
+	$('a.addTools').click( function() {
+		var tool = $(this).parent().find('select').val();
+		$('ul.selectedTools').prepend('<li><i class="icon-remove-sign"></i><a>' + tool + '</a></li>')
+	});
+	$('a.editLinks').click( function() {
+		if(!$(this).hasClass('editing')){
+			$('.MyTools').show();
+			$(this).addClass('editing');
+			$(this).addClass('btn-primary').html('Save');
+			$('#editLinks').find('li').prepend('<i class="icon-remove-sign"></i>');
+		} else {
+			$(this).removeClass('editing');
+			$(this).removeClass('btn-primary').html('Edit');
+			$('#editLinks').find('i').remove('i');			
+			$('.MyTools').hide();
+		} }	)
+		
+	$('a.editDetails').click( function() {
+		$('#editDetails').find('td:last', function() {
+			
+		})
+	});
 }
