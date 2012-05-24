@@ -5,15 +5,6 @@ include ../../patterns/mixin.jade
 mixin pageTitle("What's Happening?", false)
 .row
 	.span8
-		.row
-			.span8
-				.dropdown.pull-right
-					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
-					ul.dropdown-menu
-						li: a Newest
-						li: a Oldest
-						li: a Alphabetically
-
 		.row.posts
 			.span8
 				include ../../patterns/feed

@@ -5,20 +5,9 @@ mixin pageTitle("Activity Feed", false)
 
 .row
 	.span8
-		.row-fluid
-			.span12
-				.dropdown.pull-right
-					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
-					ul.dropdown-menu
-						li: a Newest
-						li: a Oldest
-						li: a Alphabetically
-						
-			.span6
 		.row.posts
-			.span8
-				include ../../patterns/feed
-				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+		include ../../patterns/feed
+		mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
 		h3 Filters
 		hr
