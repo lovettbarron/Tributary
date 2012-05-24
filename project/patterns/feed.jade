@@ -82,21 +82,17 @@ mixin miniFeed(feed)
 				when 'news'
 					.feedItem.accordion-group
 						mixin shareModal(item.type)
-						.row-fluid.accordion-heading
+						.row-fluid.accordion-heading(id='key' + key)
 							.span2
 								img(src='http://placehold.it/100x100&text=++News++')
 							.span10
-								.time.pull-right #{item.time}
-								-if (feed.mini)
-									h4: a(href='news')= item.title
-								-else
-									h4: a(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key)= item.title
-										.pull-right.collapseToggle
-											span.down.show &#9660;
-											span.up.hide &#9650;
+								.time.pull-right From <a href="#{item.source}">#{item.source}</a> at #{item.time}
+								h4: a(href='news')= item.title
 								p.post-meta
 									a(href='publicProfile')= item.actor
 									|  wrote:
+								-if (!feed.mini)
+									a.btn.expandToggle(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key) Expand
 								p.ipsum(length='130')
 								.row-fluid.onHover
 									.span2
@@ -113,10 +109,7 @@ mixin miniFeed(feed)
 							.span12
 								p.ipsum(length='900')
 							.row-fluid.post-meta
-								.span6 12 minutes ago from 
-									a Feed Name
-								.span6
-									.pull-right: mixin share()
+								.span6: mixin share()
 				when 'doc'
 					.feedItem
 						mixin shareModal(item.type)

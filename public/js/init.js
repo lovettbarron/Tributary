@@ -37,18 +37,22 @@ function init() {
 			$('.returnHome').hide()
 		});
 
-		$(".collapse").collapse('hide')
-		$(".accordion-heading").click( function(e) {
-			$(this).find('.collapse').collapse('toggle');
+		$('.collapse').collapse('hide')
+		$("a.expandToggle").click( function(e) {
+			if(!$(this).hasClass('open')) {
+				$(this).html('Collapse');
+				$(this).addClass('open')
+			} else {
+				$(this).html('Expand');
+				$(this).removeClass('open')
+			}
 		});
 		
 		$('.collapse').on('hidden', function() {
-			$(this).find('.collapseToggle > .down').show();
-			$(this).find('.collapseToggle > .up').hide();
+			$(this).find('.expandToggle').show();
 		});
 		$('.collapse').on('shown', function() {
-			$(this).find('.collapseToggle > .down').hide();
-			$(this).find('.collapseToggle > .up').show();
+			$(this).find('.expandToggle').hide();
 		});
 
 

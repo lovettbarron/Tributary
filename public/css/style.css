@@ -18,6 +18,14 @@
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+a.expandToggle {
+	position: absolute;
+	margin: 5px;
+	bottom: 0;
+	right: 0;
+	z-index:9999;
+}
+
 .accordion-group {
 	background: #efefef;
 }

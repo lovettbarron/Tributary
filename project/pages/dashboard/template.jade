@@ -37,7 +37,7 @@ include ../../patterns/submitstory_modal.jade
 		.row
 			.span4
 				.well
-					mixin miniFeed({personal: true, mini: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+					mixin miniFeed({personal: true, mini: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 				.well
 					h3 Quick Poll
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})
