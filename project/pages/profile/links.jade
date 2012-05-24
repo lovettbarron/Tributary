@@ -3,7 +3,7 @@ a.btn.pull-right.editLinks Edit
 #editLinks
 	h4 My Links
 
-	- var links = {title: 'My Services', items: [{title: 'e-HR for Staff', address: '#'}, {title: 'Staff Absence Reporting System (STARS)', address: '#'},{title: 'Occupational Health & Safety Services', address: '#'}, {title: 'Benefits Information', address: '#'}, {title: 'Information Services', address: '#'},{title: 'Financial Services', address: '#'},{title: 'Shop & Eat at SickKids', address: '#'}]}
+	- var links = {title: 'My Services', items: [{title: 'e-HR for Staff', address: '#'}, {title: 'Staff Absence Reporting System (STARS)', address: '#'},{title: 'Occupational Health & Safety Services', address: '#'}, {title: 'Benefits Information', address: '#'}, {title: 'Information Services', nodelete: true,address: '#'},{title: 'Financial Services', nodelete: true,address: '#'},{title: 'Shop & Eat at SickKids', nodelete: true,address: '#'}]}
 
 	mixin linkList(links)
 
@@ -11,7 +11,7 @@ a.btn.pull-right.editLinks Edit
 
 	.link-list
 		h4 My Tools
-		.row-fluid.MyTools.well
+		.row-fluid.MyTools
 			| Add tool from list
 			select.select.span12
 				-each item in tools

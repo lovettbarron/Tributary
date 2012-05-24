@@ -377,7 +377,7 @@ function modifyProfile() {
 			$('.MyTools').show();
 			$(this).addClass('editing');
 			$(this).addClass('btn-primary').html('Save');
-			$('#editLinks').find('li').prepend('<a class="removeItem"><i class="icon-remove-sign"></i></a>');
+			$('#editLinks').find('li').not('li.noDelete').prepend('<a class="removeItem"><i class="icon-remove-sign"></i></a>');
 			$('a.removeItem').click( function() {
 				$(this).parent().queue( 
 						function(n) {
