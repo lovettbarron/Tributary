@@ -30,55 +30,55 @@ function init() {
 			})
 		}
 	});
-
+	// Logo overlay
 	$('a.brand').parent().hover( function() {
 			$('.returnHome').show()
 		}, function() {
 			$('.returnHome').hide()
 		});
+	// Expand collapse business for activity feed
+	$('.collapse').collapse('hide')
+	$("a.expandToggle").click( function(e) {
+		if(!$(this).hasClass('open')) {
+			$(this).html('Collapse');
+			$(this).addClass('open')
+		} else {
+			$(this).html('Expand');
+			$(this).removeClass('open')
+		}
+	});
+	
+	$('.collapse').on('hidden', function() {
+		$(this).find('.expandToggle').show();
+	});
+	$('.collapse').on('shown', function() {
+		$(this).find('.expandToggle').hide();
+	});
 
-		$('.collapse').collapse('hide')
-		$("a.expandToggle").click( function(e) {
-			if(!$(this).hasClass('open')) {
-				$(this).html('Collapse');
-				$(this).addClass('open')
-			} else {
-				$(this).html('Expand');
-				$(this).removeClass('open')
-			}
-		});
-		
-		$('.collapse').on('hidden', function() {
-			$(this).find('.expandToggle').show();
-		});
-		$('.collapse').on('shown', function() {
-			$(this).find('.expandToggle').hide();
-		});
 
-
-		context();
-		subscribeButtons();
-		$('li.dropdown').hover(function(){
-			$(".dropdown-menu", this).addClass("open");
-		},
-		function(){
-			$(".dropdown-menu", this).removeClass("open");
-		});
-		
-		$('#todoModal input[type="checkbox"]').click( function(e) {
-			$('.calendarView').show();
-		})
-		
-    $('#calendarTab a:first').tab('show');
-		$('[rel="tooltip"]').tooltip();
-		$(".collapse").collapse()
-		$('.modal').modal();
+	context();
+	subscribeButtons();
+	$('li.dropdown').hover(function(){
+		$(".dropdown-menu", this).addClass("open");
+	},
+	function(){
+		$(".dropdown-menu", this).removeClass("open");
+	});
+	
+	$('#todoModal input[type="checkbox"]').click( function(e) {
+		$('.calendarView').show();
+	})
+	
+   $('#calendarTab a:first').tab('show');
+	$('[rel="tooltip"]').tooltip();
+	$(".collapse").collapse()
+	$('.modal').modal();
+	$('.modal').modal('hide');
+	$('a.saveModal').on('click', function(e) {
+		e.preventDefault();
 		$('.modal').modal('hide');
-		$('a.saveModal').on('click', function(e) {
-			e.preventDefault();
-			$('.modal').modal('hide');
-			$('.success').modal('show')
-		});
+		$('.success').modal('show')
+	});
 
 		//Context menu for doc
 		$('#contextActive').hide();
@@ -189,6 +189,10 @@ function init() {
         $nav.removeClass('subnav-fixed')
       }
     }
+	//HAckiITY hack hack
+	if($('h2:first').html() == "What's Happening?") {
+		$(".collapse:first").collapse('show');
+	}
 }
 
 function comment() {
