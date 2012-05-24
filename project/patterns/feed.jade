@@ -87,10 +87,13 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=++News++')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key)= item.title
-									.pull-right.collapseToggle
-										span.down.show &#9660;
-										span.up.hide &#9650;
+								-if (feed.mini)
+									h4: a(href='news')= item.title
+								-else
+									h4: a(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key)= item.title
+										.pull-right.collapseToggle
+											span.down.show &#9660;
+											span.up.hide &#9650;
 								p.post-meta
 									a(href='publicProfile')= item.actor
 									|  wrote:

@@ -19,10 +19,16 @@ function init() {
 		$(this).find('.dropdown').hide();
 	})
 
-	$('input[data-original-title="Select all"]').click( function() {
+	$('#contextHidden input[type="checkbox"]').on('click', function() {
+		if( $(this).attr('checked') ) {
 		$('input[type="checkbox"]').each( function() {
 			$(this).prop("checked", true);
-		})
+		}) 
+		}	else {
+			$('input[type="checkbox"]').each( function() {
+				$(this).prop("checked", false);
+			})
+		}
 	});
 
 	$('a.brand').parent().hover( function() {
