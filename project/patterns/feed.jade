@@ -1,7 +1,7 @@
 mixin miniFeed(feed)
 	.row-fluid
 		.span12
-			-if (!feed.personal)
+			-if (!feed.noSubscribe && !feed.personal)
 				mixin subscribe()
 			h3= feed.title
 		-if (feed.personal)
@@ -28,6 +28,7 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='publicProfile')= item.actor
+									|  »
 								p= item.title
 								.row-fluid.onHover
 									.span2

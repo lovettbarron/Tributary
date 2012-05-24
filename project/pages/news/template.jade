@@ -5,53 +5,25 @@ include ../../patterns/mixin.jade
 mixin pageTitle("What's Happening?", false)
 .row
 	.span8
-		.well.clearfix.news-feature
-			h3: a(href='#') Get fit and have fun with the Inter-Hospital Health  Challenge (see photos)
-			img.pull-left(src='http://placehold.it/300x200')
-			p We kicked off the Inter-Hospital Health Challenge on May 1 with the largest exercise class University Ave. has ever seen! Energetic staff from SickKids and surrounding hospitals hiked up their heart rates to star this May health challenge. Check out these happy and health people and find out how you can participate! There could be a lot more text here all about the story that would be featured.
-			p.ipsum(length='100')
-			p: a(href='#') Read more
-		.row
+		.row-fluid
+			.span6.dropdown
+				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
+				ul.dropdown-menu
+					li: a Newest
+					li: a Oldest
+					li: a Alphabetically
+
+			.span6
+				.btn-group.pull-right.sub-buttons
+					.btn.btn: i.icon-arrow-up
+					.btn.btn: i.i.icon-arrow-down
+				.btn-group.pull-right.sub-buttons
+					.btn.btn: i.icon-list
+					.btn.btn: i.i.icon-tasks
+		.row.posts
 			.span8
-				.row-fluid
-					.span6.dropdown
-						a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Show all &#9660;
-						ul.dropdown-menu
-							li: a Show all
-							li: a Unread only
-							li: a Favourited only
-							li: a My groups only
-
-					.span6
-						.btn-group.pull-right.sub-buttons
-							.btn.btn: i.icon-arrow-up
-							.btn.btn: i.i.icon-arrow-down
-						.btn-group.pull-right.sub-buttons
-							.btn.btn: i.icon-list
-							.btn.btn: i.i.icon-tasks
-				.row.posts
-					.span8
-						h3 More SickKids Headlines
-						.row-fluid.post
-							.span1: img(src='http://placehold.it/100x100')
-							.span10
-								.row-fluid
-									.span12: h4: a This is an expanded subscription item
-									p.ipsum
-								.row-fluid.post-meta
-									.span6 12 minutes ago from 
-										a Feed Name
-									.span6
-										.pull-right: mixin share()
-
-						-each story in Stories
-
-							.row-fluid.post.closed
-								.span1: img(src='http://placehold.it/100x100')
-								.span11
-									h4: a= story.title
-									p.post-meta 12 minutes ago from 
-										a Feed Name
+				include ../../patterns/feed
+				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
 		hr
