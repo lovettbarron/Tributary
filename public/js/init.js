@@ -320,12 +320,21 @@ function context() {
 function subscribeButtons() {
 	$('.subscribeButton').click( function(e) {
 		e.preventDefault();
-		if($(this).hasClass('subscribed')) {
+		if( $(this).hasClass('subscribed') ) {
 			$(this).removeClass('subscribed')
 			$(this).html('Subscribe');
 		} else {
-			$(this).addClass('subscribed')
-			$(this).html('loading...').delay(3000).html('<i class="icon-ok"></i> Subscribed')
+			$(this).addClass('subscribed');
+			$(this).queue( 
+				function(n) {
+					$(this).html('loading...');
+	        n();
+			}).delay(1000)
+			.queue(
+				function(n) {
+	        $(this).html('<i class="icon-ok"></i> Subscribed');
+	        n();
+		    }).fadeIn(500);
 		}
 	});
 }

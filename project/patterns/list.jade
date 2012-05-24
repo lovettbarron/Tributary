@@ -4,9 +4,8 @@ mixin listType(data)
 			.pull-right.dropdown
 					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
 					ul.dropdown-menu
-						li: a Newest
-						li: a Oldest
-						li: a Alphabetically
+						-each item in data.dropdown
+							li: a= item
 	.row-fluid#contextActive
 		-each button in data.context
 			btn.btn= button
