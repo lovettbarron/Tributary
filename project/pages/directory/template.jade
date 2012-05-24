@@ -5,84 +5,44 @@ mixin pageTitle("Directory", false)
 	.span8
 		.row
 			include ../../patterns/list
-			mixin listType({ type: 'people', header: ['Person','Role','Department','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Adminstrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })
+			mixin listType({ type: 'people', header: ['Name','Role','Department','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Lindsay Ellerby', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Adminstrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })
 	.span2
 		hr
 		ul.unstyled.rightNav
 			li
 				a All People (274)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a My groups (10)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			hr
 			li.header: h6 Pillar:
 			li
 				a Research (700)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Care (900)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Learning (300)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Support (300)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			hr
 			li.header: h6 By:
 			li
 				a Programs (1240)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Teams (2120)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Projects (30)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			li
 				a Departments (150)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort alphabetically
-						li: a Sort by recent activity
+
 			hr
 		.pull-right
 			a Reset search

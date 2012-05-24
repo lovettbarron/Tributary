@@ -28,7 +28,6 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='publicProfile')= item.actor
-									|  »
 								p= item.title
 								.row-fluid.onHover
 									.span2
@@ -89,6 +88,9 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key)= item.title
+									.pull-right.collapseToggle
+										span.down.show &#9660;
+										span.up.hide &#9650;
 								p.post-meta
 									a(href='publicProfile')= item.actor
 									|  wrote:

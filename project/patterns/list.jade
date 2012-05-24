@@ -1,4 +1,10 @@
 mixin listType(data)
+	.pull-right.dropdown
+			a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
+			ul.dropdown-menu
+				li: a Newest
+				li: a Oldest
+				li: a Alphabetically
 	.row-fluid#contextActive
 		-each button in data.context
 			btn.btn= button
@@ -37,7 +43,7 @@ mixin listType(data)
 					when 'group'
 						a(href='care')= item.assoc
 					when 'people'
-						a(href='publicProfile')= item.assoc
+						= item.assoc
 					when 'shop'
 						a(href='shopswap')= item.assoc
 

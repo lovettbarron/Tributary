@@ -19,6 +19,12 @@ function init() {
 		$(this).find('.dropdown').hide();
 	})
 
+	$('input[data-original-title="Select all"]').click( function() {
+		$('input[type="checkbox"]').each( function() {
+			$(this).prop("checked", true);
+		})
+	});
+
 	$('a.brand').parent().hover( function() {
 			$('.returnHome').show()
 		}, function() {
@@ -29,6 +35,16 @@ function init() {
 		$(".accordion-heading").click( function(e) {
 			$(this).find('.collapse').collapse('toggle');
 		});
+		
+		$('.collapse').on('hidden', function() {
+			$(this).find('.collapseToggle > .down').show();
+			$(this).find('.collapseToggle > .up').hide();
+		});
+		$('.collapse').on('shown', function() {
+			$(this).find('.collapseToggle > .down').hide();
+			$(this).find('.collapseToggle > .up').show();
+		});
+
 
 		context();
 		subscribeButtons();

@@ -6,20 +6,21 @@ mixin pageTitle("What's Happening?", false)
 .row
 	.span8
 		.row-fluid
-			.span6.dropdown
-				a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
-				ul.dropdown-menu
-					li: a Newest
-					li: a Oldest
-					li: a Alphabetically
-
 			.span6
-				.btn-group.pull-right.sub-buttons
+				.btn-group.pull-left.sub-buttons
 					.btn.btn: i.icon-arrow-up
 					.btn.btn: i.i.icon-arrow-down
-				.btn-group.pull-right.sub-buttons
+				.btn-group.pull-left.sub-buttons
 					.btn.btn: i.icon-list
 					.btn.btn: i.i.icon-tasks
+			.span6
+				.dropdown.pull-right
+					a.btn.dd-toggle(data-toggle='dropdown', data-target='#') Sort by &#9660;
+					ul.dropdown-menu
+						li: a Newest
+						li: a Oldest
+						li: a Alphabetically
+
 		.row.posts
 			.span8
 				include ../../patterns/feed
@@ -30,77 +31,21 @@ mixin pageTitle("What's Happening?", false)
 		ul.unstyled.rightNav
 			li
 				a All News (7000)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
 			hr
 			li.header: h6 Pillar:
 			li
 				a Research news (700)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
+
 			li
 				a Care news (900)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
+
 			li
 				a Learning news (300)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
+
 			li
 				a Support news (300)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
-			hr
-			li.header: h6 Campaign:
 			li
-				a <img src="http://placehold.it/15x15"> Blue Ribbon (700)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
-			li
-				a <img src="http://placehold.it/15x15"> Run for SickKids (900)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
-			li
-				a <img src="http://placehold.it/15x15"> Flowers and Fun at SickKids (300)
-				.dropdown.pull-right
-					btn.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#') &#9660;
-					ul.dropdown-menu
-						li: a Sort by new
-						li: a Sort by old
-						li.divider
-						li: a Unsubscribe
+				a Campaigns (3)
+
 		.pull-right
 			a Reset search
