@@ -2,6 +2,12 @@
 
 include feed.jade
 
+mixin notification(notif)
+	.notification
+		a.closeNotification.pull-right x
+		h3= notif.title
+		p= notif.desc
+
 mixin subnav(section)
 	case section
 		when 'research'
@@ -46,11 +52,13 @@ mixin radio(poll)
 				| #{item}
 
 mixin newsBtn()
+	mixin notification({title:'Subscribed successfully',desc:'You\'ve successfully subscribed to the feed.'})
 	#newsBtn.pull-right
 		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
 		btn.btn.btn-mini(href='#') Submit a Story
 
 mixin subscribe()
+	mixin notification({title:'Subscribed successfully',desc:'You\'ve successfully subscribed to the feed.'})
 	#newsBtn.pull-right
 		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
 

@@ -10,7 +10,7 @@ $(document).ready( function() {
 });
 
 function init() {
-	
+	$('.notification').hide();
 	$('.rightNav').find('.dropdown').hide();
 	$('.rightNav > li').hover( function() {
 		$(this).find('.dropdown').show();
@@ -333,10 +333,20 @@ function subscribeButtons() {
 			.queue(
 				function(n) {
 	        $(this).html('<i class="icon-ok"></i> Subscribed');
+					notification(this);
 	        n();
 		    }).fadeIn(500);
 		}
 	});
+}
+
+function notification($target) {
+	$($target).parent().parent().find('div.notification').each( function() {
+		$(this).fadeIn(300);
+	});
+	$('.closeNotification').click( function() {
+		$(this).parent().fadeOut(300);
+	})
 }
 
 function addTodo(content) {
