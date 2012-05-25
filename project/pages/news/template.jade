@@ -5,7 +5,7 @@ include ../../patterns/mixin.jade
 mixin pageTitle("What's Happening?", false)
 .row
 	.span8
-		.row.posts
+		#mainNewsFeed.row.posts
 			.span8
 				include ../../patterns/feed
 				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})

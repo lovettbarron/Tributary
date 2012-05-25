@@ -49,9 +49,6 @@ function init() {
 			$(this).removeClass('open')
 		}
 	});
-	$('div.accordion-heading').click( function(e) {
-//		$(this).find('a.expandToggle').click();
-	});
 	
 	$('.collapse').on('hidden', function() {
 		$(this).find('.expandToggle').show();
@@ -181,10 +178,8 @@ function init() {
         $nav.removeClass('subnav-fixed')
       }
     }
-	//HAckiITY hack hack
-	if($('h2:first').html() == "What's Happening?") {
-		$(".collapse:first").collapse('show');
-	}
+	//Opens the first new item by default on What's Happening
+	$("#mainNewsFeed a.expandToggle:first").click();
 }
 
 function comment() {
