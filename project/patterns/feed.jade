@@ -1,11 +1,10 @@
 mixin miniFeed(feed)
 	.row-fluid
-		.span12
-			-if (!feed.noSubscribe && !feed.personal)
-				mixin subscribe()
-			h3= feed.title
+		-if (!feed.noSubscribe && !feed.personal)
+			mixin subscribe()
+		h3= feed.title
 		-if (feed.personal)
-			.row-fluid				
+			.row-fluid
 				form.form-horizontal.span12
 					textarea.input-xlarge#feedUpdate.hint(rows='1')
 					.row-fluid
@@ -30,7 +29,6 @@ mixin miniFeed(feed)
 			case item.type
 				when 'profile'
 					.feedItem
-						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=Profile')
@@ -48,7 +46,6 @@ mixin miniFeed(feed)
 										|  Report
 				when 'group'
 					.feedItem
-						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=+Group++')
@@ -70,7 +67,6 @@ mixin miniFeed(feed)
 										|  Report
 				when 'event'
 					.feedItem
-						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=++Event++')
@@ -94,7 +90,6 @@ mixin miniFeed(feed)
 										|  Report
 				when 'news'
 					.feedItem.accordion-group
-						mixin shareModal(item.type)
 						.row-fluid.accordion-heading(id='key' + key)
 							.span2
 								img(src='http://placehold.it/100x100&text=++News++')
@@ -127,7 +122,6 @@ mixin miniFeed(feed)
 								.span6
 				when 'doc'
 					.feedItem
-						mixin shareModal(item.type)
 						.row-fluid
 							.span2
 								img(src='http://placehold.it/100x100&text=Document')
