@@ -1,15 +1,14 @@
 include ../../patterns/mixin.jade
-a.btn.pull-right.editLinks Edit
 #editLinks
-	h4 My Links
-
-	- var links = {title: 'My Services', items: [{title: 'e-HR for Staff', address: '#'}, {title: 'Staff Absence Reporting System (STARS)', address: '#'},{title: 'Occupational Health & Safety Services', address: '#'}, {title: 'Benefits Information', address: '#'}, {title: 'Information Services', nodelete: true,address: '#'},{title: 'Financial Services', nodelete: true,address: '#'},{title: 'Shop & Eat at SickKids', nodelete: true,address: '#'}]}
+	- var links = {title: 'My Links', edit: true, items: [{title: 'e-HR for Staff', address: '#'}, {title: 'Staff Absence Reporting System (STARS)', address: '#'},{title: 'Occupational Health & Safety Services', address: '#'}, {title: 'Benefits Information', address: '#'}, {title: 'Information Services', nodelete: true,address: '#'},{title: 'Financial Services', nodelete: true,address: '#'},{title: 'Shop & Eat at SickKids', nodelete: true,address: '#'}]}
 
 	mixin linkList(links)
 
 	-var tools = [{title: 'KidTrac', selected: true, address: '#'}, {title: 'iProject', selected: true, address: '#'},{title: 'Ideas Innovation Tool', address: '#'}, {title: 'Canadian Medical Directory', address: '#'}]
 
 	.link-list
+		a.btn.btn-mini.pull-right.editLink Edit
+
 		h4 My Tools
 		.row-fluid.MyTools
 			| Add tool from list
@@ -24,7 +23,7 @@ a.btn.pull-right.editLinks Edit
 						a(href=item.address)= item.title
 						mixin notification({title:item.title + ' deleted', desc: 'Click here to undo' })
 
-	- var groups = {title: 'My Groups', items: [{title: 'Critical Care Medicine Program (CCMP)', address: '#'}, {title: 'IV Pump Project', address: '#'},{title: 'Cardiac Connections', address: '#'},{title: 'Centre for Nursing', address: '#'},{title: 'Community Care Access Centre', address: '#'},{title: 'MDCentre', address: '#'}]}
+	- var groups = {title: 'My Active Groups', edit: true, items: [{title: 'Critical Care Medicine Program (CCMP)', address: '#'}, {title: 'IV Pump Project', address: '#'},{title: 'Cardiac Connections', address: '#'},{title: 'Centre for Nursing', address: '#'},{title: 'Community Care Access Centre', address: '#'},{title: 'MDCentre', address: '#'}]}
 
 	mixin linkList(groups)
 

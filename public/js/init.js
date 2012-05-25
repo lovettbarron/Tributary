@@ -354,45 +354,14 @@ function addTodo(content) {
 
 
 function modifyProfile() {
-	$('.MyTools').hide();
-	$('div.editDetails').hide();
-	$('a.addTools').click( function() {
-		var tool = $(this).parent().find('select').val();
-		$('ul.selectedTools').prepend('<li><a class="removeItem"><i class="icon-remove-sign"></i>' + tool + '</a></li>')
-	});
-	$('a.editLinks').click( function() {
-		if(!$(this).hasClass('editing')){
-			$('.MyTools').show();
-			$(this).addClass('editing');
-			$(this).addClass('btn-primary').html('Save');
-			$('#editLinks').find('li').not('li.noDelete').prepend('<a class="removeItem"><i class="icon-remove-sign"></i></a>');
-			$('a.removeItem').click( function() {
-				$(this).parent().queue( 
-						function(n) {
-							$(this).html('<a>Undo</a>');
-			        n();
-					}).delay(3000)
-					.fadeOut(500);
-					
-				})
-		} else {
-			$(this).removeClass('editing');
+	$(".editLink").click(function(){
+		block = $(this).parent();
+		if (block.hasClass('edit')) {
+			block.removeClass('edit');
 			$(this).removeClass('btn-primary').html('Edit');
-			$('#editLinks').find('a > i').parent().remove();			
-			$('.MyTools').hide();
-		} }	)
-		
-	$('a.editDetails').click( function() {
-		if(!$(this).hasClass('editing')){
-			$('div.editDetails').show();
-			$('div.unEditted').hide();
-			$(this).addClass('editing');
-			$(this).addClass('btn-primary').html('Save');
 		} else {
-			$(this).removeClass('editing');
-			$(this).removeClass('btn-primary').html('Edit');
-			$('div.editDetails').hide();
-			$('div.unEditted').show();
+			block.addClass('edit');
+			$(this).addClass('btn-primary').html('Save');
 		}
 	});
 }
