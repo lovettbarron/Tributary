@@ -186,7 +186,7 @@ function init() {
 	
 	//Alert if clicking away from page with form
 	if($('#formAlert').length) {
-		$('a[href]').click( function() {
+		$('a[href]').not('a.done').click( function() {
 			confirm('Your form isn\'t finished, leave page?');
 		})
 	}
