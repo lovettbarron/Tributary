@@ -14,8 +14,7 @@ include ../../patterns/submitstory_modal.jade
 					.row
 						.span5
 							h4: a(href='news') Get fit and have fun with the inter-hospital health
-							p: img.news-feature(src='http://placehold.it/300x112&text=Video+or+Image')
-							p.ipsum(length='100')
+							p: img.news-feature(src='http://placehold.it/300x200&text=Video+or+Image')
 							hr
 							h4 More Headlines
 							-each story in Stories
@@ -33,7 +32,7 @@ include ../../patterns/submitstory_modal.jade
 								img.icon-chevron-right 
 							hr
 							h4 Real-time Data Ticker
-							img(src='http://placehold.it/200x150&text=Realtime+Data')
+							img(src='http://placehold.it/200x100&text=Realtime+Data')
 		.row
 			.span4
 				.well
@@ -49,5 +48,4 @@ include ../../patterns/submitstory_modal.jade
 				.well.clearfix
 					mixin twitter()
 	.span2
-		include links
-	-var poll = {question: 'May 7 is Stop! Clean Your Hands Day. What is SickKids\' hand hygiene complaince target?', items:['60%', '70%', '80%', '90%']}
+		include ../profile/links

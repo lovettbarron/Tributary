@@ -60,7 +60,7 @@ function init() {
 		$(this).find('.expandToggle').hide();
 	});
 
-modifyProfile()
+	modifyProfile()
 	context();
 	subscribeButtons();
 	$('li.dropdown').hover(function(){
@@ -74,7 +74,7 @@ modifyProfile()
 		$('.calendarView').show();
 	})
 	
-   $('#calendarTab a:first').tab('show');
+  $('#calendarTab a:first').tab('show');
 	$('[rel="tooltip"]').tooltip();
 	$(".collapse").collapse()
 	$('.modal').modal();
@@ -127,47 +127,34 @@ modifyProfile()
 		searchField();
 		// On hover state for feed items
 		$('.onHover').hide();
-		$('.feedItem').hover( function() {
-//			$(this).find('.onHover').show();
-		}, function() {
-	//		$(this).find('.onHover').hide();
-		})
+		
+		feedUpdateHint = "What are you working on?";
+		
+		$('#feedUpdate').val(feedUpdateHint);
+		
 		$('.feedbtn').hide();
-		// Click in to feed update
+		$('#newPostUpdate').hide();
+		
 		$('#feedUpdate').focus( function(){
 			$(this).height('100');
+			$('#feedUpdate').removeClass('hint');
+			$('#feedUpdate').val("");
 			$('.feedbtn').show();
 		});
-		$('#feedUpdate').focusout( function() {
-			$(this).height('30');
-//			$('.feedbtn').hide();
+		
+		$("#postWall").click(function(){
+			$("#feedUpdate").height('30');
+			$('#feedUpdate').val(feedUpdateHint);
+			$('#feedUpdate').addClass('hint');
+			$('.feedbtn').hide();
+			$('#newPostUpdate').slideDown('slow');
 		});
+
 		// Hide onboarding item
 		$('.closeOnboarding').click(function(e) {
 			e.preventDefault();
 			$(this).parent().parent().hide();
 		})
-		
-		//Post to the feed where appropriate.
-		$('#postWall').click(function(e) {
-			e.preventDefault();
-			var posting = $('#feedUpdate').val();
-			$('.feedItem:first').before(''
-+'			<div class="feedItem">'
-+'			                <div class="row-fluid">                                                                  '
-+'			                  <div class="span2"><img src="http://placehold.it/100x100&amp;text=profile"></div>      '
-+'			                  <div class="span10">                                                                   '
-+'			                    <div class="time pull-right">Just now</div>                                          '
-+'			                    <h4><a href="publicProfile">Bob Watts</a></h4>                                       '
-+'			                    <p>'+ posting +'</p>                                                       '
-+'			                    <div class="row-fluid onHover" style="display: none; ">                              '
-+'			                      <div class="span2"><i class="icon-share"></i> Share</div>                          '
-+'			                      <div class="span2"><i class="icon-remove"></i> Report</div>                        '
-+'			                    </div>                                                                               '
-+'			                  </div>                                                                                 '
-+'			                </div>                                                                                   '
-+'			              </div>                                                                                     ')
-		});
 		
 		// fix sub nav on scroll
     var $win = $(window)
