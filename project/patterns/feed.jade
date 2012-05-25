@@ -5,18 +5,27 @@ mixin miniFeed(feed)
 				mixin subscribe()
 			h3= feed.title
 		-if (feed.personal)
-			.row-fluid
-				.span12
-						form.form-horizontal
-							textarea.input-xlarge#feedUpdate(rows='1')
-							.pull-left.btnPadding.feedbtn
-								label Privacy:
-									select(style='width: 70%')
-										option(value='default') Everyone
-										option My Team
-										option My followers
-										option Private
-							a.feedbtn.btn.btn-primary.pull-right#postWall Post
+			.row-fluid				
+				form.form-horizontal.span12
+					textarea.input-xlarge#feedUpdate.hint(rows='1')
+					.row-fluid
+						.span6
+							.btnPadding.feedbtn
+								select(style='width: 70%')
+									option(value='default') Everyone
+									option My Team
+									option My followers
+									option Private
+						.span6
+							a.feedbtn.pull-right.btn.btn-primary#postWall Post
+			.feedItem#newPostUpdate
+				.row-fluid
+					.span2
+						img(src='http://placehold.it/100x100&text=Profile')
+					.span10
+						.time.pull-right Just Now
+						h4: a(href='publicProfile') Bob Watts
+						p New updates
 		- each item, key in feed.updates
 			case item.type
 				when 'profile'

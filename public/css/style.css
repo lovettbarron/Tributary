@@ -579,3 +579,11 @@ img.news-feature {
     height:150px; 
     margin:-150px 0 0; 
 }
+
+.hint {
+	color: #999;
+}
+
+.btn-save {
+	margin-top: 10px;
+}

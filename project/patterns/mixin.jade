@@ -221,8 +221,7 @@ mixin people(posts)
 
 
 mixin share()
-		btn.btn.btn-mini Share
-		btn.btn.btn-mini Report
+	btn.btn.btn-mini.btn-save Save
 
 mixin calendar()
 	.row-fluid
@@ -354,11 +353,11 @@ mixin toTop()
 
 mixin pageTitle(title, toggle)
 	.row
-		.span6
+		.span8
+			-if (toggle != false)
+				.pull-right
+					mixin share()
 			h2= title
-		-if (toggle != false)
-			.span2
-				mixin share()
 
 mixin twitter()
 	-var twitter = ['SickKids_Hospital','SickKidsHealth','ResearchTower','SickKidsHealth']

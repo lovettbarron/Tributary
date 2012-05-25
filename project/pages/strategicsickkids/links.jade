@@ -1,7 +1,11 @@
 include ../../patterns/mixin.jade
 
-h4 Strategy Tools and Links
+h4 Important Links
 
-- var links = {title: '', items: [{title: 'Ideas Innovation Tool', address: '#'},{title: 'Avenues to Excellence', address: '#'},{title: 'SickKids Scorecard', address: '#'},{title: 'Do the Happy.com', address: '#'}, {title: 'Ideas that Make Cents', address: '#'}]}
+- var links = {title: 'Tools', items: [{title: 'Ideas Innovation Tool', address: '#'}]}
+
+mixin linkList(links)
+
+- var links = {title: 'Links', items: [{title: 'Avenues to Excellence', address: '#'},{title: 'SickKids Scorecard', address: '#'},{title: 'Do the Happy.com', address: '#'}, {title: 'Ideas that Make Cents', address: '#'}]}
 
 mixin linkList(links)
