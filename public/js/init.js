@@ -325,7 +325,7 @@ function subscribeButtons() {
 			.queue(
 				function(n) {
 	        $(this).html('<i class="icon-ok"></i> Subscribed');
-					notification(this);
+					notification( $(this).parent() );
 	        n();
 		    }).fadeIn(500);
 		}
@@ -334,7 +334,10 @@ function subscribeButtons() {
 
 function notification($target) {
 	var height = notificationOpen * 120
-		$($target).parent().parent().find('div.notification:first').css('top', height + 90).fadeIn(300);
+		$($target).parent().find('div.notification:first').css('top', height + 90).fadeIn(300).delay(6000).queue( function(n) {
+			$('.closeNotification').click();
+			n();
+		});
 		notificationOpen =+ 1;
 		$('.closeNotification').click( function() {
 			$(this).parent().fadeOut(300, function() {
