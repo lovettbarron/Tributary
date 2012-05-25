@@ -1,20 +1,18 @@
 mixin listType(data)
-	.row-fluid#contextActive
-		.span1
-			input.pull-right.docSelected(type='checkbox',rel="tooltip")
-		.span1
-		.span11
+	.row-fluid.header-row
+		.span1#checkall
+			input.pull-right(type='checkbox',rel="tooltip",title="Select all")
+
+		.span11#contextActive
 			-each button in data.context
 				btn.btn.btn-mini= button
 
-	.row-fluid#contextHidden
-		.span1 
-			input.pull-right(type='checkbox',rel="tooltip",title="Select all")
-		-each header,key in data.header
-			-if(!key)
-				.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
-			-else
-				.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
+		.span11#contextHidden
+			-each header,key in data.header
+				-if(!key)
+					.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
+				-else
+					.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
 	-each item in data.items
 		.row-fluid.forum-post
 			.span1 

@@ -6,7 +6,7 @@ mixin pageTitle("Welcome to the Learning Institute", false)
 .row
 	.span8
 		.well
-			mixin miniFeed({title: 'Learning feed', updates: [{type:'group', desc:'Updated its information', title:'Ontario Poison Control Centre Team', time:'30min ago'},{type:'news',source:'learning', title:'Learning Institute part of $6.4 million research grant', time:'2 minutes ago'},{type:'doc',title:'Conference and Learning Event guidelines',actor:'Kerem Tirmandi', time:'2 days ago'},{type:'event', desc:'Learning Institute town hall wants your opinion!',title:'Learning Institute Town Hall - June 2012', time:'last week'},{type:'news',source:'learning',title:'SickKids researchers solve a universal lab test mystery', time:'2 weeks ago'}]})
+			mixin miniFeed({title: 'Learning feed', updates: [{type:'group', actor:'Bob Watts', source:'OPC', desc:'Updated its information', title:'Ontario Poison Control Centre Team', time:'30min ago'},{type:'news',source:'Learning', actor: 'Bob Watts', title:'Learning Institute part of $6.4 million research grant', time:'2 minutes ago'},{type:'doc',title:'Conference and Learning Event guidelines',actor:'Kerem Tirmandi', time:'2 days ago'},{type:'event', actor:'Roberta Wells', desc:'Learning Institute town hall wants your opinion!',title:'Learning Institute Town Hall - June 2012', time:'last week'},{type:'news',source:'Learning',title:'SickKids researchers solve a universal lab test mystery', actor: 'Bob Watts', time:'2 weeks ago'}]})
 		.row
 			.span8
 				- var Stories =[ {title: 'SickKids is Blazing a Streak of Blue!', address: 'test'}, {title: 'It\'s here! corporate services survey launches today', address: 'test'} , {title: 'Borschel and Tabori honoured with Ontario Early Research Awards', address: 'test'}, {title: 'test', address: 'test'}]

@@ -21,15 +21,19 @@ function init() {
 		$(this).find('.dropdown').hide();
 	})
 
-	$('#contextHidden input[type="checkbox"]').on('click', function() {
+	$('#checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
-		$('input[type="checkbox"]').each( function() {
-			$(this).prop("checked", true);
-		}) 
+			$('input[type="checkbox"]').each( function() {
+				$(this).prop("checked", true);
+			});
+			$('#contextActive').show();
+			$('#contextHidden').hide();
 		}	else {
 			$('input[type="checkbox"]').each( function() {
 				$(this).prop("checked", false);
-			})
+			});
+			$('#contextActive').hide();
+			$('#contextHidden').show();				
 		}
 	});
 	// Logo overlay
@@ -94,8 +98,7 @@ function init() {
 			if(active) {
 				$('#contextActive').show();
 				$('#contextHidden').hide();
-			}
-			else {
+			}	else {
 				$('#contextActive').hide();
 				$('#contextHidden').show();				
 			}
