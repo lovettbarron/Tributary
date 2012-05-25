@@ -7,6 +7,9 @@ $(document).ready( function() {
 	$('ul.care').hide();
 	$('ul.learning').hide();
 	$('ul.financial').hide();
+	$('.typeahead').typeahead({
+		source: ['Care', 'Public Relations','Research','Hemotology','Administrator']
+	})
 	init();
 	$('.dropdown-toggle').dropdown();
 });
@@ -20,7 +23,7 @@ function init() {
 	function() {
 		$(this).find('.dropdown').hide();
 	})
-
+	
 	$('#checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
 			$('input[type="checkbox"]').each( function() {

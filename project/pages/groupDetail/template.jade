@@ -1,98 +1,102 @@
 include ../../patterns/mixin.jade
-
 .row
 	.span8
-		.span2
-			img.pull-left(src="http://i.imgur.com/PUC9m.png")
-		.span6
-			h3 Cardiac Connections
-			h6 Care | Cardiology
-			p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
-		br
+		.row.groupprofile
+			.span2
+				img.pull-left(src="http://i.imgur.com/PUC9m.png")
+			.span6
+				h3 Cardiac Connections
+				h6 Care | Cardiology
+				p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
+			
 		.row
-			.span8
-		a.btn.pull-right.editDetails Edit group info
-		h3 Group Information
-		.row-fluid.unEditted
-			.span6
-				table.table.table-striped.border
-					tbody
-						tr 
-							td Office Location 
-							td Clinical Care
-						tr 
-							td Office Location
-							td 180 Dundas Street West, 1624
-						tr
-							td Manager
-							td 
-								a(href='#') Stephen Porter
-						tr
-							td Assistant
-							td  
-								a(href='#') Amanda Perrin
-			.span6
-				table.table.table-striped.border
-					tbody
-						tr
-							td Email
-							td 
-								a(href='mailto:alison.drabble@sickkids.ca') alison.drabble@sickkids.ca
-						tr
-							td Work Phone
-							td (416) 899-2395
-						tr
-							td Mobile Phone
-							td (416) 223-2953
-						tr
-							td Home Phone
-							td (416) 225-1123
-						tr	
-							td Fax
-							td (416) 999-9911
+		.span8
+			a.btn.pull-right.editDetails Edit group info
+			h3 Group Information
+			.row-fluid.unEditted
+				.span6
+					table.table.table-striped.border
+						tbody
+							tr 
+								td Department 
+								td Clinical Care
+							tr 
+								td Office Location
+								td 180 Dundas Street West, 1624
+							tr
+								td Manager
+								td 
+									a(href='#') Stephen Porter
+							tr
+								td Assistant
+								td  
+									a(href='#') Amanda Perrin
+							tr
+								td Administrator
+								td 
+									a(href='#') Karl Pilkington
+				.span6
+					table.table.table-striped.border
+						tbody
+							tr
+								td Email
+								td 
+									a(href='mailto:alison.drabble@sickkids.ca') alison.drabble@sickkids.ca
+							tr
+								td Work Phone
+								td (416) 899-2395
+							tr
+								td Mobile Phone
+								td (416) 223-2953
+							tr
+								td Home Phone
+								td (416) 225-1123
+							tr	
+								td Fax
+								td (416) 999-9911
 
-		.row-fluid.editDetails
-			.span6
-				table.table.table-striped.border
-					tbody
-						tr 
-							td Department
-							td: input(type='text', value="Clinical Care") 
-						tr 
-							td Office Location
-							td: input(type='text', value="180 Dundas Street West, 1624")
-						tr
-							td Manager
-							td: input(type='text', value="Stephen Porter")
-						tr
-							td Assistant
-							td: input(type='text', value="Amanda Perrin")  
-			.span6
-				table.table.table-striped.border
-					tbody
-						tr
-							td Email
-							td: input(type='text', value="dwatts@sickkids.ca")
-						tr
-							td Work Phone
-							td: input(type='text', value="(416) 899-2395")
-						tr
-							td Mobile Phone
-							td: input(type='text', value="(416) 223-2953") 
-						tr
-							td Home Phone
-							td: input(type='text', value="(416) 225-1123")
-						tr	
-							td Fax
-							td: input(type='text', value="(416) 999-9911")
-		.row
-			ul.nav.nav-pills
-				li.active: a(href='#home', data-toggle="pill") Activity
-				li: a(href='#calendar', data-toggle="pill") Calendar
-				li: a(href='#forum', data-toggle="pill") Discussions
-				li: a(href='#documents', data-toggle="pill") Resources
-				li: a(href='#peopleBig', data-toggle="pill") People
-				li: a(href='#tools', data-toggle="pill") About Us
+			.row-fluid.editDetails
+				.span6
+					table.table.table-striped.border
+						tbody
+							tr 
+								td Department
+								td: input(type='text', value="Clinical Care") 
+							tr 
+								td Office Location
+								td: input(type='text', value="180 Dundas Street West, 1624")
+							tr
+								td Manager
+								td: input(type='text', value="Stephen Porter")
+							tr
+								td Assistant
+								td: input(type='text', value="Amanda Perrin")  
+				.span6
+					table.table.table-striped.border
+						tbody
+							tr
+								td Email
+								td: input(type='text', value="dwatts@sickkids.ca")
+							tr
+								td Work Phone
+								td: input(type='text', value="(416) 899-2395")
+							tr
+								td Mobile Phone
+								td: input(type='text', value="(416) 223-2953") 
+							tr
+								td Home Phone
+								td: input(type='text', value="(416) 225-1123")
+							tr	
+								td Fax
+								td: input(type='text', value="(416) 999-9911")
+			.row
+				ul.nav.nav-pills
+					li.active: a(href='#home', data-toggle="pill") Activity
+					li: a(href='#calendar', data-toggle="pill") Calendar
+					li: a(href='#forum', data-toggle="pill") Discussions
+					li: a(href='#documents', data-toggle="pill") Resources
+					li: a(href='#peopleBig', data-toggle="pill") People
+					li: a(href='#tools', data-toggle="pill") About Us
 			.span8.tab-content
 				#home.tab-pane.active
 					mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})
@@ -101,7 +105,9 @@ include ../../patterns/mixin.jade
 				#forum.tab-pane
 					h3	Discussions
 					
-					mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})				
+					mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})	
+					.span8
+						include discussion			
 				#documents.tab-pane
 					img(src='http://placehold.it/1200x800&text=Sharepoint+Documents')
 				#peopleBig.tab-pane
@@ -125,11 +131,7 @@ include ../../patterns/mixin.jade
 							p To serve critically ill children with the highest level of expertise, grounded in knowledge, dedication and compassion.
 							br
 							h4 GOALS
-							p.ipsum(length=2000)
-						.span8
-							include discussion
-							
-			
-
+							p.ipsum(length=2000)						
 	.span2
 		include links
+

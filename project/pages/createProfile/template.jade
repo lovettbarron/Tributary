@@ -1,0 +1,180 @@
+#formAlert
+.row
+	.span8
+		h2 Create a Profile
+
+		form.form-horizontal.well.createProfile
+			.pagination
+				ul
+					li.active Basic Information
+					li Contact information
+					li Additional Information
+					li Review and Save
+
+			h3 Basic information
+			fieldset
+				.row-fluid.formField
+					.span3
+						label.pull-right.form First name
+					.span9
+						input.pull-left.text(type='text')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Last name
+					.span9
+						input.pull-left.text(type='text')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Title
+					.span9
+						input.pull-left.text(type='text')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Department
+					.span9
+						input.pull-left.typehead.text(type='text', data-provide='typeahead', placeholder='Start typing your department')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Upload a photo
+					.span9
+						a.btn.btn Upload an image
+				.row-fluid.formField
+					.span12
+						a.btn.btn-primary.pull-right.nextForm Save and continue
+
+		form.form-horizontal.well.createProfile
+			.pagination
+				ul
+					li Basic Information
+					li.active Contact information
+					li Additional Information
+					li Review and Save
+
+			h3 Contact information
+			fieldset
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Email
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Office Location
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Office Phone
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Cell Phone
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Home Phone
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Fax
+				.span9
+					input.pull-left.text(type='text')
+			.row-fluid.formField
+				.span12
+					a.btn.btn.prevForm Return to previous
+					a.btn.btn-primary.pull-right.nextForm Save and continue
+
+
+		form.form-horizontal.well.createProfile
+			h3 Additional Information
+			fieldset
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Schools
+				.span9
+					input.pull-left.text(type='text', placeholder='Start typing your department')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Birthday
+				.span9.input-append
+					input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
+					btn.btn: i.icon-calendar
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Responsibilities
+				.span9
+					textarea.pull-left.form(type='text', col='3')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Skills
+				.span9
+					textarea.pull-left.text(type='text', col='3')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Projects
+				.span9
+					textarea.pull-left.text(type='text', col='3')
+			.row-fluid.formField
+				.span3
+					label.pull-right.form Interests
+				.span9
+					textarea.pull-left.text(type='text', col='3')
+			.row-fluid.formField
+				.span12
+					a.btn.btn.prevForm Return to previous
+					a.btn.btn-primary.pull-right.nextForm Save and continue
+
+
+
+		form.form-horizontal.well.createProfile
+			h3 Your profile is finished!
+			p Double check the information below
+			a.btn.btn.prevForm Modify?
+			hr
+			.row-fluid
+				.span3
+					img(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+				.span9
+					h2 Bob Watts
+					p: em Physician | Cardiology
+					p I am a doctor and I help children everyday. I love my job and I'm happy to help people with their projects and research.
+					p.ipsum(length=100)
+			.row-fluid
+				.span12
+					include ../publicProfile/info
+			.row-fluid
+				.span12
+					table.table.table-striped.border
+						h3 More About Me
+
+						tbody#editDetails
+							tr 
+								td Responsibilities
+								td Clinical Care, Bed-side Care, Patient Management, Team Management, Another thing, Another thing, And even more, Clinical Care, Bed-side Care, Patient Management, Team Management, Another thing, Another thing, And even more
+							tr
+								td Skills
+								td JavaScript, CSS, HTML5, InDesign, Emailing
+							tr
+								td Projects
+								td	
+									a(href='#') Cardiology Research Project, 
+									a(href='#') Doctors Building Project, 
+									a(href='#') Kids Learning Project
+							tr
+								td Groups
+								td 
+									a(href='#') Cardiology Group, 
+									a(href='#') Doctor's Group, 
+									a(href='#') Clinical Care Group
+							tr
+								td Interests
+								td Cooking, Skiing, Research, Writing, Running
+
+			.row-fluid.formField
+				.span12
+					a.btn.btn.prevForm Modify profile
+					a.btn.btn-primary.pull-right.done(href='dashboard') Save and Finish
+

@@ -1,0 +1,151 @@
+#formAlert
+.row
+	.span8
+
+
+		form.form-horizontal.well
+			h2 This is a form field
+			fieldset
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample text input
+					.span9
+						input.pull-left.text(type='text')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample checkbox
+					.span9
+						input(type='checkbox', style='margin-right: 5px')
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Radio list
+					.span9
+						label
+							input(type='checkbox', style='margin-right: 5px')
+							| Option 1            
+						label                   
+							input(type='checkbox', style='margin-right: 5px')
+							| Option 2            
+						label                   
+							input(type='checkbox',style='margin-right: 5px')
+							| Option 3
+				.row-fluid.formField
+					.span3
+						label.pull-right.form List of Checkboxes
+					.span9
+						label
+							input(type='radio',  name='radio', style='margin-right: 5px')
+							| Option 1        
+						label                 
+							input(type='radio',  name='radio',style='margin-right: 5px')
+							| Option 2        
+						label                 
+							input(type='radio',  name='radio',style='margin-right: 5px')
+							| Option 3
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Person selector
+					.span9.input-append
+						input.pull-left.text(type='text', placeholder='Default is you')
+						btn.btn: i.icon-user
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Date selector
+					.span9.input-append
+						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
+						btn.btn: i.icon-calendar
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Date selector
+					.span3.input-append
+						input.pull-left.text(type='text', placeholder='yy/mm/dd hh:mm', style='width: 60%')
+						btn.btn: i.icon-calendar
+					.span1(style='text-align: center') to
+					.span3.input-append
+						input.pull-left.text(type='text', placeholder='yy/mm/dd hh:mm', style='width: 60%')
+						btn.btn: i.icon-calendar
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample select list
+					.span9
+						select.select
+							-var options = ['This is an option', 'This is another option']
+							-each option in options
+								option= option
+
+
+		form.form-horizontal.well
+			h2 Successful
+			fieldset
+				
+
+
+		form.form-horizontal.well
+			h2 Error examples
+			fieldset.control-group.error
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample text input
+					.span9
+						input.pull-left.text(type='text')
+						span.help-inline This form must be filled
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample email
+					.span9
+						input.pull-left.text(type='text', placeholder='sample.email@sickkids.ca')
+						span.help-inline This needs to be in an email format.
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Required checkbox
+						span.help-inline
+					.span9
+						input(type='checkbox', style='margin-right: 5px')
+						span.help-inline Required checkbox
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Person selector
+					.span9.input-append
+						input.pull-left.text(type='text', placeholder='Default is you')
+						btn.btn(data-toggle='modal', href='#personModal'): i.icon-user
+						span.help-inline No such person
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Date selector
+					.span9.input-append
+						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
+						btn.btn: i.icon-calendar
+						span.help-inline Date unavailable
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Sample select list
+					.span9
+						select.select
+							-var options = ['This is an option', 'This is another option']
+							-each option in options
+								option= option
+						span.help-inline Incorrect option
+
+		form.form-horizontal.well
+			h2 Disabled forms
+			fieldset.control-group.disabled
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Disabled input
+					.span9
+						input.pull-left.disabled.text(type='text', disabled)
+
+		form.form-horizontal.well
+			h2 Person selector
+			fieldset
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Person selector
+					.span9.input-append
+						input.pull-left.text(type='text', placeholder='Default is you')
+						btn.btn: i.icon-user
+						br
+						The
+
+
+include formModal

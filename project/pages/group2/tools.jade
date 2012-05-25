@@ -1,0 +1,10 @@
+include ../../patterns/mixin
+
+- var Links =[ {title: 'test', address: 'test'}, {title: 'test', address: 'test'} , {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
+
+ul.nav.nav-list
+	li.nav-header Group Tools
+		.pull-right: mixin addTool()
+	- each link in Links
+		li
+			a(href='#') link.title

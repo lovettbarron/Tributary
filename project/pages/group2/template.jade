@@ -1,0 +1,77 @@
+include ../../patterns/mixin.jade
+mixin pageTitle("Cardiac Connections")
+
+.row
+	.span8
+		.row
+			.span8
+				.row
+					.span2
+						img(src="http://www.hospice4centraltexas.com/uploads/1/0/8/8/10884427/6703093.jpg?165")
+					.span6
+						em Cardiac Connections
+						p Visit regularly for new and exciting updates across the program!
+						.row-fluid
+							.span6 Location
+								br
+								a 9 Elm st meeting point
+							.span6 Contact
+								br
+								a alison.drabble@sickkids.ca
+								br 
+								a 416-515-2121
+				br
+				ul.nav.nav-pills
+					li.active: a(href='home', data-toggle="pill") Overview
+					li: a(href='calendarBig', data-toggle="pill") Calendar
+					li: a(href='forum', data-toggle="pill") Discussions
+					li: a(href='documents', data-toggle="pill") Documents
+					li: a(href='peopleBig', data-toggle="pill") People
+					li: a(href='tools', data-toggle="pill") Updates Feed
+			.span8
+				.row-fluid.tab-content
+					#home.tab-pane.active
+						.span12
+							.well
+								-var forumposts = [ 'Random post', 'random post 2', 'more random posts', 'oh hey all ya see']
+								h3 Group Forum
+								mixin forum(forumposts)
+						.row-fluid
+							.span6
+								.well
+									-var post = [{title: 'Sample dynamic document', icon: 'pencil'},{title: 'Sample form', icon: 'list'},{title: 'Sample PDF or upload', icon: 'download-alt'},{title: 'Sample collaborative document', icon: 'globe'},{title: 'Sample document name', icon: 'download-alt'},{title: 'Sample document name', icon: 'download-alt'},]
+									h4 Group Documents
+									-each story in post
+										.news-item
+											i(class='icon-' + story.icon).pull-left
+											h4
+												a(href='subscription')= story.title
+											p.ipsum(length='100')
+
+							.span6
+								.well
+									mixin calendar()
+					#calendarBig.tab-pane
+						.span12
+							include ../../patterns/calendar
+					#forum.tab-pane
+						.span12
+							.row-fluid
+								.span8
+									h3 Forum
+								.span4
+									mixin share()
+							include ../../patterns/forum
+					#documents.tab-pane
+						.span12
+							h3 Documents
+							include ../../patterns/documents
+					#peopleBig.tab-pane
+						.span12
+							h3 People
+					#tools.tab-pane
+						.span12
+							mixin tools(['test', 'test2', 'test3'])
+
+	.span2
+		include links
