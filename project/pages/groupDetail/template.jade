@@ -6,21 +6,11 @@ include ../../patterns/list
 		.row.groupprofile
 			.span2
 				img.pull-left(src="http://i.imgur.com/PUC9m.png")
-		.span6
-			h3 Cardiac Connections
-			h6 Care | Cardiology
-			p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
-			br
-			.row
-	.span8
-		a.btn.pull-right.editDetails Edit group info
-		h3 Group Information
-		.row-fluid.unEditted
 			.span6
 				h2 Cardiac Connections
 				p: em Care | Cardiology
 				p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
-			
+		br
 		.row
 			.span8
 				a.btn.pull-right.editDetails Edit group info
@@ -49,6 +39,7 @@ include ../../patterns/list
 								tr	
 									td Fax
 									td (416) 999-9911
+				hr
 				.row
 					.span8
 						ul.nav.nav-pills
@@ -64,16 +55,18 @@ include ../../patterns/list
 						#calendar.tab-pane
 							img(src='http://placehold.it/1200x800&text=Sharepoint+Calendar')
 						#forum.tab-pane
+							.btn.pull-right Start a Discussion
 							h3	Discussions
+							br
 							.row-fluid.header-row
 								.span4: strong: a(rel="tooltip",title="Sort by Author") Author
-								.span4: strong: a(rel="tooltip",title="Sort by Topic") Topic
-								.span4: strong: a(rel="tooltip",title="Sort by Updated") Updated
+								.span5: strong: a(rel="tooltip",title="Sort by Topic") Topic
+								.span3: strong: a(rel="tooltip",title="Sort by Updated") Updated
 							.row-fluid.forum-post
 								.span1: img(src='http://placehold.it/100x100')
 								.span3: a(href="/publicProfile") Bob Watts
-								.span4: a(href="/discussion") Cardiac awareness information for you
-								.span4 Yesterday
+								.span5: a(href="/discussionDetail") Cardiac awareness information for you
+								.span3 Yesterday
 						#documents.tab-pane
 							img(src='http://placehold.it/1200x800&text=Sharepoint+Documents')
 						#peopleBig.tab-pane

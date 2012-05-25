@@ -11,10 +11,35 @@ mixin pageTitle("What is Innovation at SickKids?")
 						| on April 19, 2012
 					p.ipsum(length='2200', para='3')
 					hr
-					h4 Leave a comment
-					form.form-horizontal#commentForm
-						textarea.input-large.span8(columns='5')
-						btn.btn(type='Comment') Comment
+					.well
+						h4 Comments
+						.row
+							.span1
+								img.content.pull-left(src='http://pilkipedia.co.uk/wiki/images/thumb/9/90/Karlpilkington.jpg/107px-Karlpilkington.jpg')
+							.span6
+								p.post-meta 
+									a Karl Pilkington 
+									| said on April 19, 2012:
+								p Why didn't evolution make a giraffe good at carpentry so it could build a ladder? 
+								p.ipsum(length="100") 
+						hr
+						.row
+							.span1
+								img.content(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+							.span6
+								p.post-meta 
+									a Bob Watts 
+									| said on April 18, 2012:
+								p Interesting question, perhaps we should present this question to our colleagues in RI.
+								p.ipsum(length="200") 
+						hr
+						.row
+							.span8
+								h4 Leave a Comment
+								form.form-horizontal#commentForm
+									textarea.input-large.span7(columns='5')
+									btn.btn(type='Comment') Comment
+
 
 	.span2
 		include ../blog/links
