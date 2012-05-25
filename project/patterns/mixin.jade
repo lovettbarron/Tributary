@@ -334,6 +334,8 @@ mixin addTool()
 
 mixin linkList(list)
 	.link-list
+		-if (list.edit)
+			a.btn.btn-mini.pull-right.editLink Edit
 		h4= list.title
 		ul
 			-each item in list.items
@@ -341,7 +343,8 @@ mixin linkList(list)
 					li.noDelete
 						a(href=item.address)= item.title
 				-else
-					li
+					li.deleteable.clearfix
+						.icon-remove-sign
 						a(href=item.address)= item.title
 						-if (list.showOpts == true)
 							a.btn.btn-mini.dd-toggle(data-toggle='dropdown', data-target='#'): &#9660;

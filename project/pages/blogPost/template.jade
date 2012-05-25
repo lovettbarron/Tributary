@@ -1,0 +1,20 @@
+include ../../patterns/mixin.jade
+mixin pageTitle("What is Innovation at SickKids?")
+
+.row
+	.span8
+		.row
+			.span8.post
+					p.post-meta 
+						|By 
+						a Mary Jo Haddad 
+						| on April 19, 2012
+					p.ipsum(length='2200', para='3')
+					hr.clean-fix
+					h4 Leave a comment
+					form.form-horizontal#commentForm
+						textarea.input-large.span8(columns='5')
+						btn.btn(type='Comment') Comment
+
+	.span2
+		include ../blog/links
