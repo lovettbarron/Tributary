@@ -622,3 +622,8 @@ img.news-feature {
 .edit .MyTools {
 	display: block;
 }
+
+#commentForm textarea {
+	margin: 0 0 10px 0;
+	height: 100px;
+}
