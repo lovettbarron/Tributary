@@ -1,0 +1,94 @@
+include ../../patterns/mixin
+include ../../patterns/list
+
+.row
+	.span8
+		.row.groupprofile
+			.span2
+				img.pull-left(src="http://i.imgur.com/PUC9m.png")
+			.span6
+				h2 Cardiac Connections
+				p: em Care | Cardiology
+				p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
+		br
+		.row
+			.span8
+				a.btn.pull-right.editDetails Edit group info
+				h3 Group Information
+				.row-fluid.unEditted
+					.span6
+						table.table.table-striped.border
+							tbody
+								tr 
+									td Office Location
+									td 180 Dundas Street West, 1624
+								tr
+									td Phone Number
+									td (416) 869-3450
+								tr
+									td Administrator
+									td 
+										a(href='#') Karl Pilkington
+					.span6
+						table.table.table-striped.border
+							tbody
+								tr
+									td Email
+									td 
+										a(href='mailto:alison.drabble@sickkids.ca') karl.pilkington@sickkids.ca
+								tr	
+									td Fax
+									td (416) 999-9911
+				hr
+				.row
+					.span8
+						ul.nav.nav-pills
+							li: a(href='/groupDetail#home', data-toggle="pill") Activity
+							li: a(href='/groupDetail#calendar', data-toggle="pill") Calendar
+							li.active: a(href='/groupDetail#forum', data-toggle="pill") Discussions
+							li: a(href='/groupDetail#documents', data-toggle="pill") Resources
+							li: a(href='/groupDetail#peopleBig', data-toggle="pill") People
+							li: a(href='/groupDetail#tools', data-toggle="pill") About Us
+					.span8
+						.row
+							.span8
+								.row
+									.span8
+										p: a(href="/groupDetail#forum") « Back to Discussions
+										h3 Cardiac awareness information for you
+										p.post-meta Posted by 
+											a Jack Mellon 
+											| May 22 at 11:23am
+										p.ipsum(length="600")
+										.well
+											h4 Comments
+											.row
+												.span1
+													img.content.pull-left(src='http://pilkipedia.co.uk/wiki/images/thumb/9/90/Karlpilkington.jpg/107px-Karlpilkington.jpg')
+												.span6
+													p.post-meta 
+														a Karl Pilkington 
+														| said on April 19, 2012:
+													p Why didn't evolution make a giraffe good at carpentry so it could build a ladder? 
+													p.ipsum(length="100") 
+											hr
+											.row
+												.span1
+													img.content(src="http://b.vimeocdn.com/ps/116/116909_300.jpg")
+												.span6
+													p.post-meta 
+														a Bob Watts 
+														| said on April 18, 2012:
+													p Interesting question, perhaps we should present this question to our colleagues in RI.
+													p.ipsum(length="200") 
+											hr
+											.row
+												.span8
+													h4 Leave a Comment
+													form.form-horizontal#commentForm
+														textarea.input-large.span7(columns='5')
+														btn.btn(type='Comment') Comment
+
+	.span2
+		include ../groupDetail/links
+
