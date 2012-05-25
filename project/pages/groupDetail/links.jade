@@ -2,10 +2,14 @@ include ../../patterns/mixin.jade
 
 h4 Links
 
-- var links = {title: 'Group Quick Links', items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+- var links = {title: 'Links', items: [{title: 'Cardiac Critical Care', address: '#'},{title: 'CUPID Project', address: '#'},{title: 'Bereavement Program', address: '#'},{title: 'Bootcamp', address: '#'}]}
 
 mixin linkList(links)
 
-- var tools = {title: 'Group Tools', items: [{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+- var tools = {title: 'Tools', items: [{title: 'e-formularly', address: '#'},{title: 'Infusion Calculator', address: '#'},{title: 'Bootcamp', address: '#'},{title: 'Link', address: '#'}]}
+
+mixin linkList(tools)
+
+- var tools = {title: 'Forms and Docs', items: [{title: 'Heart Centre Innovation Funding Application', address: '#'},{title: 'Accredidation', address: '#'},{title: 'eDin Drug Info', address: '#'},{title: 'Scheduling Request Form', address: '#'}]}
 
 mixin linkList(tools)
