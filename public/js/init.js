@@ -180,6 +180,23 @@ function init() {
     }
 	//Opens the first new item by default on What's Happening
 	$("#mainNewsFeed a.expandToggle:first").click();
+	
+	//Alert if clicking away from page with form
+	if($('#formAlert').length) {
+		$('a[href]').click( function() {
+			confirm('Your form isn\'t finished, leave page?');
+		})
+	}
+	$('.createProfile').hide();
+	$('.createProfile:first').addClass('active').show();
+	$('a.nextForm').click( function() {
+		$(this).closest('.createProfile').removeClass('active').hide()
+			.next('.createProfile').addClass('active').show();
+	})
+	$('a.prevForm').click( function() {
+		$(this).closest('.createProfile').removeClass('active').hide()
+			.prev('.createProfile').addClass('active').show();
+	})
 }
 
 function comment() {
