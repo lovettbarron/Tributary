@@ -187,10 +187,21 @@ function init() {
 	//Opens the first new item by default on What's Happening
 	$("#mainNewsFeed a.expandToggle:first").click();
 	
+	//Plus/minus hide
+	var addedPeople = [];
+	$('a.minus').hide();
+	$('a.plus').click( function() {
+		$(this).hide().next('a.minus').show();
+		addedPeople.push($(this).closest('personName').html());
+	})
+	$('a.minus').click( function() {
+		$(this).hide().prev('a.plus').show();
+	})
+	
 	//Alert if clicking away from page with form
 	if($('#formAlert').length) {
-		$('a[href]').not('a.done').click( function() {
-			confirm('Your form isn\'t finished, leave page?');
+		$('a[href]').not('#content').click( function() {
+			//confirm('Your form isn\'t finished, leave page?');
 		})
 	}
 	$('.createProfile').hide();
