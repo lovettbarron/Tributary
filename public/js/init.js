@@ -24,19 +24,19 @@ function init() {
 		$(this).find('.dropdown').hide();
 	})
 	
-	$('#checkall input').on('click', function() {
+	$('.checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
 			$('input[type="checkbox"]').each( function() {
 				$(this).prop("checked", true);
 			});
-			$('#contextActive').show();
-			$('#contextHidden').hide();
+			$('.contextActive').show();
+			$('.contextHidden').hide();
 		}	else {
 			$('input[type="checkbox"]').each( function() {
 				$(this).prop("checked", false);
 			});
-			$('#contextActive').hide();
-			$('#contextHidden').show();				
+			$('.contextActive').hide();
+			$('.contextHidden').show();				
 		}
 	});
 	// Logo overlay
@@ -90,7 +90,7 @@ function init() {
 	});
 
 		//Context menu for doc
-		$('#contextActive').hide();
+		$('.contextActive').hide();
 		$('input.docSelected').click(function() {
 			var active = false;
 			$('input.docSelected').each( function() {
@@ -99,11 +99,11 @@ function init() {
 				}
 			})
 			if(active) {
-				$('#contextActive').show();
-				$('#contextHidden').hide();
+				$('.contextActive').show();
+				$('.contextHidden').hide();
 			}	else {
-				$('#contextActive').hide();
-				$('#contextHidden').show();				
+				$('.contextActive').hide();
+				$('.contextHidden').show();				
 			}
 		});
 		
@@ -116,12 +116,12 @@ function init() {
 				}
 			})
 			if(active) {
-				$('#contextActive').show();
-				$('#contextHidden').hide();
+				$('.contextActive').show();
+				$('.contextHidden').hide();
 			}
 			else {
-				$('#contextActive').hide();
-				$('#contextHidden').show();				
+				$('.contextActive').hide();
+				$('.contextHidden').show();				
 			}
 		});
 		

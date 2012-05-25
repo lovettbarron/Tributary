@@ -1,13 +1,14 @@
 mixin listType(data)
 	.row-fluid.header-row
-		.span1#checkall
-			input.pull-right(type='checkbox',rel="tooltip",title="Select all")
+		-if(data.context)
+			.span1.checkall
+				input.pull-right(type='checkbox',rel="tooltip",title="Select all")
 
-		.span11#contextActive
-			-each button in data.context
-				btn.btn.btn-mini= button
+			.span11.contextActive
+				-each button in data.context
+					btn.btn.btn-mini= button
 
-		.span11#contextHidden
+		.span11.contextHidden
 			-each header,key in data.header
 				-if(!key)
 					.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
@@ -15,8 +16,9 @@ mixin listType(data)
 					.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
 	-each item in data.items
 		.row-fluid.forum-post
-			.span1 
-				input.pull-right.docSelected(type='checkbox',rel="tooltip")
+			-if(data.context)
+				.span1 
+					input.pull-right.docSelected(type='checkbox',rel="tooltip")
 			.span1: img(src='http://placehold.it/100x100')
 
 			//- Title, item, or name
@@ -30,6 +32,8 @@ mixin listType(data)
 						a(href='publicProfile')= item.title
 					when 'shop'
 						a(href='shopswap')= item.title
+					when 'discussion'
+						a(href='discussion')= item.author
 
 			//- Association of document: group, pillar, or collaborators
 			.span2.listAssoc
@@ -42,17 +46,22 @@ mixin listType(data)
 						= item.assoc
 					when 'shop'
 						a(href='shopswap')= item.assoc
+					when 'discussion'
+						a(href='discussion')= item.topic
 
 			//- Origin of document: author, group, or source
-			.span2.listOrigin
-				case data.type
-					when 'doc'
+			case data.type
+				when 'doc'
+					.span2.listOrigin
 						| item.origin
-					when 'group'
+				when 'group'
+					.span2.listOrigin
 						a(href='publicProfile')= item.origin
-					when 'people'
+				when 'people'
+					.span2.listOrigin
 						a(href='groupDetail')= item.origin
-					when 'shop'
+				when 'shop'
+					.span2.listOrigin
 						a(href='shopswap')= item.origin
 
 			//- Last updated

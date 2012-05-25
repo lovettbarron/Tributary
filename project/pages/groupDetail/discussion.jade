@@ -8,7 +8,7 @@ mixin pageTitle("Discussions", false)
 				.well
 					.post
 						h3: a(href='#') Cardiac Care Fair
-						hr.clean-fix
+						hr
 						btn.btn.btn-minii(type='Edit') Edit
 						btn.btn.btn-mini(type='Delete') Delete
 						p.post-meta By Karl Pilkington on April 19, 2012
@@ -16,17 +16,15 @@ mixin pageTitle("Discussions", false)
 						p Why didn't evolution make a giraffe good at carpentry so it could build a ladder? 
 						p.ipsum(length="100") 
 						br
-						hr.clean-fix
+						hr
 						p.post-meta By Bob Watts on April 18, 2012
 						span2
 						img.content.pull-left(src="http://b.vimeocdn.com/ps/116/116909_300.jpg", width="100", height="100")
 						span8
 						p Interesting question, perhaps we should present this question to our colleagues in RI.
 						p.ipsum(length="200") 
-						hr.clean-fix
+						hr
 						
-						
-						form.form-horizontal
-							textarea.input-large#feedUpdate(columns='5', placeholder="Add a comment here")
-							.pull-left.btnPadding.feedbtn
-						btn.btn.btn-mini(type='Comment') Comment
+						form.form-horizontal#commentForm
+							textarea.input-large.span6(columns='5')
+							btn.btn(type='Comment') Comment
