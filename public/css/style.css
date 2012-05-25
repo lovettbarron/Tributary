@@ -321,10 +321,6 @@ img.news-feature {
 	width: 100%;
 }
 
-.posts {
-	margin-top: 1em;
-}
-
 .breadcrumb {
 	border: 0;
 	background: transparent;
@@ -586,4 +582,8 @@ img.news-feature {
 
 .btn-save {
 	margin-top: 10px;
+}
+
+.header-row {
+	margin-bottom: 10px;
 }

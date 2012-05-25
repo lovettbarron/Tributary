@@ -1,10 +1,10 @@
 include ../../patterns/mixin
 - var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
-mixin pageTitle("Groups", false)
+mixin pageTitle("My Groups", false)
 .row
 	.span8
 		include ../../patterns/list
-		mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Join group','Report group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid dynamics reading group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
+		mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Leave Group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research Team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology Sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids Cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid Dynamics Reading Group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
 	.span2
 		.dropdown
 			btn.btn(data-toggle='modal', href='#todoModal') Create a Group
@@ -12,10 +12,10 @@ mixin pageTitle("Groups", false)
 		h3 Filters
 		ul.unstyled.rightNav
 			li
-				a All groups (274)
+				a My groups (10)
 
 			li
-				a My groups (10)
+				a All groups (274)
 
 			hr
 			li.header: h6 Type:
@@ -35,7 +35,7 @@ mixin pageTitle("Groups", false)
 				a Project (75)
 
 			li
-				a Other (1500)
+				a Social (1500)
 
 			hr
 			li.header: h6 Pillar:

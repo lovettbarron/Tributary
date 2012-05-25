@@ -55,6 +55,10 @@ mixin miniFeed(feed)
 							.span10
 								.time.pull-right #{item.time}
 								h4: a(href='groupDetail')= item.title
+								p.post-meta
+									a(href='publicProfile')= item.actor
+									|  from <a href="#{item.source}">#{item.source}</a>
+									|  wrote:
 								p= item.desc
 								.row-fluid.onHover
 									.span2
