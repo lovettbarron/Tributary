@@ -573,7 +573,7 @@ img.news-feature {
 	min-height: 5px;
 }
 
-h3:before {
+.page-content h3:before {
     display:block; 
     content:""; 
     height:150px; 
