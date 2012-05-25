@@ -95,6 +95,83 @@ mixin pageTitle("Cardiac Connections")
 				#home.tab-pane.active
 					mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})
 				#calendar.tab-pane
+					img(src='http://placehold.it/1200x800&text=Sharepoint+Calendar')
+				#forum.tab-pane
+					img(src='http://placehold.it/1200x800&text=THUG+LIFE')
+				#documents.tab-pane
+					img(src='http://placehold.it/1200x800&text=Sharepoint+Documents')
+				#peopleBig.tab-pane
+					include ../../patterns/mixin
+					- var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
+					mixin pageTitle("Directory", false)
+					.row
+						.span8
+							include ../../patterns/list
+							mixin listType({ type: 'people', dropdown: ['Sort alphabetically','Sort by recent activity'], header: ['Name','Role','Groups','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })			
+				#tools.tab-pane
+				include ../../patterns/mixin
+				mixin pageTitle("About Cardiac Care", false)
+				.row
+					.span8
+						hr
+						h4 VISION
+						p To be THE Paediatric Critical Care experts leading research, education and clinical care 
+						br
+						h4 MISSION
+						p To serve critically ill children with the highest level of expertise, grounded in knowledge, dedication and compassion
+						Our new Vision and Mission Statements were accepted by all who attended the Strategic Planning Retreat
+						br
+						p Research Awards and Financial Services (RA&FS) is an important resource for researchers and research trainees who wish to apply for external grants and awards. The RA&FS staff can help identify funding resources, assist with the development of applications (including budget preparation) and help obtain institutional sign-off prior to grant submission.
+						ul
+							li Research Awards and Financial Services consists of four divisions:
+							li Grants Management Office
+							li GRIA (Government Research Infrastructure Awards)
+							li Financial Planning & Analysis
+							li Financial Operations
+
+						p Each division is designed to meet the different needs within the Research Institute. For a detailed description of the various divisions, and the many services that we offer, we welcome you to browse our site.
+						hr
+						h3 Our Services
+						p: h6 Consulting
+						ul
+							li Financial Forecast of Available Funds
+							li Variance Analysis of Funds (Budget vs. Actual)
+							li Fund Consultations and Business Planning
+						p: h6 Compliance
+						ul
+							li Preparing infrastructure budgets
+							li Preparing Financial Statements/Statements of Accounts to Granting Agencies
+							li Preparing documentation/reconciliation for financial audits of grants
+							li Ensuring Compliance with Granting Agency Policies
+							li Liasing/corresponding with Granting Agencies
+							li Research Operating Plan
+							li Research Annual Report
+							li Monthend Management Reports
+						p: h6 Accounting
+						ul
+							li Transfers of Expenses between grants
+							li Overhead income allocations
+							li Preparing Invoices for recoveries (ie.Heart & Stroke, NIH subcontracts, etc)
+							li Processing Internal Billings (ie. Lab Animal Services)
+							li Closing Grants (ensuring payroll charges, VISA cards, etc have been transferred when grant ends)
+							li Credit Card Terminal for Research Funds (used by facilities instead of external invoicing)
+							li Depositing research cheques
+						p: h6 Inquiries
+						ul
+							li Verifying Fund Balances/expense inquiries
+							li Accounts Receivable collections and inquiries
+							li Check deposit inquiries
+							li Assisting in providing the proper contact person in non-Research Financial Services queries.
+							li Process billings through credit card terminal
+						hr
+						.well
+							P: h5 *PATIENT CARE FUNDS*
+							Research Financial Servicess does not manage patient care funds. If you need assistance with those funds please contact Sandra Bradshaw, Director of Finance - Patient Care, ext. 8374.
+
+					.span3
+						include links	
+					
+					
 
 	.span2
 		include links
