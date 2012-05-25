@@ -198,6 +198,22 @@ function init() {
 		$(this).hide().prev('a.plus').show();
 	})
 	
+	//Upload image example
+	
+	$('a.uploadImage').click( function() {
+		$(this).hide
+		var target = $(this).next('.bar');
+		var i = 0;
+		setTimeout(function(){
+			target.css('width',i);
+			i++;
+			if(i>100) {
+				target.hide();
+				$(this).show();
+				}
+ 			}, 10);
+	})
+	
 	//Alert if clicking away from page with form
 	if($('#formAlert').length) {
 		$('a[href]').not('#content').click( function() {

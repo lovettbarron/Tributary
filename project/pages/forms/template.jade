@@ -71,18 +71,6 @@
 							-var options = ['This is an option', 'This is another option']
 							-each option in options
 								option= option
-				.row-fluid.formField
-					.span3
-						label.pull-right.form Image upload
-					.span9
-						a.btn.btn Upload an image
-				.row-fluid.formField
-					.span3
-						label.pull-right.form Successful upload
-					.span9
-						a.btn.btn Upload different
-						i.icon-ok
-						|  Upload successful
 
 
 		form.form-horizontal.well
@@ -159,6 +147,27 @@
 						p <i class="icon-remove"></i>Johna Tilly
 						p <i class="icon-remove"></i>Hanna Smith
 						p <i class="icon-remove"></i>Peter Johna
+
+		form.form-horizontal.well
+			h2 Uploading
+			fieldset
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Upload something
+					.span9
+						a.btn.uploadImage Upload
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Uploading
+					.span6.progress.progress-striped.active
+						.bar(style="width: 40%;")
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Successful upload
+					.span9
+						i.icon-ok
+						|  Upload successful 
+						a.btn.btn-mini Upload different
 
 
 include formModal
