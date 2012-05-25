@@ -1,24 +1,16 @@
-include ../../patterns/mixin.jade
+include ../../patterns/mixin
+include ../../patterns/list
+
 .row
 	.span8
 		.row.groupprofile
 			.span2
 				img.pull-left(src="http://i.imgur.com/PUC9m.png")
-		.span6
-			h3 Cardiac Connections
-			h6 Care | Cardiology
-			p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
-			br
-			.row
-	.span8
-		a.btn.pull-right.editDetails Edit group info
-		h3 Group Information
-		.row-fluid.unEditted
 			.span6
 				h2 Cardiac Connections
 				p: em Care | Cardiology
 				p Visit regularly for new and exciting updates across the program. The page will provide you with important notices, deadlines, and daily Labatt Family Heart Centre News. 
-			
+		br
 		.row
 			.span8
 				a.btn.pull-right.editDetails Edit group info
@@ -47,6 +39,7 @@ include ../../patterns/mixin.jade
 								tr	
 									td Fax
 									td (416) 999-9911
+				hr
 				.row
 					.span8
 						ul.nav.nav-pills
@@ -62,23 +55,24 @@ include ../../patterns/mixin.jade
 						#calendar.tab-pane
 							img(src='http://placehold.it/1200x800&text=Sharepoint+Calendar')
 						#forum.tab-pane
+							.btn.pull-right Start a Discussion
 							h3	Discussions
-					
-							mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})	
-							.span8
-								include discussion			
+							br
+							.row-fluid.header-row
+								.span4: strong: a(rel="tooltip",title="Sort by Author") Author
+								.span5: strong: a(rel="tooltip",title="Sort by Topic") Topic
+								.span3: strong: a(rel="tooltip",title="Sort by Updated") Updated
+							.row-fluid.forum-post
+								.span1: img(src='http://placehold.it/100x100')
+								.span3: a(href="/publicProfile") Bob Watts
+								.span5: a(href="/discussionDetail") Cardiac awareness information for you
+								.span3 Yesterday
 						#documents.tab-pane
 							img(src='http://placehold.it/1200x800&text=Sharepoint+Documents')
 						#peopleBig.tab-pane
-							include ../../patterns/mixin
-							- var groupSidebar = {items: [{title: 'Link', address: '#'}, {title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'},{title: 'Link', address: '#'}]}
-							mixin pageTitle("Directory", false)
-							.row
-								.span8
-									include ../../patterns/list
-							mixin listType({ type: 'people', dropdown: ['Sort alphabetically','Sort by recent activity'], header: ['Name','Role','Groups','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })			
+							h3 People
+							mixin listType({ type: 'discussions', header: ['Name','Role','Groups','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })
 						#tools.tab-pane
-							include ../../patterns/mixin
 							mixin pageTitle("About Cardiac Care", false)
 							.row
 								.span8
