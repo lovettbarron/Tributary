@@ -1,14 +1,43 @@
-include ../../patterns/mixin
+include ../../patterns/list
 
 div.modal(id='personModal')
 	.modal-header
 		btn.closeModal.pull-right(data-dismiss='modal') x
 		h3 Select a person
 	.modal-body
-		form.form-horizontal
-			textarea.input-xlarge#feedUpdate(rows='1')
+		form.form-search
+			label
+				| Filter
+				input.search-query(type='text',placeholder='Filter by name or email')
 		.row-fluid
+			-var items = [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }]
 
+			-each item in items
+				.row-fluid.forum-post
+					.span1 
+						a.plus: i.icon-plus
+						a.minus: i.icon-minus
+					.span1: img(src='http://placehold.it/100x100')
+					.span3.listTitle
+						a(href='publicProfile').personName= item.title
+					.span2.listAssoc
+						= item.assoc
+					//- Origin of document: author, group, or source
+					.span2.listOrigin
+						a(href='groupDetail')= item.origin
 	.modal-footer
 		a.btn.close Close
-		a.btn.btn-primary.saveModal(href='Success') Share
+		a.btn.btn-primary.saveModal(href='Success') Add selected
+
+
+
+div.modal(id='calendarModal')
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 Select a person
+	.modal-body
+		img(src='http://placehold.it/300x300&text=Sharepoint')
+	.modal-footer
+		a.btn.close Close
+		a.btn.btn-primary.saveModal(href='Success') Select date
+

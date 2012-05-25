@@ -4,14 +4,12 @@
 		h2 Create a Profile
 
 		form.form-horizontal.well.createProfile
-			.pagination
-				ul
-					li.active Basic Information
-					li Contact information
-					li Additional Information
-					li Review and Save
+			ul.nav.nav-pills
+				li.active: a Basic Information
+				li: a Contact information
+				li: a Additional Information
+				li: a Review and Save
 
-			h3 Basic information
 			fieldset
 				.row-fluid.formField
 					.span3
@@ -43,14 +41,12 @@
 						a.btn.btn-primary.pull-right.nextForm Save and continue
 
 		form.form-horizontal.well.createProfile
-			.pagination
-				ul
-					li Basic Information
-					li.active Contact information
-					li Additional Information
-					li Review and Save
+			ul.nav.nav-pills
+				li: a Basic Information
+				li.active: a Contact information
+				li: a Additional Information
+				li: a Review and Save
 
-			h3 Contact information
 			fieldset
 			.row-fluid.formField
 				.span3
@@ -89,7 +85,11 @@
 
 
 		form.form-horizontal.well.createProfile
-			h3 Additional Information
+			ul.nav.nav-pills
+				li: a Basic Information
+				li: a Contact information
+				li.active: a Additional Information
+				li: a Review and Save
 			fieldset
 			.row-fluid.formField
 				.span3
@@ -130,6 +130,11 @@
 
 
 		form.form-horizontal.well.createProfile
+			ul.nav.nav-pills
+				li: a Basic Information
+				li: a Contact information
+				li: a Additional Information
+				li.active: a Review and Save
 			h3 Your profile is finished!
 			p Double check the information below
 			a.btn.btn.prevForm Modify?
