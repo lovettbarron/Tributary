@@ -9,7 +9,7 @@ mixin pageTitle("Activity Feed", false)
 			include ../../patterns/feed
 			mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
-		h3 Filters
+		h4 Filters
 		ul.unstyled.rightNav
 			li
 				a All News (7000)
@@ -18,7 +18,7 @@ mixin pageTitle("Activity Feed", false)
 			li
 				a All my subscriptions (4000)
 			hr
-			li.header: h6 Type:
+			li.header: h6 Type
 			li
 				a Groups (700)
 				.dropdown.pull-right
@@ -36,7 +36,7 @@ mixin pageTitle("Activity Feed", false)
 				.dropdown.pull-right
 
 			hr
-			li.header: h6 Pillar:
+			li.header: h6 Pillar
 			li
 				a Research (700)
 				.dropdown.pull-right

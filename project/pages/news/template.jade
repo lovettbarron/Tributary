@@ -8,10 +8,10 @@ mixin pageTitle("What's Happening?", false)
 		#mainNewsFeed.row.posts
 			.span8
 				include ../../patterns/feed
-				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
+				mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'news',source:'Support',actor:'Helena Troy', title:'We raised 26K with Blue Streak!', time:'2 weeks ago'},{type:'news',source:'Care',actor:'Helena Troy', title:'SickKids in the News this Week', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Our Results Are In', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 
 	.span2
-		h3 Filters
+		h4 Filters
 		ul.unstyled.rightNav
 			li
 				a All News (7000)
@@ -30,6 +30,10 @@ mixin pageTitle("What's Happening?", false)
 				a Support news (300)
 			li
 				a Campaigns (3)
+				
+				- var archive = {title: 'Archive', items: [{title: '2012', address: '#'}, 		{title:'2011', address: '#'}]}
+
+				mixin linkList(archive)
 		hr
 		.pull-right
 			a Reset filters
