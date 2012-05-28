@@ -1,0 +1,29 @@
+include mixin
+
+#pollModal.modal
+	.modal-header
+		btn.closeModal.pull-right(data-dismiss='modal') x
+		h3 <span style="font-weight: 300">Poll results</span> What do you think of this poll?
+	.modal-body
+		.row-fluid
+			.span3 60%
+			.span6.progress
+				.bar(style="width: 40%;")
+			.span3 3 answers
+		.row-fluid
+			.span3 70%
+			.span6.progress
+				.bar(style="width: 10%;")
+			.span3 1 answers
+		.row-fluid
+			.span3 80%
+			.span6.progress
+				.bar(style="width: 90%;")
+			.span3 7 response
+		.row-fluid
+			.span3 90%
+			.span6.progress
+				.bar(style="width: 70%;")
+			.span3 5 response
+	.modal-footer
+		a.btn.close Close
