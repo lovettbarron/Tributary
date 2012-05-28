@@ -3,21 +3,21 @@
 
 
 		form.form-horizontal.well
-			h2 This is a form field
+			h2 Form Fields
 			fieldset
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample text input
+						label.pull-right.form Sample Text Input
 					.span9
 						input.pull-left.text(type='text')
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample checkbox
+						label.pull-right.form Sample Checkbox
 					.span9
 						input(type='checkbox', style='margin-right: 5px')
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Radio list
+						label.pull-right.form Radio List
 					.span9
 						label
 							input(type='checkbox', style='margin-right: 5px')
@@ -43,19 +43,13 @@
 							| Option 3
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Person selector
-					.span9.input-append
-						input.pull-left.text(type='text', placeholder='Default is you')
-						a.btn(data-toggle='modal', href='#personModal'): i.icon-user
-				.row-fluid.formField
-					.span3
-						label.pull-right.form Date selector
+						label.pull-right.form Date Selector
 					.span9.input-append
 						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
 						a.btn(data-toggle='modal', href='#calendarModal'): i.icon-calendar
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Date selector
+						label.pull-right.form Date Selector
 					.span3.input-append
 						input.pull-left.text(type='text', placeholder='yy/mm/dd hh:mm', style='width: 60%')
 						a.btn(data-toggle='modal', href='#calendarModal'): i.icon-calendar
@@ -65,7 +59,7 @@
 						a.btn(data-toggle='modal', href='#calendarModal'): i.icon-calendar
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample select list
+						label.pull-right.form Sample Select List
 					.span9
 						select.select
 							-var options = ['This is an option', 'This is another option']
@@ -74,44 +68,44 @@
 
 
 		form.form-horizontal.well
-			h2 Error examples
+			h2 Error Examples
 			fieldset.control-group.error
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample text input
+						label.pull-right.form Sample Text Input
 					.span9
 						input.pull-left.text(type='text')
 						span.help-inline This form must be filled
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample email
+						label.pull-right.form Sample Email
 					.span9
 						input.pull-left.text(type='text', placeholder='sample.email@sickkids.ca')
 						span.help-inline Use email format.
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Required checkbox
+						label.pull-right.form Required Checkbox
 						span.help-inline
 					.span9
 						input(type='checkbox', style='margin-right: 5px')
 						span.help-inline Required checkbox
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Person selector
+						label.pull-right.form Person Selector
 					.span9.input-append
 						input.pull-left.text(type='text', placeholder='Default is you')
 						btn.btn(data-toggle='modal', href='#personModal'): i.icon-user
 						span.help-inline No such person
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Date selector
+						label.pull-right.form Date Selector
 					.span9.input-append
 						input.pull-left.text(type='text', placeholder='yyyy/mm/dd hh:mm')
 						btn.btn: i.icon-calendar
 						span.help-inline Date unavailable
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Sample select list
+						label.pull-right.form Sample Select List
 					.span9
 						select.select
 							-var options = ['This is an option', 'This is another option']
@@ -120,27 +114,52 @@
 						span.help-inline Incorrect option
 
 		form.form-horizontal.well
-			h2 Disabled forms
+			h2 Button Styles
+			fieldset
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Primary Button
+					.span9
+						btn.btn.pull-left.btn-primary Submit
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Secondary Button
+					.span9
+						btn.btn.pull-left.btn-info Save
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Cancel Button
+					.span9
+						btn.btn Cancel 
+				.row-fluid.formField
+					.span3
+						label.pull-right.form Link Button
+					.span9
+						a Submit
+
+		form.form-horizontal.well
+			h2 Disabled Forms
 			fieldset.control-group.disabled
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Disabled input
+						label.pull-right.form Disabled Input
 					.span9
 						input.pull-left.disabled.text(type='text', disabled)
 
 		form.form-horizontal.well
-			h2 Person selector
+			h2 Person Selector
+			p.span6 Typing in the field will show a dropdown of names and email options that fit the entered value. Selecting one of those options (clicking on dropdown or hitting enter) adds that person to the list. Hitting enter on a query with no results triggers the error state.
 			fieldset
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Person selector
+						label.pull-right.form Person Selector
 					.span9.input-append
 						input.pull-left.text(type='text', placeholder='Default is you')
 						a.btn(data-toggle='modal', href='#personModal'): i.icon-user
 
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Three selected
+						label.pull-right.form Three Selected
 					.span9.input-append
 						input.pull-left.text(type='text', placeholder='Default is you')
 						a.btn(data-toggle='modal', href='#personModal'): i.icon-user
@@ -153,7 +172,7 @@
 			fieldset
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Upload something
+						label.pull-right.form Upload Something
 					.span9
 						a.btn.uploadImage Upload
 				.row-fluid.formField
@@ -163,11 +182,23 @@
 						.bar(style="width: 40%;")
 				.row-fluid.formField
 					.span3
-						label.pull-right.form Successful upload
+						label.pull-right.form Successful Upload
 					.span9
 						i.icon-ok
 						|  Upload successful 
 						a.btn.btn-mini Upload different
 
+		form.form-horizontal.well(style="position: relative")
+			h2 Confirmation
+			.modal-example
+				.modalfix
+					.modal-header
+						btn.close x
+						h3 Confirmation header
+					.modal-body
+						p Are you sure you want to perform this action?
+					.modal-footer
+						btn.btn Cancel
+						btn.btn.btn-primary Confirm
 
 include formModal
