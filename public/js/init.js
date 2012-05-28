@@ -384,8 +384,8 @@ function notification($target) {
 			n();
 		});
 		notificationOpen =+ 1;
-		$('.closeNotification').click( function() {
-			$(this).parent().fadeOut(300, function() {
+		$('.closeNotification').parent().click( function() {
+			$(this).fadeOut(300, function() {
 				notificationOpen =- 1;
 				});
 			})
