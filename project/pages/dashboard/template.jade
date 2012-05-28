@@ -39,9 +39,10 @@ include ../../patterns/submitstory_modal.jade
 					mixin miniFeed({personal: true, mini: true, title: 'Activity feed', updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 				.well
 					h3 Quick Poll
+					include ../../patterns/poll_modal
 					mixin radio({question: 'What do you think of this poll?', items:['60%', '70%','80%', '90%']})
-					a.pollresults.pull-right(href='poll') View poll results »
-					btn.btn.btn-primary(type='button') Submit
+					a.pollresults.pull-right(data-toggle='modal', href='#pollModal') View poll results »
+					a.btn.btn-primary(data-toggle='modal', href='#pollModal') Submit
 			.span4
 				.well.clearfix
 					mixin dailyAgenda(['This item is on the calendar today', 'This is another item that needs to be done today', 'Project deadline is today'])
