@@ -1,4 +1,18 @@
-ul
-	li: a Terms of use
-	li: a SickKids.ca
-	li: a University of Toronto
+include ../../patterns/mixin.jade
+
+.navbar.navbar-fixed-bottom
+	.navbar-inner
+		.container
+			.row
+				.span1
+					a.brand(href="dashboard") SK
+					.returnHome Intranet Homepage
+				.span11
+					.row
+						.span8
+							ul.nav
+								li: a(href="strategicsickkids") SickKids.ca
+								li: a(href="news") Terms of Use
+								li: a(href="news") Feedback & Comments
+								li: a(href="news") University of Toronto
+								li: a(href="news") Contact SickKids
