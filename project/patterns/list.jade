@@ -2,10 +2,6 @@ mixin listType(data)
 	.row-fluid-pagination
 		.span12
 			ul.unstyled.horizontal
-				li.active: a All
-				li.divider
-				li: a «
-				li: a #
 				li: a A
 				li: a B
 				li: a C
@@ -32,7 +28,6 @@ mixin listType(data)
 				li: a X
 				li: a Y
 				li: a Z
-				li: a »
 	.row-fluid.header-row
 		-if(data.context)
 			.span1.checkall
@@ -47,7 +42,7 @@ mixin listType(data)
 				-if(!key)
 					.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
 				-else
-					.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
+					.span2(style='text-align: center'): strong: a(rel="tooltip",title="Sort by" + header)= header
 	-each item in data.items
 		.row-fluid.forum-post
 			-if(data.context)
