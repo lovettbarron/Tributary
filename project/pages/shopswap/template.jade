@@ -15,7 +15,7 @@ mixin content(list)
 					.time.pull-right #{item.time}
 					h4: a(href='news')= item.title
 					p.post-meta
-						| Interested? Contact 
+						| Contact 
 						a(href='publicProfile')= item.actor
 						|  from <a href="#{item.source}">#{item.source}</a>
 					a.btn.expandToggle(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key) Expand
@@ -41,10 +41,9 @@ mixin content(list)
 		h4 Filters
 		ul.unstyled.rightNav
 			li
-				a My Posts (10)
-
-			li
 				a All Posts (274)
+			li
+				a My Posts (10)
 
 			hr
 			li.header: h6 Categories

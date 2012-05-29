@@ -310,6 +310,23 @@ li.indent {
 	color: #fff;
 }
 
+ul.horizontal {
+	text-align: center;
+}
+
+.horizontal > li {
+	clear: none;
+	float: left;
+	padding:4px;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+}
+
+
+.horizontal > li.divider {
+	border: 0px;
+}
+
 .user-nav a:not(.dropdown-item) {
 	color: #fff;
 	text-decoration: none;

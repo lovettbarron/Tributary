@@ -24,6 +24,8 @@ function init() {
 		$(this).find('.dropdown').hide();
 	})
 	
+	
+	
 	$('.checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
 			$('input[type="checkbox"]').each( function() {
