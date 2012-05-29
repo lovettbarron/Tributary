@@ -188,7 +188,7 @@ li.header a {
 	margin-right: 5px;
 }
 
-ul.research, ul.financial, ul.care, ul.support, ul.learning {
+ul.research, ul.financial, ul.care, ul.support, ul.learning,ul.strategic {
 	background-color: #fbfbfb;
 	background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
 	background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
