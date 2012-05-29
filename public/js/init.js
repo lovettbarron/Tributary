@@ -295,6 +295,7 @@ function context() {
 	var care = ['care'];
 	var learning = ['learning'];
 	var ssr = ['support'];
+	var strat = ['strategicsickkids']
 	$('li.sub').hide();
 	if(window.location.pathname) {
 		if( $.inArray(path, context) >= 0) { //Research context			
@@ -302,6 +303,7 @@ function context() {
 			$('ul.research').slideDown();
 			$('ul.financial').hide();
 			$('ul.care').hide();
+			$('ul.strategic').hide();
 			$('ul.learning').hide();
 			$('ul.support').hide();
 		} 
@@ -312,6 +314,7 @@ function context() {
 			$('ul.financial').slideDown();
 			$('ul.shrinker#home').show();
 			$('ul.care').hide();
+			$('ul.strategic').hide();
 			$('ul.learning').hide();
 			$('ul.support').hide();
 		}
@@ -321,6 +324,7 @@ function context() {
 			$('ul.financial').hide();
 			$('ul.research').hide();
 			$('ul.support').hide();
+			$('ul.strategic').hide();
 			$('ul.learning').hide();
 		}
 		else if( $.inArray(path, learning) >= 0) { // learning
@@ -330,11 +334,22 @@ function context() {
 			$('ul.care').hide();
 			$('ul.research').hide();
 			$('ul.support').hide();
+			$('ul.strategic').hide();
 		}
 		else if( $.inArray(path, ssr) >= 0) { // support
 			$('ul.retract').slideUp();
 			$('ul.support').slideDown();
 			$('ul.financial').hide();
+			$('ul.research').hide();
+			$('ul.strategic').hide();
+			$('ul.care').hide();
+			$('ul.learning').hide();
+		}
+		else if( $.inArray(path, strat) >= 0) { // strateigc
+			$('ul.retract').slideUp();
+			$('ul.strategic').slideDown();
+			$('ul.financial').hide();
+			$('ul.support').hide();
 			$('ul.research').hide();
 			$('ul.care').hide();
 			$('ul.learning').hide();
@@ -345,6 +360,7 @@ function context() {
 			$('ul.learning').hide();
 			$('ul.support').hide();
 			$('ul.research').slideUp();
+			$('ul.strategic').hide();
 			if( !$('li.sub:first').is(':visible')) {
 				$('li.sub').slideDown();
 			}
@@ -358,6 +374,7 @@ function context() {
 			$('ul.shrinker').hide();
 			$('ul.care').hide();
 			$('ul.learning').hide();
+			$('ul.strategic').hide();
 			$('ul.support').hide();
 		}
 	}
