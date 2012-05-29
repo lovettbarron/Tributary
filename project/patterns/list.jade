@@ -39,12 +39,13 @@ mixin listType(data)
 				-each button in data.context
 					btn.btn.btn-mini= button
 
-		.span11.contextHidden
+			
+		.row-fluid.contextHidden
 			-each header,key in data.header
 				-if(!key)
-					.span4: strong: a(rel="tooltip",title="Sort by" + header)= header
+					.span4: strong: a(style="padding-left: 10px",rel="tooltip",title="Sort by" + header)= header
 				-else
-					.span2(style='text-align: center'): strong: a(rel="tooltip",title="Sort by" + header)= header
+					.span2: strong: a(rel="tooltip",title="Sort by" + header)= header
 	-each item in data.items
 		.row-fluid.forum-post
 			-if(data.context)

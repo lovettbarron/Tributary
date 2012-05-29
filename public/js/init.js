@@ -23,8 +23,11 @@ function init() {
 	function() {
 		$(this).find('.dropdown').hide();
 	})
-	
-	
+	$('.pollCont > .result').hide();
+	$('.pollResults').click(function() {
+		$(this).parent().find('.pollCont > .question').hide();
+		$(this).parent().find('.pollCont > .result').fadeIn();
+	})
 	
 	$('.checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
