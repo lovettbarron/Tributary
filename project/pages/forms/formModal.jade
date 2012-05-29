@@ -13,18 +13,18 @@ div.modal(id='personModal')
 			-var items = [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }]
 
 			-each item in items
-				.row-fluid.forum-post
+				.row-fluid.person-post.forum-post
 					.span1 
-						a.plus: i.icon-plus
-						a.minus: i.icon-minus
+						a.plus Add
+						a.minus: i.icon-ok
 					.span1: img(src='http://placehold.it/100x100')
 					.span3.listTitle
-						a(href='publicProfile').personName= item.title
+						a.personName= item.title
 					.span2.listAssoc
 						= item.assoc
 					//- Origin of document: author, group, or source
 					.span2.listOrigin
-						a(href='groupDetail')= item.origin
+						a= item.origin
 	.modal-footer
 		a.btn.btn-primary.saveModal(href='Success') Done
 

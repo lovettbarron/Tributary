@@ -197,6 +197,15 @@ function init() {
 	$('a.minus').click( function() {
 		$(this).hide().prev('a.plus').show();
 	})
+	$('.person-post').click( function() {
+		$(this).find('a.plus').click();
+	});
+	
+	$('a.minus').hover( function() {
+		$(this).html('<i class="icon-remove"></i>');
+	}, function() {
+		$(this).html('<i class="icon-ok"></i>');
+	})
 	
 	//Upload image example
 	
@@ -274,7 +283,8 @@ function ipsum() {
 	
 	});
 }
-	
+
+
 function context() {
 	var path = window.location.pathname.split('/')[1];
 	var context = ['research','shopswap'];
@@ -350,6 +360,7 @@ function context() {
 		}
 	}
  $('a#researchExpand').click( function() {
+		$('ul.financial').slideUp();
 	$('ul.research').slideToggle();
 });
 }

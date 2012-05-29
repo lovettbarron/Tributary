@@ -184,8 +184,10 @@
 					.span3
 						label.pull-right.form Successful Upload
 					.span9
+						img.pull-left(src='http://placehold.it/100x100&text=Preview')
 						i.icon-ok
-						|  Upload successful 
+						|  Upload successful
+						br
 						a.btn.btn-mini Upload different
 
 		form.form-horizontal.well(style="position: relative")
@@ -224,6 +226,13 @@
 					.span12
 						a.btn.btn.prevForm Modify answers?
 						a.btn.btn-primary.pull-right.done(href='dashboard') Save and Finish
+
+		form.form-horizontal.well
+			h2 System Notifications
+				.notificationFake
+					a.closeNotification.pull-right: i.icon-remove
+					h3 Notification title
+					p Description of the system notification
 
 
 include formModal

@@ -9,17 +9,24 @@ include ../../patterns/mixin.jade
 					.returnHome Intranet Homepage
 				.span11
 					.row
-						.span8
+						.span7
 							ul.nav
 								li: a(href="strategicsickkids") Strategic SickKids
 								li: a(href="news") What's Happening?
 								li: a(href="blog") Mary Jo's Message
 								li: a(href="directory") People
-						.span3
+						.span4
 							ul.user-nav.pull-right
 								li
 									i.icon-user.icon-white
 									|  Welcome, <a href="profile">Bob</a>
+								li.divider
+								li.dropdown
+									a.dd-toggle(href="support") Admin
+									ul.dropdown-menu
+										li: a.dropdown-item(href='') Request Page
+										li: a.dropdown-item(href='') Manage my Pages
+								li.divider
 								li: a(href="people") Kidmail
 
 	.mainnavsub

@@ -31,25 +31,33 @@ mixin content(list)
 	.span8
 		mixin subscribe()
 		h2 Shop 'n Swap
-		.well
-			p Shop n' Swap is available to all Research Institute employees who would like to dispose of lab or office items, such as equipment or supplies. Items can be sold, traded or given away. There is also a forum for posting personal items.
-		ul.nav.nav-pills.pull-left
-			li.active: a(href='#header1', data-toggle="pill") Research tools
-			li: a(href='#header2', data-toggle="pill") Office supplies
-			li: a(href='#header3', data-toggle="pill") Personal listings
-		.row-fluid.tab-content
-			#header1.tab-pane.span12.active
-				mixin content(swap1)
-			#header2.tab-pane.span12
-				mixin content(swap2)
-			#header3.tab-pane.span12
+		p Shop n' Swap is available to all Research Institute employees who would like to dispose of lab or office items, such as equipment or supplies. Items can be sold, traded or given away. There is also a forum for posting personal items.
+		.row-fluid
 				mixin content(swap1)
 	.span2
 		.dropdown
 			a.btn(data-toggle='modal', href='#shopModal') Post an item
 		hr
-		h4 My postings
+		h4 Filters
+		ul.unstyled.rightNav
+			li
+				a My Posts (10)
+
+			li
+				a All Posts (274)
+
+			hr
+			li.header: h6 Categories
+			li
+				a Research Tools (70)
+
+			li
+				a Office Supplies (9)
+
+			li
+				a Personal (300)
 
 
-		mixin linkList({title: 'Department', items: [{title: 'HP95 Printer Cartridges', address: '#'}, {title: 'Box of TI-83+ calculators', address: '#'},{title: 'IBM Laptops', address: '#'}]})
-		mixin linkList({title: 'Personal', items: [{title: 'Teak side table', address: '#'}, {title: 'FREE box of baby clothes', address: '#'}]})
+		hr
+		.pull-right
+			a Reset filters

@@ -1,10 +1,15 @@
 include ../../patterns/mixin.jade
+include ../../patterns/submitstory_modal.jade
 
 - var Stories =[ {title: 'SickKids in the news!', address: 'test'}, {title: 'Testing it out', address: 'test'} , {title: 'Testing testing', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}, {title: 'test', address: 'test'}];
 
-mixin pageTitle("What's Happening?", false)
 .row
 	.span8
+		.row
+			.span4
+				mixin pageTitle("What's Happening?", false)
+			.span4
+				btn.btn.btn-mini.pull-right(data-toggle='modal', href='#submitStoryModal') Submit a Story
 		#mainNewsFeed.row.posts
 			.span8
 				include ../../patterns/feed
