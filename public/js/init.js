@@ -25,8 +25,8 @@ function init() {
 	})
 	$('.pollCont > .result').hide();
 	$('.pollResults').click(function() {
-		$(this).parent().find('.pollCont > .question').hide();
-		$(this).parent().find('.pollCont > .result').fadeIn();
+		$(this).parents('.pollCont').find('.question').hide();
+		$(this).parents('.pollCont').find('.result').fadeIn();
 	})
 	
 	$('.checkall input').on('click', function() {
