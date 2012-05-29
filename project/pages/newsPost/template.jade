@@ -1,12 +1,13 @@
 include ../../patterns/mixin.jade
-mixin pageTitle("What is Innovation at SickKids?")
+a(href="news") « Back to news
+mixin pageTitle("We raised 26K with Blue Streak!")
 .row
 	.span8
 		.row
 			.span8.post
 					p.post-meta 
 						|By 
-						a Mary Jo Haddad 
+						a Helena Troy
 						| on April 19, 2012
 					p.ipsum(length='2200', para='3')
 					hr
@@ -41,4 +42,29 @@ mixin pageTitle("What is Innovation at SickKids?")
 
 
 	.span2
-		include ../blog/links
+		h4 Filters
+		ul.unstyled.rightNav
+			li
+				a All News (7000)
+			hr
+			li.header: h6 Pillar
+			li
+				a Research news (700)
+
+			li
+				a Care news (900)
+
+			li
+				a Learning news (300)
+
+			li
+				a Support news (300)
+			li
+				a Campaigns (3)
+				
+				- var archive = {title: 'Archive', items: [{title: '2012', address: '#'}, 		{title:'2011', address: '#'}]}
+
+				mixin linkList(archive)
+		hr
+		.pull-right
+			a Reset filters

@@ -95,7 +95,7 @@ mixin miniFeed(feed)
 								img(src='http://placehold.it/100x100&text=++News++')
 							.span10
 								.time.pull-right #{item.time}
-								h4: a(href='news')= item.title
+								h4: a(href='newsPost')= item.title
 								p.post-meta
 									a(href='publicProfile')= item.actor
 									|  from <a href="#{item.source}">#{item.source}</a>
