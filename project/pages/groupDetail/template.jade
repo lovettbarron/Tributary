@@ -43,7 +43,7 @@ include ../../patterns/list
 				.row
 					.span8
 						ul.nav.nav-pills
-							li.active: a(href='#home', data-toggle="pill") Activity
+							li.active: a(href='#home', data-toggle="pill") Group Activity
 							li: a(href='#calendar', data-toggle="pill") Calendar
 							li: a(href='#forum', data-toggle="pill") Discussions
 							li: a(href='#documents', data-toggle="pill") Resources
@@ -51,7 +51,7 @@ include ../../patterns/list
 							li: a(href='#tools', data-toggle="pill") About Us
 					.span8.tab-content
 						#home.tab-pane.active
-							mixin miniFeed({title: 'Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})
+							mixin miniFeed({title: 'Group Activity', noSubscribe: true, updates: [{type:'group', desc:'Contact information updated', title:'Cardiac Connections', time:'30min ago'},{type:'news',source:'Cardiac Connections', title:'Unhealthy habits in teens from lower socioeconomic households raises risk of heart disease more', actor:'Monty Burns', time:'2 minutes ago'},{type:'doc',title:'Policy documents',actor:'Tim Maly', time:'2 days ago'},{type:'event', desc:'9:00-11:00 in the Hollywood Theatre, Come and hear more about the future vision for the Heart Centre',title:'Save the Date! All Staff Meeting: Friday, Feburary 17, 2012', time:'last week'},{type:'event',source:'Cardiac Connections',title:'Deadlines for the Innovation Funds Application are: February 29 (not a typo), 2012', actor:'Bob Watts', time:'2 weeks ago'}]})
 						#calendar.tab-pane
 							img(src='http://placehold.it/1200x800&text=Sharepoint+Calendar')
 						#forum.tab-pane
