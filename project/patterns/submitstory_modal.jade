@@ -1,5 +1,3 @@
-include mixin
-
 #submitStoryModal.modal
 	.modal-header
 		btn.closeModal.pull-right(data-dismiss='modal') x
@@ -8,7 +6,7 @@ include mixin
 		p Placeholder for posting rules and guidelines.
 	.modal-footer
 		a.btn.btn-primary(data-toggle='modal', href='#submitStoryForm', data-dismiss='modal') Accept
-		a.btn.close Close
+		a.btn.close(data-dismiss='modal') Close
 
 
 #submitStoryForm.modal

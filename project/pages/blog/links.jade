@@ -2,14 +2,24 @@ include ../../patterns/mixin.jade
 
 h4 More Posts
 
-- var recent = {title: 'Recent Posts', items: [{title: 'Towering over Bay and Elm, SickKids...', address: '#'}, {title: 'Being healthy at work...', address: '#'},{title: 'Our presentation this week was about...', address: '#'},{title: 'Congratulations to the Nursing Centre...', address: '#'},{title: 'Ideas that make cents: what we...', address: '#'},{title: 'Listening to your voice...', address: '#'}]}
+- var recent = {title: 'Recent Posts', items: [{title: 'Towering over Bay and Elm, SickKids...', address: 'newsPost'}, {title: 'Being healthy at work...', address: 'newsPost'},{title: 'Our presentation this week was about...', address: 'newsPost'},{title: 'Congratulations to the Nursing Centre...', address: 'newsPost'},{title: 'Ideas that make cents: what we...', address: 'newsPost'},{title: 'Listening to your voice...', address: 'newsPost'}]}
 
 mixin linkList(recent)
 
-- var cats = {title: 'Categories', items: [{title: 'Innovation', address: '#'}, {title: 'Staff Engagement', address: '#'},{title: 'SickKids Centre for Research & Learning', address: '#'},{title: 'Safety & Training', address: '#'},{title: 'Financial Health', address: '#'},{title: 'Patient Support', address: '#'}]}
+- var cats = {title: 'Categories', items: [{title: 'Innovation', address: 'newsPost'}, {title: 'Staff Engagement', address: 'newsPost'},{title: 'SickKids Centre for Research & Learning', address: 'newsPost'},{title: 'Safety & Training', address: 'newsPost'},{title: 'Financial Health', address: 'newsPost'},{title: 'Patient Support', address: 'newsPost'}]}
 
 mixin linkList(cats)
 
-- var archive = {title: 'Archive', items: [{title: '2012', address: '#'}, {title: '2011', address: '#'}]}
-
-mixin linkList(archive)
+.link-list
+	h4 Archive
+	ul
+		li.noDelete
+			a.expand » 2012
+			ul.hiddenArchive
+				- each item in recent.items
+					li: a(href=item.address)= item.title
+		li.noDelete
+			a.expand » 2011 
+			ul.hiddenArchive
+				- each item in recent.items
+					li: a(href=item.address)= item.title

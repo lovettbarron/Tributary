@@ -76,10 +76,11 @@ mixin radio(poll)
 				| #{item}
 
 mixin newsBtn()
+	include submitstory_modal.jade
 	mixin notification({title:'Subscribed successfully',desc:'You\'ve successfully subscribed to the feed.'})
 	#newsBtn.pull-right
 		btn.btn.btn-mini.subscribeButton(href='#') Subscribe
-		btn.btn.btn-mini(href='#') Submit a Story
+		btn.btn.btn-mini(data-toggle='modal', href='#submitStoryModal') Submit a Story
 
 mixin subscribe()
 	mixin notification({title:'Subscribed successfully',desc:'You\'ve successfully subscribed to the feed.'})
@@ -387,7 +388,7 @@ mixin pageTitle(title, toggle)
 			h2= title
 
 mixin twitter()
-	-var twitter = ['SickKids_Hospital','SickKidsHealth','ResearchTower','SickKidsHealth']
+	-var twitter = ['sickkids','SickKidsNews','SickKidsGlobal','Build_SickKids']
 	h3 SickKids Twitter Feed
 	-each account in twitter
 		.row-fluid

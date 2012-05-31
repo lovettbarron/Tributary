@@ -10,49 +10,62 @@ mixin pageTitle("All Activity", false)
 			mixin miniFeed({personal: false, noSubscribe: true, updates: [{type:'profile', actor:'Bob Watts', title:'Bob updated his profile', time:'2 minutes ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'},{type:'doc',title:'List of Honours', actor:'Lindsay Ellerby', time:'2 days ago'},{type:'event',actor:'Bob Watts', title:'General Assembly May 2012', time:'last week'},{type:'news',source:'Research',actor:'Helena Troy', title:'Message from the Chief of Research', time:'2 weeks ago'}]})
 	.span2
 		h4 Filters
-		ul.unstyled.rightNav
+		ul.unstyled.rightNav.activityFilters
 			li
-				a All News (7000)
+				a All News
+					span.number  (7000)
 			li
-				a Research News (10)
+				a Research News
+					span.number  (10)
 			li
-				a All my subscriptions (4000)
+				a All my subscriptions
+					span.number  (4000)
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Type
 			li
-				a Groups (700)
+				a Groups
+					span.number  (700)
 				.dropdown.pull-right
 
 			li
-				a People (900)
+				a People
+					span.number  (900)
 				.dropdown.pull-right
 
 			li
-				a Documents (300)
+				a Documents
+					span.number  (300)
 				.dropdown.pull-right
 
 			li
-				a Events (300)
+				a Events 
+					span.number  (300)
 				.dropdown.pull-right
 
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Pillar
 			li
-				a Research (700)
+				a Research
+					span.number  (700)
 				.dropdown.pull-right
 
 			li
-				a Care (900)
+				a Care
+					span.number  (900)
 				.dropdown.pull-right
 
 			li
-				a Learning (300)
+				a Learning
+					span.number  (300)
 				.dropdown.pull-right
 
 			li
-				a Support (300)
+				a Support
+					span.number  (300)
 				.dropdown.pull-right
 
 		hr
 		.pull-right
-			a Reset filters
+			a.resetAll Reset filters

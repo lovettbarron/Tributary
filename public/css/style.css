@@ -161,6 +161,19 @@ img.feature {
 	background: #eeeeee;
 }
 
+ul.hiddenArchive > li {
+	padding-left: 5px;
+}
+
+li.activeFilter {
+	width: 100%;
+	background: #0098EE;
+}
+
+li.activeFilter a {
+	color: #ffffff;
+}
+
 #context li {
 	text-align: left;
 	list-style-type: none;

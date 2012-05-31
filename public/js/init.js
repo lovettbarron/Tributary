@@ -28,7 +28,7 @@ function init() {
 		$(this).parents('.pollCont').find('.question').hide();
 		$(this).parents('.pollCont').find('.result').fadeIn();
 	})
-	
+	activityFilters()
 	$('.checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
 			$('input[type="checkbox"]').each( function() {
@@ -82,6 +82,20 @@ function init() {
 	$('#todoModal input[type="checkbox"]').click( function(e) {
 		$('.calendarView').show();
 	})
+	
+	$('div.editDetails').hide();
+	$('a.editDetails').click( function() {
+		if($(this).hasClass('open')) {
+			$('.unEditted').show();
+			$('div.editDetails').hide();
+			$(this).removeClass('open');
+		}
+		else{
+			$('.unEditted').hide();
+			$('div.editDetails').show();
+			$(this).addClass('open');
+		}
+	});
 	
   $('#calendarTab a:first').tab('show');
 	$('[rel="tooltip"]').tooltip();
@@ -191,6 +205,12 @@ function init() {
     }
 	//Opens the first new item by default on What's Happening
 	$("#mainNewsFeed a.expandToggle:first").click();
+	
+	// Archive collapse stuff
+	$('.hiddenArchive').hide();
+	$('a.expand').click( function() {
+		$(this).next('ul.hiddenArchive').slideToggle(300);
+	})
 	
 	//Plus/minus hide
 	var addedPeople = [];
@@ -443,5 +463,66 @@ function modifyProfile() {
 			block.addClass('edit');
 			$(this).addClass('btn-primary').html('Save');
 		}
+	});
+	$('a.addTools').click( function() {
+		var tool = $(this).parent().find('select').val();
+		$('ul.selectedTools').prepend('<li class="deleteable"><i class="icon-remove-sign"></i> <a>' + tool + '</a></li>').find('i.icon-remove-sign').click( function() {
+			$(this).parent().queue( 
+					function(n) {
+						$(this).html('<a>Undo</a>');
+		        n();
+						}).delay(3000)
+						.fadeOut(500);
+
+		})
+	});
+	$('li.deleteable > div.icon-remove-sign').click( function() {
+		$(this).parent().queue( 
+				function(n) {
+					$(this).html('<a>Undo</a>');
+	        n();
+					}).delay(3000)
+					.fadeOut(500);
+
+	})
+
+}
+
+// Filter stuff for All Activity
+function activityFilters() {
+	$('ul.activityFilters > li').not('.header').click( function() {
+		$(this).parent().children().each( function() {
+			$(this).removeClass('activeFilter');
+		});
+		$(this).addClass('activeFilter');
+		reloadFeed('.posts');
+		randomizeNumber();
+	})
+
+	$('a.resetAll').click( function() {
+		reloadFeed('.posts');
+		$('ul.activityFilters').children().each( function() {
+			$(this).removeClass('activeFilter');
+			$('span.number').each(function() {
+				if($(this).attr('default')){
+					var num = $(this).attr('default');
+				}
+				$(this).html('(' + num + ')')
+			})
+		});
+		
+	})	
+}
+
+function reloadFeed($target) {
+	$($target).fadeOut(300).delay(400).fadeIn(500);
+	}	
+	
+function randomizeNumber() {
+	$('span.number').each( function() {
+		var current = $(this).html().match(/\d+/);
+		$(this).attr('default',current);
+		var num = Math.floor(Math.random() * current);
+		$(this).html('(' + num + ')')
 	});
 }
