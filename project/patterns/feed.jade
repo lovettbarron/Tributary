@@ -98,7 +98,7 @@ mixin miniFeed(feed)
 								h4: a(href='newsPost')= item.title
 								p.post-meta
 									a(href='publicProfile')= item.actor
-									|  from <a class="capital" href="#{item.source}">#{item.source}</a>
+									|  from <a class="capital" href="#{item.source}">#{item.sourceName}</a>
 									|  wrote:
 								-if (!feed.mini)
 									a.btn.expandToggle(href='news', data-toggle="collapse", data-parent="#" + key, href="#" + key) Expand

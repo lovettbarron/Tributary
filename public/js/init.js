@@ -543,7 +543,7 @@ function randomizeNumber() {
 		if($(this).attr('default') === undefined){
 			$(this).attr('default',current);
 		}
-		var num = Math.floor(Math.random() * current);
+		var num = Math.floor((Math.random() * (current-50)) + 50);
 		$(this).html(' ( ' + num + ' )')
 	});
 }
