@@ -36,7 +36,23 @@ include ../../patterns/submitstory_modal.jade
 				
 				- var archive = {title: 'Archive', items: [{title: '2012', address: '#'}, 		{title:'2011', address: '#'}]}
 
-				mixin linkList(archive)
+				include ../../patterns/mixin.jade
+
+				h4 More Posts
+				- var recent = {title: 'Recent Posts', items: [{title: 'January (40)', address: 'newsPost'}, {title: 'March(23)', address: 'newsPost'},{title: 'April (12)', address: 'newsPost'},{title: 'May(62)', address: 'newsPost'},{title: 'June(21)', address: 'newsPost'}]}
+				.link-list
+					h4 Archive
+					ul
+						li.noDelete
+							a.expand » 2012
+							ul.hiddenArchive
+								- each item in recent.items
+									li: a(href=item.address)= item.title
+						li.noDelete
+							a.expand » 2011 
+							ul.hiddenArchive
+								- each item in recent.items
+									li: a(href=item.address)= item.title
 		hr
 		.pull-right
 			a Reset filters

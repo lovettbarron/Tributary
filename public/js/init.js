@@ -28,6 +28,7 @@ function init() {
 		$(this).parents('.pollCont').find('.question').hide();
 		$(this).parents('.pollCont').find('.result').fadeIn();
 	})
+	saveLinkButtons()
 	activityFilters()
 	$('.checkall input').on('click', function() {
 		if( $(this).attr('checked') ) {
@@ -430,6 +431,29 @@ function subscribeButtons() {
 	});
 }
 
+function saveLinkButtons() {
+	$('.saveToLinks').click( function(e) {
+		e.preventDefault();
+		if( $(this).hasClass('subscribed') ) {
+			$(this).removeClass('subscribed')
+			$(this).html('Save to Links');
+		} else {
+			$(this).addClass('subscribed');
+			$(this).queue( 
+				function(n) {
+					$(this).html('loading...');
+	        n();
+			}).delay(1000)
+			.queue(
+				function(n) {
+	        $(this).html('<i class="icon-ok"></i> Saved');
+					notification( $(this).parent() );
+	        n();
+		    }).fadeIn(500);
+		}
+	});
+}
+
 function notification($target) {
 	var height = notificationOpen * 120
 	$('a.closeNotification').click( function() {
@@ -467,12 +491,7 @@ function modifyProfile() {
 	$('a.addTools').click( function() {
 		var tool = $(this).parent().find('select').val();
 		$('ul.selectedTools').prepend('<li class="deleteable"><i class="icon-remove-sign"></i> <a>' + tool + '</a></li>').find('i.icon-remove-sign').click( function() {
-			$(this).parent().queue( 
-					function(n) {
-						$(this).html('<a>Undo</a>');
-		        n();
-						}).delay(3000)
-						.fadeOut(500);
+			$(this).parent().fadeOut(500);
 
 		})
 	});

@@ -246,7 +246,8 @@ mixin people(posts)
 
 
 mixin share()
-	btn.btn.btn-mini.btn-save Save to Links
+	mixin notification({title:'Successfully saved to links',desc:'This link will now appear in your My Links page.'})
+	btn.btn.btn-mini.btn-save.saveToLinks Save to Links
 
 mixin calendar()
 	.row-fluid

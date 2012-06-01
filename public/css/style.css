@@ -19,6 +19,10 @@
 	overflow: hidden;
 }
 
+.moreAboutMe {
+margin-top: 25px;
+}
+
 .navbar-bottom {
 	margin-top: 30px;
 }
@@ -233,16 +237,6 @@ ul.research, ul.financial, ul.care, ul.support, ul.learning,ul.strategic {
 	padding: 10px;
 }
 
-ul.research, ul.care, ul.support, ul.learning {
-	margin-top: 10px;
-	background: #eee;
-	width: 100%;
-}
-
-ul.research, ul.care, ul.support, ul.learning > li {
-	padding: 0 5 0 5;
-	border-bottom: 1px dashed #ffffff;
-}
 
 ul.financial {
 	margin-top: 20px;

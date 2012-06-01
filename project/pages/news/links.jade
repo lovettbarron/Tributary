@@ -14,3 +14,26 @@ mixin linkList(news)
 
 mixin linkList(eat)
 
+h4 More Posts
+
+- var recent = {title: 'Recent Posts', items: [{title: 'January (4)', address: 'newsPost'}, {title: 'March(1)', address: 'newsPost'},{title: 'April (1)', address: 'newsPost'},{title: 'May(2)', address: 'newsPost'},{title: 'June(1)', address: 'newsPost'}]}
+
+mixin linkList(recent)
+
+- var cats = {title: 'Categories', items: [{title: 'January (4)', address: 'newsPost'}, {title: 'March(1)', address: 'newsPost'},{title: 'April (1)', address: 'newsPost'},{title: 'May(2)', address: 'newsPost'},{title: 'June(1)', address: 'newsPost'}]}
+
+mixin linkList(cats)
+
+.link-list
+	h4 Archive
+	ul
+		li.noDelete
+			a.expand » 2012
+			ul.hiddenArchive
+				- each item in recent.items
+					li: a(href=item.address)= item.title
+		li.noDelete
+			a.expand » 2011 
+			ul.hiddenArchive
+				- each item in recent.items
+					li: a(href=item.address)= item.title

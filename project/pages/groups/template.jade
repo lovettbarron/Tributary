@@ -3,53 +3,69 @@ include ../../patterns/mixin
 mixin pageTitle("My Groups")
 .row
 	.span8
-		include ../../patterns/list
-		mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Leave Group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research Team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology Sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids Cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid Dynamics Reading Group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
+		.posts
+			include ../../patterns/list
+			mixin listType({ type: 'group', dropdown: ['Sort alphabetically','Sort by recent activity'],header: ['Group Name','Pillar','Admin','Updated'], context: ['Leave Group'], items: [{ title: 'Cardiac Connections', address: '#group2', assoc:'Care', origin:'SickKids',updated:'yesterday' }, { title: 'Research Team', assoc:'Research', origin:'Janice Nicholson',updated:'yesterday' }, { title: 'Hemotology Sciences', assoc:'Research', origin:'Peter Jim',updated:'two hours ago' }, { title: 'SickKids Cyclists', assoc:'Hospital', origin:'Tim Maly',updated:'three days ago' }, { title: 'Shop \'n Swap', assoc:'Research', origin:'Jerry Johnson',updated:'yesterday' }, { title: 'Clincical Hemotology', assoc:'Care', origin:'Tim Maly',updated:'yesterday' }, { title: 'Fluid Dynamics Reading Group', assoc:'Learning', origin:'Bob Watts',updated:'yesterday' }] })
 	.span2
 		.dropdown
 			btn.btn(data-toggle='modal', href='#todoModal') Create a Group
 		hr
 		h4 Filters
-		ul.unstyled.rightNav
+		ul.unstyled.rightNav.activityFilters
 			li
-				a My groups (10)
+				a My groups
+					span.number  (10)
 
 			li
-				a All groups (274)
+				a All groups
+					span.number  (274)
 
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Pillar
 			li
-				a Research (700)
+				a Research
+					span.number  (700)
 
 			li
-				a Care (900)
+				a Care
+					span.number  (900)
 
 			li
-				a Learning (300)
+				a Learning
+					span.number  (300)
 
 			li
-				a Support (300)
+				a Support
+					span.number  (300)
 
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Type
 			li
-				a Department (700)
+				a Department
+					span.number  (700)
 
 			li
-				a Program (900)
+				a Program
+					span.number  (900)
 
 			li
-				a Team (300)
+				a Team
+					span.number  (300)
 
 			li
-				a Centre (300)
+				a Centre
+					span.number  (300)
 
 			li
-				a Project (75)
+				a Project
+					span.number  (75)
 
 			li
-				a Social (1500)
+				a Social
+					span.number  (1500)
 		hr
+		ul.unstyled.rightNav.activityFilters
 		.pull-right
-			a Reset filters
+			a.resetAll Reset filters
