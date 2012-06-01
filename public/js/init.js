@@ -432,16 +432,16 @@ function subscribeButtons() {
 
 function notification($target) {
 	var height = notificationOpen * 120
+	$('a.closeNotification').click( function() {
+		$(this).parent().fadeOut(300, function() {
+			notificationOpen =- 1;
+			});
+		});
 		$($target).parent().find('div.notification:first').css('top', height + 90).fadeIn(300).delay(6000).queue( function(n) {
 			$('.closeNotification').click();
 			n();
 		});
 		notificationOpen =+ 1;
-		$('.closeNotification').parent().click( function() {
-			$(this).fadeOut(300, function() {
-				notificationOpen =- 1;
-				});
-			})
 }
 
 function addTodo(content) {
@@ -504,10 +504,10 @@ function activityFilters() {
 		$('ul.activityFilters').children().each( function() {
 			$(this).removeClass('activeFilter');
 			$('span.number').each(function() {
-				if($(this).attr('default')){
+				if($(this).attr('default') !== undefined){
 					var num = $(this).attr('default');
+					$(this).html(' ( ' + num + ' )')
 				}
-				$(this).html('(' + num + ')')
 			})
 		});
 		
@@ -515,14 +515,16 @@ function activityFilters() {
 }
 
 function reloadFeed($target) {
-	$($target).fadeOut(300).delay(400).fadeIn(500);
+	$($target).fadeOut(300).fadeIn(900);
 	}	
 	
 function randomizeNumber() {
 	$('span.number').each( function() {
 		var current = $(this).html().match(/\d+/);
-		$(this).attr('default',current);
+		if($(this).attr('default') === undefined){
+			$(this).attr('default',current);
+		}
 		var num = Math.floor(Math.random() * current);
-		$(this).html('(' + num + ')')
+		$(this).html(' ( ' + num + ' )')
 	});
 }

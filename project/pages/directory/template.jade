@@ -3,48 +3,62 @@ include ../../patterns/mixin
 mixin pageTitle("Directory")
 .row
 	.span8
-		include ../../patterns/list
-		mixin listType({ type: 'people', dropdown: ['Sort alphabetically','Sort by recent activity'], header: ['Name','Role','Groups','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })
+		.posts
+			include ../../patterns/list
+			mixin listType({ type: 'people', dropdown: ['Sort alphabetically','Sort by recent activity'], header: ['Name','Role','Groups','Updated'], context: ['Subscribe', 'Assign to group','Report individual'], items: [{ title: 'Bob Watts', assoc:'Physician', origin:'Cardiology',updated:'yesterday' }, { title: 'Kerem Tirmandi', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Andrew Lovett-Barron', assoc:'Analyst', origin:'Care',updated:'two hours ago' }, { title: 'Blair Johnsrude', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Joe Stevenson', assoc:'Researcher', origin:'Research',updated:'yesterday' }, { title: 'Nigel Doherty', assoc:'Manager', origin:'Learning',updated:'yesterday' }, { title: 'Hidetoshi Sashitomi', assoc:'Manager', origin:'Care',updated:'two hours ago' }, { title: 'Lily Kampingwa', assoc:'Operations', origin:'Hospital',updated:'three days ago' },{ title: 'Lindsay Ellerby', assoc:'Administrator', origin:'Research',updated:'yesterday' }, { title: 'Samantha Lin', assoc:'Administrator', origin:'Learning',updated:'yesterday' }, { title: 'Bill Rutherford', assoc:'Nurse', origin:'Care',updated:'two hours ago' }, { title: 'Karl Pilkington', assoc:'Physician', origin:'Hospital',updated:'three days ago' }] })
 	.span2
 		h4 Filters
-		ul.unstyled.rightNav
+		ul.unstyled.rightNav.activityFilters
 			li
-				a My Contacts (10)
+				a My Contacts
+					span.number (10)
 
 			li
-				a All People (274)
+				a All People
+					span.number (274)
 
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Pillar
 			li
-				a Research (700)
+				a Research
+					span.number (700)
 
 			li
-				a Care (900)
+				a Care
+					span.number (900)
 
 			li
-				a Learning (300)
+				a Learning
+					span.number (300)
 
 			li
-				a Support (300)
+				a Support
+					span.number (300)
 
 			hr
+		ul.unstyled.rightNav.activityFilters
 			li.header: h6 Type
 			li
-				a Department (1240)
+				a Department
+					span.number (1240)
 
 			li
-				a Program (2120)
+				a Program
+					span.number (2120)
 
 			li
-				a Team (30)
+				a Team
+					span.number (30)
 
 			li
-				a Centre (150)
+				a Centre
+					span.number (150)
 			
 			li
-				a Project (150)
+				a Project
+					span.number (150)
 
 		hr
 		.pull-right
-			a Reset filters
+			a.resetAll Reset filters

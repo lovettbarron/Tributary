@@ -225,6 +225,10 @@ ul.research, ul.financial, ul.care, ul.support, ul.learning,ul.strategic {
 	height: 10px;
 }
 
+.capital:first-letter {
+	text-transform: capitalize;
+}
+
 .thirdnav {
 	padding: 10px;
 }
